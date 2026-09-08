@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+
+# Local dependencies and logs
+node_modules/
+npm-debug.log*
+
+# Local environment files and credentials
+.env
+.env.*
+!.env.example
+
+# Editor settings
+.vscode/
+.idea/

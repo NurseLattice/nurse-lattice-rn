@@ -1,0 +1,30 @@
+{
+  "lessonId": 5,
+  "questions": [
+    {
+      "id": "rn-05-q01",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client with possible dysphagia coughs and develops a wet voice after a sip of water. What should the RN do first?",
+      "choices": ["Offer a larger sip to confirm the finding", "Stop oral intake, keep the client upright, and assess according to the swallowing-safety plan", "Place the client flat to rest", "Add a straw and ask the client to drink quickly"],
+      "correctIndex": 1,
+      "explanation": "Coughing and a wet voice after swallowing are concerning for impaired airway protection. Stop intake and maintain upright positioning while following the assessment and escalation plan."
+    },
+    {
+      "id": "rn-05-q02",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which intervention most directly reduces heel pressure for an immobile client?",
+      "choices": ["Massage reddened heel tissue", "Place a ring-shaped cushion under each heel", "Float the heels so they are off the mattress", "Keep the head of the bed at its highest position"],
+      "correctIndex": 2,
+      "explanation": "Offloading removes sustained pressure from the heels. Massaging injured tissue, ring devices, and unnecessary high head elevation can worsen tissue stress or shear."
+    },
+    {
+      "id": "rn-05-q03",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After administering an ordered opioid for acute pain, which follow-up is most important?",
+      "choices": ["Reassess pain, respiratory status, sedation, and function at the appropriate time", "Wait until the end of the shift to avoid disturbing the client", "Document only that the dose was given", "Ask the next shift to decide whether the medication worked"],
+      "correctIndex": 0,
+      "explanation": "Evaluation includes both therapeutic effect and adverse effects, especially respiratory depression and sedation. Administration without timely reassessment is incomplete care."
+    }
+  ]
+}
+

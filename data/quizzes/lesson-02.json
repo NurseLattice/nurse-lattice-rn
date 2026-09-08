@@ -1,0 +1,85 @@
+{
+  "lessonId": 2,
+  "questions": [
+    {
+      "id": "rn-02-q01",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Before administering a medication, the RN finds that the date of birth on the wristband does not match the medication record. What should the RN do first?",
+      "choices": ["Ask the client whether the medication looks familiar", "Hold the medication and resolve the identification discrepancy through the approved process", "Use the room number as the second identifier", "Administer the medication because the client's name matches"],
+      "correctIndex": 1,
+      "explanation": "A mismatch in an approved identifier is a stop signal. The RN should hold the medication and resolve the discrepancy before proceeding; a room number and medication appearance do not establish identity."
+    },
+    {
+      "id": "rn-02-q02",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement correctly describes Standard Precautions?",
+      "choices": ["They are used only when a client has a confirmed infection", "They replace Transmission-Based Precautions", "They apply to every client and are selected according to the anticipated exposure", "They require the same complete set of PPE for every interaction"],
+      "correctIndex": 2,
+      "explanation": "Standard Precautions apply to all clients in every healthcare setting. The specific protective equipment is chosen from the task and anticipated exposure, with added Transmission-Based Precautions when indicated."
+    },
+    {
+      "id": "rn-02-q03",
+      "clinicalJudgmentStep": "Take action",
+      "question": "After removing intact gloves used for routine client care, what should the nurse do next?",
+      "choices": ["Perform hand hygiene immediately", "Put on a second pair of gloves", "Touch only clean equipment", "Wait until leaving the unit to wash"],
+      "correctIndex": 0,
+      "explanation": "Gloves can have small defects, and hands may become contaminated during removal. Hand hygiene is required immediately after glove removal even when the gloves appear intact."
+    },
+    {
+      "id": "rn-02-q04",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "The RN is preparing to suction a client's tracheostomy, and splashing of secretions is anticipated. Which PPE selection best addresses the exposure?",
+      "choices": ["Gloves only", "A gown only", "Gloves, gown, and mask with eye or face protection", "A surgical cap and shoe covers only"],
+      "correctIndex": 2,
+      "explanation": "Anticipated contact with secretions and a risk of splash call for gloves and a gown plus protection for the mouth, nose, and eyes. PPE is matched to the exposure rather than used as a fixed set."
+    },
+    {
+      "id": "rn-02-q05",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client arriving for evaluation has a persistent cough, night sweats, weight loss, and possible pulmonary tuberculosis. What is the priority nursing response?",
+      "choices": ["Keep the client in the common waiting area until testing is complete", "Place a mask on the client if tolerated, separate the client, and initiate the facility's airborne-precaution process", "Begin Contact Precautions only", "Wait for a positive culture before using additional precautions"],
+      "correctIndex": 1,
+      "explanation": "The symptom pattern raises concern for an airborne infection. Source control, prompt separation, and the airborne-precaution process should begin from suspicion rather than waiting for final confirmation."
+    },
+    {
+      "id": "rn-02-q06",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "While preparing a sterile field, which finding means the RN should replace the field?",
+      "choices": ["The field is set up immediately before the procedure", "A sterile item remains above waist level", "Moisture has soaked through the sterile drape from the surface below", "The RN opens the first flap of a package away from the body"],
+      "correctIndex": 2,
+      "explanation": "Moisture can carry microorganisms through a barrier by strike-through contamination. The field is no longer considered sterile and should be replaced before the procedure continues."
+    },
+    {
+      "id": "rn-02-q07",
+      "clinicalJudgmentStep": "Take action",
+      "question": "During a sterile dressing change, one sterile glove touches the bedrail. What should the RN do?",
+      "choices": ["Continue because the contact was brief", "Clean the glove with alcohol-based hand rub", "Keep the hand away from the wound but continue", "Stop and replace the contaminated glove using sterile technique"],
+      "correctIndex": 3,
+      "explanation": "The bedrail is not sterile, so the glove is contaminated regardless of how brief the contact was. The RN should stop and replace it without contaminating the remaining sterile supplies."
+    },
+    {
+      "id": "rn-02-q08",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A nurse sustains a needlestick from a used hollow-bore needle. What is the nurse's first action?",
+      "choices": ["Wash the area promptly with soap and water", "Finish the medication round before reporting it", "Squeeze the wound repeatedly to make it bleed", "Document the exposure only in the client's medical record"],
+      "correctIndex": 0,
+      "explanation": "Immediate cleansing is the first response, followed promptly by reporting and the designated exposure-evaluation process. Delaying, aggressively squeezing, or using the client record as the exposure report is inappropriate."
+    },
+    {
+      "id": "rn-02-q09",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "The RN finds a client sitting on the floor beside the bed after an unwitnessed fall. What is the priority action?",
+      "choices": ["Lift the client into bed immediately", "Assess the client for injury and physiologic instability while calling for appropriate assistance", "Complete the incident report before examining the client", "Ask the client to stand to determine whether walking is possible"],
+      "correctIndex": 1,
+      "explanation": "The RN first assesses for injury and instability and summons appropriate help before moving the client. Reporting and documentation follow immediate protection, assessment, and needed care."
+    },
+    {
+      "id": "rn-02-q10",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which chart entry is most appropriate after a client safety event?",
+      "choices": ["Incident report completed because the nursing assistant was careless", "Client found on floor at 1015; awake, reports left hip pain 6/10; movement limited; provider notified and ordered evaluation", "Client appears fine after an avoidable fall", "See incident report for all assessment findings"],
+      "correctIndex": 1,
+      "explanation": "The clinical record should contain objective findings, the client's report, nursing actions, notifications, and response. It should not assign blame, speculate, or substitute an incident report for clinical documentation."
+    }
+  ]
+}

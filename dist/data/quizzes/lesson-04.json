@@ -1,0 +1,85 @@
+{
+  "lessonId": 4,
+  "questions": [
+    {
+      "id": "rn-04-q01",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which opening statement best begins a therapeutic health interview?",
+      "choices": ["Why did you wait so long to seek care?", "Tell me what concerns you most today.", "You are not worried about this, are you?", "I know exactly how you feel."],
+      "correctIndex": 1,
+      "explanation": "An open invitation lets the client identify the priority concern in their own words. The other responses imply judgment, lead the answer, or claim understanding without assessment."
+    },
+    {
+      "id": "rn-04-q02",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client becomes tearful and silent after discussing a recent loss. What is the nurse's best response?",
+      "choices": ["Allow silence, remain present, and say, “Take your time; I am here with you.”", "Change the subject to prevent more distress", "Say, “Everything happens for a reason.”", "Describe a similar loss from the nurse's life"],
+      "correctIndex": 0,
+      "explanation": "Purposeful silence and presence allow the client to process emotion and continue when ready. Clichés, topic changes, and unrelated self-disclosure can minimize the experience or shift the focus."
+    },
+    {
+      "id": "rn-04-q03",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with limited English proficiency needs a detailed admission interview. Which approach is best?",
+      "choices": ["Ask the client's young child to interpret", "Use a qualified interpreter, speak directly to the client, and check understanding", "Speak English more loudly and use the same questions", "Ask only yes-or-no questions without interpretation"],
+      "correctIndex": 1,
+      "explanation": "A qualified interpreter supports accurate, confidential communication. The nurse addresses the client directly and verifies understanding; children, volume, and restricted questions are not safe substitutes."
+    },
+    {
+      "id": "rn-04-q04",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The client says, “I have felt sad most days,” while smiling briefly and then becoming tearful. Which statement correctly distinguishes mood from affect?",
+      "choices": ["Sadness is the observed affect, and tearfulness is the reported mood", "The reported sadness is mood, and the observed changing emotional expression is affect", "Mood and affect mean exactly the same thing", "Affect can be assessed only by asking the family"],
+      "correctIndex": 1,
+      "explanation": "Mood is the client's report of a more sustained emotional state. Affect is the nurse's observation of current emotional expression, including its range, stability, and congruence with the discussion."
+    },
+    {
+      "id": "rn-04-q05",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A hospitalized older adult who was oriented this morning becomes inattentive and disoriented during the evening. What is the priority interpretation?",
+      "choices": ["The change is expected with normal aging", "The client is being uncooperative", "The acute change may signal a medical problem and requires prompt focused assessment", "A psychiatric diagnosis should be assigned before taking vital signs"],
+      "correctIndex": 2,
+      "explanation": "New inattention and disorientation are acute changes that may reflect hypoxia, infection, medication effects, glucose disturbance, neurologic change, or another urgent cause. Prompt assessment takes priority."
+    },
+    {
+      "id": "rn-04-q06",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "A client reports hearing a voice. Which follow-up question is the priority?",
+      "choices": ["Why are you imagining a voice?", "Are you sure the voice is not real?", "What is the voice saying, and is it telling you to hurt yourself or someone else?", "Would you like to discuss something more pleasant?"],
+      "correctIndex": 2,
+      "explanation": "The RN assesses the content of the hallucination and whether it directs unsafe action. Arguing about reality, blaming, or changing the subject misses an immediate safety cue."
+    },
+    {
+      "id": "rn-04-q07",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client says, “There is no reason for me to live anymore.” What is the nurse's best response?",
+      "choices": ["You have many things to be thankful for", "Are you thinking about killing yourself?", "Promise me that you will not do anything dangerous", "Let us discuss this after you have rested"],
+      "correctIndex": 1,
+      "explanation": "The statement is a suicide-risk cue and calls for a direct, calm question about suicidal thoughts, followed by the required structured assessment and safety response. Reassurance or promises are insufficient."
+    },
+    {
+      "id": "rn-04-q08",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client states, “I have a loaded gun at home and plan to use it tonight.” What is the RN's priority action?",
+      "choices": ["Ask the client to sign a no-harm contract", "Stay with the client and activate the immediate suicide-safety response", "Schedule a routine appointment for next week", "Leave the client alone to contact a family member"],
+      "correctIndex": 1,
+      "explanation": "A feasible plan, access to a lethal means, and near-term intent indicate immediate danger. The RN maintains safety and observation while activating the emergency response rather than relying on a contract or delay."
+    },
+    {
+      "id": "rn-04-q09",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which documentation entry is most objective?",
+      "choices": ["Client is acting strange and probably psychotic", "Client is manipulative and attention-seeking", "Client states, “The television is sending me warnings”; scans the room repeatedly and speaks in a low voice", "Client has a bad attitude toward treatment"],
+      "correctIndex": 2,
+      "explanation": "The entry records the client's words and observable behavior without assigning a diagnosis, motive, or judgment. Objective description supports accurate reassessment and communication."
+    },
+    {
+      "id": "rn-04-q10",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which action best closes a health interview?",
+      "choices": ["End when the allotted time expires without explanation", "Summarize key findings, invite correction, explain next steps, and confirm urgent concerns are addressed", "Introduce a new complex topic in the final minute", "Promise that all concerns will be resolved today"],
+      "correctIndex": 1,
+      "explanation": "A concise summary checks accuracy and gives the client a chance to correct or add information. Clear next steps and ownership of urgent concerns support continuity and realistic expectations."
+    }
+  ]
+}

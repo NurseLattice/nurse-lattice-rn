@@ -1,0 +1,30 @@
+{
+  "lessonId": 6,
+  "questions": [
+    {
+      "id": "rn-06-q01",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A medication dose is far outside the usual range and the indication is unclear. What should the RN do?",
+      "choices": ["Administer it because the order is electronic", "Hold the medication and clarify the order before administration", "Give half the dose and document the change", "Ask the client whether the dose seems correct"],
+      "correctIndex": 1,
+      "explanation": "An unexpected dose or unclear indication requires clarification before administration. Electronic entry does not guarantee appropriateness, and the RN should not independently alter the dose."
+    },
+    {
+      "id": "rn-06-q02",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "During a peripheral IV infusion, the site becomes cool, swollen, and uncomfortable. What is the RN's first action?",
+      "choices": ["Increase the infusion rate", "Stop the infusion and assess the site", "Cover the site so the client cannot see it", "Flush forcefully to restore flow"],
+      "correctIndex": 1,
+      "explanation": "Coolness, swelling, and discomfort suggest infiltration. Stop the infusion to prevent additional fluid entering the tissue, then assess and follow the solution- and policy-specific management steps."
+    },
+    {
+      "id": "rn-06-q03",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which action best supports safe administration of a high-alert medication?",
+      "choices": ["Skip barcode scanning when the unit is busy", "Use the required independent verification and monitoring process", "Rely on room number as the client identifier", "Prepare medications for several clients at one time"],
+      "correctIndex": 1,
+      "explanation": "High-alert medications require the organization's specified safeguards, which may include independent verification and enhanced monitoring. Workarounds remove defenses against serious harm."
+    }
+  ]
+}
+

@@ -1,0 +1,85 @@
+{
+  "lessonId": 3,
+  "questions": [
+    {
+      "id": "rn-03-q01",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding is subjective assessment data?",
+      "choices": ["Respiratory rate is 28/min", "Skin is cool and pale", "Client states, “I feel dizzy when I stand.”", "Radial pulse is irregular"],
+      "correctIndex": 2,
+      "explanation": "Dizziness is an experience reported by the client and is therefore subjective. Respiratory rate, skin appearance, and pulse rhythm are observable or measurable objective findings."
+    },
+    {
+      "id": "rn-03-q02",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "During the initial general survey, which finding requires the most immediate focused assessment?",
+      "choices": ["The client asks when lunch will arrive", "The client uses accessory muscles and pauses after every few words", "The client wears reading glasses", "The client reports sleeping six hours last night"],
+      "correctIndex": 1,
+      "explanation": "Accessory-muscle use and difficulty speaking suggest significant respiratory effort and a possible breathing threat. The RN should immediately assess airway, breathing, oxygenation, and need for help."
+    },
+    {
+      "id": "rn-03-q03",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The RN obtains an unexpectedly high blood pressure using a cuff that is too small for the client's arm. How should the nurse interpret the result?",
+      "choices": ["The reading may be falsely high and should be repeated with the correct cuff", "The reading is always accurate if the device is automatic", "The reading is probably falsely low", "Cuff size affects pulse but not blood pressure"],
+      "correctIndex": 0,
+      "explanation": "An undersized cuff can produce an inaccurately high blood pressure. The RN should use an appropriate cuff and repeat the measurement while also considering the client's symptoms and condition."
+    },
+    {
+      "id": "rn-03-q04",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A pulse oximeter displays 82%, but the alert client is speaking comfortably and has cold fingers with a weak signal. What is the best nursing action?",
+      "choices": ["Ignore the value because the client looks comfortable", "Assess the client and oxygen setup while improving the signal and promptly confirming the reading", "Document 82% as the confirmed saturation", "Wait thirty minutes and recheck without assessing the client"],
+      "correctIndex": 1,
+      "explanation": "The RN should assess the client first and evaluate oxygen delivery while checking signal quality and confirming an unexpected value. Poor circulation and cold skin can affect accuracy, but the reading must not be dismissed."
+    },
+    {
+      "id": "rn-03-q05",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client becomes lightheaded while standing for an assessment. What should the RN do first?",
+      "choices": ["Ask the client to remain standing until all measurements are complete", "Protect the client from falling and assist the client to a safe position", "Leave the room to obtain a different blood pressure cuff", "Document that the client could not tolerate the assessment"],
+      "correctIndex": 1,
+      "explanation": "Immediate injury prevention takes priority. After assisting the client to a safe position, the RN assesses symptoms and vital signs, obtains help as needed, and evaluates possible causes."
+    },
+    {
+      "id": "rn-03-q06",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which change is most concerning and should be escalated promptly?",
+      "choices": ["Heart rate changes from 76/min to 80/min after conversation", "Temperature differs slightly when measured by a different route", "Respiratory rate rises from 18/min to 30/min while the client becomes newly confused", "Pain decreases from 6/10 to 3/10 after an intervention"],
+      "correctIndex": 2,
+      "explanation": "A rising respiratory rate combined with new confusion suggests acute deterioration. The trend and associated neurologic change are more concerning than small context-related variations or an improving pain score."
+    },
+    {
+      "id": "rn-03-q07",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which question best assesses the quality component of PQRSTU for pain?",
+      "choices": ["What does the pain feel like?", "When did the pain begin?", "Where is the pain located?", "What number describes its intensity?"],
+      "correctIndex": 0,
+      "explanation": "Quality describes the character of the pain, such as pressure, burning, aching, or stabbing. Onset addresses timing, location addresses region, and a rating describes severity."
+    },
+    {
+      "id": "rn-03-q08",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client rates pain as 8/10 while resting quietly and smiling with a visitor. Which response by the RN is best?",
+      "choices": ["Record no pain because the behavior does not match the rating", "Accept the report, complete a structured pain assessment, and develop a safe plan", "Ask the visitor to decide whether the client is in pain", "Tell the client to request care only when visible distress develops"],
+      "correctIndex": 1,
+      "explanation": "When a client can communicate, self-report is the primary pain source. Behavior alone does not disprove pain; the RN assesses characteristics, function, goals, associated findings, and safety before planning care."
+    },
+    {
+      "id": "rn-03-q09",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After providing an intervention for pain, which action completes the evaluation step?",
+      "choices": ["Assume the intervention worked because the client is quiet", "Reassess pain, function, and adverse effects at an appropriate time and compare with the goal", "Wait until the next shift to ask about pain", "Document only that the intervention was given"],
+      "correctIndex": 1,
+      "explanation": "Evaluation requires timely reassessment of the client's response, function, and possible adverse effects. The findings determine whether the plan should continue, change, or be escalated."
+    },
+    {
+      "id": "rn-03-q10",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which documentation entry best describes an acute assessment change?",
+      "choices": ["Client is doing badly today", "Client seems confused for no reason", "At 1420, client newly disoriented to place; respirations 30/min with accessory-muscle use; rapid-response process activated", "Vital signs abnormal; will continue to watch"],
+      "correctIndex": 2,
+      "explanation": "The entry gives the time, specific objective findings, change in mental status, and nursing action. Vague conclusions and unsupported speculation do not communicate the severity or response."
+    }
+  ]
+}

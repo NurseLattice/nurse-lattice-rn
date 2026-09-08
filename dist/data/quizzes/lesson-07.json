@@ -1,0 +1,30 @@
+{
+  "lessonId": 7,
+  "questions": [
+    {
+      "id": "rn-07-q01",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which postoperative trend is most concerning and requires prompt follow-up?",
+      "choices": ["Pain decreases after treatment", "Heart rate rises from 88 to 118/min while blood pressure and urine output fall", "Temperature remains unchanged over two readings", "The client requests help repositioning"],
+      "correctIndex": 1,
+      "explanation": "Rising heart rate with falling blood pressure and urine output suggests worsening perfusion and possible bleeding or shock. The pattern is more urgent than a stable or improving finding."
+    },
+    {
+      "id": "rn-07-q02",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The laboratory reports a critically high potassium result for a client. Which action is the RN's priority?",
+      "choices": ["File the result for the next shift", "Assess the client and cardiac status, verify the result as appropriate, and promptly escalate for treatment", "Encourage unrestricted potassium-rich foods", "Repeat the test next week without notifying anyone"],
+      "correctIndex": 1,
+      "explanation": "Severe hyperkalemia can cause life-threatening dysrhythmias. The RN rapidly assesses, checks monitoring and specimen context without delaying care, and activates the critical-result response."
+    },
+    {
+      "id": "rn-07-q03",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "After a femoral arterial procedure, which finding requires immediate escalation?",
+      "choices": ["A small amount of stable bruising at the insertion site", "The affected foot is newly cool with an absent pedal pulse", "The client asks when lunch will arrive", "The dressing remains dry and intact"],
+      "correctIndex": 1,
+      "explanation": "A newly cool, pulseless extremity suggests acute arterial compromise. Compare with baseline, maintain safety, and escalate immediately to protect limb perfusion."
+    }
+  ]
+}
+

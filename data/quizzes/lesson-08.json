@@ -1,0 +1,30 @@
+{
+  "lessonId": 8,
+  "questions": [
+    {
+      "id": "rn-08-q01",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client develops new inspiratory stridor shortly after neck surgery. Which problem is the priority?",
+      "choices": ["Disturbed sleep", "Threatened airway", "Impaired social interaction", "Knowledge deficit"],
+      "correctIndex": 1,
+      "explanation": "Stridor signals upper-airway narrowing and possible obstruction. Activate emergency airway support immediately while assessing and preparing ordered rescue interventions."
+    },
+    {
+      "id": "rn-08-q02",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client receiving blood develops chills, back pain, and shortness of breath. What is the RN's first action?",
+      "choices": ["Slow the transfusion and reassess in 30 minutes", "Stop the transfusion", "Discard the blood bag immediately", "Give the next unit to maintain the schedule"],
+      "correctIndex": 1,
+      "explanation": "The findings suggest an acute transfusion reaction. Stop the transfusion first to prevent further exposure, then maintain appropriate IV access, assess, notify, and follow the transfusion-reaction protocol."
+    },
+    {
+      "id": "rn-08-q03",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client with suspected infection becomes confused, hypotensive, and tachypneic. What is the RN's priority response?",
+      "choices": ["Recheck the client after the next routine vital-sign round", "Activate rapid evaluation and the sepsis or deterioration pathway while supporting airway, breathing, and circulation", "Offer oral fluids and leave the client to rest", "Focus first on completing admission paperwork"],
+      "correctIndex": 1,
+      "explanation": "Acute confusion, hypotension, and tachypnea suggest organ hypoperfusion and possible sepsis. Immediate escalation and stabilization take priority over routine tasks or delayed reassessment."
+    }
+  ]
+}
+

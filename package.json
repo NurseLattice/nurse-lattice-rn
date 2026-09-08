@@ -1,0 +1,13 @@
+{
+  "name": "rn-quest",
+  "version": "0.5.0",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "test": "node tests/static-check.js && node tests/progress-check.js && node tests/quiz-check.js",
+    "build": "node scripts/build.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "RN Quest",
+  "short_name": "RN Quest",
+  "description": "NCLEX-RN lessons, practice, and progress tracking.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071523",
+  "theme_color": "#075985"
+}
+

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#075985">
+  <meta name="description" content="Mobile-first NCLEX-RN lessons, clinical judgment practice, and study progress.">
+  <meta name="application-name" content="RN Quest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="RN Quest">
+  <link rel="manifest" href="manifest.webmanifest?v=0.5.0">
+  <title>RN Quest v0.5.0 · RN Curriculum</title>
+  <link rel="stylesheet" href="css/styles.css?v=0.5.0">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" type="button" data-route="home" aria-label="RN Quest home">
+        <span class="brand-mark" aria-hidden="true">RN</span>
+        <span><b>RN Quest</b><small>NCLEX-RN pilot</small></span>
+      </button>
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Switch theme">☾</button>
+    </header>
+
+    <main id="main">
+      <section id="home" class="page active" aria-labelledby="homeTitle">
+        <div class="hero-grid">
+          <article class="hero-card">
+            <div class="eyebrow">NURSING SCHOOL + NCLEX-RN</div>
+            <h1 id="homeTitle">Build safe decisions, one shift at a time.</h1>
+            <p>Traditional nursing courses, concise lessons, and rationale-first practice mapped to the 2026 NCLEX-RN blueprint.</p>
+            <button id="continueButton" class="primary-action" type="button">Start Lesson 1</button>
+          </article>
+          <article class="status-card" aria-label="Study status">
+            <div><span class="stat-label">LEVEL <span id="level">1</span></span><strong><span id="xp">0</span> XP</strong></div>
+            <div class="xp-track" aria-hidden="true"><span id="xpBar"></span></div>
+            <div class="compact-stats">
+              <span><b id="streak">0</b> day streak</span>
+              <span><b id="studyDays">0</b> study days</span>
+              <span><b id="freeze">1</b> freeze</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-heading">
+          <div><span class="eyebrow">CURRICULUM</span><h2>Nursing course pathway</h2></div>
+          <span id="completionSummary" class="summary-chip">0 / 8 complete</span>
+        </div>
+        <div id="curriculumList" class="curriculum-list" aria-live="polite"></div>
+
+        <div class="section-heading">
+          <div><span class="eyebrow">CLINICAL JUDGMENT</span><h2>Mixed practice</h2></div>
+        </div>
+        <article class="practice-card">
+          <div>
+            <h3>10-question shift</h3>
+            <p>Practice prioritization across every loaded module, then review the rationale for each answer.</p>
+          </div>
+          <button id="practiceButton" class="primary-action" type="button">Start practice</button>
+        </article>
+
+        <article class="notice-card">
+          <b>Educational pilot</b>
+          <p>RN Quest is an independent study tool. It is not affiliated with NCSBN, does not provide medical advice or clinical decision support, and does not guarantee NCLEX results.</p>
+        </article>
+      </section>
+
+      <section id="learn" class="page" aria-labelledby="learnTitle">
+        <button class="back-button" type="button" data-route="home">← Home</button>
+        <div class="section-heading"><div><span class="eyebrow">LEARN</span><h1 id="learnTitle">RN curriculum</h1></div></div>
+        <div id="learnList" class="curriculum-list"></div>
+      </section>
+
+      <section id="lesson" class="page" aria-labelledby="lessonTitle">
+        <button class="back-button" type="button" data-route="learn">← Curriculum</button>
+        <article id="lessonBody" class="lesson-card"></article>
+        <button id="lessonQuizButton" class="primary-action full-width" type="button">Check my understanding</button>
+      </section>
+
+      <section id="quiz" class="page" aria-labelledby="questionText">
+        <button id="quizBackButton" class="back-button" type="button">← Leave quiz</button>
+        <article class="quiz-card">
+          <div class="quiz-meta"><span id="quizLabel">LESSON QUIZ</span><span><span id="questionNumber">1</span> / <span id="questionTotal">3</span></span></div>
+          <div class="question-progress" aria-hidden="true"><span id="questionProgress"></span></div>
+          <div id="questionStep" class="judgment-step"></div>
+          <h1 id="questionText"></h1>
+          <div id="answerChoices" class="answer-list"></div>
+          <div id="answerRationale" class="rationale" role="status" hidden></div>
+          <button id="nextQuestionButton" class="primary-action full-width" type="button" hidden>Next question</button>
+        </article>
+      </section>
+
+      <section id="results" class="page" aria-labelledby="resultsTitle">
+        <article class="result-card">
+          <span class="eyebrow">SHIFT COMPLETE</span>
+          <h1 id="resultsTitle">Practice complete</h1>
+          <div class="result-score"><span id="resultScore">0</span><small>/ <span id="resultTotal">0</span></small></div>
+          <p id="resultMessage"></p>
+          <button id="resultsHomeButton" class="primary-action full-width" type="button">Back home</button>
+        </article>
+      </section>
+
+      <section id="progress" class="page" aria-labelledby="progressTitle">
+        <div class="section-heading">
+          <div><span class="eyebrow">PROGRESS</span><h1 id="progressTitle">Your RN readiness</h1></div>
+          <span class="summary-chip">Local pilot</span>
+        </div>
+        <div class="progress-grid">
+          <article><span>XP</span><strong id="progressXp">0</strong></article>
+          <article><span>Streak</span><strong id="progressStreak">0</strong></article>
+          <article><span>Study days</span><strong id="progressStudyDays">0</strong></article>
+          <article><span>Accuracy</span><strong id="progressAccuracy">—</strong></article>
+        </div>
+        <article class="progress-panel">
+          <h2>Module readiness</h2>
+          <div id="moduleProgress"></div>
+        </article>
+        <article class="cloud-panel">
+          <div><span class="cloud-dot" aria-hidden="true"></span><b>Device-only progress</b></div>
+          <p>The pilot keeps RN progress separate from FNP Quest. A dedicated RN cloud project can be connected after the learning flow is approved.</p>
+        </article>
+      </section>
+
+      <section id="about" class="page" aria-labelledby="aboutTitle">
+        <button class="back-button" type="button" data-route="home">← Home</button>
+        <article class="lesson-card">
+          <span class="eyebrow">ABOUT</span><h1 id="aboutTitle">About RN Quest</h1>
+          <p>RN Quest is a mobile-first study pilot for nursing students and graduates preparing for entry-level registered nurse practice and the NCLEX-RN.</p>
+          <h2>Blueprint</h2>
+          <p>The curriculum follows traditional nursing-school courses and maps each lesson to the eight content areas in the official 2026 NCLEX-RN Test Plan, effective April 1, 2026 through March 31, 2029.</p>
+          <p><a href="https://www.nclex.com/test-plans" target="_blank" rel="noopener noreferrer">Review the official NCLEX test plan ↗</a></p>
+          <h2>Use responsibly</h2>
+          <p>Questions and explanations are original educational material. Verify time-sensitive care standards against current institutional policy, official references, and qualified faculty. Never enter patient information.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <button type="button" data-route="about">About &amp; sources</button>
+      <span>RN Quest v0.5.0</span>
+    </footer>
+
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <button type="button" data-route="home" class="active"><span aria-hidden="true">⌂</span>Home</button>
+      <button type="button" data-route="learn"><span aria-hidden="true">▤</span>Learn</button>
+      <button type="button" data-action="practice"><span aria-hidden="true">✚</span>Practice</button>
+      <button type="button" data-route="progress"><span aria-hidden="true">◫</span>Progress</button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/version.js?v=0.5.0"></script>
+  <script src="js/progress.js?v=0.5.0"></script>
+  <script src="js/quiz.js?v=0.5.0"></script>
+  <script src="js/cloud.js?v=0.5.0"></script>
+  <script src="js/app.js?v=0.5.0"></script>
+</body>
+</html>

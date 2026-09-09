@@ -1,0 +1,105 @@
+{
+  "lessonId": 12,
+  "questions": [
+    {
+      "id": "rn-12-q01",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which observation is most concerning for increased work of breathing?",
+      "choices": ["A client speaking in full sentences with relaxed respirations", "A client using accessory muscles and speaking only in short phrases", "A client asking to sit in a chair after breakfast", "A client with a regular respiratory pattern while resting"],
+      "correctIndex": 1,
+      "explanation": "Accessory-muscle use and inability to speak in full sentences are concerning respiratory-distress cues. The RN promptly assesses airway, breathing, circulation, and mental status and follows the escalation process rather than relying on a single monitor value."
+    },
+    {
+      "id": "rn-12-q02",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A pulse oximeter suddenly displays a low value for a client who is alert and comfortable, but the client's hand is cold and moving. What should the RN do?",
+      "choices": ["Immediately change the prescribed oxygen flow rate", "Assess the client and signal quality, correct reversible sensor issues, repeat the measurement, and follow the plan", "Ignore the reading because pulse oximetry is never useful", "Remove oxygen from the room to prevent inaccurate readings"],
+      "correctIndex": 1,
+      "explanation": "Poor perfusion and movement can affect pulse-oximeter accuracy. The RN assesses the client first, checks sensor placement and signal quality, repeats the measurement as needed, and compares findings with the prescribed target and clinical picture."
+    },
+    {
+      "id": "rn-12-q03",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which preparation is best before administering prescribed supplemental oxygen to a stable client?",
+      "choices": ["Choose any available device that feels most comfortable", "Verify the client, order, prescribed device and setting, current assessment, and equipment connection", "Set the flow rate to the highest setting available", "Ask the client to adjust the equipment without teaching or supervision"],
+      "correctIndex": 1,
+      "explanation": "Oxygen delivery requires verification of the client, order, prescribed device and setting, current respiratory assessment, and equipment setup. The RN then monitors response; comfort alone does not determine the appropriate device or setting."
+    },
+    {
+      "id": "rn-12-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which oxygen-safety action is appropriate?",
+      "choices": ["Allow smoking near the oxygen source if a window is open", "Keep oxygen away from flames, sparks, smoking materials, and other ignition sources", "Place a portable oxygen cylinder where it can roll freely", "Use any household product on the device without checking facility guidance"],
+      "correctIndex": 1,
+      "explanation": "Oxygen creates a significant fire-safety concern around flames, sparks, and smoking materials. The RN maintains a safe environment and follows facility procedures for equipment and approved products rather than improvising."
+    },
+    {
+      "id": "rn-12-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client suddenly cannot speak, has stridor, and appears cyanotic. What is the priority action?",
+      "choices": ["Complete a full respiratory history before acting", "Activate the immediate emergency response and begin required airway actions within role and training", "Wait for pulse oximetry to produce three readings", "Offer the client water to soothe the throat"],
+      "correctIndex": 1,
+      "explanation": "Inability to speak, stridor, and cyanosis can indicate an airway emergency. The RN activates the emergency response and begins required airway actions within role and training; routine history, monitoring, and oral fluids do not take priority."
+    },
+    {
+      "id": "rn-12-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which respiratory change should the RN report as a meaningful trend?",
+      "choices": ["A client who is now restless, has a faster respiratory rate, and develops new nasal flaring", "A client who requests an extra pillow for reading", "A client who takes one deeper breath before speaking", "A client whose chest rises symmetrically at rest"],
+      "correctIndex": 0,
+      "explanation": "Restlessness, a faster respiratory rate, and nasal flaring can indicate a worsening breathing trend. The RN performs focused assessment, compares with baseline, documents objective findings, and communicates the change using the escalation process."
+    },
+    {
+      "id": "rn-12-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client receiving prescribed oxygen becomes newly confused and increasingly drowsy. Which interpretation should the RN prioritize?",
+      "choices": ["The client may be tired after a busy day", "The change may reflect respiratory deterioration and needs immediate assessment and escalation", "The oxygen device can be removed because the client is resting", "The client should be left alone until the next vital-sign round"],
+      "correctIndex": 1,
+      "explanation": "New confusion and declining alertness in a client with respiratory concerns are high-priority cues. The RN immediately assesses ABCs and overall status, verifies the treatment setup, and activates the required response rather than assuming normal fatigue."
+    },
+    {
+      "id": "rn-12-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN finds that a client's prescribed oxygen tubing is kinked beneath the bedrail. What should the RN do first?",
+      "choices": ["Remove the oxygen order from the chart", "Release the kink, verify the ordered setup and flow, assess the client, and reassess the response", "Increase the flow setting without checking the order", "Disconnect the device and wait for respiratory therapy to return"],
+      "correctIndex": 1,
+      "explanation": "A kink can obstruct oxygen delivery. The RN restores the ordered setup, verifies the prescribed setting, assesses respiratory status, and reassesses response. Increasing a setting or discontinuing therapy independently is not a safe substitute for verification."
+    },
+    {
+      "id": "rn-12-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best supports that a prescribed oxygen intervention is helping?",
+      "choices": ["The device is present even though the client has increased work of breathing", "The client has improved comfort and work of breathing, a stable or improving pattern, and readings consistent with the individualized plan", "The flow setting was changed repeatedly without reassessment", "The client removed the device because it was inconvenient"],
+      "correctIndex": 1,
+      "explanation": "Evaluation combines the client's comfort, work of breathing, respiratory pattern, mental status, and pulse-oximetry trend in relation to the individualized plan. A device in place alone does not show that the intervention is effective."
+    },
+    {
+      "id": "rn-12-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which documentation best communicates a respiratory change?",
+      "choices": ["Breathing looks worse", "Client is probably anxious", "Respiratory rate 30, speaking in short phrases, new accessory-muscle use, and SpO2 below prescribed target on ordered oxygen", "Oxygen left at bedside"],
+      "correctIndex": 2,
+      "explanation": "Objective findings, the ordered treatment, and comparison with the prescribed target clearly communicate respiratory risk and support follow-up. Vague or speculative notes do not show the assessment, change from baseline, or response needed for safe care."
+    }
+  ]
+}

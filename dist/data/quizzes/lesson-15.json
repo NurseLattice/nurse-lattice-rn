@@ -1,0 +1,105 @@
+{
+  "lessonId": 15,
+  "questions": [
+    {
+      "id": "rn-15-q01",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A newly admitted client is visibly short of breath while registration questions are being asked. What should the RN prioritize?",
+      "choices": ["Complete the belongings form before assessment", "Assess airway, breathing, circulation, and level of consciousness and respond to instability", "Finish the full social history before obtaining help", "Ask the client to wait until the admission checklist is complete"],
+      "correctIndex": 1,
+      "explanation": "Immediate physiologic safety takes priority over routine admission documentation. The RN performs a primary survey, responds to instability, and obtains appropriate help before returning to the remaining comprehensive assessment."
+    },
+    {
+      "id": "rn-15-q02",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which admission finding is most important for early discharge planning?",
+      "choices": ["The client prefers the window shade open", "The client lives alone, cannot climb home stairs, and has no transportation for follow-up", "The client brought a favorite book", "The client prefers breakfast at 0800"],
+      "correctIndex": 1,
+      "explanation": "Mobility, home access, caregiver support, and transportation are transition barriers that require early planning. Recognizing them at admission gives the team time to develop a realistic, safer discharge plan with the client."
+    },
+    {
+      "id": "rn-15-q03",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which information should be included in a transfer handoff?",
+      "choices": ["Only the admitting diagnosis", "Current condition and trends, allergies, precautions, treatments, devices, pending tests, risks, and time-sensitive follow-up", "Every detail from the client's lifetime medical history", "Personal opinions about the receiving unit"],
+      "correctIndex": 1,
+      "explanation": "A safe transfer handoff communicates the accurate, prioritized information needed to continue care. Current trends, risks, treatments, devices, pending work, and required reassessment help transfer both information and responsibility."
+    },
+    {
+      "id": "rn-15-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Immediately before an internal transfer, the client's blood pressure drops and mental status changes. What should the RN do?",
+      "choices": ["Send the client because the receiving unit can assess the change", "Pause the transfer, assess and stabilize the client, obtain help, and update the receiving team", "Remove monitoring equipment to avoid delaying transport", "Document the earlier stable assessment and continue the transfer"],
+      "correctIndex": 1,
+      "explanation": "A new change in stability must be assessed and addressed before routine transfer proceeds. The RN obtains appropriate help, updates the plan and receiving team, and documents the current condition rather than relying on an earlier assessment."
+    },
+    {
+      "id": "rn-15-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which finding best demonstrates a gap in discharge readiness?",
+      "choices": ["The client signs the discharge form", "The client cannot explain which medicines were stopped and which should continue", "The client chooses to wear their own clothes home", "The client asks for a copy of the written instructions"],
+      "correctIndex": 1,
+      "explanation": "Inability to explain medication changes suggests that the plan is not yet understood and may create harm after discharge. The RN clarifies the reconciled list, reteaches in plain language, and reassesses understanding."
+    },
+    {
+      "id": "rn-15-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which nursing statement correctly uses teach-back?",
+      "choices": ["Do you understand everything I told you?", "Please sign here to prove that you understand", "To make sure I explained this clearly, please show me how you will use this equipment at home", "You remember this from yesterday, correct?"],
+      "correctIndex": 2,
+      "explanation": "Teach-back asks the client to explain or demonstrate the plan so the clinician can evaluate the clarity of teaching. It is not a test of the client, and a yes response or signature alone does not confirm usable understanding."
+    },
+    {
+      "id": "rn-15-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client has limited English proficiency and is learning a complex discharge medication schedule. Which approach is best?",
+      "choices": ["Ask a young family member to translate all instructions", "Use a qualified interpreter, plain-language materials, and teach-back with the client and authorized caregiver", "Provide English instructions only and request a signature", "Skip medication teaching because the pharmacy will explain it later"],
+      "correctIndex": 1,
+      "explanation": "A qualified interpreter and accessible teaching support accurate communication. Teach-back evaluates whether the explanation is usable, while the client controls caregiver involvement and the team addresses remaining questions before transition."
+    },
+    {
+      "id": "rn-15-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which discharge statement requires immediate clarification?",
+      "choices": ["I will bring my medication list to the follow-up visit", "If my breathing becomes severely difficult, I will wait until the clinic opens next week", "I know where and when my follow-up appointment is", "I will call the listed number if I cannot obtain the prescribed equipment"],
+      "correctIndex": 1,
+      "explanation": "Waiting with severe breathing difficulty shows dangerous misunderstanding of warning signs and emergency action. The RN immediately clarifies when to call the clinic, seek urgent help, or use emergency services, then repeats teach-back."
+    },
+    {
+      "id": "rn-15-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "During discharge teaching, the client reports being unable to afford a newly prescribed medicine. What should the RN do?",
+      "choices": ["Advise the client to take half the prescribed dose", "Identify the access barrier and collaborate with the discharge team before the client leaves", "Document that the client is noncompliant", "Tell the client to resolve the issue after discharge"],
+      "correctIndex": 1,
+      "explanation": "Medication affordability is a transition-safety barrier, not evidence of noncompliance. The RN communicates the problem and collaborates on a feasible plan rather than changing a prescription or sending the client home without access."
+    },
+    {
+      "id": "rn-15-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best indicates that a discharge transition is ready to proceed?",
+      "choices": ["Transportation has arrived, although the medication list remains unclear", "The client is stable, explains the plan and warning signs, and has required medicines, equipment, services, and follow-up arrangements", "The discharge order is present, although the client cannot demonstrate wound care", "The family says they will search online if questions arise"],
+      "correctIndex": 1,
+      "explanation": "Readiness combines current stability, demonstrated understanding, a reconciled plan, access to needed resources, and clear follow-up. Transportation or an order alone does not close unresolved safety and self-management gaps."
+    }
+  ]
+}

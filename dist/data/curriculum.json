@@ -3,7 +3,7 @@
   "blueprint": "2026 NCLEX-RN Test Plan",
   "effectiveDates": "April 1, 2026–March 31, 2029",
   "courses": [
-    {"id": "management-of-care", "title": "Management of Care", "weight": "15–21%", "lessonIds": [1, 14]},
+    {"id": "management-of-care", "title": "Management of Care", "weight": "15–21%", "lessonIds": [1, 14, 15]},
     {"id": "safety-infection", "title": "Safety and Infection Prevention and Control", "weight": "10–16%", "lessonIds": [2]},
     {"id": "health-promotion", "title": "Health Promotion and Maintenance", "weight": "6–12%", "lessonIds": [3]},
     {"id": "psychosocial", "title": "Psychosocial Integrity", "weight": "6–12%", "lessonIds": [4]},
@@ -26,6 +26,7 @@
     {"id": 11, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "basic-care", "category": "Basic Care & Comfort", "weight": "6–12%", "lessonFile": "data/lessons/lesson-11.json", "quizFile": "data/quizzes/lesson-11.json", "cardTitle": "Lesson 11 · Elimination: Urinary & Bowel Care", "summary": "Toileting dignity, elimination assessment, catheter safety, escalation"},
     {"id": 12, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "physiological-adaptation", "category": "Physiological Adaptation", "weight": "11–17%", "lessonFile": "data/lessons/lesson-12.json", "quizFile": "data/quizzes/lesson-12.json", "cardTitle": "Lesson 12 · Oxygenation Basics & Respiratory Safety", "summary": "Respiratory assessment, oxygen monitoring, equipment safety, escalation"},
     {"id": 13, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "basic-care", "category": "Basic Care & Comfort", "weight": "6–12%", "lessonFile": "data/lessons/lesson-13.json", "quizFile": "data/quizzes/lesson-13.json", "cardTitle": "Lesson 13 · Pain, Sleep & Comfort", "summary": "Pain assessment, function goals, rest support, reassessment"},
-    {"id": 14, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "management-of-care", "category": "Management of Care", "weight": "15–21%", "lessonFile": "data/lessons/lesson-14.json", "quizFile": "data/quizzes/lesson-14.json", "cardTitle": "Lesson 14 · Documentation & Handover", "summary": "Objective charting, SBAR, closed-loop communication, continuity"}
+    {"id": 14, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "management-of-care", "category": "Management of Care", "weight": "15–21%", "lessonFile": "data/lessons/lesson-14.json", "quizFile": "data/quizzes/lesson-14.json", "cardTitle": "Lesson 14 · Documentation & Handover", "summary": "Objective charting, SBAR, closed-loop communication, continuity"},
+    {"id": 15, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "management-of-care", "category": "Management of Care", "weight": "15–21%", "lessonFile": "data/lessons/lesson-15.json", "quizFile": "data/quizzes/lesson-15.json", "cardTitle": "Lesson 15 · Admission, Transfer & Discharge", "summary": "Baseline safety, transition handoff, discharge readiness, teach-back"}
   ]
 }

@@ -1,4 +1,4 @@
-const CACHE_NAME = "rn-quest-v0.13.0";
+const CACHE_NAME = "rn-quest-v0.14.0";
 const APP_SHELL = [
   "./",
   "index.html",

@@ -20,7 +20,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 9) throw new Error("Pilot must preserve all eight Client Needs areas and include nine lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 10) throw new Error("Pilot must preserve all eight Client Needs areas and include ten lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const questionIds = new Set();
@@ -80,12 +80,22 @@ if (ninthLesson.traditionalCourse !== "Foundations of Nursing Practice" || ninth
 for (const question of ninthQuiz.questions) {
   if (question.traditionalCourse !== "Foundations of Nursing Practice" || question.nclexClientNeeds !== "Basic Care and Comfort") throw new Error("Each Lesson 9 question must preserve its course and NCLEX tags");
 }
+const tenthLessonItem = curriculum.lessons[9];
+const tenthLesson = JSON.parse(read(tenthLessonItem.lessonFile));
+const tenthQuiz = JSON.parse(read(tenthLessonItem.quizFile));
+if (tenthLessonItem.courseId !== "foundations-of-nursing" || tenthLessonItem.course !== "Foundations of Nursing Practice") throw new Error("Lesson 10 must remain in the foundations course");
+if (!tenthLesson.title.includes("Nutrition, Feeding & Aspiration Prevention") || !tenthLesson.html.includes("Recognize aspiration risk before feeding") || !tenthLesson.html.includes("Protect swallowing safety") || !tenthLesson.html.includes("Enteral feeding: follow the order and policy") || !tenthLesson.html.includes("Evaluate nutrition and hydration outcomes")) throw new Error("Lesson 10 nutrition and feeding content is incomplete");
+if (tenthQuiz.questions.length !== 10) throw new Error("Lesson 10 must include ten nutrition and feeding questions");
+if (tenthLesson.traditionalCourse !== "Foundations of Nursing Practice" || tenthLesson.nclexClientNeeds !== "Basic Care and Comfort" || tenthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 10 must preserve all three content tags");
+for (const question of tenthQuiz.questions) {
+  if (question.traditionalCourse !== "Foundations of Nursing Practice" || question.nclexClientNeeds !== "Basic Care and Comfort") throw new Error("Each Lesson 10 question must preserve its course and NCLEX tags");
+}
 const roadmap = JSON.parse(read("data/program-roadmap.json"));
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 62) throw new Error("Expected 62 pilot questions after adding Lesson 9");
+if (questionIds.size !== 72) throw new Error("Expected 72 pilot questions after adding Lesson 10");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -104,4 +114,4 @@ const cloudConfig = read("js/cloud.js");
 if (!cloudConfig.includes('url: ""') || !cloudConfig.includes('publishableKey: ""')) throw new Error("Pilot cloud adapter must remain unconfigured");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "RN Quest" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: Lessons 1–8 preserved, Foundations Lesson 9 added, 62 questions, and version parity.");
+console.log("Static checks passed: Lessons 1–9 preserved, Foundations Lesson 10 added, 72 questions, and version parity.");

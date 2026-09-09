@@ -7,7 +7,7 @@
     {"id": "safety-infection", "title": "Safety and Infection Prevention and Control", "weight": "10–16%", "lessonIds": [2]},
     {"id": "health-promotion", "title": "Health Promotion and Maintenance", "weight": "6–12%", "lessonIds": [3]},
     {"id": "psychosocial", "title": "Psychosocial Integrity", "weight": "6–12%", "lessonIds": [4]},
-    {"id": "basic-care", "title": "Basic Care and Comfort", "weight": "6–12%", "lessonIds": [5, 9, 10, 11]},
+    {"id": "basic-care", "title": "Basic Care and Comfort", "weight": "6–12%", "lessonIds": [5, 9, 10, 11, 13]},
     {"id": "pharmacological", "title": "Pharmacological and Parenteral Therapies", "weight": "13–19%", "lessonIds": [6]},
     {"id": "risk-reduction", "title": "Reduction of Risk Potential", "weight": "9–15%", "lessonIds": [7]},
     {"id": "physiological-adaptation", "title": "Physiological Adaptation", "weight": "11–17%", "lessonIds": [8, 12]}
@@ -24,6 +24,7 @@
     {"id": 9, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "basic-care", "category": "Basic Care & Comfort", "weight": "6–12%", "lessonFile": "data/lessons/lesson-09.json", "quizFile": "data/quizzes/lesson-09.json", "cardTitle": "Lesson 9 · Skin Integrity & Wound Care", "summary": "Pressure prevention, wound assessment, dressings, escalation"},
     {"id": 10, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "basic-care", "category": "Basic Care & Comfort", "weight": "6–12%", "lessonFile": "data/lessons/lesson-10.json", "quizFile": "data/quizzes/lesson-10.json", "cardTitle": "Lesson 10 · Nutrition, Feeding & Aspiration Prevention", "summary": "Intake assessment, dysphagia precautions, enteral-feeding safety, escalation"},
     {"id": 11, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "basic-care", "category": "Basic Care & Comfort", "weight": "6–12%", "lessonFile": "data/lessons/lesson-11.json", "quizFile": "data/quizzes/lesson-11.json", "cardTitle": "Lesson 11 · Elimination: Urinary & Bowel Care", "summary": "Toileting dignity, elimination assessment, catheter safety, escalation"},
-    {"id": 12, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "physiological-adaptation", "category": "Physiological Adaptation", "weight": "11–17%", "lessonFile": "data/lessons/lesson-12.json", "quizFile": "data/quizzes/lesson-12.json", "cardTitle": "Lesson 12 · Oxygenation Basics & Respiratory Safety", "summary": "Respiratory assessment, oxygen monitoring, equipment safety, escalation"}
+    {"id": 12, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "physiological-adaptation", "category": "Physiological Adaptation", "weight": "11–17%", "lessonFile": "data/lessons/lesson-12.json", "quizFile": "data/quizzes/lesson-12.json", "cardTitle": "Lesson 12 · Oxygenation Basics & Respiratory Safety", "summary": "Respiratory assessment, oxygen monitoring, equipment safety, escalation"},
+    {"id": 13, "courseId": "foundations-of-nursing", "course": "Foundations of Nursing Practice", "categoryId": "basic-care", "category": "Basic Care & Comfort", "weight": "6–12%", "lessonFile": "data/lessons/lesson-13.json", "quizFile": "data/quizzes/lesson-13.json", "cardTitle": "Lesson 13 · Pain, Sleep & Comfort", "summary": "Pain assessment, function goals, rest support, reassessment"}
   ]
 }

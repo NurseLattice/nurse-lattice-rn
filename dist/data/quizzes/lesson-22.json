@@ -1,0 +1,105 @@
+{
+  "lessonId": 22,
+  "questions": [
+    {
+      "id": "rn-22-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "An oral temperature is unexpectedly low immediately after the client drinks ice water. What should the RN do?",
+      "choices": ["Document the value as the client’s baseline", "Follow device and organizational guidance for timing or use an appropriate alternate route, then repeat and document the route", "Add one degree to the result", "Use a rectal temperature without checking safety or contraindications"],
+      "correctIndex": 1,
+      "explanation": "Recent cold intake can distort an oral measurement. The RN uses an appropriate route and timing under policy, repeats the assessment, and documents the actual method rather than mathematically adjusting the result."
+    },
+    {
+      "id": "rn-22-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The client’s radial pulse is irregular. Which action provides the most useful follow-up?",
+      "choices": ["Estimate the rate from a 5-second count", "Record only that a pulse is present", "Obtain the appropriate full-duration or apical assessment and compare it with the client’s condition and monitor", "Ask the client to hold their breath while counting"],
+      "correctIndex": 2,
+      "explanation": "An irregular peripheral pulse requires a more complete rate and rhythm assessment, often including an apical count according to policy. A short estimate may miss clinically important irregularity."
+    },
+    {
+      "id": "rn-22-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which respiratory finding requires the RN’s most immediate response?",
+      "choices": ["Respirations are quiet while the client sleeps", "Rate increases briefly after walking", "The client sighs once during the interview", "The client has new accessory-muscle use, cannot speak a full sentence, and is becoming drowsy"],
+      "correctIndex": 3,
+      "explanation": "Increased work of breathing, impaired speech, and altered alertness indicate possible respiratory failure. The RN immediately assesses ABCs and activates the appropriate urgent response."
+    },
+    {
+      "id": "rn-22-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "How does using a blood-pressure cuff that is too small for the client’s arm commonly affect the reading?",
+      "choices": ["It can produce an artificially high reading", "It always produces an accurate systolic value", "It can produce an artificially low reading", "It changes only the pulse rate"],
+      "correctIndex": 0,
+      "explanation": "An undersized cuff can falsely elevate the blood-pressure result, whereas an oversized cuff can produce a falsely low result. Correct cuff selection is essential before interpreting the number."
+    },
+    {
+      "id": "rn-22-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which position best supports an accurate routine upper-arm blood-pressure measurement?",
+      "choices": ["Cuff over clothing with the arm hanging at the side", "Correct cuff on bare skin with the arm supported at heart level and the client not talking", "Arm held above the head while the client answers questions", "Client standing unsupported immediately after exercise"],
+      "correctIndex": 1,
+      "explanation": "A correctly sized cuff on bare skin, a supported arm at heart level, and avoidance of talking or movement reduce common measurement error. Context and preparation must also be considered."
+    },
+    {
+      "id": "rn-22-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "During ordered position-change measurements, the client becomes pale and says, “I’m going to faint” after standing. What should the RN do first?",
+      "choices": ["Keep the client standing until the scheduled time is complete", "Ask the client to walk so the symptom can be reproduced", "Assist the client to a safe position immediately and assess, then follow the response protocol", "Leave to find a different blood-pressure cuff"],
+      "correctIndex": 2,
+      "explanation": "Near-syncope creates an immediate fall and perfusion risk. The RN protects the client from injury, assesses symptoms and vital signs safely, and follows the appropriate clinical response."
+    },
+    {
+      "id": "rn-22-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A pulse oximeter displays 82%, but the waveform is poor and the client’s hands are cold. What is the RN’s best action?",
+      "choices": ["Ignore the result because the client is awake", "Increase oxygen to the maximum without assessing the client", "Record 82% as confirmed because the monitor displayed it", "Assess the client immediately, improve or change the approved sensor site, verify signal and pulse agreement, and repeat or confirm while responding to any distress"],
+      "correctIndex": 3,
+      "explanation": "Poor perfusion can make SpO2 unreliable, but a low value cannot simply be dismissed. The RN assesses the client and signal in parallel, corrects technique, confirms as appropriate, and treats urgent distress."
+    },
+    {
+      "id": "rn-22-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement about pulse oximetry is accurate?",
+      "choices": ["It estimates oxygen saturation but does not replace assessment of breathing, perfusion, symptoms, and device limitations", "It directly measures carbon-dioxide ventilation", "A normal reading rules out respiratory deterioration", "Skin temperature, motion, circulation, and pigmentation never affect performance"],
+      "correctIndex": 0,
+      "explanation": "SpO2 is an estimate with recognized limitations and does not measure ventilation or the whole clinical picture. The RN interprets it with respiratory effort, perfusion, symptoms, and trends."
+    },
+    {
+      "id": "rn-22-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which trend is most concerning even if individual values are only modestly abnormal?",
+      "choices": ["Stable pulse and blood pressure with improving pain", "Rising pulse and respiratory rate with falling blood pressure, reduced urine output, and new restlessness", "One temperature taken by a different route without symptoms", "A slightly different pulse after the client walks to the bathroom"],
+      "correctIndex": 1,
+      "explanation": "A cluster of worsening circulation, breathing, urine output, and mental-status findings suggests deterioration. Trends and related cues carry more meaning than isolated numbers without context."
+    },
+    {
+      "id": "rn-22-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "A trained assistive staff member reports an unexpected blood pressure in a stable client. What remains the RN’s responsibility?",
+      "choices": ["Accept the number without review because collection was delegated", "Ask the staff member to choose the treatment", "Review the result promptly, assess the client, validate the measurement as needed, and take appropriate action", "Delete the result if the client has no symptoms"],
+      "correctIndex": 2,
+      "explanation": "Collection may be delegated when appropriate, but nursing analysis and follow-up are not transferred. The RN reviews, validates, assesses, intervenes, and communicates based on the client’s condition."
+    }
+  ]
+}

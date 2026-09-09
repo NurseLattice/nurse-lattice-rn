@@ -1,0 +1,105 @@
+{
+  "lessonId": 19,
+  "questions": [
+    {
+      "id": "rn-19-q01",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "The RN plans discharge teaching, but the client reports severe pain and cannot focus. What should the RN do first?",
+      "choices": ["Give all instructions quickly before the client becomes more tired", "Address and reassess the pain according to the care plan, then teach when the client can participate", "Ask the client to sign that teaching was offered", "Leave written material and record the teaching as complete"],
+      "correctIndex": 1,
+      "explanation": "Severe pain interferes with attention and learning readiness. The RN addresses the immediate need, reassesses the client, and chooses a time and method that allow meaningful participation."
+    },
+    {
+      "id": "rn-19-q02",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with limited English proficiency needs teaching about a new high-risk medication. Which plan is best?",
+      "choices": ["Ask the client’s young child to interpret the instructions", "Use an online translation chosen by another patient", "Arrange a qualified health care interpreter, speak directly to the client, and verify understanding", "Teach only the English-speaking family member even though the client can make decisions"],
+      "correctIndex": 2,
+      "explanation": "A qualified interpreter supports accurate, impartial communication while preserving the client’s confidentiality and decision-making authority. The RN speaks to and teaches the capable client directly."
+    },
+    {
+      "id": "rn-19-q03",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which statement is the best example of teach-back?",
+      "choices": ["I want to be sure I explained this clearly. Please tell me how you will take this medicine at home", "Do you understand everything I just told you?", "Repeat my exact words so I can grade your memory", "You read well, so I know you will follow the instructions"],
+      "correctIndex": 0,
+      "explanation": "Effective teach-back places responsibility on the clinician’s explanation and asks the learner to describe the plan in their own words. A yes-or-no question does not demonstrate usable understanding."
+    },
+    {
+      "id": "rn-19-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "A client gives an incorrect teach-back of wound-care instructions. What should the RN do next?",
+      "choices": ["Document noncompliance and end the session", "Repeat the same instructions more loudly", "Ask a family member to perform all care without the client’s permission", "Re-explain the missed step in a different way and ask the client to teach it back again"],
+      "correctIndex": 3,
+      "explanation": "An incorrect teach-back signals that communication or the plan needs adjustment. The RN clarifies without shame, changes the teaching approach, checks for barriers, and reassesses understanding."
+    },
+    {
+      "id": "rn-19-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which method best evaluates whether a client can safely use a newly prescribed inhaler?",
+      "choices": ["Ask whether the written instructions were read", "Have the client perform a complete return demonstration while the RN observes", "Ask whether a relative has used an inhaler", "Record teaching complete after showing a video"],
+      "correctIndex": 1,
+      "explanation": "A psychomotor skill is best evaluated through return demonstration. Observing the complete sequence allows the RN to identify errors, give respectful correction, and confirm safe performance."
+    },
+    {
+      "id": "rn-19-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which learning outcome is written in measurable, learner-centered terms?",
+      "choices": ["The RN will review fall prevention", "The client will receive a brochure", "Before discharge, the client will demonstrate use of the walker and state when to request assistance", "Teaching will occur sometime today"],
+      "correctIndex": 2,
+      "explanation": "The outcome identifies what the client will demonstrate and explain and sets a time for evaluation. The other choices describe nursing activity or material delivery rather than learner performance."
+    },
+    {
+      "id": "rn-19-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which finding most clearly shows that written discharge material needs adaptation?",
+      "choices": ["The client asks an appropriate follow-up question", "The client prefers to review information in the morning", "The client’s support person brings a notebook", "The client cannot read the small print even while wearing prescribed glasses"],
+      "correctIndex": 3,
+      "explanation": "Material that the client cannot see is not accessible. The RN provides a usable format and combines it with clear spoken teaching and verification rather than treating document delivery as education."
+    },
+    {
+      "id": "rn-19-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After teaching a client to measure a new liquid medication, which finding best demonstrates learning?",
+      "choices": ["The client nods while the RN speaks", "The client signs the discharge form", "The client selects the supplied oral syringe, measures the prescribed volume correctly, and explains the schedule", "The family says the medication is probably similar to one used before"],
+      "correctIndex": 2,
+      "explanation": "Correct return demonstration plus explanation provides observable evidence that the client can use the device and follow the schedule. Nodding, signing, or family assumptions do not confirm learning."
+    },
+    {
+      "id": "rn-19-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "An alert client wants a support person included in teaching. What should the RN do?",
+      "choices": ["Include the support person with the client’s permission while continuing to direct education and decisions to the capable client", "Teach only the support person because it saves time", "Exclude all support people from education", "Allow the support person to change the plan without asking the client"],
+      "correctIndex": 0,
+      "explanation": "Chosen support persons can reinforce learning when the client agrees, but they do not replace the capable client’s participation or authority. The RN maintains privacy and centers the client."
+    },
+    {
+      "id": "rn-19-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which documentation best records the outcome of patient education?",
+      "choices": ["Teaching done", "Client verbalized understanding", "Brochure left at bedside", "Client used teach-back to state the dose and timing correctly but omitted the warning sign; RN re-taught the warning sign and client then identified when to call"],
+      "correctIndex": 3,
+      "explanation": "Specific documentation records the evaluation method, demonstrated learning, remaining gap, corrective teaching, and reassessment. General phrases do not show what the learner can explain or do."
+    }
+  ]
+}

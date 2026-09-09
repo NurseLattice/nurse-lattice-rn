@@ -1,0 +1,155 @@
+{
+  "lessonId": 16,
+  "questions": [
+    {
+      "id": "rn-16-q01",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Psychosocial Integrity",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement by the RN best explains palliative care to a client with serious illness?",
+      "choices": [
+        "Palliative care is available only during the final days of life",
+        "Palliative care focuses on symptom relief and quality of life and may be provided alongside disease-directed treatment",
+        "Choosing palliative care automatically changes the client’s resuscitation status",
+        "Palliative care means that all diagnostic testing must stop immediately"
+      ],
+      "correctIndex": 1,
+      "explanation": "Palliative care addresses symptoms, stress, and quality of life throughout serious illness and may accompany disease-directed treatment. It does not by itself determine code status, stop all testing, or require that death be imminent."
+    },
+    {
+      "id": "rn-16-q02",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Psychosocial Integrity",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A bereaved spouse says, “I feel numb. I have not cried at all.” Which response by the RN is best?",
+      "choices": [
+        "You should try to cry so that the grieving process can begin",
+        "Most people pass through the same stages in a predictable order",
+        "People respond to loss differently. Tell me what this has been like for you",
+        "Feeling numb means that you are not accepting the death"
+      ],
+      "correctIndex": 2,
+      "explanation": "Grief responses vary and do not follow a required sequence. An open, nonjudgmental response invites the spouse to describe the experience without labeling numbness as abnormal or prescribing a particular emotional reaction."
+    },
+    {
+      "id": "rn-16-q03",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "An alert client with decision-making capacity declines a treatment, but the health care proxy insists that it be given. What should the RN prioritize?",
+      "choices": [
+        "Follow the proxy’s request because a proxy always has final authority",
+        "Ask the family to vote on whether the treatment should be given",
+        "Delay all comfort measures until the disagreement is resolved",
+        "Protect the capable client’s decision, notify the responsible clinician, and clarify the plan through the approved process"
+      ],
+      "correctIndex": 3,
+      "explanation": "A client who currently has decision-making capacity directs their own care. The RN advocates for that decision, maintains comfort and safety, communicates the conflict promptly, and follows legal and organizational processes."
+    },
+    {
+      "id": "rn-16-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which plan best supports comfort for a minimally responsive dying client with a dry mouth?",
+      "choices": [
+        "Provide frequent gentle oral care and lip moisture with approved products, then reassess comfort",
+        "Force large amounts of oral fluid at each visit",
+        "Stop mouth care because the client cannot request it",
+        "Use lemon-glycerin swabs routinely without checking the care plan or product guidance"
+      ],
+      "correctIndex": 0,
+      "explanation": "Frequent gentle oral care and approved lip moisture can relieve dryness even when the client cannot ask. Forced intake can create distress or aspiration risk, and products should follow the individualized plan and facility guidance."
+    },
+    {
+      "id": "rn-16-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "A client receiving comfort-focused care develops irregular breathing and cooler, mottled feet. Which interpretation is most appropriate?",
+      "choices": [
+        "These findings prove that death will occur within exactly one hour",
+        "The findings may occur near death, but the RN still assesses for distress and responds according to the goals and care plan",
+        "All comfort medications should be withheld until breathing becomes regular",
+        "The family should be told that the client cannot hear them"
+      ],
+      "correctIndex": 1,
+      "explanation": "Breathing and circulation changes may occur as death approaches, but timing cannot be predicted precisely. The RN assesses for suffering, provides ordered comfort measures, explains uncertainty honestly, and continues respectful communication."
+    },
+    {
+      "id": "rn-16-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Psychosocial Integrity",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A grieving client says, “There is no reason for me to live, and I might hurt myself tonight.” What should the RN do first?",
+      "choices": [
+        "Explain that such feelings are a normal stage of grief",
+        "Leave briefly to give the client privacy",
+        "Stay with the client, initiate immediate safety assessment and protection, and obtain the appropriate help",
+        "Ask the client to write about the loss and discuss it at the next visit"
+      ],
+      "correctIndex": 2,
+      "explanation": "A statement of possible self-harm requires immediate safety action regardless of a recent loss. The RN stays with the client, assesses risk directly, protects the client, and activates the appropriate emergency or behavioral-health response."
+    },
+    {
+      "id": "rn-16-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The family requests resuscitation, but the chart contains an advance directive and a current do-not-resuscitate order. What is the RN’s best action?",
+      "choices": [
+        "Remove the order until every family member agrees",
+        "Promise the family that resuscitation will be performed",
+        "Ignore the family because an order is present",
+        "Continue comfort and safety, verify the documents and current order, and promptly notify the responsible clinician of the conflict"
+      ],
+      "correctIndex": 3,
+      "explanation": "The RN does not independently change or promise to disregard a medical order. Verify the current documentation, maintain comfort and safety, communicate the conflict promptly, and use the organization’s legal, clinical, or ethics process."
+    },
+    {
+      "id": "rn-16-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After an ordered intervention for end-of-life breathlessness, which finding best indicates an effective response?",
+      "choices": [
+        "The oxygen saturation is unchanged, but breathing effort, facial tension, and reported distress are reduced",
+        "The client is quieter only because they are now difficult to arouse",
+        "The respiratory rate is lower while grimacing and accessory-muscle use increase",
+        "The intervention was documented, so further assessment is unnecessary"
+      ],
+      "correctIndex": 0,
+      "explanation": "Comfort evaluation integrates the client’s report and observable distress, not oxygen saturation alone. Reduced breathing effort and tension support benefit; decreased alertness or worsening work of breathing requires further assessment."
+    },
+    {
+      "id": "rn-16-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Psychosocial Integrity",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which question best supports culturally responsive end-of-life care?",
+      "choices": [
+        "People from your culture usually want the whole family present, correct?",
+        "Would you like me to decide which practices will be most comforting?",
+        "What beliefs, practices, people, or spiritual support would you like included in your care?",
+        "Can we avoid discussing rituals until after death?"
+      ],
+      "correctIndex": 2,
+      "explanation": "An open question lets the client define meaningful cultural and spiritual preferences without stereotyping. The RN then communicates and supports those preferences when possible within safety, law, and organizational policy."
+    },
+    {
+      "id": "rn-16-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Before beginning postmortem care after an expected death, what should the RN do?",
+      "choices": [
+        "Remove every line and tube immediately",
+        "Follow the required pronouncement, notification, donation, and medical-examiner processes and verify whether devices must remain",
+        "Send all belongings with the first visitor without documentation",
+        "Begin care before confirming the client’s identity"
+      ],
+      "correctIndex": 1,
+      "explanation": "Postmortem care begins only after required clinical and legal processes are addressed. Lines or tubes may need to remain for donation or investigation; identification, belongings, notifications, cultural practices, and documentation follow policy."
+    }
+  ]
+}

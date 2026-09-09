@@ -1,0 +1,105 @@
+{
+  "lessonId": 25,
+  "questions": [
+    {
+      "id": "rn-25-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which respiratory finding requires the RN’s most immediate response?",
+      "choices": ["An occasional dry cough after talking", "A harsh inspiratory sound with new voice change and difficulty speaking", "Equal chest expansion with quiet breathing", "A respiratory rate that returns to baseline after walking"],
+      "correctIndex": 1,
+      "explanation": "Stridor with voice change and difficulty speaking may indicate critical upper-airway obstruction. The RN prioritizes airway assessment, emergency support, and rapid escalation."
+    },
+    {
+      "id": "rn-25-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "How should the RN obtain the most reliable resting respiratory rate when the breathing pattern appears irregular?",
+      "choices": ["Tell the client to breathe normally and count for 10 seconds", "Count unobtrusively for a full minute while also observing rhythm, depth, and effort", "Estimate the rate from the pulse-oximeter display", "Ask the client how many breaths occur each minute"],
+      "correctIndex": 1,
+      "explanation": "Breathing may change when attention is called to it. An irregular pattern should be counted for a full minute while rate, rhythm, depth, and effort are observed."
+    },
+    {
+      "id": "rn-25-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which technique is best for comparing lung sounds?",
+      "choices": ["Listen through clothing at one site on each side", "Listen to every site on the right before beginning the left", "Place the diaphragm on skin and compare corresponding right and left sites from apices toward bases", "Ask the client to hold the breath at every site"],
+      "correctIndex": 2,
+      "explanation": "Direct skin contact and a side-to-side ladder at matching landmarks make regional asymmetry easier to identify. The RN listens through a complete respiratory cycle at each site."
+    },
+    {
+      "id": "rn-25-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client with severe bronchospasm initially has loud wheezing. The wheeze becomes faint while the client grows drowsy and respirations become shallow. How should the RN interpret this change?",
+      "choices": ["The narrowed airways have resolved", "Less sound with worsening effort and mental status may indicate critically reduced airflow", "Drowsiness confirms the client is resting comfortably", "The stethoscope is no longer needed because wheezing decreased"],
+      "correctIndex": 1,
+      "explanation": "A quieter chest can reflect less air movement rather than improvement. Drowsiness, shallow breathing, and declining sound form a high-risk cluster requiring immediate airway and breathing response."
+    },
+    {
+      "id": "rn-25-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which assessment best evaluates possible cyanosis in a client with deeply pigmented skin?",
+      "choices": ["Inspect only the forearm in room light", "Rely only on the numeric oxygen-saturation display", "Assess lips, tongue and oral mucosa as appropriate and correlate color with effort, mental status, perfusion, and reliable monitoring", "Assume cyanosis cannot be assessed"],
+      "correctIndex": 2,
+      "explanation": "Color change should be assessed at multiple appropriate sites and interpreted with the complete clinical picture. Skin tone alone and an isolated monitor value are insufficient."
+    },
+    {
+      "id": "rn-25-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A pulse oximeter displays 82%, but the client is talking comfortably and the waveform is erratic while the hand is cold and moving. What should the RN do first?",
+      "choices": ["Document severe hypoxemia without further assessment", "Ignore the reading because the client can talk", "Assess the client while correcting signal problems such as motion, poor perfusion, and sensor placement, then obtain a reliable reading", "Remove all prescribed oxygen until the device reads normally"],
+      "correctIndex": 2,
+      "explanation": "The RN assesses the client and measurement quality together. Motion, poor perfusion, and placement can distort the reading, but the number should not simply be accepted or dismissed without validation."
+    },
+    {
+      "id": "rn-25-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which cluster after a bedside procedure is most concerning?",
+      "choices": ["Equal breath sounds and mild fatigue", "Sudden pleuritic pain, dyspnea, and newly diminished breath sounds on one side", "A cough that clears coarse sounds", "Stable oxygen use and unchanged activity tolerance"],
+      "correctIndex": 1,
+      "explanation": "Sudden pain and dyspnea with unilateral diminished sounds after a procedure may signal an acute complication. The RN supports breathing, obtains help, and communicates the procedural context and baseline change promptly."
+    },
+    {
+      "id": "rn-25-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which information is most important to include when assessing a client’s productive cough?",
+      "choices": ["Only whether the cough is loud", "Onset, frequency, sputum amount and appearance, blood, associated symptoms, and ability to clear secretions", "Whether the client dislikes coughing", "The family’s guess about the diagnosis"],
+      "correctIndex": 1,
+      "explanation": "A useful cough assessment describes timing, pattern, secretions, blood, related symptoms, and effectiveness. These cues guide urgency and focused follow-up without assigning a diagnosis."
+    },
+    {
+      "id": "rn-25-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After an intervention for respiratory distress, which reassessment best evaluates the response?",
+      "choices": ["Check oxygen saturation only", "Reassess airway sounds, respiratory rate and effort, speech, lung sounds, oxygen delivery, reliable saturation, mental status, and client response", "Wait until the next shift because oxygen was applied", "Ask whether the client feels better without obtaining objective findings"],
+      "correctIndex": 1,
+      "explanation": "Respiratory response is multidimensional. The RN repeats the priority subjective and objective measures rather than relying on one number or the fact that an intervention was performed."
+    },
+    {
+      "id": "rn-25-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which respiratory documentation is most clinically useful?",
+      "choices": ["Breathing bad; team aware", "Lungs clear", "1410: Dyspnea at rest, speaking in three-word phrases, RR 30/min with accessory-muscle use; right-base sounds diminished; prescribed nasal cannula 2 L/min intact; response team activated at 1412", "Respiratory assessment completed"],
+      "correctIndex": 2,
+      "explanation": "Specific documentation identifies symptoms, speech, rate, effort, sound location, oxygen context, and timed action. Vague labels do not support comparison or continuity."
+    }
+  ]
+}

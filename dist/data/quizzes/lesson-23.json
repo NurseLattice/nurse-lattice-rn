@@ -1,0 +1,105 @@
+{
+  "lessonId": 23,
+  "questions": [
+    {
+      "id": "rn-23-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A postoperative client reports pain 8/10 while lying quietly without grimacing. How should the RN interpret this finding?",
+      "choices": ["The absence of grimacing proves the rating is inaccurate", "The client’s self-report is the primary pain source; complete the assessment and evaluate function and safety", "Normal behavior means analgesia is contraindicated", "The RN should choose a lower pain score for the record"],
+      "correctIndex": 1,
+      "explanation": "When reliable self-report is possible, the client’s report is primary. Behavior, vital signs, culture, and chronicity may affect expression, so the RN assesses the complete pattern rather than invalidating the rating."
+    },
+    {
+      "id": "rn-23-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which pain report requires the most immediate action?",
+      "choices": ["Chronic knee aching that is unchanged from baseline", "Incisional soreness that improves with splinting", "Sudden severe headache with new weakness and difficulty speaking", "Mild muscle tenderness after usual exercise"],
+      "correctIndex": 2,
+      "explanation": "A sudden severe headache with focal neurologic change may indicate a time-sensitive emergency. The RN stops routine assessment, evaluates immediate safety and ABCs, and activates the appropriate response."
+    },
+    {
+      "id": "rn-23-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which pain description is most consistent with neuropathic features?",
+      "choices": ["Burning and electric shocks with tingling", "Localized aching after a minor muscle strain", "Cramping that occurs before a bowel movement", "Tenderness directly over a fresh bruise"],
+      "correctIndex": 0,
+      "explanation": "Burning, electric, shooting, and tingling descriptors are common neuropathic features. These words guide focused assessment and communication but do not by themselves establish a medical diagnosis."
+    },
+    {
+      "id": "rn-23-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Take action",
+      "question": "How should the RN use a validated faces pain scale with a client who understands the tool?",
+      "choices": ["Select the face that matches the client’s facial expression", "Ask the family to choose without involving the client", "Use the saddest face whenever the client is crying", "Explain what the faces represent and ask the client to choose the face that best represents the pain"],
+      "correctIndex": 3,
+      "explanation": "A faces scale remains a self-report tool when the client can use it. The client selects the representation of pain; the RN does not infer intensity from appearance or emotion."
+    },
+    {
+      "id": "rn-23-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A nonverbal critically ill client cannot provide a reliable self-report. What is the best assessment approach?",
+      "choices": ["Assume no pain if heart rate is normal", "Use a validated behavioral tool for the population, assess likely painful conditions, obtain baseline behavior, and evaluate response", "Assign a numeric score based only on the RN’s intuition", "Wait until the client can speak before addressing possible pain"],
+      "correctIndex": 1,
+      "explanation": "When self-report is impossible, the RN uses an appropriate validated behavioral tool plus clinical context, caregiver knowledge, and response to measures. Normal vital signs do not exclude pain."
+    },
+    {
+      "id": "rn-23-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which outcome is the best example of an individualized comfort-function goal?",
+      "choices": ["The client will never report pain again", "The RN will ask for a pain number each shift", "Within one hour, the client will report tolerable pain at rest and will cough and transfer to the chair safely", "The client will accept every offered medication"],
+      "correctIndex": 2,
+      "explanation": "A comfort-function goal combines the client’s acceptable comfort level with a meaningful, measurable activity and time frame. It does not demand zero pain or describe only nurse activity."
+    },
+    {
+      "id": "rn-23-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "After an ordered opioid, which finding requires the RN’s most immediate response?",
+      "choices": ["Pain decreased from 7/10 to 4/10", "The client asks to dim the lights", "The client says the mouth feels dry", "The client is difficult to arouse with slow, shallow breathing"],
+      "correctIndex": 3,
+      "explanation": "Marked sedation with slow, shallow breathing can indicate life-threatening medication harm. The RN immediately assesses airway and breathing and initiates the appropriate emergency and medication-response pathway."
+    },
+    {
+      "id": "rn-23-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which reassessment best determines whether a pain intervention was effective and safe?",
+      "choices": ["Recheck pain intensity, the agreed functional task, sedation and respiratory status, adverse effects, and the client’s judgment of benefit", "Ask only whether the client wants another dose", "Record the pre-intervention score again", "Consider the intervention successful whenever the client falls asleep"],
+      "correctIndex": 0,
+      "explanation": "A complete reassessment evaluates pain, function, the client’s goal, physiologic safety, and adverse effects at the appropriate time. Sleep alone could reflect relief or harmful sedation."
+    },
+    {
+      "id": "rn-23-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client calls knee pain “tolerable” but rates it 7/10. What should the RN do?",
+      "choices": ["Replace the score with 3/10", "Assume the client is seeking medication", "Clarify the conditions and functional meaning, such as whether 7/10 occurs with movement but is tolerable at rest", "Ignore the word tolerable because only numbers matter"],
+      "correctIndex": 2,
+      "explanation": "Apparently inconsistent statements require respectful clarification. Pain can vary with activity, and understanding function and context helps individualize treatment without changing the client’s report."
+    },
+    {
+      "id": "rn-23-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which documentation provides the clearest evidence of a pain intervention’s outcome?",
+      "choices": ["Pain improved", "Forty-five minutes after the ordered medication, pain decreased from 7/10 to 4/10; client walked 20 feet; alert with unchanged respirations", "Medication given as ordered", "Client appears comfortable"],
+      "correctIndex": 1,
+      "explanation": "Specific documentation includes timing, comparable pain rating, functional response, and safety assessment. Vague conclusions or administration details alone do not show whether the outcome was effective and safe."
+    }
+  ]
+}

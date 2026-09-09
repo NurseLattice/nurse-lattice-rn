@@ -1,0 +1,105 @@
+{
+  "lessonId": 26,
+  "questions": [
+    {
+      "id": "rn-26-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which client finding requires the RN’s most immediate response?",
+      "choices": ["An unchanged soft systolic murmur documented for years", "Mild bilateral ankle swelling after prolonged standing", "New chest pressure with diaphoresis, nausea, and falling blood pressure", "A resting radial pulse that is equal bilaterally"],
+      "correctIndex": 2,
+      "explanation": "New chest pressure with autonomic symptoms and hemodynamic change is a time-sensitive circulation threat. The RN initiates immediate assessment, emergency support, and the approved response pathway."
+    },
+    {
+      "id": "rn-26-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which action is correct when palpating carotid pulses?",
+      "choices": ["Palpate both sides simultaneously to compare strength", "Use the thumb and press firmly", "Palpate one side at a time with gentle pressure", "Massage the artery before auscultation"],
+      "correctIndex": 2,
+      "explanation": "Carotid pulses are palpated one side at a time because simultaneous compression can reduce cerebral blood flow. Excess pressure and massage are unsafe."
+    },
+    {
+      "id": "rn-26-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "When auscultating the precordium, what should the RN assess at each standard landmark?",
+      "choices": ["Only whether a murmur is present", "Rate, rhythm, S1 and S2, and the location and character of any unexpected sound", "Peripheral pulse amplitude without touching the extremities", "Blood pressure from the sound of S1"],
+      "correctIndex": 1,
+      "explanation": "Systematic cardiac auscultation identifies rate, rhythm, expected S1 and S2, and any extra or unusual sound at each location. A sound is described and correlated before its cause is determined."
+    },
+    {
+      "id": "rn-26-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The RN cannot palpate a client’s dorsalis pedis pulse. What is the best next action when the client is otherwise stable?",
+      "choices": ["Immediately document the pulse as absent", "Reposition, confirm the landmark, compare sides, assess perfusion, and use Doppler according to training and policy", "Press progressively harder until a pulse is felt", "Assume the finding is normal in older adults"],
+      "correctIndex": 1,
+      "explanation": "Technique and anatomy can make a pulse difficult to palpate. The RN validates the finding and assesses the complete neurovascular picture before documenting, while escalating urgently if threat cues are present."
+    },
+    {
+      "id": "rn-26-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client’s right foot is suddenly painful, pale, cool, and numb with no Doppler pulse. What should the RN do?",
+      "choices": ["Elevate the foot and reassess tomorrow", "Massage the foot to restore circulation", "Treat the findings as an urgent perfusion threat, maintain safety, and activate immediate evaluation", "Apply a heating pad directly to the numb foot"],
+      "correctIndex": 2,
+      "explanation": "Sudden pain, pallor, coolness, sensory change, and an absent pulse indicate threatened tissue perfusion. The RN avoids delay, massage, and unsafe heat and obtains immediate evaluation."
+    },
+    {
+      "id": "rn-26-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client’s capillary refill appears delayed while the fingers are cold. Which interpretation is best?",
+      "choices": ["The client definitely has arterial occlusion", "Cold temperature and technique can affect refill, so the RN should assess pulse, color, temperature, sensation, both sides, and the overall clinical pattern", "Capillary refill should be ignored in every adult", "A normal blood pressure proves peripheral perfusion is adequate"],
+      "correctIndex": 1,
+      "explanation": "Capillary refill is influenced by temperature and technique and must be interpreted with other perfusion cues. Neither the refill result nor blood pressure alone establishes adequate or impaired limb circulation."
+    },
+    {
+      "id": "rn-26-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN observes new unilateral calf warmth, tenderness, and swelling. Which action is most appropriate?",
+      "choices": ["Massage the calf and encourage vigorous walking", "Perform repeated ankle dorsiflexion to rule out thrombosis", "Avoid massaging the limb, assess related symptoms, maintain safety, and report the change promptly", "Apply a tight wrap without an order"],
+      "correctIndex": 2,
+      "explanation": "Unilateral warmth, tenderness, and swelling require prompt evaluation for a venous complication. Massage and unvalidated provocative maneuvers are unsafe and cannot diagnose or exclude thrombosis."
+    },
+    {
+      "id": "rn-26-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which documentation best describes peripheral edema?",
+      "choices": ["Legs swollen", "Edema is bad today", "Bilateral pitting edema from ankles to mid-shins, graded with the organization’s approved scale; skin intact and circumference landmarks documented", "Fluid overload present"],
+      "correctIndex": 2,
+      "explanation": "Objective edema documentation includes laterality, location, extent, pitting method, skin condition, and reproducible measurements when indicated. It does not substitute an unconfirmed diagnosis."
+    },
+    {
+      "id": "rn-26-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Assistive personnel report a stable client gained 2.5 kg since yesterday and is more short of breath. What should the RN do?",
+      "choices": ["Ask the assistant to decide whether heart failure is present", "Personally assess breathing, vital signs, lung and heart findings, edema, intake and output, and weight validity, then escalate the change as indicated", "Delete the weight because assistants cannot collect data", "Wait for the next daily weight"],
+      "correctIndex": 1,
+      "explanation": "A rapid weight change with dyspnea is concerning. The RN validates the measurement, performs the focused assessment, interprets the cluster, communicates, and evaluates the response."
+    },
+    {
+      "id": "rn-26-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which chart entry is most useful for a new peripheral perfusion problem?",
+      "choices": ["Circulation poor; doctor called", "Right foot abnormal", "1035: Right foot newly pale and cool compared with left; pain 8/10, sensation decreased, pedal pulses not palpable and no Doppler signal per unit procedure; response team notified at 1038", "Possible arterial blockage"],
+      "correctIndex": 2,
+      "explanation": "The entry records time, side, comparison, pain, sensation, pulse-assessment method, and response. It supports continuity without vague language or an unconfirmed medical diagnosis."
+    }
+  ]
+}

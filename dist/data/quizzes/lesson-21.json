@@ -1,0 +1,105 @@
+{
+  "lessonId": 21,
+  "questions": [
+    {
+      "id": "rn-21-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding collected during a health history is subjective data?",
+      "choices": ["The client states, “I become short of breath when I climb one flight of stairs”", "Respiratory rate is 28 breaths/min", "The RN observes use of accessory muscles", "Oxygen saturation is 89% on room air"],
+      "correctIndex": 0,
+      "explanation": "The client’s description of breathlessness is a reported symptom and therefore subjective. Respiratory rate, observed effort, and measured oxygen saturation are objective findings."
+    },
+    {
+      "id": "rn-21-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "During a routine history, a client suddenly develops facial droop, slurred speech, and right-arm weakness. What should the RN do first?",
+      "choices": ["Finish the family history to identify inherited risk", "Stop the routine interview, assess immediate findings and last-known-well time, and activate the time-sensitive response", "Ask the client to complete a written review of systems", "Schedule a longer health-history appointment"],
+      "correctIndex": 1,
+      "explanation": "Sudden focal neurologic changes are emergency cues. The RN interrupts routine data collection, performs the immediate assessment, identifies timing, and activates the appropriate response without delay."
+    },
+    {
+      "id": "rn-21-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which opening question is most likely to elicit the client’s main concern?",
+      "choices": ["You are here because your blood pressure is high, correct?", "Why did you wait so long to seek care?", "Tell me what brought you in and what concerns you most today", "You do not have chest pain, do you?"],
+      "correctIndex": 2,
+      "explanation": "An open, neutral question allows the client to describe the reason for care and personal priority. Leading or judgmental questions can narrow, distort, or suppress important information."
+    },
+    {
+      "id": "rn-21-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which question best assesses the “aggravating and relieving factors” portion of a symptom history?",
+      "choices": ["Where exactly do you feel it?", "When did it first begin?", "How severe is it from 0 to 10?", "What makes it worse, and what have you tried that makes it better?"],
+      "correctIndex": 3,
+      "explanation": "Asking what worsens or relieves the symptom identifies aggravating and relieving factors. Location, onset, and severity are important but represent different parts of structured symptom analysis."
+    },
+    {
+      "id": "rn-21-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which entry provides the most clinically useful allergy information?",
+      "choices": ["Penicillin allergy: generalized hives and wheezing after the last dose", "Allergic to several medicines", "Penicillin—client does not like taking pills", "Unknown allergy, probably severe"],
+      "correctIndex": 0,
+      "explanation": "Naming the substance and the specific reaction supports risk assessment and future decisions. Vague, assumed, or preference-based entries do not describe what occurred and require clarification."
+    },
+    {
+      "id": "rn-21-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which question best evaluates instrumental activities of daily living?",
+      "choices": ["Can you turn from side to side in bed?", "Can you manage your medicines and arrange transportation to appointments?", "Can you identify today’s date?", "Do you have tenderness in your abdomen?"],
+      "correctIndex": 1,
+      "explanation": "Medication management and transportation are instrumental activities needed for independent community living. Bed mobility is a basic function, orientation is cognitive data, and tenderness is objective examination data."
+    },
+    {
+      "id": "rn-21-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Psychosocial Integrity",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "How should the RN ask about substance use during a comprehensive history?",
+      "choices": ["Ask only clients who appear intoxicated", "Begin by warning that substance use shows poor judgment", "Use neutral, routine questions with privacy, explain confidentiality limits, and follow the appropriate screening process", "Ask family members in the hallway instead of the capable client"],
+      "correctIndex": 2,
+      "explanation": "Routine, neutral, private screening reduces stigma and supports more accurate disclosure. The RN explains confidentiality limits and follows validated screening and response procedures when indicated."
+    },
+    {
+      "id": "rn-21-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "A client reports difficulty obtaining prescribed medications because there is no transportation to the pharmacy. How should the RN classify this information?",
+      "choices": ["An irrelevant personal preference", "Objective physical-examination data", "Proof that the client is nonadherent", "A social and access factor that may affect the care plan and requires further assessment"],
+      "correctIndex": 3,
+      "explanation": "Transportation is a health-access factor that can directly affect medication availability and outcomes. The RN assesses its impact and collaborates on resources rather than assigning a moral label."
+    },
+    {
+      "id": "rn-21-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement correctly distinguishes the review of systems from the physical examination?",
+      "choices": ["The review of systems gathers reported symptoms; the physical examination gathers observable and measurable findings", "Both terms refer only to laboratory results", "The review of systems establishes a medical diagnosis", "The physical examination contains only the client’s perceptions"],
+      "correctIndex": 0,
+      "explanation": "The review of systems is a structured subjective symptom inventory, whereas the physical examination produces objective findings. Both inform clinical judgment but neither alone automatically establishes a diagnosis."
+    },
+    {
+      "id": "rn-21-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "A spouse provides history because the client was initially unresponsive. The client is now alert and gives different information. What should the RN do?",
+      "choices": ["Keep only the spouse’s version because it was collected first", "Record the discrepancy and sources, clarify with the client and relevant records, and update the assessment", "Delete all secondary-source information", "Ask the spouse to decide which account is official"],
+      "correctIndex": 1,
+      "explanation": "The alert client is the primary source, but earlier collateral data may still matter. The RN identifies each source, validates discrepancies without accusation, and revises the assessment based on the best available evidence."
+    }
+  ]
+}

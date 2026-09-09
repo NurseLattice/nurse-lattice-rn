@@ -1,0 +1,105 @@
+{
+  "lessonId": 18,
+  "questions": [
+    {
+      "id": "rn-18-q01",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client with new confusion repeatedly pulls at oxygen tubing. Which action should the RN take first while maintaining immediate safety?",
+      "choices": ["Apply wrist restraints before assessing the client", "Assess oxygenation, pain, toileting needs, delirium cues, and what the client is trying to accomplish", "Request a standing restraint order for the remainder of the admission", "Administer a sedating medication solely to prevent movement"],
+      "correctIndex": 1,
+      "explanation": "Pulling at equipment is a cue that requires assessment for reversible causes while immediate safety is maintained. Hypoxia, pain, delirium, fear, or toileting needs may be addressed without restraint."
+    },
+    {
+      "id": "rn-18-q02",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A family member asks the RN to restrain an alert client because the family is afraid the client might fall. Which response is best?",
+      "choices": ["A family request is enough authorization for restraint", "Restraint is required for every client identified as a fall risk", "We will assess the client’s individual risks and use the least restrictive effective safety plan; restraint cannot be used only for convenience or routine fall prevention", "The family may apply a restraint without an order if they remain in the room"],
+      "correctIndex": 2,
+      "explanation": "Restraint requires clinical necessity and the applicable authorization process; fear or family preference alone is insufficient. The RN uses an individualized fall-prevention plan and least restrictive measures."
+    },
+    {
+      "id": "rn-18-q03",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which medication use may meet the definition of a restraint?",
+      "choices": ["An antibiotic given at the prescribed dose for a bacterial infection", "An analgesic titrated according to an order for reported postoperative pain", "A routine home medication continued for its documented indication", "A sedating medication used mainly to control behavior or restrict movement when it is not standard treatment or dosage for the client’s condition"],
+      "correctIndex": 3,
+      "explanation": "A medication can function as a restraint when its primary purpose is behavior control or movement restriction and it is not standard treatment or dosage for the client’s condition. The drug name alone does not determine this."
+    },
+    {
+      "id": "rn-18-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client suddenly swings a metal object at another client and cannot be redirected. What is the RN’s priority action?",
+      "choices": ["Summon trained assistance, move others from danger, use de-escalation, and follow the emergency process for the least restrictive effective intervention", "Approach alone and attempt to take the object by force", "Wait until a routine team meeting before intervening", "Lock the unit doors and leave both clients together"],
+      "correctIndex": 0,
+      "explanation": "An immediate serious threat requires rapid protection of everyone present, trained assistance, hazard reduction, and de-escalation. Any restrictive intervention must be the least restrictive effective option under the emergency process."
+    },
+    {
+      "id": "rn-18-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which assessment finding in a restrained client requires the most immediate response?",
+      "choices": ["The client asks what time breakfast will arrive", "The client reports mild boredom", "The restrained hand is cool and pale with delayed capillary refill", "The client requests the television remote"],
+      "correctIndex": 2,
+      "explanation": "Coolness, pallor, and delayed capillary refill suggest impaired circulation and possible tissue injury. The RN immediately protects the client, releases or adjusts the intervention as appropriate, and follows the urgent response process."
+    },
+    {
+      "id": "rn-18-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "A restrained client is now calm, follows directions, and no longer presents the behavior that created immediate danger. What should the RN do?",
+      "choices": ["Continue restraint until the full order time expires", "Discontinue the restraint at the earliest safe time and continue the individualized safety plan", "Wait for the family to approve release", "Renew the order so the restraint is available if behavior returns"],
+      "correctIndex": 1,
+      "explanation": "Restraint must end as soon as the unsafe situation has resolved, regardless of remaining time on the order. The RN continues observation and an individualized plan rather than restraining for a possible future behavior."
+    },
+    {
+      "id": "rn-18-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which restraint order should the RN question?",
+      "choices": ["An order entered after assessment for a specific current safety need", "An order with reassessment requirements defined by current policy", "A time-limited order from an authorized practitioner", "A standing PRN order to apply restraints whenever the client becomes restless"],
+      "correctIndex": 3,
+      "explanation": "Hospital restraint rules do not permit standing or PRN restraint orders. Each use requires assessment of a current clinical need, the applicable authorization, ongoing reassessment, and discontinuation at the earliest safe time."
+    },
+    {
+      "id": "rn-18-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement about four raised side rails is most accurate?",
+      "choices": ["Side rails can never be considered a restraint", "Any single raised rail is always a restraint", "Whether the rails function as a restraint depends on their purpose, use, and whether they restrict the client from voluntarily leaving the bed", "Side rails are restraints only when the family objects"],
+      "correctIndex": 2,
+      "explanation": "Equipment is evaluated by how it affects the individual client, not by its label alone. Rails that prevent voluntary exit may function as a restraint; therapeutic use and definitions depend on current rules and policy."
+    },
+    {
+      "id": "rn-18-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which documentation entry best supports safe restraint care?",
+      "choices": ["Client difficult; restraint used for safety", "Restraint continued because the previous shift started it", "Client restless; no further details needed", "Client repeatedly struck staff with the call-light cord; pain and toileting assessed, de-escalation and reduced stimulation ineffective; required order obtained, monitoring begun, and response documented"],
+      "correctIndex": 3,
+      "explanation": "Useful documentation states the observable behavior and risk, assessment findings, alternatives and responses, clinical reason, authorization, monitoring, and outcome. Vague labels do not establish necessity or continuity."
+    },
+    {
+      "id": "rn-18-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "For which situation may seclusion be considered under applicable hospital rules after less restrictive measures are ineffective or unsafe?",
+      "choices": ["A client with violent behavior presents an immediate physical danger to others", "A client repeatedly uses the call light for assistance", "A client with dementia wanders toward the dayroom", "A client refuses a scheduled bath"],
+      "correctIndex": 0,
+      "explanation": "Seclusion is limited to management of violent or self-destructive behavior that creates an immediate physical safety threat. It is not an intervention for inconvenience, wandering, treatment refusal, or frequent requests."
+    }
+  ]
+}

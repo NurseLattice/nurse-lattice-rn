@@ -1,0 +1,105 @@
+{
+  "lessonId": 24,
+  "questions": [
+    {
+      "id": "rn-24-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "At the start of a routine head-to-toe assessment, the client is cyanotic, using accessory muscles, and can speak only one word at a time. What should the RN do first?",
+      "choices": ["Complete the neurologic examination before calling for help", "Stop the routine sequence, assess airway and breathing, support oxygenation as permitted, and activate the appropriate response", "Document the findings and return after medication rounds", "Ask the client to lie flat so every system can be examined"],
+      "correctIndex": 1,
+      "explanation": "Severe respiratory distress and cyanosis make airway and breathing the priority. A checklist does not outrank acuity; the RN stops the routine exam, begins immediate assessment and safety actions, and obtains help."
+    },
+    {
+      "id": "rn-24-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which sequence should the RN use for a routine abdominal examination?",
+      "choices": ["Palpate, percuss, inspect, auscultate", "Auscultate, inspect, palpate, percuss", "Inspect, auscultate, percuss, palpate", "Inspect, palpate, percuss, auscultate"],
+      "correctIndex": 2,
+      "explanation": "The abdomen is assessed by inspection followed by auscultation, then percussion and palpation. Listening before touching helps avoid changing bowel activity before it is assessed."
+    },
+    {
+      "id": "rn-24-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which technique best supports recognition of asymmetric breath sounds?",
+      "choices": ["Listen through the gown to reduce exposure", "Complete every site on the right, then every site on the left", "Compare corresponding right and left landmarks at the same level with the stethoscope on skin", "Listen only where the client reports discomfort"],
+      "correctIndex": 2,
+      "explanation": "Side-to-side comparison at corresponding landmarks makes asymmetry easier to recognize. Direct contact with skin reduces artifact from clothing, and a systematic examination includes the appropriate anterior and posterior fields."
+    },
+    {
+      "id": "rn-24-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which action is correct when assessing carotid pulses?",
+      "choices": ["Palpate both carotid arteries at the same time", "Palpate one carotid artery at a time and avoid excessive pressure", "Use the thumb to compress each artery firmly", "Skip circulation assessment whenever a radial pulse is present"],
+      "correctIndex": 1,
+      "explanation": "Carotid arteries are assessed one at a time. Simultaneous compression can reduce cerebral blood flow and is unsafe."
+    },
+    {
+      "id": "rn-24-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Psychosocial Integrity",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client becomes tense when the RN prepares to examine the abdomen. Which response best supports trauma-informed assessment?",
+      "choices": ["Continue without discussion because the examination is routine", "Tell the client refusal will delay all care", "Explain each step, ask permission before touch, protect privacy, and offer choices within safe care", "Ask a family member to hold the client still"],
+      "correctIndex": 2,
+      "explanation": "Explanation, permission, privacy, and meaningful choices support control and dignity. The RN explores concerns and adapts the examination without coercion while addressing essential safety needs."
+    },
+    {
+      "id": "rn-24-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "During an assessment, the RN finds new left facial droop, left arm drift, and slurred speech. What is the priority action?",
+      "choices": ["Finish the assessment to identify every abnormal system", "Ask the client to rest and reassess at the end of the shift", "Document probable stroke and wait for the provider to round", "Note the time and last known baseline, initiate the emergency neurologic response, and maintain immediate safety"],
+      "correctIndex": 3,
+      "explanation": "New focal neurologic deficits are time-sensitive. The RN stops the routine examination, identifies timing and baseline, protects the client, and activates the appropriate emergency pathway without independently assigning a diagnosis."
+    },
+    {
+      "id": "rn-24-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Assistive personnel report that a stable client’s right foot is newly cool and they cannot feel a pedal pulse. What should the RN do?",
+      "choices": ["Ask the assistant to document the finding as normal for age", "Personally assess perfusion, compare both extremities, evaluate related cues, and escalate the change promptly", "Wait for the next scheduled vital signs", "Delegate interpretation to another assistant"],
+      "correctIndex": 1,
+      "explanation": "A newly cool extremity with an absent pulse may represent impaired perfusion. The RN validates and interprets concerning delegated data, performs a focused assessment, and communicates urgently."
+    },
+    {
+      "id": "rn-24-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which preparation best reduces infection and assessment error before using a shared stethoscope?",
+      "choices": ["Perform hand hygiene, review required precautions, and clean the stethoscope according to policy", "Place the stethoscope over clothing so cleaning is unnecessary", "Wear sterile gloves for every head-to-toe examination", "Clean the stethoscope only when visible soil is present"],
+      "correctIndex": 0,
+      "explanation": "Hand hygiene, transmission-based precaution review, and appropriate equipment cleaning reduce cross-transmission. The stethoscope should contact skin for accurate sounds, and sterile gloves are not routinely required."
+    },
+    {
+      "id": "rn-24-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client has chronic right-arm weakness after an old injury. Which finding is most important when interpreting today’s strength assessment?",
+      "choices": ["Whether the weakness differs from the client’s reliable baseline or is accompanied by new findings", "Whether most adults of the same age have equal strength", "Whether the client appears worried", "Whether the room has enough light to inspect the abdomen"],
+      "correctIndex": 0,
+      "explanation": "A current asymmetry must be compared with the client’s established baseline and related cues. A chronic stable limitation and a new change carry different urgency; age alone does not explain away a finding."
+    },
+    {
+      "id": "rn-24-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which entry is the most objective documentation of an unexpected assessment finding and response?",
+      "choices": ["Client looked bad, so the provider was called", "Abnormal neuro check; probable stroke", "0940: New left facial droop and arm drift; last observed at baseline 0915. Emergency response activated at 0942; client remained in bed with RN present", "Assessment completed and physician aware"],
+      "correctIndex": 2,
+      "explanation": "Useful documentation identifies the specific finding, laterality, timing, comparison with baseline, action, and safety response. It avoids vague labels and an unconfirmed medical diagnosis."
+    }
+  ]
+}

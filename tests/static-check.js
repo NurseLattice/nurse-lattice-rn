@@ -4,6 +4,7 @@ const root = path.resolve(__dirname, "..");
 const read = relative => fs.readFileSync(path.join(root, relative), "utf8");
 const index = read("index.html");
 const curriculum = JSON.parse(read("data/curriculum.json"));
+const roadmap = JSON.parse(read("data/program-roadmap.json"));
 const version = JSON.parse(read("version.json"));
 const versionScript = read("js/version.js");
 
@@ -20,14 +21,16 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 15) throw new Error("Pilot must preserve all eight Client Needs areas and include fifteen lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 26) throw new Error("Pilot must preserve all eight Client Needs areas and include twenty-six lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
 const questionIds = new Set();
 for (const [index, lessonItem] of curriculum.lessons.entries()) {
   if (lessonItem.id !== index + 1) throw new Error("Lesson IDs must be contiguous");
-  if (lessonItem.courseId !== "foundations-of-nursing" || lessonItem.course !== "Foundations of Nursing Practice") throw new Error("All current lessons must remain under Foundations of Nursing Practice");
+  const phase = roadmap.phases.find(item => lessonItem.id >= item.lessonRange[0] && lessonItem.id <= item.lessonRange[1]);
+  const expectedCourseId = phase?.id === "foundations" ? "foundations-of-nursing" : phase?.id;
+  if (!phase || lessonItem.courseId !== expectedCourseId || lessonItem.course !== phase.title) throw new Error("Lesson " + lessonItem.id + " is assigned to the wrong traditional course");
   if (index < expectedCategories.length && lessonItem.categoryId !== expectedCategories[index]) throw new Error("Lesson category order does not match blueprint");
   if (!expectedCategories.includes(lessonItem.categoryId)) throw new Error("Lesson category must map to a current Client Needs area");
   for (const property of ["category", "weight", "cardTitle", "summary", "lessonFile", "quizFile"]) {
@@ -146,12 +149,121 @@ if (fifteenthLesson.traditionalCourse !== "Foundations of Nursing Practice" || f
 for (const question of fifteenthQuiz.questions) {
   if (question.traditionalCourse !== "Foundations of Nursing Practice" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 15 question must preserve its course and NCLEX tags");
 }
-const roadmap = JSON.parse(read("data/program-roadmap.json"));
+const sixteenthLessonItem = curriculum.lessons[15];
+const sixteenthLesson = JSON.parse(read(sixteenthLessonItem.lessonFile));
+const sixteenthQuiz = JSON.parse(read(sixteenthLessonItem.quizFile));
+if (sixteenthLessonItem.courseId !== "foundations-of-nursing" || sixteenthLessonItem.course !== "Foundations of Nursing Practice") throw new Error("Lesson 16 must remain in the foundations course");
+if (!sixteenthLesson.title.includes("Grief, Loss & End-of-Life Care") || !sixteenthLesson.html.includes("Use precise terms") || !sixteenthLesson.html.includes("Center the client's choices") || !sixteenthLesson.html.includes("Assess and relieve suffering") || !sixteenthLesson.html.includes("After death")) throw new Error("Lesson 16 grief and end-of-life content is incomplete");
+if (sixteenthQuiz.questions.length !== 10) throw new Error("Lesson 16 must include ten end-of-life questions");
+if (sixteenthLesson.traditionalCourse !== "Foundations of Nursing Practice" || sixteenthLesson.nclexClientNeeds !== "Psychosocial Integrity" || sixteenthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 16 must preserve all three content tags");
+for (const question of sixteenthQuiz.questions) {
+  if (question.traditionalCourse !== "Foundations of Nursing Practice" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 16 question must preserve its course and NCLEX tags");
+}
+const seventeenthLessonItem = curriculum.lessons[16];
+const seventeenthLesson = JSON.parse(read(seventeenthLessonItem.lessonFile));
+const seventeenthQuiz = JSON.parse(read(seventeenthLessonItem.quizFile));
+if (seventeenthLessonItem.courseId !== "foundations-of-nursing" || seventeenthLessonItem.course !== "Foundations of Nursing Practice") throw new Error("Lesson 17 must remain in the foundations course");
+if (!seventeenthLesson.title.includes("Medication Dosage Calculations & Safe Math") || !seventeenthLesson.html.includes("Begin with a safety screen") || !seventeenthLesson.html.includes("Weight-based and divided doses") || !seventeenthLesson.html.includes("Safe-dose range is a separate check") || !seventeenthLesson.html.includes("Write decimals safely")) throw new Error("Lesson 17 dosage-calculation content is incomplete");
+if (seventeenthQuiz.questions.length !== 10) throw new Error("Lesson 17 must include ten dosage-calculation questions");
+if (seventeenthLesson.traditionalCourse !== "Foundations of Nursing Practice" || seventeenthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || seventeenthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 17 must preserve all three content tags");
+for (const question of seventeenthQuiz.questions) {
+  if (question.traditionalCourse !== "Foundations of Nursing Practice" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 17 question must preserve its course and NCLEX tags");
+}
+const eighteenthLessonItem = curriculum.lessons[17];
+const eighteenthLesson = JSON.parse(read(eighteenthLessonItem.lessonFile));
+const eighteenthQuiz = JSON.parse(read(eighteenthLessonItem.quizFile));
+if (eighteenthLessonItem.courseId !== "foundations-of-nursing" || eighteenthLessonItem.course !== "Foundations of Nursing Practice") throw new Error("Lesson 18 must remain in the foundations course");
+if (!eighteenthLesson.title.includes("Restraint-Free Care & Least-Restrictive Safety") || !eighteenthLesson.html.includes("Assess the cause before restricting movement") || !eighteenthLesson.html.includes("Use individualized alternatives") || !eighteenthLesson.html.includes("Discontinue at the earliest possible time") || !eighteenthLesson.html.includes("Document objective evidence")) throw new Error("Lesson 18 least-restrictive safety content is incomplete");
+if (eighteenthQuiz.questions.length !== 10) throw new Error("Lesson 18 must include ten least-restrictive safety questions");
+if (eighteenthLesson.traditionalCourse !== "Foundations of Nursing Practice" || eighteenthLesson.nclexClientNeeds !== "Safety and Infection Prevention and Control" || eighteenthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 18 must preserve all three content tags");
+for (const question of eighteenthQuiz.questions) {
+  if (question.traditionalCourse !== "Foundations of Nursing Practice" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 18 question must preserve its course and NCLEX tags");
+}
+const nineteenthLessonItem = curriculum.lessons[18];
+const nineteenthLesson = JSON.parse(read(nineteenthLessonItem.lessonFile));
+const nineteenthQuiz = JSON.parse(read(nineteenthLessonItem.quizFile));
+if (nineteenthLessonItem.courseId !== "foundations-of-nursing" || nineteenthLessonItem.course !== "Foundations of Nursing Practice") throw new Error("Lesson 19 must remain in the foundations course");
+if (!nineteenthLesson.title.includes("Patient Education, Health Literacy & Teach-Back") || !nineteenthLesson.html.includes("Assess before teaching") || !nineteenthLesson.html.includes("Use universal precautions") || !nineteenthLesson.html.includes("Teach-back checks the explanation") || !nineteenthLesson.html.includes("Use return demonstration for skills")) throw new Error("Lesson 19 patient-education content is incomplete");
+if (nineteenthQuiz.questions.length !== 10) throw new Error("Lesson 19 must include ten patient-education questions");
+if (nineteenthLesson.traditionalCourse !== "Foundations of Nursing Practice" || nineteenthLesson.nclexClientNeeds !== "Health Promotion and Maintenance" || nineteenthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 19 must preserve all three content tags");
+for (const question of nineteenthQuiz.questions) {
+  if (question.traditionalCourse !== "Foundations of Nursing Practice" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 19 question must preserve its course and NCLEX tags");
+}
+const twentiethLessonItem = curriculum.lessons[19];
+const twentiethLesson = JSON.parse(read(twentiethLessonItem.lessonFile));
+const twentiethQuiz = JSON.parse(read(twentiethLessonItem.quizFile));
+if (twentiethLessonItem.courseId !== "foundations-of-nursing" || twentiethLessonItem.course !== "Foundations of Nursing Practice") throw new Error("Lesson 20 must complete the foundations course");
+if (!twentiethLesson.title.includes("Ethical Practice, Client Rights & Advocacy") || !twentiethLesson.html.includes("Center self-determination") || !twentiethLesson.html.includes("Support informed consent") || !twentiethLesson.html.includes("Protect privacy and confidentiality") || !twentiethLesson.html.includes("Advocacy is a clinical action")) throw new Error("Lesson 20 ethical-practice content is incomplete");
+if (twentiethQuiz.questions.length !== 10) throw new Error("Lesson 20 must include ten ethical-practice questions");
+if (twentiethLesson.traditionalCourse !== "Foundations of Nursing Practice" || twentiethLesson.nclexClientNeeds !== "Management of Care" || twentiethLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 20 must preserve all three content tags");
+for (const question of twentiethQuiz.questions) {
+  if (question.traditionalCourse !== "Foundations of Nursing Practice" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 20 question must preserve its course and NCLEX tags");
+}
+const twentyFirstLessonItem = curriculum.lessons[20];
+const twentyFirstLesson = JSON.parse(read(twentyFirstLessonItem.lessonFile));
+const twentyFirstQuiz = JSON.parse(read(twentyFirstLessonItem.quizFile));
+if (twentyFirstLessonItem.courseId !== "health-assessment-skills" || twentyFirstLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 21 must begin Health Assessment & Nursing Skills");
+if (!twentyFirstLesson.title.includes("Comprehensive Health History & Risk Assessment") || !twentyFirstLesson.html.includes("Separate subjective and objective data") || !twentyFirstLesson.html.includes("Analyze the present symptom") || !twentyFirstLesson.html.includes("Assess function and daily life") || !twentyFirstLesson.html.includes("Complete a focused review of systems")) throw new Error("Lesson 21 health-history content is incomplete");
+if (twentyFirstQuiz.questions.length !== 10) throw new Error("Lesson 21 must include ten health-history questions");
+if (twentyFirstLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentyFirstLesson.nclexClientNeeds !== "Health Promotion and Maintenance" || twentyFirstLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 21 must preserve all three content tags");
+for (const question of twentyFirstQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 21 question must preserve its course and NCLEX tags");
+}
+const twentySecondLessonItem = curriculum.lessons[21];
+const twentySecondLesson = JSON.parse(read(twentySecondLessonItem.lessonFile));
+const twentySecondQuiz = JSON.parse(read(twentySecondLessonItem.quizFile));
+if (twentySecondLessonItem.courseId !== "health-assessment-skills" || twentySecondLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 22 must remain in Health Assessment & Nursing Skills");
+if (!twentySecondLesson.title.includes("Vital Signs—Accurate Measurement & Trend Recognition") || !twentySecondLesson.html.includes("Temperature: route and context matter") || !twentySecondLesson.html.includes("Blood pressure: control the technique") || !twentySecondLesson.html.includes("Pulse oximetry estimates saturation") || !twentySecondLesson.html.includes("Trends and clusters carry meaning")) throw new Error("Lesson 22 vital-sign content is incomplete");
+if (twentySecondQuiz.questions.length !== 10) throw new Error("Lesson 22 must include ten vital-sign questions");
+if (twentySecondLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentySecondLesson.nclexClientNeeds !== "Reduction of Risk Potential" || twentySecondLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 22 must preserve all three content tags");
+for (const question of twentySecondQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 22 question must preserve its course and NCLEX tags");
+}
+const twentyThirdLessonItem = curriculum.lessons[22];
+const twentyThirdLesson = JSON.parse(read(twentyThirdLessonItem.lessonFile));
+const twentyThirdQuiz = JSON.parse(read(twentyThirdLessonItem.quizFile));
+if (twentyThirdLessonItem.courseId !== "health-assessment-skills" || twentyThirdLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 23 must remain in Health Assessment & Nursing Skills");
+if (!twentyThirdLesson.title.includes("Pain Assessment, Functional Goals & Reassessment") || !twentyThirdLesson.html.includes("Use PQRSTU to organize the story") || !twentyThirdLesson.html.includes("When the client cannot self-report") || !twentyThirdLesson.html.includes("Set a comfort-function goal") || !twentyThirdLesson.html.includes("Reassessment closes the loop")) throw new Error("Lesson 23 pain-assessment content is incomplete");
+if (twentyThirdQuiz.questions.length !== 10) throw new Error("Lesson 23 must include ten pain-assessment questions");
+if (twentyThirdLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentyThirdLesson.nclexClientNeeds !== "Basic Care and Comfort" || twentyThirdLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 23 must preserve all three content tags");
+for (const question of twentyThirdQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 23 question must preserve its course and NCLEX tags");
+}
+const twentyFourthLessonItem = curriculum.lessons[23];
+const twentyFourthLesson = JSON.parse(read(twentyFourthLessonItem.lessonFile));
+const twentyFourthQuiz = JSON.parse(read(twentyFourthLessonItem.quizFile));
+if (twentyFourthLessonItem.courseId !== "health-assessment-skills" || twentyFourthLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 24 must remain in Health Assessment & Nursing Skills");
+if (!twentyFourthLesson.title.includes("Head-to-Toe Assessment—Sequence, Techniques & Documentation") || !twentyFourthLesson.html.includes("Begin with safety, consent, and context") || !twentyFourthLesson.html.includes("Stability comes before the routine sequence") || !twentyFourthLesson.html.includes("Use the four core techniques") || !twentyFourthLesson.html.includes("Document a usable clinical picture")) throw new Error("Lesson 24 head-to-toe assessment content is incomplete");
+if (twentyFourthQuiz.questions.length !== 10) throw new Error("Lesson 24 must include ten head-to-toe assessment questions");
+if (twentyFourthLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentyFourthLesson.nclexClientNeeds !== "Reduction of Risk Potential" || twentyFourthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 24 must preserve all three content tags");
+for (const question of twentyFourthQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 24 question must preserve its course and NCLEX tags");
+}
+const twentyFifthLessonItem = curriculum.lessons[24];
+const twentyFifthLesson = JSON.parse(read(twentyFifthLessonItem.lessonFile));
+const twentyFifthQuiz = JSON.parse(read(twentyFifthLessonItem.quizFile));
+if (twentyFifthLessonItem.courseId !== "health-assessment-skills" || twentyFifthLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 25 must remain in Health Assessment & Nursing Skills");
+if (!twentyFifthLesson.title.includes("Respiratory Assessment—Inspection, Auscultation & Early Deterioration") || !twentyFifthLesson.html.includes("Start with the airway and the client—not the stethoscope") || !twentyFifthLesson.html.includes("Inspect the respiratory pattern") || !twentyFifthLesson.html.includes("Auscultate in a side-to-side ladder") || !twentyFifthLesson.html.includes("Recognize deterioration as a cluster")) throw new Error("Lesson 25 respiratory-assessment content is incomplete");
+if (twentyFifthQuiz.questions.length !== 10) throw new Error("Lesson 25 must include ten respiratory-assessment questions");
+if (twentyFifthLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentyFifthLesson.nclexClientNeeds !== "Reduction of Risk Potential" || twentyFifthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 25 must preserve all three content tags");
+for (const question of twentyFifthQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 25 question must preserve its course and NCLEX tags");
+}
+const twentySixthLessonItem = curriculum.lessons[25];
+const twentySixthLesson = JSON.parse(read(twentySixthLessonItem.lessonFile));
+const twentySixthQuiz = JSON.parse(read(twentySixthLessonItem.quizFile));
+if (twentySixthLessonItem.courseId !== "health-assessment-skills" || twentySixthLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 26 must remain in Health Assessment & Nursing Skills");
+if (!twentySixthLesson.title.includes("Cardiovascular & Peripheral Vascular Assessment") || !twentySixthLesson.html.includes("Begin with stability and time-sensitive symptoms") || !twentySixthLesson.html.includes("Auscultate rate, rhythm, and heart sounds") || !twentySixthLesson.html.includes("Assess pulses and peripheral perfusion") || !twentySixthLesson.html.includes("Describe edema instead of merely naming it")) throw new Error("Lesson 26 cardiovascular-assessment content is incomplete");
+if (twentySixthQuiz.questions.length !== 10) throw new Error("Lesson 26 must include ten cardiovascular-assessment questions");
+if (twentySixthLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentySixthLesson.nclexClientNeeds !== "Reduction of Risk Potential" || twentySixthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 26 must preserve all three content tags");
+for (const question of twentySixthQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 26 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 150) throw new Error("Expected 150 reviewed pilot questions");
+if (questionIds.size !== 260) throw new Error("Expected 260 pilot questions after adding Lesson 26");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -170,4 +282,4 @@ const cloudConfig = read("js/cloud.js");
 if (!cloudConfig.includes('url: ""') || !cloudConfig.includes('publishableKey: ""')) throw new Error("Pilot cloud adapter must remain unconfigured");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "RN Quest" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 15 Foundations lessons preserved and reviewed, 150 questions, and version parity.");
+console.log("Static checks passed: 20 Foundations lessons, 6 Health Assessment lessons, 260 questions, and version parity.");

@@ -1,0 +1,105 @@
+{
+  "lessonId": 20,
+  "questions": [
+    {
+      "id": "rn-20-q01",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A capable adult refuses a prescribed blood transfusion after discussing the expected benefits and risks. What should the RN do?",
+      "choices": ["Administer the transfusion because it may prevent harm", "Ask the family to sign consent over the client’s objection", "Respect the refusal, notify the responsible clinician, continue appropriate care, and document the decision and actions", "Tell the client that all nursing care will stop unless consent is given"],
+      "correctIndex": 2,
+      "explanation": "A capable, informed adult may refuse treatment. The RN protects self-determination, communicates and documents the decision, addresses immediate needs, and continues appropriate care without coercion or abandonment."
+    },
+    {
+      "id": "rn-20-q02",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding requires the RN to pause preparation for an elective procedure and notify the responsible practitioner?",
+      "choices": ["The client signed the consent after receiving a sedative and now cannot explain the procedure", "The client asks what time the procedure will begin", "The client’s support person waits in the lobby", "The procedure is listed on the daily schedule"],
+      "correctIndex": 0,
+      "explanation": "Consent must be voluntary and made by someone able to decide. A sedated client who cannot explain the procedure raises concern about capacity and understanding, so the RN pauses and seeks clarification."
+    },
+    {
+      "id": "rn-20-q03",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement about the RN witnessing an informed-consent signature is most accurate?",
+      "choices": ["The witness signature means the RN personally explained every procedural risk", "The witness follows policy to verify matters such as identity and voluntary signature, while unresolved questions return to the responsible practitioner", "The witness signature prevents the client from later refusing", "The RN may witness any signature even when the client appears unable to decide"],
+      "correctIndex": 1,
+      "explanation": "Witnessing commonly confirms the signing circumstances specified by policy; it does not replace the responsible practitioner’s explanation, prove understanding, eliminate the right to refuse, or cure impaired capacity."
+    },
+    {
+      "id": "rn-20-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Two nurses begin discussing an identifiable client’s diagnosis in a crowded elevator. What is the best action by a third RN?",
+      "choices": ["Join the discussion if everyone works in the hospital", "Wait until the shift ends to mention it casually", "Record the conversation on a personal phone as evidence", "Stop the conversation, move necessary communication to a private approved setting, and follow the privacy-breach process if indicated"],
+      "correctIndex": 3,
+      "explanation": "Identifiable clinical information should not be discussed where unauthorized people can overhear it. The RN intervenes promptly, protects necessary communication, and follows organizational privacy procedures."
+    },
+    {
+      "id": "rn-20-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which social-media action violates professional confidentiality?",
+      "choices": ["Posting an unusual client story without a name when the details could allow community members to identify the person", "Sharing a link to a public health department announcement", "Discussing a fictional classroom case that contains no real client information", "Using the organization’s approved secure system for an authorized clinical handoff"],
+      "correctIndex": 0,
+      "explanation": "Removing a name does not protect confidentiality when combined details can identify the client. Personal social media is not an appropriate place for client stories, images, recordings, or clinical details."
+    },
+    {
+      "id": "rn-20-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement about decision-making capacity is correct?",
+      "choices": ["Any psychiatric diagnosis means the client lacks capacity", "A choice the team considers unwise proves incapacity", "Capacity is assessed for the particular decision and can change over time; legal competence is a separate determination", "Only family members can describe whether a hospitalized adult has capacity"],
+      "correctIndex": 2,
+      "explanation": "Capacity is a clinical, decision-specific, and potentially changing assessment. Diagnosis, disability, or disagreement alone does not establish incapacity, while competence is determined through a legal process."
+    },
+    {
+      "id": "rn-20-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A team uses the same clinically relevant criteria to allocate a scarce resource among eligible clients. Which ethical principle is most directly involved?",
+      "choices": ["Fidelity", "Justice", "Veracity", "Autonomy"],
+      "correctIndex": 1,
+      "explanation": "Justice concerns fair treatment and ethically defensible distribution of benefits and burdens. Autonomy concerns self-determination, veracity truthfulness, and fidelity professional commitments."
+    },
+    {
+      "id": "rn-20-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "The care team disagrees about whether a plan reflects an incapacitated client’s documented values. Which action is best?",
+      "choices": ["Let the loudest family member decide immediately", "Ask staff to vote without reviewing the record", "Ignore the conflict until discharge", "Clarify the ethical question and facts, review the client’s wishes and surrogate authority, and use the appropriate clinical, leadership, and ethics resources"],
+      "correctIndex": 3,
+      "explanation": "Ethical conflict requires a structured review of facts, capacity, documented values, legitimate decision-makers, risks, and options. Appropriate consultation supports a fair process centered on the client."
+    },
+    {
+      "id": "rn-20-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "An alert client with capacity declines a treatment, but the designated health care proxy demands that it be given. Whose decision has priority?",
+      "choices": ["The client’s current informed decision", "The proxy’s decision because the document is already active", "The bedside RN’s personal preference", "The majority vote of available relatives"],
+      "correctIndex": 0,
+      "explanation": "A surrogate acts when authorized under the applicable process, generally when the client cannot decide. A client who currently has capacity retains authority over their own treatment choices."
+    },
+    {
+      "id": "rn-20-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN believes a newly entered medication order could cause serious harm and the first clarification attempt does not resolve the concern. What should the RN do?",
+      "choices": ["Administer it because an order transfers accountability to the prescriber", "Hold the medication as appropriate, protect the client, communicate the specific concern, and use the chain of command until the safety issue is resolved", "Delete the order from the record", "Ask the client to decide whether the dose is technically correct"],
+      "correctIndex": 1,
+      "explanation": "The RN remains accountable for safe nursing practice. A material unresolved concern requires client protection, precise communication, and escalation through established channels rather than blind administration or unauthorized order changes."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "lessonId": 17,
+  "questions": [
+    {
+      "id": "rn-17-q01",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The prescription is for 0.5 g of a medication. How many milligrams should the RN use in the calculation?",
+      "choices": ["50 mg", "500 mg", "5,000 mg", "0.0005 mg"],
+      "correctIndex": 1,
+      "explanation": "One gram equals 1,000 mg. Multiplying 0.5 g by 1,000 mg/g gives 500 mg; writing the conversion with units allows grams to cancel and leaves the required milligram unit."
+    },
+    {
+      "id": "rn-17-q02",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A medication is ordered at 375 mg PO. The label reads 250 mg/5 mL. How many milliliters should the RN prepare?",
+      "choices": ["3 mL", "5 mL", "7.5 mL", "12.5 mL"],
+      "correctIndex": 2,
+      "explanation": "Use desired over have: 375 mg ÷ 250 mg × 5 mL = 7.5 mL. The mg units cancel, the answer remains in mL, and the final volume should be measured with an appropriate metric device."
+    },
+    {
+      "id": "rn-17-q03",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A medication is ordered at 0.75 mg. Each tablet contains 0.25 mg. How many tablets equal the ordered dose?",
+      "choices": ["0.3 tablet", "1 tablet", "2 tablets", "3 tablets"],
+      "correctIndex": 3,
+      "explanation": "Divide the desired 0.75 mg by 0.25 mg in each tablet: 0.75 ÷ 0.25 = 3 tablets. The RN still verifies the formulation, order, and client-specific safety data before administration."
+    },
+    {
+      "id": "rn-17-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client weighs 154 lb. Which weight should the RN use for a medication ordered in mg/kg?",
+      "choices": ["70 kg", "77 kg", "140 kg", "339 kg"],
+      "correctIndex": 0,
+      "explanation": "Convert pounds to kilograms by dividing by 2.2: 154 lb ÷ 2.2 = 70 kg. Weight-based calculations must use the unit specified by the order and an appropriate current measured weight."
+    },
+    {
+      "id": "rn-17-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A medication is ordered at 10 mg/kg/dose for an 18-kg client. What is the ordered amount for each dose?",
+      "choices": ["1.8 mg", "28 mg", "180 mg", "1,800 mg"],
+      "correctIndex": 2,
+      "explanation": "The order states mg/kg/dose, so multiply 10 mg by 18 kg to obtain 180 mg for each dose. No division by the daily frequency is needed because the order already specifies each dose."
+    },
+    {
+      "id": "rn-17-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A medication is ordered at 30 mg/kg/day in equal doses every 8 hours for a 15-kg client. How many milligrams are in each dose?",
+      "choices": ["50 mg", "150 mg", "450 mg", "1,350 mg"],
+      "correctIndex": 1,
+      "explanation": "The total daily amount is 30 mg × 15 kg = 450 mg/day. Every 8 hours gives three doses per day, so 450 mg ÷ 3 = 150 mg per dose."
+    },
+    {
+      "id": "rn-17-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A 20-kg client has an order for 400 mg per dose. The stated safe range is 10–15 mg/kg/dose. What should the RN do?",
+      "choices": ["Administer because 400 is within the numerical range 10–15", "Give half the ordered dose without contacting anyone", "Round the client’s weight up to make the order safe", "Hold preparation or administration as appropriate and clarify because the calculated safe range is 200–300 mg per dose"],
+      "correctIndex": 3,
+      "explanation": "For 20 kg, the stated safe interval is 200 mg to 300 mg per dose. The 400-mg order exceeds that interval, so the RN does not independently change it and instead follows the approved clarification process."
+    },
+    {
+      "id": "rn-17-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "An IV infusion of 1,000 mL is prescribed over 8 hours. What pump rate should the RN calculate?",
+      "choices": ["80 mL/hr", "125 mL/hr", "800 mL/hr", "8,000 mL/hr"],
+      "correctIndex": 1,
+      "explanation": "For a basic pump rate, divide total volume by time: 1,000 mL ÷ 8 hr = 125 mL/hr. The RN also verifies the solution, duration, line, pump settings, and ordered limits."
+    },
+    {
+      "id": "rn-17-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "An injectable medication is ordered at 3 mg. The vial concentration is 2 mg/mL. What volume contains the ordered dose?",
+      "choices": ["0.67 mL", "1 mL", "1.5 mL", "6 mL"],
+      "correctIndex": 2,
+      "explanation": "Divide the desired dose by the concentration: 3 mg ÷ 2 mg/mL = 1.5 mL. The mg units cancel, leaving mL; the RN then confirms that the device and route can accurately deliver that volume."
+    },
+    {
+      "id": "rn-17-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which medication dose is written using the safest decimal notation?",
+      "choices": [".5 mg", "0.5 mg", "5.0 mg", ".50 mg"],
+      "correctIndex": 1,
+      "explanation": "Use a leading zero for doses below one and omit trailing zeros: 0.5 mg is the safe form. A missing leading zero or an unnecessary trailing zero can contribute to a tenfold dosing error."
+    }
+  ]
+}

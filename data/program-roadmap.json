@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "totalLessons": 184,
+  "phases": [
+    {"id": "foundations", "title": "Foundations of Nursing Practice", "lessonRange": [1, 20]},
+    {"id": "health-assessment-skills", "title": "Health Assessment & Nursing Skills", "lessonRange": [21, 34]},
+    {"id": "pathophysiology", "title": "Pathophysiology", "lessonRange": [35, 50]},
+    {"id": "pharmacology", "title": "Pharmacology", "lessonRange": [51, 70]},
+    {"id": "med-surg-1", "title": "Adult Health / Med-Surg I", "lessonRange": [71, 94]},
+    {"id": "med-surg-2-critical-care", "title": "Adult Health / Med-Surg II & Critical Care", "lessonRange": [95, 118]},
+    {"id": "maternal-newborn", "title": "Maternal–Newborn / OB Nursing", "lessonRange": [119, 132]},
+    {"id": "pediatrics", "title": "Pediatric Nursing", "lessonRange": [133, 146]},
+    {"id": "mental-health", "title": "Mental Health Nursing", "lessonRange": [147, 158]},
+    {"id": "community-gerontology", "title": "Community Health & Gerontological Nursing", "lessonRange": [159, 168]},
+    {"id": "leadership-research-ethics-informatics", "title": "Leadership, Research, Ethics & Informatics", "lessonRange": [169, 176]},
+    {"id": "nclex-integration", "title": "NCLEX-RN Integration & NGN Cases", "lessonRange": [177, 184]}
+  ],
+  "tagging": ["traditionalCourse", "nclexClientNeeds", "clinicalJudgmentStep"]
+}

@@ -68,8 +68,14 @@ const fourthQuiz = JSON.parse(read(fourthLessonItem.quizFile));
 if (fourthLessonItem.courseId !== "health-assessment" || fourthLessonItem.course !== "Health Assessment") throw new Error("Lesson 4 must continue the traditional health assessment course");
 if (!fourthLesson.title.includes("Therapeutic Interview & Mental Status Assessment") || !fourthLesson.html.includes("Observe the mental status throughout") || !fourthLesson.html.includes("Ask directly about safety") || !fourthLesson.html.includes("qualified interpreter")) throw new Error("Lesson 4 interview and mental status content is incomplete");
 if (fourthQuiz.questions.length !== 10) throw new Error("Lesson 4 must include ten interview and mental status questions");
+const fifthLessonItem = curriculum.lessons[4];
+const fifthLesson = JSON.parse(read(fifthLessonItem.lessonFile));
+const fifthQuiz = JSON.parse(read(fifthLessonItem.quizFile));
+if (fifthLessonItem.courseId !== "health-assessment" || fifthLessonItem.course !== "Health Assessment") throw new Error("Lesson 5 must continue the traditional health assessment course");
+if (!fifthLesson.title.includes("Head-to-Toe Physical Assessment & Documentation") || !fifthLesson.html.includes("The core examination techniques") || !fifthLesson.html.includes("inspect, auscultate, percuss, then palpate") || !fifthLesson.html.includes("Turn data into a useful handoff")) throw new Error("Lesson 5 head-to-toe assessment content is incomplete");
+if (fifthQuiz.questions.length !== 10) throw new Error("Lesson 5 must include ten head-to-toe assessment questions");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 52) throw new Error("Expected 52 pilot questions after the Lesson 4 redesign");
+if (questionIds.size !== 59) throw new Error("Expected 59 pilot questions after the Lesson 5 redesign");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -88,4 +94,4 @@ const cloudConfig = read("js/cloud.js");
 if (!cloudConfig.includes('url: ""') || !cloudConfig.includes('publishableKey: ""')) throw new Error("Pilot cloud adapter must remain unconfigured");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "RN Quest" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: redesigned Lessons 1–4, 52 questions, isolated runtime, and version parity.");
+console.log("Static checks passed: redesigned Lessons 1–5, 59 questions, isolated runtime, and version parity.");

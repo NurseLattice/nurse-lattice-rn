@@ -3,28 +3,83 @@
   "questions": [
     {
       "id": "rn-05-q01",
-      "clinicalJudgmentStep": "Take action",
-      "question": "A client with possible dysphagia coughs and develops a wet voice after a sip of water. What should the RN do first?",
-      "choices": ["Offer a larger sip to confirm the finding", "Stop oral intake, keep the client upright, and assess according to the swallowing-safety plan", "Place the client flat to rest", "Add a straw and ask the client to drink quickly"],
-      "correctIndex": 1,
-      "explanation": "Coughing and a wet voice after swallowing are concerning for impaired airway protection. Stop intake and maintain upright positioning while following the assessment and escalation plan."
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which technique is used when the nurse listens to breath sounds with a stethoscope?",
+      "choices": ["Inspection", "Palpation", "Percussion", "Auscultation"],
+      "correctIndex": 3,
+      "explanation": "Auscultation is listening to body sounds with a stethoscope. Inspection uses observation, palpation uses touch, and percussion uses tapping to assess underlying tissue."
     },
     {
       "id": "rn-05-q02",
       "clinicalJudgmentStep": "Generate solutions",
-      "question": "Which intervention most directly reduces heel pressure for an immobile client?",
-      "choices": ["Massage reddened heel tissue", "Place a ring-shaped cushion under each heel", "Float the heels so they are off the mattress", "Keep the head of the bed at its highest position"],
-      "correctIndex": 2,
-      "explanation": "Offloading removes sustained pressure from the heels. Massaging injured tissue, ring devices, and unnecessary high head elevation can worsen tissue stress or shear."
+      "question": "Which sequence is correct for a routine abdominal assessment?",
+      "choices": ["Inspect, auscultate, percuss, palpate", "Inspect, palpate, percuss, auscultate", "Palpate, inspect, auscultate, percuss", "Auscultate, percuss, palpate, inspect"],
+      "correctIndex": 0,
+      "explanation": "The abdomen is assessed by inspection, auscultation, percussion, then palpation. Palpation and percussion can change bowel sounds and may increase discomfort, so auscultation occurs first."
     },
     {
       "id": "rn-05-q03",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client reports severe right-lower-quadrant abdominal pain. Which action is appropriate during the physical assessment?",
+      "choices": ["Palpate the painful area first to confirm the report", "Assess nonpainful areas first and palpate the painful area last if appropriate", "Avoid asking about the pain to prevent anxiety", "Give the client food before continuing the assessment"],
+      "correctIndex": 1,
+      "explanation": "Painful areas are assessed last to reduce discomfort and guarding while allowing comparison with less painful areas. The RN continues to assess urgency and follows the escalation plan for concerning findings."
+    },
+    {
+      "id": "rn-05-q04",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "During a respiratory assessment, which finding is the highest priority?",
+      "choices": ["A dry cough reported for two days", "New accessory-muscle use with short phrases during speech", "A request for a second pillow", "Mild nasal congestion with normal effort"],
+      "correctIndex": 1,
+      "explanation": "Accessory-muscle use and inability to speak in full phrases suggest increased work of breathing and possible deterioration. The RN should immediately assess airway, breathing, oxygen delivery, vital signs, and need for help."
+    },
+    {
+      "id": "rn-05-q05",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "While assessing an older adult, the RN notes new facial asymmetry, right arm drift, and slurred speech. What is the priority action?",
+      "choices": ["Complete the rest of the head-to-toe assessment", "Offer oral fluids and reassess in one hour", "Activate the facility's urgent neurologic-response process while protecting the client", "Document the findings at the end of the shift"],
+      "correctIndex": 2,
+      "explanation": "New focal neurologic deficits are time-sensitive cues. The RN protects the client, notes onset or last-known baseline when possible, performs focused assessment, and activates the required urgent response."
+    },
+    {
+      "id": "rn-05-q06",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which skin-assessment approach is best for detecting possible early pressure-related injury across different skin tones?",
+      "choices": ["Assess only for visible redness", "Compare with surrounding skin and assess color change, temperature, texture, tenderness, and nonblanching change", "Skip the skin assessment if the client denies pain", "Massage every bony prominence to improve circulation"],
+      "correctIndex": 1,
+      "explanation": "Redness alone may not reveal early change across all skin tones. Comparing areas and assessing multiple visual and tactile cues supports more equitable detection. Massage over vulnerable tissue can cause harm."
+    },
+    {
+      "id": "rn-05-q07",
+      "clinicalJudgmentStep": "Take action",
+      "question": "During assessment of an IV site, the RN notes swelling, coolness, and new discomfort above the insertion site. What should the RN do first?",
+      "choices": ["Ignore the finding if the infusion pump has no alarm", "Stop the infusion and assess the site and client according to the organization's IV complication process", "Increase the infusion rate to check patency", "Cover the site so the client cannot touch it"],
+      "correctIndex": 1,
+      "explanation": "Swelling, coolness, and discomfort may indicate an IV complication. The RN stops the infusion, assesses, protects the client, and follows organizational policy for the medication or solution involved and required notification."
+    },
+    {
+      "id": "rn-05-q08",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which action best supports accurate comparison of lung sounds?",
+      "choices": ["Listen only to the most symptomatic side", "Auscultate comparable areas side-to-side in a systematic pattern", "Place the stethoscope over clothing to preserve privacy", "Ask the client to hold the breath throughout the assessment"],
+      "correctIndex": 1,
+      "explanation": "A systematic side-to-side comparison helps identify asymmetry and localize unexpected sounds. Auscultation is generally performed on skin in a quiet environment, while the client breathes as directed."
+    },
+    {
+      "id": "rn-05-q09",
       "clinicalJudgmentStep": "Evaluate outcomes",
-      "question": "After administering an ordered opioid for acute pain, which follow-up is most important?",
-      "choices": ["Reassess pain, respiratory status, sedation, and function at the appropriate time", "Wait until the end of the shift to avoid disturbing the client", "Document only that the dose was given", "Ask the next shift to decide whether the medication worked"],
-      "correctIndex": 0,
-      "explanation": "Evaluation includes both therapeutic effect and adverse effects, especially respiratory depression and sedation. Administration without timely reassessment is incomplete care."
+      "question": "Which documentation entry best communicates an important assessment change?",
+      "choices": ["Client has abnormal lungs and needs watching", "Client seems weaker than usual", "At 1840, respirations 30/min with accessory-muscle use; oxygen device intact at ordered setting; rapid-response process activated", "Head-to-toe assessment completed, no further details needed"],
+      "correctIndex": 2,
+      "explanation": "The entry gives the time, specific objective cues, relevant treatment context, and nursing action. Vague labels do not let the next clinician understand severity, trend, or response."
+    },
+    {
+      "id": "rn-05-q10",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After the RN reports new unilateral lower-extremity coolness and a weaker pulse than the opposite side, what action is essential next?",
+      "choices": ["Assume the report completes the assessment", "Reassess the client and document the response to the escalation plan", "Wait until routine vital signs are due", "Massage the affected extremity vigorously"],
+      "correctIndex": 1,
+      "explanation": "Escalation does not end nursing accountability. The RN continues focused assessment, protects the client, follows the response plan, documents communications and actions, and evaluates the client's condition."
     }
   ]
 }
-

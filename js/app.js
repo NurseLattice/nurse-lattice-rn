@@ -1,6 +1,7 @@
 const RN_THEME_KEY = "rnQuestThemeV1";
 const JUDGMENT_STEPS = ["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"];
 let curriculum = null;
+let roadmap = null;
 let progress = RNProgress.loadProgress(localStorage);
 let currentLessonIndex = 0;
 let currentQuiz = null;
@@ -71,9 +72,31 @@ function moduleCard(lesson, index) {
   return button;
 }
 
+function phaseCard(phase, phaseIndex) {
+  const [firstLesson, lastLesson] = phase.lessonRange;
+  const lessons = curriculum.lessons.filter(lesson => lesson.id >= firstLesson && lesson.id <= lastLesson);
+  const section = document.createElement("section");
+  section.className = "course-phase" + (lessons.length ? " course-phase-active" : "");
+  const status = lessons.length ? lessons.length + " / " + (lastLesson - firstLesson + 1) + " lessons available" : "Coming soon";
+  section.innerHTML = '<div class="course-phase-header"><div><span class="eyebrow">PHASE ' + (phaseIndex + 1) + '</span><h2>' + phase.title + '</h2><p>Lessons ' + firstLesson + '–' + lastLesson + '</p></div><span class="phase-status">' + status + '</span></div>';
+  if (lessons.length) {
+    const list = document.createElement("div");
+    list.className = "phase-module-list";
+    list.append(...lessons.map(lesson => moduleCard(lesson, curriculum.lessons.indexOf(lesson))));
+    section.append(list);
+  } else {
+    const message = document.createElement("p");
+    message.className = "phase-message";
+    message.textContent = "This course is mapped and will unlock as its lessons are authored.";
+    section.append(message);
+  }
+  return section;
+}
+
 function renderCurriculum() {
+  if (!curriculum || !roadmap) return;
   [document.getElementById("curriculumList"), document.getElementById("learnList")].forEach(container => {
-    container.replaceChildren(...curriculum.lessons.map(moduleCard));
+    container.replaceChildren(...roadmap.phases.map(phaseCard));
   });
 }
 
@@ -87,7 +110,7 @@ function updateDashboard() {
   document.getElementById("streak").textContent = progress.streak;
   document.getElementById("studyDays").textContent = progress.studyDates.length;
   document.getElementById("freeze").textContent = progress.freeze;
-  document.getElementById("completionSummary").textContent = progress.completedLessons.length + " / " + curriculum.lessons.length + " complete";
+  document.getElementById("completionSummary").textContent = progress.completedLessons.length + " / " + curriculum.lessons.length + " available complete";
   const nextIndex = Math.max(0, Math.min(curriculum.lessons.length - 1, progress.lastLessonId - 1));
   const continueButton = document.getElementById("continueButton");
   continueButton.textContent = progress.completedLessons.length ? "Continue Lesson " + curriculum.lessons[nextIndex].id : "Start Lesson 1";
@@ -250,7 +273,7 @@ async function initializeApp() {
   initializeTheme();
   bindEvents();
   try {
-    curriculum = await fetchJson("data/curriculum.json");
+    [curriculum, roadmap] = await Promise.all([fetchJson("data/curriculum.json"), fetchJson("data/program-roadmap.json")]);
     updateDashboard();
     if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(error => console.warn("Offline support unavailable", error));
   } catch (error) {

@@ -2,7 +2,7 @@
 
 A mobile-first RN nursing learning app modeled on the FNP Quest product loop: short lessons, quizzes with rationales, mixed practice, XP, streaks, total study days, progress, theme switching, and offline-ready static delivery.
 
-The long-term curriculum is a 184-lesson traditional nursing-school pathway: foundations, assessment and skills, pathophysiology, pharmacology, Med-Surg, OB, pediatrics, mental health, community health, leadership, and NCLEX-RN integration. Every lesson and question is tagged with its traditional course, NCLEX Client Needs category, and clinical-judgment step. The current local prototype contains ten authored lessons and 72 original questions. It is an educational prototype, not an official NCSBN product or a substitute for faculty, clinical supervision, local policy, or current clinical references.
+The long-term curriculum is a 184-lesson traditional nursing-school pathway: foundations, assessment and skills, pathophysiology, pharmacology, Med-Surg, OB, pediatrics, mental health, community health, leadership, and NCLEX-RN integration. Every lesson and question is tagged with its traditional course, NCLEX Client Needs category, and clinical-judgment step. The current local prototype contains eleven authored lessons and 82 original questions. It is an educational prototype, not an official NCSBN product or a substitute for faculty, clinical supervision, local policy, or current clinical references.
 
 ## Run locally
 

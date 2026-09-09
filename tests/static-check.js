@@ -26,6 +26,7 @@ if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories
 const questionIds = new Set();
 for (const [index, lessonItem] of curriculum.lessons.entries()) {
   if (lessonItem.id !== index + 1) throw new Error("Lesson IDs must be contiguous");
+  if (lessonItem.courseId !== "foundations-of-nursing" || lessonItem.course !== "Foundations of Nursing Practice") throw new Error("All current lessons must remain under Foundations of Nursing Practice");
   if (index < expectedCategories.length && lessonItem.categoryId !== expectedCategories[index]) throw new Error("Lesson category order does not match blueprint");
   if (!expectedCategories.includes(lessonItem.categoryId)) throw new Error("Lesson category must map to a current Client Needs area");
   for (const property of ["category", "weight", "cardTitle", "summary", "lessonFile", "quizFile"]) {
@@ -60,13 +61,13 @@ if (secondQuiz.questions.length !== 10) throw new Error("Lesson 2 must include t
 const thirdLessonItem = curriculum.lessons[2];
 const thirdLesson = JSON.parse(read(thirdLessonItem.lessonFile));
 const thirdQuiz = JSON.parse(read(thirdLessonItem.quizFile));
-if (thirdLessonItem.courseId !== "health-assessment" || thirdLessonItem.course !== "Health Assessment") throw new Error("Lesson 3 must begin the traditional health assessment course");
+if (thirdLessonItem.courseId !== "foundations-of-nursing" || thirdLessonItem.course !== "Foundations of Nursing Practice") throw new Error("Lesson 3 must remain in Foundations of Nursing Practice");
 if (!thirdLesson.title.includes("General Survey, Vital Signs & Pain") || !thirdLesson.html.includes("Subjective and objective data") || !thirdLesson.html.includes("PQRSTU") || !thirdLesson.html.includes("Pulse oximetry")) throw new Error("Lesson 3 health assessment content is incomplete");
 if (thirdQuiz.questions.length !== 10) throw new Error("Lesson 3 must include ten health assessment questions");
 const fourthLessonItem = curriculum.lessons[3];
 const fourthLesson = JSON.parse(read(fourthLessonItem.lessonFile));
 const fourthQuiz = JSON.parse(read(fourthLessonItem.quizFile));
-if (fourthLessonItem.courseId !== "health-assessment" || fourthLessonItem.course !== "Health Assessment") throw new Error("Lesson 4 must continue the traditional health assessment course");
+if (fourthLessonItem.courseId !== "foundations-of-nursing" || fourthLessonItem.course !== "Foundations of Nursing Practice") throw new Error("Lesson 4 must remain in Foundations of Nursing Practice");
 if (!fourthLesson.title.includes("Therapeutic Interview & Mental Status Assessment") || !fourthLesson.html.includes("Observe the mental status throughout") || !fourthLesson.html.includes("Ask directly about safety") || !fourthLesson.html.includes("qualified interpreter")) throw new Error("Lesson 4 interview and mental status content is incomplete");
 if (fourthQuiz.questions.length !== 10) throw new Error("Lesson 4 must include ten interview and mental status questions");
 const ninthLessonItem = curriculum.lessons[8];
@@ -82,6 +83,7 @@ for (const question of ninthQuiz.questions) {
 const roadmap = JSON.parse(read("data/program-roadmap.json"));
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
+if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
 if (questionIds.size !== 62) throw new Error("Expected 62 pilot questions after adding Lesson 9");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json"]) {

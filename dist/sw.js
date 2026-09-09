@@ -1,4 +1,4 @@
-const CACHE_NAME = "rn-quest-v0.7.0";
+const CACHE_NAME = "rn-quest-v0.8.0";
 const APP_SHELL = [
   "./",
   "index.html",
@@ -9,6 +9,7 @@ const APP_SHELL = [
   "js/cloud.js",
   "js/app.js",
   "data/curriculum.json",
+  "data/program-roadmap.json",
   "manifest.webmanifest"
 ];
 

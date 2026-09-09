@@ -86,6 +86,17 @@ h3 { font-size: 1.05rem; line-height: 1.3; }
 .section-heading .eyebrow { margin-bottom: 5px; }
 .summary-chip { flex: 0 0 auto; padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: .78rem; font-weight: 800; }
 .curriculum-list { display: grid; gap: 10px; }
+.course-roadmap { display: grid; gap: 14px; }
+.course-phase { padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: 0 7px 20px rgba(15,61,82,.055); }
+.course-phase-active { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+.course-phase-header { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+.course-phase-header .eyebrow { margin-bottom: 5px; }
+.course-phase-header h2 { margin-bottom: 4px; font-size: clamp(1.08rem, 3.5vw, 1.42rem); }
+.course-phase-header p, .phase-message { margin-bottom: 0; color: var(--muted); font-size: .85rem; }
+.phase-status { flex: 0 0 auto; margin-top: 3px; padding: 6px 9px; border-radius: 999px; background: var(--surface-strong); color: var(--muted); font-size: .72rem; font-weight: 850; text-align: center; }
+.course-phase-active .phase-status { background: var(--accent-soft); color: var(--accent); }
+.phase-module-list { display: grid; gap: 10px; margin-top: 15px; }
+.phase-message { margin-top: 15px; }
 .module-card { width: 100%; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 13px; padding: 15px; border: 1px solid var(--line); border-radius: 17px; background: var(--surface); color: var(--text); text-align: left; box-shadow: 0 7px 20px rgba(15,61,82,.055); }
 .module-card:hover { border-color: var(--primary); transform: translateY(-1px); }
 .module-number { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 13px; background: var(--accent-soft); color: var(--accent); font-weight: 900; }
@@ -154,6 +165,7 @@ h3 { font-size: 1.05rem; line-height: 1.3; }
   .hero-grid { grid-template-columns: 1.6fr .9fr; align-items: stretch; }
   .status-card { display: flex; flex-direction: column; justify-content: center; }
   .curriculum-list { grid-template-columns: repeat(2, 1fr); }
+  .phase-module-list { grid-template-columns: repeat(2, 1fr); }
   .progress-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
@@ -166,10 +178,11 @@ h3 { font-size: 1.05rem; line-height: 1.3; }
   .practice-card button { width: 100%; }
   .module-card { grid-template-columns: auto 1fr; }
   .module-weight { grid-column: 2; }
+  .course-phase-header { align-items: start; }
+  .phase-status { max-width: 118px; }
   .site-footer { flex-direction: column; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
 }
-

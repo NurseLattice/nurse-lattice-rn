@@ -1,0 +1,105 @@
+{
+  "lessonId": 9,
+  "questions": [
+    {
+      "id": "rn-09-q01",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which client has the greatest risk for impaired skin integrity?",
+      "choices": ["A client who walks independently and repositions without help", "A client who is incontinent, has decreased sensation, and cannot reposition independently", "A client with an intact incision and normal mobility", "A client who requests a blanket after a shower"],
+      "correctIndex": 1,
+      "explanation": "Moisture, impaired sensation, and immobility combine to increase skin-injury risk. The RN assesses the skin, supports repositioning, manages moisture, and individualizes prevention measures."
+    },
+    {
+      "id": "rn-09-q02",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which approach is best when assessing possible early pressure-related skin injury across different skin tones?",
+      "choices": ["Look only for redness over bony prominences", "Compare with nearby skin and assess color change, temperature, tenderness, texture, and nonblanching change", "Skip the assessment if the client denies pain", "Massage the area until the color normalizes"],
+      "correctIndex": 1,
+      "explanation": "Redness alone may not reveal early injury across all skin tones. A comparison and multiple visual and tactile cues support more accurate assessment. Massage can worsen vulnerable tissue."
+    },
+    {
+      "id": "rn-09-q03",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which description best identifies purulent wound drainage?",
+      "choices": ["Clear, thin, watery drainage", "Fresh bright-red bleeding", "Thin pink drainage with a small amount of blood", "Thick, opaque tan, yellow, green, or brown drainage"],
+      "correctIndex": 3,
+      "explanation": "Purulent drainage is thick and opaque and may be tan, yellow, green, or brown. New purulent drainage is not expected and should be assessed and reported promptly."
+    },
+    {
+      "id": "rn-09-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which wound finding most strongly suggests a possible local infection that needs follow-up?",
+      "choices": ["New warmth, increasing tenderness, odor, and purulent drainage", "Small amount of clear drainage from a new wound", "An intact periwound area without pain", "A stable scar that is lighter than surrounding skin"],
+      "correctIndex": 0,
+      "explanation": "New warmth, tenderness, odor, and purulent drainage are concerning local infection cues. The RN assesses the client and wound together, compares with baseline, and follows the escalation process."
+    },
+    {
+      "id": "rn-09-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Take action",
+      "question": "During a dressing change, the RN sees abdominal organs protruding through a dehisced incision. What is the priority action?",
+      "choices": ["Gently push the organs back into the abdomen", "Cover the exposed tissue with sterile gauze moistened with sterile normal saline and call for immediate assistance", "Remove all remaining dressings and ask the client to stand", "Leave the room to obtain a routine incident form"],
+      "correctIndex": 1,
+      "explanation": "Evisceration is an emergency. The RN protects exposed tissue with sterile saline-moistened gauze, maintains client safety, and activates urgent assistance; the tissue should not be forced back into the body."
+    },
+    {
+      "id": "rn-09-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Take action",
+      "question": "After removing a soiled wound dressing, what infection-prevention action is required before touching clean supplies?",
+      "choices": ["Keep the same gloves if they look intact", "Perform hand hygiene and apply clean gloves as the procedure requires", "Touch the clean supplies with the outside of the old dressing", "Skip gloves because the wound is covered"],
+      "correctIndex": 1,
+      "explanation": "Moving from a contaminated task to a clean task requires safe glove removal, hand hygiene, and appropriate clean or sterile gloves. Gloves do not replace hand hygiene."
+    },
+    {
+      "id": "rn-09-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which documentation entry is most complete and objective for a wound assessment?",
+      "choices": ["Sacral wound looks better today", "Pressure sore cleaned and covered", "2 cm × 1 cm open area at sacrum with small serosanguineous drainage; periwound skin intact; client reports pain 3/10 during care", "Wound is probably infected because it smells bad"],
+      "correctIndex": 2,
+      "explanation": "The entry includes location, dimensions, drainage type, periwound condition, and the client's pain report without speculation. Objective descriptions allow clinicians to compare healing over time."
+    },
+    {
+      "id": "rn-09-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client with a draining wound becomes newly confused, tachypneic, and hypotensive. What is the priority interpretation?",
+      "choices": ["The client is anxious about the dressing change", "The cues may reflect systemic deterioration and require immediate assessment and escalation", "The wound is healing because drainage is present", "The client should rest before the nurse obtains vital signs"],
+      "correctIndex": 1,
+      "explanation": "New confusion, tachypnea, and hypotension in a client with a possible infection are high-risk systemic cues. The RN promptly assesses airway, breathing, circulation, and mental status while activating the required response."
+    },
+    {
+      "id": "rn-09-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best supports that a skin-protection plan is working for an immobile client?",
+      "choices": ["New nonblanching color change over the heel", "Skin remains intact with no new pressure-related changes and the client tolerates repositioning", "Increasing moisture in skin folds", "Pain increases whenever the client is turned"],
+      "correctIndex": 1,
+      "explanation": "Intact skin, absence of new pressure-related change, and tolerance of the individualized plan support effectiveness. The RN continues surveillance because risk can change with mobility, perfusion, moisture, and condition."
+    },
+    {
+      "id": "rn-09-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After applying a prescribed wound dressing, which action completes the nursing evaluation step?",
+      "choices": ["Assume the dressing will work until the next scheduled change", "Reassess wound pain, drainage, surrounding skin, client tolerance, and the expected healing trend", "Discard the wound documentation because treatment is complete", "Ask the client not to mention discomfort until the next shift"],
+      "correctIndex": 1,
+      "explanation": "Evaluation considers the client's response and the wound trend, including pain, drainage, surrounding skin, and tolerance. Findings guide whether the current plan should continue, be modified, or be escalated."
+    }
+  ]
+}

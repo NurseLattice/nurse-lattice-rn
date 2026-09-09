@@ -7,7 +7,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Which documentation entry is most objective and useful?",
-      "choices": ["Client is doing poorly and seems noncompliant", "Client is probably developing an infection", "1415: respiratory rate 28, speaking in short phrases, temperature 38.5°C; provider notified", "Client was difficult all afternoon"],
+      "choices": [
+        "Client is doing poorly and seems noncompliant",
+        "Client is probably developing an infection",
+        "1415: respiratory rate 28, speaking in short phrases, temperature 38.5°C; provider notified",
+        "Client was difficult all afternoon"
+      ],
       "correctIndex": 2,
       "explanation": "The entry gives time-stamped, observable findings and communication without judgment or unsupported diagnosis. Objective documentation enables other clinicians to identify the change, see what action occurred, and continue safe follow-up."
     },
@@ -17,7 +22,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Which statement belongs in the Background portion of an SBAR call?",
-      "choices": ["I am calling because the client is newly short of breath", "The client has a history of heart failure, received IV fluids today, and was speaking comfortably one hour ago", "I think the client may be in trouble", "Please come to the bedside now"],
+      "choices": [
+        "I am calling because the client is newly short of breath",
+        "The client has a history of heart failure, received IV fluids today, and was speaking comfortably one hour ago",
+        "I think the client may be in trouble",
+        "Please come to the bedside now"
+      ],
       "correctIndex": 1,
       "explanation": "Background supplies relevant history, recent events, baseline, and treatments that explain the current concern. The immediate problem belongs in Situation, focused findings are Assessment, and the needed action belongs in the Recommendation or Request."
     },
@@ -27,7 +37,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Take action",
       "question": "A provider gives a new verbal instruction that the RN cannot clearly hear. What should the RN do?",
-      "choices": ["Guess the most likely instruction and implement it", "Use the required read-back or check-back process to clarify and confirm the instruction", "Wait until the next shift to see whether it was charted", "Ask another client what they heard"],
+      "choices": [
+        "Guess the most likely instruction and implement it",
+        "Use the required read-back or check-back process to clarify and confirm the instruction",
+        "Wait until the next shift to see whether it was charted",
+        "Ask another client what they heard"
+      ],
       "correctIndex": 1,
       "explanation": "Unclear instructions must be clarified using the organization’s read-back or check-back process. Repeating the information back for confirmation reduces communication error and ensures the RN understands the intended action before implementation."
     },
@@ -37,7 +52,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Analyze cues",
       "question": "Which handover detail has the highest priority to communicate to the oncoming nurse?",
-      "choices": ["The client's favorite television program", "A new drop in blood pressure, pending provider response, and the timing of the next reassessment", "The brand of lotion on the bedside table", "The name of a visitor who left earlier"],
+      "choices": [
+        "A stable chronic symptom already described in the care plan",
+        "A new drop in blood pressure, pending provider response, and the timing of the next reassessment",
+        "A routine hygiene task planned for later in the shift",
+        "A completed test with normal results and no pending action"
+      ],
       "correctIndex": 1,
       "explanation": "A new blood-pressure change, pending response, and follow-up timing directly affect safety and continuity. Handover prioritizes changes, risks, treatments, and tasks that the next clinician must recognize and act on."
     },
@@ -47,7 +67,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Take action",
       "question": "The RN realizes a charted entry contains an error. What is the appropriate action?",
-      "choices": ["Delete the entry so no one can see it", "Use the approved correction process and preserve record integrity according to policy", "Ask a coworker to change the entry under their name", "Ignore the error because the next note will be accurate"],
+      "choices": [
+        "Delete the entry so no one can see it",
+        "Use the approved correction process and preserve record integrity according to policy",
+        "Ask a coworker to change the entry under their name",
+        "Ignore the error because the next note will be accurate"
+      ],
       "correctIndex": 1,
       "explanation": "Health records must remain accurate and traceable. The RN uses the approved correction process rather than erasing, concealing, or asking another person to alter the record, then documents relevant current information as needed."
     },
@@ -57,7 +82,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Which action best protects client privacy when documenting electronically?",
-      "choices": ["Open any record on the unit to learn from it", "Access only records needed for care, secure the screen, and use approved accounts and devices", "Share a screenshot in a group chat without names", "Leave a workstation unlocked for the next staff member"],
+      "choices": [
+        "Open any record on the unit to learn from it",
+        "Access only records needed for care, secure the screen, and use approved accounts and devices",
+        "Share a screenshot in a group chat without names",
+        "Leave a workstation unlocked for the next staff member"
+      ],
       "correctIndex": 1,
       "explanation": "Electronic records are accessed only for a legitimate care purpose through approved, secure systems. Protecting screens, accounts, and client information supports privacy and record integrity; removing a name from an informal screenshot does not make sharing appropriate."
     },
@@ -67,7 +97,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Prioritize hypotheses",
       "question": "After an RN reports new confusion and hypotension, the provider says, “Just keep watching.” What is the priority concern?",
-      "choices": ["The RN should assume the vague response is a complete plan", "The response may be insufficiently clear for a potentially deteriorating client and requires clarification and escalation", "The RN should document only that the provider was called", "The RN should wait for routine morning rounds before reassessing"],
+      "choices": [
+        "The RN should assume the vague response is a complete plan",
+        "The response may be insufficiently clear for a potentially deteriorating client and requires clarification and escalation",
+        "The RN should document only that the provider was called",
+        "The RN should wait for routine morning rounds before reassessing"
+      ],
       "correctIndex": 1,
       "explanation": "A potentially unstable client needs a clear, actionable plan. The RN clarifies the request or recommendation, communicates objective concerns, follows escalation pathways when needed, and continues reassessment rather than treating an ambiguous response as adequate."
     },
@@ -77,7 +112,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "Which action shows that an urgent communication loop has been closed?",
-      "choices": ["The RN left a message but did not check for a response", "The RN gave SBAR, confirmed the response, completed required actions, reassessed the client, and documented the outcome", "The RN added a vague note at the end of the shift", "The RN assumed the next nurse would see the monitor alarm"],
+      "choices": [
+        "The RN left a message but did not check for a response",
+        "The RN gave SBAR, confirmed the response, completed required actions, reassessed the client, and documented the outcome",
+        "The RN added a vague note at the end of the shift",
+        "The RN assumed the next nurse would see the monitor alarm"
+      ],
       "correctIndex": 1,
       "explanation": "Communication is complete only when the message is received and understood, the needed action is carried out, and the client’s response is evaluated and documented. A message alone does not ensure continuity or demonstrate that risk was addressed."
     },
@@ -87,7 +127,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Which client statement should be documented as a direct quote because it describes a new concern?",
-      "choices": ["The client is anxious", "The client states, “This is the worst chest pressure I have ever felt.”", "The client is exaggerating symptoms", "The client seems worried about tests"],
+      "choices": [
+        "The client is anxious",
+        "The client states, “This is the worst chest pressure I have ever felt.”",
+        "The client is exaggerating symptoms",
+        "The client seems worried about tests"
+      ],
       "correctIndex": 1,
       "explanation": "A direct quote preserves the client’s own description of a potentially urgent symptom without interpretation. The RN also performs immediate focused assessment and follows the required escalation process; documentation never replaces urgent action."
     },
@@ -97,7 +142,12 @@
       "nclexClientNeeds": "Management of Care",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "Which handover practice best supports safe continuity of care?",
-      "choices": ["Recite every historic chart entry without prioritizing", "Share current status, recent changes, risks, therapies and equipment, pending tasks, goals, and required follow-up", "Avoid questions so the report ends quickly", "Discuss client details in a public elevator after leaving the unit"],
+      "choices": [
+        "Recite every historic chart entry without prioritizing",
+        "Share current status, recent changes, risks, therapies and equipment, pending tasks, goals, and required follow-up",
+        "Avoid questions so the report ends quickly",
+        "Discuss client details in a public elevator after leaving the unit"
+      ],
       "correctIndex": 1,
       "explanation": "Safe handover is concise but complete about information the next clinician needs to continue care, including changes, risks, equipment, pending tasks, and follow-up. Questions and clarification are part of reliable communication and privacy remains essential."
     }

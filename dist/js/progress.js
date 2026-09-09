@@ -9,32 +9,50 @@ function createDefaultProgress() {
     lastStudyDate: null,
     completedLessons: [],
     lastLessonId: 1,
-    answers: { total: 0, correct: 0 }
+    answers: { total: 0, correct: 0 },
+    missedQuestionIds: [],
+    lessonScores: {}
   };
+}
+
+function nonnegativeInteger(value) {
+  return Number.isFinite(Number(value)) ? Math.max(0, Math.floor(Number(value))) : 0;
 }
 
 function normalizeProgress(value) {
   const source = value && typeof value === "object" ? value : {};
   const normalized = Object.assign(createDefaultProgress(), source);
-  normalized.xp = Math.max(0, Number(normalized.xp) || 0);
-  normalized.streak = Math.max(0, Number(normalized.streak) || 0);
-  normalized.freeze = Math.max(0, Number(normalized.freeze) || 0);
+  normalized.xp = nonnegativeInteger(normalized.xp);
+  normalized.streak = nonnegativeInteger(normalized.streak);
+  normalized.freeze = nonnegativeInteger(normalized.freeze);
   normalized.studyDates = Array.isArray(normalized.studyDates)
     ? [...new Set(normalized.studyDates.filter(date => /^\d{4}-\d{2}-\d{2}$/.test(date)))].sort()
     : [];
   normalized.completedLessons = Array.isArray(normalized.completedLessons)
-    ? [...new Set(normalized.completedLessons.map(Number).filter(Number.isInteger))].sort((a, b) => a - b)
+    ? [...new Set(normalized.completedLessons.map(Number).filter(id => Number.isInteger(id) && id > 0))].sort((a, b) => a - b)
     : [];
-  normalized.lastLessonId = Math.max(1, Number(normalized.lastLessonId) || 1);
+  normalized.lastLessonId = Math.max(1, nonnegativeInteger(normalized.lastLessonId));
   const answers = normalized.answers && typeof normalized.answers === "object" ? normalized.answers : {};
   normalized.answers = {
-    total: Math.max(0, Number(answers.total) || 0),
-    correct: Math.max(0, Number(answers.correct) || 0)
+    total: nonnegativeInteger(answers.total),
+    correct: nonnegativeInteger(answers.correct)
   };
   normalized.answers.correct = Math.min(normalized.answers.correct, normalized.answers.total);
   normalized.lastStudyDate = /^\d{4}-\d{2}-\d{2}$/.test(normalized.lastStudyDate || "")
     ? normalized.lastStudyDate
     : (normalized.studyDates.at(-1) || null);
+  normalized.missedQuestionIds = Array.isArray(source.missedQuestionIds)
+    ? [...new Set(source.missedQuestionIds.filter(id => typeof id === "string" && /^rn-\d+-q\d+$/.test(id)))] : [];
+  normalized.lessonScores = {};
+  for (const [id, score] of Object.entries(source.lessonScores || {})) {
+    if (!/^\d+$/.test(id) || !score || typeof score !== "object") continue;
+    const total = nonnegativeInteger(score.total);
+    if (total) normalized.lessonScores[id] = {
+      total, last: Math.min(total, nonnegativeInteger(score.last)),
+      bestPercent: Math.min(100, nonnegativeInteger(score.bestPercent)),
+      attempts: nonnegativeInteger(score.attempts)
+    };
+  }
   return normalized;
 }
 
@@ -71,9 +89,20 @@ function markStudyDay(progress, dateKey) {
   return state;
 }
 
-function recordAnswer(progress, correct) {
+function currentStreak(progress, today) {
+  const state = normalizeProgress(progress);
+  if (!state.lastStudyDate) return 0;
+  const gap = dayNumber(today) - dayNumber(state.lastStudyDate);
+  return gap <= 1 || (gap === 2 && state.freeze > 0) ? state.streak : 0;
+}
+
+function recordAnswer(progress, correct, questionId) {
   const state = normalizeProgress(progress);
   state.answers.total += 1;
+  if (typeof questionId === "string" && /^rn-\d+-q\d+$/.test(questionId)) {
+    state.missedQuestionIds = state.missedQuestionIds.filter(id => id !== questionId);
+    if (!correct) state.missedQuestionIds.push(questionId);
+  }
   if (correct) {
     state.answers.correct += 1;
     state.xp += 10;
@@ -90,6 +119,23 @@ function completeLesson(progress, lessonId) {
   }
   state.lastLessonId = lessonId;
   return state;
+}
+
+function recordLessonScore(progress, lessonId, score, total) {
+  const state = normalizeProgress(progress);
+  const previous = state.lessonScores[lessonId];
+  state.lessonScores[lessonId] = { last: score, total,
+    bestPercent: Math.max(previous?.bestPercent || 0, Math.round(score / total * 100)),
+    attempts: (previous?.attempts || 0) + 1 };
+  return normalizeProgress(state);
+}
+
+function nextLessonIndex(progress, lessons) {
+  const state = normalizeProgress(progress);
+  const last = lessons.findIndex(lesson => lesson.id === state.lastLessonId);
+  if (last >= 0 && !state.completedLessons.includes(lessons[last].id)) return last;
+  const next = lessons.findIndex(lesson => !state.completedLessons.includes(lesson.id));
+  return next >= 0 ? next : Math.max(0, last);
 }
 
 function loadProgress(storage) {
@@ -112,7 +158,10 @@ const RNProgress = {
   createDefaultProgress,
   normalizeProgress,
   markStudyDay,
+  currentStreak,
   recordAnswer,
+  recordLessonScore,
+  nextLessonIndex,
   completeLesson,
   loadProgress,
   saveProgress

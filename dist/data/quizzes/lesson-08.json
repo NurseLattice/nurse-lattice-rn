@@ -5,26 +5,151 @@
       "id": "rn-08-q01",
       "clinicalJudgmentStep": "Prioritize hypotheses",
       "question": "A client develops new inspiratory stridor shortly after neck surgery. Which problem is the priority?",
-      "choices": ["Disturbed sleep", "Threatened airway", "Impaired social interaction", "Knowledge deficit"],
+      "choices": [
+        "Disturbed sleep",
+        "Threatened airway",
+        "Impaired social interaction",
+        "Knowledge deficit"
+      ],
       "correctIndex": 1,
-      "explanation": "Stridor signals upper-airway narrowing and possible obstruction. Activate emergency airway support immediately while assessing and preparing ordered rescue interventions."
+      "explanation": "Stridor signals upper-airway narrowing and possible obstruction. Activate emergency airway support immediately while assessing and preparing ordered rescue interventions.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation"
     },
     {
       "id": "rn-08-q02",
       "clinicalJudgmentStep": "Take action",
       "question": "A client receiving blood develops chills, back pain, and shortness of breath. What is the RN's first action?",
-      "choices": ["Slow the transfusion and reassess in 30 minutes", "Stop the transfusion", "Discard the blood bag immediately", "Give the next unit to maintain the schedule"],
+      "choices": [
+        "Slow the transfusion and reassess in 30 minutes",
+        "Stop the transfusion",
+        "Discard the blood bag immediately",
+        "Give the next unit to maintain the schedule"
+      ],
       "correctIndex": 1,
-      "explanation": "The findings suggest an acute transfusion reaction. Stop the transfusion first to prevent further exposure, then maintain appropriate IV access, assess, notify, and follow the transfusion-reaction protocol."
+      "explanation": "The findings suggest an acute transfusion reaction. Stop the transfusion first to prevent further exposure, then maintain appropriate IV access, assess, notify, and follow the transfusion-reaction protocol.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies"
     },
     {
       "id": "rn-08-q03",
       "clinicalJudgmentStep": "Take action",
       "question": "A client with suspected infection becomes confused, hypotensive, and tachypneic. What is the RN's priority response?",
-      "choices": ["Recheck the client after the next routine vital-sign round", "Activate rapid evaluation and the sepsis or deterioration pathway while supporting airway, breathing, and circulation", "Offer oral fluids and leave the client to rest", "Focus first on completing admission paperwork"],
+      "choices": [
+        "Recheck the client after the next routine vital-sign round",
+        "Activate rapid evaluation and the sepsis or deterioration pathway while supporting airway, breathing, and circulation",
+        "Offer oral fluids and leave the client to rest",
+        "Focus first on completing admission paperwork"
+      ],
       "correctIndex": 1,
-      "explanation": "Acute confusion, hypotension, and tachypnea suggest organ hypoperfusion and possible sepsis. Immediate escalation and stabilization take priority over routine tasks or delayed reassessment."
+      "explanation": "Acute confusion, hypotension, and tachypnea suggest organ hypoperfusion and possible sepsis. Immediate escalation and stabilization take priority over routine tasks or delayed reassessment.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation"
+    },
+    {
+      "id": "rn-08-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "An adult is unresponsive, only gasping, and has no definite pulse after a check of no more than 10 seconds. Help has been activated. What comes next?",
+      "choices": [
+        "Begin CPR with chest compressions and use the AED as soon as it is available",
+        "Wait for the provider to confirm cardiac arrest",
+        "Treat gasping as adequate breathing and observe",
+        "Continue checking the pulse for a full minute"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gasping is not normal breathing. With no definite pulse, begin CPR and apply the AED promptly under the BLS algorithm; prolonged pulse checks and waiting delay resuscitation."
+    },
+    {
+      "id": "rn-08-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client suddenly develops facial droop and one-sided arm weakness. What should the RN prioritize?",
+      "choices": [
+        "Activate the stroke pathway, establish last-known-well time, and check glucose per protocol",
+        "Offer a meal to see whether the client can swallow",
+        "Wait an hour to determine whether symptoms persist",
+        "Give oral medication before assessing swallowing safety"
+      ],
+      "correctIndex": 0,
+      "explanation": "New focal deficits require urgent stroke evaluation. Glucose and last-known-well time inform care; neither observation alone nor unassessed oral intake is an appropriate first response."
+    },
+    {
+      "id": "rn-08-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "After stopping blood for a suspected serious transfusion reaction, which line-management plan is appropriate?",
+      "choices": [
+        "Maintain IV access per policy using appropriate new tubing/access without flushing residual blood into the client",
+        "Flush the existing blood tubing into the client with saline",
+        "Restart the same blood slowly once the client feels less anxious",
+        "Discard the blood bag and tubing immediately so the room is clear"
+      ],
+      "correctIndex": 0,
+      "explanation": "Avoid delivering residual implicated blood; preserve the bag and set for investigation and maintain access per protocol. Flushing or independently restarting increases exposure; discarding evidence impairs investigation."
+    },
+    {
+      "id": "rn-08-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client on supplemental oxygen has a near-target saturation but is newly somnolent with slow, shallow breathing. Which interpretation is safest?",
+      "choices": [
+        "Ventilation may be inadequate despite the saturation reading; urgent respiratory assessment is needed",
+        "Near-target saturation excludes respiratory compromise",
+        "Somnolence is expected whenever oxygen is used",
+        "Respiratory rate is unnecessary when saturation is monitored"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pulse oximetry estimates oxygen saturation, not carbon dioxide clearance. Supplemental oxygen can mask desaturation while ventilation worsens, so breathing and mental status require urgent attention."
+    },
+    {
+      "id": "rn-08-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A deteriorating client needs equipment from outside the room. Another staff member is present. What should the RN do?",
+      "choices": [
+        "Assign the colleague to bring equipment and activate help while staying to assess and support the client",
+        "Both staff should leave to retrieve equipment faster",
+        "Finish documentation before requesting equipment",
+        "Leave the client alone with instructions to call if worse"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use available teamwork to maintain observation and immediate support while help and equipment are mobilized. Leaving an unstable client unattended or postponing help increases risk."
+    },
+    {
+      "id": "rn-08-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After initial rescue care, blood pressure improves but the client remains confused and tachypneic. What should the RN conclude?",
+      "choices": [
+        "Reassessment and escalation are still needed because recovery is incomplete",
+        "The improved pressure proves the episode has resolved",
+        "Only the next scheduled vital-sign check is required",
+        "Confusion no longer matters after pressure improves"
+      ],
+      "correctIndex": 0,
+      "explanation": "One improved value does not erase ongoing neurologic or respiratory signs. Integrate the response across systems and continue the rescue plan rather than ending surveillance prematurely."
+    },
+    {
+      "id": "rn-08-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which communication best demonstrates closed-loop teamwork during a rescue?",
+      "choices": [
+        "Name a colleague and task, receive a read-back, and confirm completion",
+        "Call out several tasks without assigning anyone",
+        "Assume the nearest person heard and acted",
+        "Wait until the event ends to identify who performed tasks"
+      ],
+      "correctIndex": 0,
+      "explanation": "A named assignment, acknowledgement, and completion report make task ownership clear. Unassigned requests and assumptions increase the risk that essential steps are missed."
     }
   ]
 }
-

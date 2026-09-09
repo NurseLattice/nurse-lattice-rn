@@ -4,10 +4,15 @@
     {
       "id": "rn-11-q01",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Reduction of Risk Potential",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Which finding most strongly suggests possible urinary retention?",
-      "choices": ["A client voids a comfortable amount after using the toilet", "A client reports suprapubic fullness, cannot void, and has frequent small voids", "A client requests privacy before using a bedside commode", "A client has clear urine in a drainage bag after adequate fluid intake"],
+      "choices": [
+        "A client voids a comfortable amount after using the toilet",
+        "A client reports suprapubic fullness, cannot void, and has frequent small voids",
+        "A client requests privacy before using a bedside commode",
+        "A client has clear urine in a drainage bag after adequate fluid intake"
+      ],
       "correctIndex": 1,
       "explanation": "Suprapubic fullness, inability to void, and frequent small voids can be retention cues. The RN performs focused assessment, follows the ordered evaluation process such as a bladder scan when authorized, and communicates concerning findings."
     },
@@ -17,7 +22,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Which intervention best promotes dignified, safe toileting for a client with limited mobility?",
-      "choices": ["Tell the client to wait until the next scheduled rounding time", "Provide privacy, respond promptly, and use the prescribed transfer or assistive-device plan", "Leave the call light out of reach so the client will rest", "Discourage the client from asking for help to preserve independence"],
+      "choices": [
+        "Tell the client to wait until the next scheduled rounding time",
+        "Provide privacy, respond promptly, and use the prescribed transfer or assistive-device plan",
+        "Leave the call light out of reach so the client will rest",
+        "Discourage the client from asking for help to preserve independence"
+      ],
       "correctIndex": 1,
       "explanation": "Prompt assistance, privacy, and the planned level of transfer support protect both dignity and safety. Delaying toileting or expecting an unsafe independent transfer can increase fall, incontinence, and skin-injury risk."
     },
@@ -27,27 +37,42 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Analyze cues",
       "question": "Which data are most useful when assessing a new change in bowel elimination?",
-      "choices": ["The client's favorite television program", "Usual bowel pattern, last bowel movement, stool characteristics, abdominal symptoms, medications, and recent intake", "The color of the client's hospital gown", "Whether the client prefers morning or evening visitors"],
+      "choices": [
+        "Only the number of days since the last bowel movement",
+        "Usual bowel pattern, last bowel movement, stool characteristics, abdominal symptoms, medications, and recent intake",
+        "Only the presence of bowel sounds at this assessment",
+        "The prescribed diet without reviewing actual intake or symptoms"
+      ],
       "correctIndex": 1,
       "explanation": "A bowel assessment compares the current pattern with the client's baseline and includes stool characteristics, symptoms, medications, intake, activity, and routines. This information supports clinical judgment without assigning a diagnosis from a single observation."
     },
     {
       "id": "rn-11-q04",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
       "clinicalJudgmentStep": "Take action",
       "question": "Which action is appropriate for maintenance of an indwelling urinary catheter?",
-      "choices": ["Keep the collection bag on the bed so it stays visible", "Maintain a closed drainage system and keep the bag below bladder level and off the floor", "Disconnect the tubing daily to inspect the catheter", "Irrigate the catheter whenever urine appears concentrated"],
+      "choices": [
+        "Keep the collection bag on the bed so it stays visible",
+        "Maintain a closed drainage system and keep the bag below bladder level and off the floor",
+        "Disconnect the tubing daily to inspect the catheter",
+        "Irrigate the catheter whenever urine appears concentrated"
+      ],
       "correctIndex": 1,
       "explanation": "A closed system and unobstructed dependent drainage are key catheter-maintenance practices. The collection bag remains below bladder level and off the floor; disconnection and irrigation are not routine actions and require the appropriate order and policy."
     },
     {
       "id": "rn-11-q05",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Reduction of Risk Potential",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Which stool finding should the RN promptly assess and report as a possible urgent cue?",
-      "choices": ["A formed brown stool consistent with the client's usual pattern", "Black, tarry stool with new weakness and dizziness", "A client asking for a warm blanket after toileting", "A small amount of stool after a usual bowel routine"],
+      "choices": [
+        "A formed brown stool consistent with the client's usual pattern",
+        "Black, tarry stool with new weakness and dizziness",
+        "A softer stool after an ordered stool softener without pain or bleeding",
+        "A small amount of stool after a usual bowel routine"
+      ],
       "correctIndex": 1,
       "explanation": "Black tarry stool accompanied by weakness and dizziness can be a concerning bleeding and instability cue. The RN promptly assesses the client, including vital signs and overall status, and follows the urgent escalation process."
     },
@@ -57,27 +82,42 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "A client has diarrhea and perineal skin irritation. Which plan is most appropriate?",
-      "choices": ["Delay hygiene until the episode pattern has stopped", "Cleanse and dry the area promptly, protect skin as ordered, document the pattern, and assess hydration concerns", "Apply any available powder without reviewing the care plan", "Restrict all oral fluids without an order"],
+      "choices": [
+        "Delay hygiene until the episode pattern has stopped",
+        "Cleanse and dry the area promptly, protect skin as ordered, document the pattern, and assess hydration concerns",
+        "Apply any available powder without reviewing the care plan",
+        "Restrict all oral fluids without an order"
+      ],
       "correctIndex": 1,
       "explanation": "Diarrhea can quickly impair skin integrity and contribute to fluid loss. Prompt gentle hygiene, ordered skin protection, objective documentation, and assessment of the pattern and hydration concerns support safe individualized care."
     },
     {
       "id": "rn-11-q07",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Physiological Adaptation",
       "clinicalJudgmentStep": "Prioritize hypotheses",
       "question": "A client has severe abdominal pain, a rigid abdomen, repeated vomiting, and hypotension. Which interpretation is the priority?",
-      "choices": ["The client needs a routine bowel diary", "The cues suggest possible acute deterioration requiring immediate assessment and escalation", "The client should receive an unprescribed laxative", "The client is likely uncomfortable because of the hospital menu"],
+      "choices": [
+        "The client needs a routine bowel diary",
+        "The cues suggest possible acute deterioration requiring immediate assessment and escalation",
+        "The client should receive an unprescribed laxative",
+        "The symptoms can be attributed to uncomplicated constipation without further assessment"
+      ],
       "correctIndex": 1,
       "explanation": "Severe pain, rigidity, repeated vomiting, and hypotension are not routine elimination findings and may signal acute deterioration. The RN assesses airway, breathing, circulation, and mental status while activating the required urgent response."
     },
     {
       "id": "rn-11-q08",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
       "clinicalJudgmentStep": "Take action",
       "question": "The RN finds a catheter drainage bag on the floor and tubing kinked under the client. What should the RN do first?",
-      "choices": ["Straighten the tubing, place the bag below bladder level off the floor, and assess urine flow", "Disconnect the catheter from the tubing and reconnect it after wiping it", "Raise the collection bag above the bladder to speed drainage", "Leave the setup unchanged until the next scheduled catheter care"],
+      "choices": [
+        "Straighten the tubing, place the bag below bladder level off the floor, and assess urine flow",
+        "Disconnect the catheter from the tubing and reconnect it after wiping it",
+        "Raise the collection bag above the bladder to speed drainage",
+        "Leave the setup unchanged until the next scheduled catheter care"
+      ],
       "correctIndex": 0,
       "explanation": "The RN promptly restores unobstructed dependent drainage by removing kinks and placing the bag below bladder level off the floor, then assesses flow and follows policy. Disconnecting the system can compromise the closed drainage system."
     },
@@ -87,17 +127,27 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "Which finding best indicates that an individualized bowel-elimination plan is effective?",
-      "choices": ["The client reports a comfortable bowel movement near the usual pattern and has intact perineal skin", "The client avoids calling for help despite urgency", "The client has increasing straining and abdominal discomfort", "The client receives an enema each day without an order"],
+      "choices": [
+        "The client reports a comfortable bowel movement near the usual pattern and has intact perineal skin",
+        "The client avoids calling for help despite urgency",
+        "The client has increasing straining and abdominal discomfort",
+        "The client receives an enema each day without an order"
+      ],
       "correctIndex": 0,
       "explanation": "A comfortable return toward the client's usual pattern with intact skin supports effectiveness. The RN continues to monitor because medications, mobility, hydration, diet restrictions, and illness can alter elimination needs over time."
     },
     {
       "id": "rn-11-q10",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "Which assessment best evaluates whether an indwelling urinary catheter is still needed?",
-      "choices": ["Whether the bag is convenient during staff rounds", "The ongoing clinical indication, current order, client condition, and facility removal process", "Whether the client prefers not to use the toilet today", "Whether there is room to hang the bag from the bedrail"],
+      "choices": [
+        "Whether the bag is convenient during staff rounds",
+        "The ongoing clinical indication, current order, client condition, and facility removal process",
+        "Whether the client prefers not to use the toilet today",
+        "Whether there is room to hang the bag from the bedrail"
+      ],
       "correctIndex": 1,
       "explanation": "Indwelling catheters should be assessed for ongoing clinical need and removed through the appropriate process when no longer indicated. Convenience or routine incontinence management is not an adequate reason to continue a catheter."
     }

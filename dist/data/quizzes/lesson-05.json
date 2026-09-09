@@ -5,25 +5,151 @@
       "id": "rn-05-q01",
       "clinicalJudgmentStep": "Take action",
       "question": "A client with possible dysphagia coughs and develops a wet voice after a sip of water. What should the RN do first?",
-      "choices": ["Offer a larger sip to confirm the finding", "Stop oral intake, keep the client upright, and assess according to the swallowing-safety plan", "Place the client flat to rest", "Add a straw and ask the client to drink quickly"],
+      "choices": [
+        "Offer a larger sip to confirm the finding",
+        "Stop oral intake, keep the client upright, and assess according to the swallowing-safety plan",
+        "Place the client flat to rest",
+        "Add a straw and ask the client to drink quickly"
+      ],
       "correctIndex": 1,
-      "explanation": "Coughing and a wet voice after swallowing are concerning for impaired airway protection. Stop intake and maintain upright positioning while following the assessment and escalation plan."
+      "explanation": "Coughing and a wet voice after swallowing are concerning for impaired airway protection. Stop intake and maintain upright positioning while following the assessment and escalation plan.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort"
     },
     {
       "id": "rn-05-q02",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Which intervention most directly reduces heel pressure for an immobile client?",
-      "choices": ["Massage reddened heel tissue", "Place a ring-shaped cushion under each heel", "Float the heels so they are off the mattress", "Keep the head of the bed at its highest position"],
+      "choices": [
+        "Massage reddened heel tissue",
+        "Place a ring-shaped cushion under each heel",
+        "Float the heels so they are off the mattress",
+        "Keep the head of the bed at its highest position"
+      ],
       "correctIndex": 2,
-      "explanation": "Offloading removes sustained pressure from the heels. Massaging injured tissue, ring devices, and unnecessary high head elevation can worsen tissue stress or shear."
+      "explanation": "Offloading removes sustained pressure from the heels. Massaging injured tissue, ring devices, and unnecessary high head elevation can worsen tissue stress or shear.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort"
     },
     {
       "id": "rn-05-q03",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "After administering an ordered opioid for acute pain, which follow-up is most important?",
-      "choices": ["Reassess pain, respiratory status, sedation, and function at the appropriate time", "Wait until the end of the shift to avoid disturbing the client", "Document only that the dose was given", "Ask the next shift to decide whether the medication worked"],
+      "choices": [
+        "Reassess pain, respiratory status, sedation, and function at the appropriate time",
+        "Wait until the end of the shift to avoid disturbing the client",
+        "Document only that the dose was given",
+        "Ask the next shift to decide whether the medication worked"
+      ],
       "correctIndex": 0,
-      "explanation": "Evaluation includes both therapeutic effect and adverse effects, especially respiratory depression and sedation. Administration without timely reassessment is incomplete care."
+      "explanation": "Evaluation includes both therapeutic effect and adverse effects, especially respiratory depression and sedation. Administration without timely reassessment is incomplete care.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies"
+    },
+    {
+      "id": "rn-05-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Before a first assisted walk after surgery, which finding requires assessment before standing?",
+      "choices": [
+        "New lightheadedness while sitting at the bedside",
+        "A request to use the prescribed walker",
+        "A plan to wear nonslip footwear",
+        "A need for help managing IV tubing"
+      ],
+      "correctIndex": 0,
+      "explanation": "New positional symptoms suggest intolerance and fall risk. Assess and support the client before advancing activity; a walker, footwear, and tubing assistance are expected safety measures."
+    },
+    {
+      "id": "rn-05-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client cannot bear weight and needs a bed-to-chair transfer. Which plan is safest?",
+      "choices": [
+        "Use the assessed mechanical-lift plan with trained staff",
+        "Ask one strong staff member to pivot the client",
+        "Use a gait belt so weight-bearing ability is unnecessary",
+        "Ask the client to hold the RN's neck during the transfer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Match transfer equipment and staffing to the mobility assessment. A gait belt or staff strength does not make a non-weight-bearing pivot safe, and pulling on the caregiver risks injury."
+    },
+    {
+      "id": "rn-05-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Take action",
+      "question": "During assisted walking, a client becomes dizzy and their knees begin to buckle. What should the RN do?",
+      "choices": [
+        "Stop, support the client safely to a seated or lying position, and assess with help",
+        "Continue slowly to avoid interrupting rehabilitation",
+        "Leave the client standing while retrieving a blood-pressure cuff",
+        "Ask the client to lean against the IV pole and rest"
+      ],
+      "correctIndex": 0,
+      "explanation": "Prevent a fall and assess the new symptoms. Finishing the walk is not the priority; leaving the client unsupported or relying on an IV pole adds risk."
+    },
+    {
+      "id": "rn-05-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A stable client can wash their face and upper body but tires when reaching their legs. Which plan best supports function?",
+      "choices": [
+        "Provide supplies and rest periods, and assist with areas the client cannot safely reach",
+        "Complete the entire bath for the client every day",
+        "Require the client to finish independently to build endurance",
+        "Delay all hygiene until the client can complete it without help"
+      ],
+      "correctIndex": 0,
+      "explanation": "Individualized assistance preserves ability and dignity without excessive exertion. Doing everything unnecessarily removes participation; insisting on full independence ignores the assessment."
+    },
+    {
+      "id": "rn-05-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client declines a scheduled bath, saying it hurts to turn. What is the best response?",
+      "choices": [
+        "Explore pain and preferences, then agree on a safe comfort and hygiene plan",
+        "Document noncompliance and omit further discussion",
+        "Explain that scheduled bathing cannot be changed",
+        "Ask an assistant to bathe the client despite the refusal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Explore the reason for refusal and address pain, timing, and alternatives with the client. A routine schedule does not override consent, and a label does not identify the care barrier."
+    },
+    {
+      "id": "rn-05-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Take action",
+      "question": "An incontinent client's skin is damp and irritated. Which action belongs in the initial care plan?",
+      "choices": [
+        "Gently cleanse, dry, protect the skin, and reassess the continence plan",
+        "Scrub the area vigorously to remove all moisture",
+        "Apply a thick layer of powder to conceal redness",
+        "Restrict all oral fluids to prevent further incontinence"
+      ],
+      "correctIndex": 0,
+      "explanation": "Moisture management and individualized continence care reduce skin exposure to irritants. Scrubbing damages fragile tissue; concealing findings or broadly restricting fluids does not address the cause."
+    },
+    {
+      "id": "rn-05-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best shows that an adapted daily-care plan is working?",
+      "choices": [
+        "The client participates within tolerance, with manageable symptoms and intact skin",
+        "The bath is finished faster even though the client remains breathless",
+        "Staff complete every task without inviting client participation",
+        "The client stays in bed all day to avoid any discomfort"
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate function, comfort, symptoms, and skin—not speed alone. Breathlessness needs reassessment; unnecessary dependence or immobility can create additional harm."
     }
   ]
 }

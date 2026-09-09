@@ -5,26 +5,151 @@
       "id": "rn-06-q01",
       "clinicalJudgmentStep": "Take action",
       "question": "A medication dose is far outside the usual range and the indication is unclear. What should the RN do?",
-      "choices": ["Administer it because the order is electronic", "Hold the medication and clarify the order before administration", "Give half the dose and document the change", "Ask the client whether the dose seems correct"],
+      "choices": [
+        "Administer it because the order is electronic",
+        "Hold the medication and clarify the order before administration",
+        "Give half the dose and document the change",
+        "Ask the client whether the dose seems correct"
+      ],
       "correctIndex": 1,
-      "explanation": "An unexpected dose or unclear indication requires clarification before administration. Electronic entry does not guarantee appropriateness, and the RN should not independently alter the dose."
+      "explanation": "An unexpected dose or unclear indication requires clarification before administration. Electronic entry does not guarantee appropriateness, and the RN should not independently alter the dose.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies"
     },
     {
       "id": "rn-06-q02",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "During a peripheral IV infusion, the site becomes cool, swollen, and uncomfortable. What is the RN's first action?",
-      "choices": ["Increase the infusion rate", "Stop the infusion and assess the site", "Cover the site so the client cannot see it", "Flush forcefully to restore flow"],
+      "choices": [
+        "Increase the infusion rate",
+        "Stop the infusion and assess the site",
+        "Cover the site so the client cannot see it",
+        "Flush forcefully to restore flow"
+      ],
       "correctIndex": 1,
-      "explanation": "Coolness, swelling, and discomfort suggest infiltration. Stop the infusion to prevent additional fluid entering the tissue, then assess and follow the solution- and policy-specific management steps."
+      "explanation": "Coolness, swelling, and discomfort suggest infiltration. Stop the infusion to prevent additional fluid entering the tissue, then assess and follow the solution- and policy-specific management steps.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies"
     },
     {
       "id": "rn-06-q03",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Which action best supports safe administration of a high-alert medication?",
-      "choices": ["Skip barcode scanning when the unit is busy", "Use the required independent verification and monitoring process", "Rely on room number as the client identifier", "Prepare medications for several clients at one time"],
+      "choices": [
+        "Skip barcode scanning when the unit is busy",
+        "Use the required independent verification and monitoring process",
+        "Rely on room number as the client identifier",
+        "Prepare medications for several clients at one time"
+      ],
       "correctIndex": 1,
-      "explanation": "High-alert medications require the organization's specified safeguards, which may include independent verification and enhanced monitoring. Workarounds remove defenses against serious harm."
+      "explanation": "High-alert medications require the organization's specified safeguards, which may include independent verification and enhanced monitoring. Workarounds remove defenses against serious harm.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies"
+    },
+    {
+      "id": "rn-06-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The medication label and barcode match, but the client reports a previous severe reaction to that medication. What should the RN do?",
+      "choices": [
+        "Hold the medication and verify the reaction history and order",
+        "Give the dose because the barcode accepted it",
+        "Give a smaller test dose without a new order",
+        "Remove the allergy alert because the medication was prescribed"
+      ],
+      "correctIndex": 0,
+      "explanation": "A successful scan does not resolve a possible contraindication. Hold and clarify the allergy and order; neither a test dose nor deleting the alert is an appropriate independent workaround."
+    },
+    {
+      "id": "rn-06-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which injection preparation practice is safe?",
+      "choices": [
+        "Use a new sterile syringe and needle for each injection",
+        "Reuse a syringe for another client after changing the needle",
+        "Share a single-dose vial between clients if some medication remains",
+        "Keep a used syringe for later access to a common vial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Both the needle and syringe must be single-use for each injection. Changing only the needle does not make a used syringe safe, and single-dose containers are not shared between clients."
+    },
+    {
+      "id": "rn-06-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A vesicant infusion causes new burning and swelling at a peripheral site. What is the appropriate initial response?",
+      "choices": [
+        "Stop the infusion, do not flush, and retain the catheter initially while initiating the extravasation protocol",
+        "Stop the infusion and immediately discard the catheter before assessing the agent",
+        "Flush the catheter briskly to dilute the medication",
+        "Apply a warm compress for every medication before calling for help"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stop further exposure. Retaining access initially may allow aspiration or agent-specific treatment. Flushing may worsen tissue exposure; catheter removal and compress selection depend on the drug-specific protocol."
+    },
+    {
+      "id": "rn-06-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "An IV medication is due through a line containing another infusion; compatibility is unknown. What should the RN do?",
+      "choices": [
+        "Verify compatibility with an approved resource or pharmacist before administration",
+        "Mix the medications if both solutions appear clear",
+        "Increase the primary flow to dilute a potential incompatibility",
+        "Assume that medications ordered together are compatible in one line"
+      ],
+      "correctIndex": 0,
+      "explanation": "Compatibility must be established, not inferred from appearance or co-prescribing. Changing the flow does not reliably prevent incompatibility and may alter the delivered dose."
+    },
+    {
+      "id": "rn-06-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client asks to discuss a new medication before deciding whether to take it. What is the best action?",
+      "choices": [
+        "Explain its purpose and key risks, answer questions, and respect the informed decision",
+        "Document the medication as given while the client considers it",
+        "Conceal the medication in food to avoid a missed dose",
+        "Tell the client that a prescription removes the option to refuse"
+      ],
+      "correctIndex": 0,
+      "explanation": "Education and informed choice are part of medication safety. Record what actually occurs and communicate a refusal as needed; coercion, concealment, or pre-charting is inappropriate."
+    },
+    {
+      "id": "rn-06-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "During admission reconciliation, which finding needs clarification?",
+      "choices": [
+        "Two bottles with different brand names contain the same active ingredient",
+        "The client brings a written medication list",
+        "The client includes over-the-counter supplements",
+        "The client reports when the last dose was taken"
+      ],
+      "correctIndex": 0,
+      "explanation": "Different brands can duplicate the same drug and create dosing risk. The list, supplements, and last-dose information are useful inputs for reconciliation, not reasons to dismiss the history."
+    },
+    {
+      "id": "rn-06-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After an IV analgesic, the pain rating falls, but the client becomes difficult to arouse. What should the RN do?",
+      "choices": [
+        "Immediately assess and support airway and breathing, summon appropriate help, and follow the medication-response protocol",
+        "Record successful pain relief and return at the next scheduled round",
+        "Administer another analgesic because the client cannot rate pain",
+        "Wait for oxygen saturation to fall before assessing respiration"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reduced pain does not establish safe treatment when sedation worsens. Assess ventilation and responsiveness immediately; waiting for desaturation or giving more sedative medication may increase harm."
     }
   ]
 }
-

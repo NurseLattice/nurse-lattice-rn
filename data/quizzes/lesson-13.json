@@ -7,7 +7,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Which statement best reflects a respectful approach to pain assessment?",
-      "choices": ["Pain is absent if the client does not appear distressed", "The client's report of pain should be assessed and respected, including its effect on function", "Only vital-sign changes can confirm pain", "Clients who sleep during the day should not report pain"],
+      "choices": [
+        "Pain is absent if the client does not appear distressed",
+        "The client's report of pain should be assessed and respected, including its effect on function",
+        "Only vital-sign changes can confirm pain",
+        "Clients who sleep during the day should not report pain"
+      ],
       "correctIndex": 1,
       "explanation": "Pain is a personal experience, and the client's report is central to assessment. The RN also assesses characteristics, functional impact, behavior, and safety cues, rather than dismissing pain because appearance or vital signs do not match expectations."
     },
@@ -17,7 +22,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Analyze cues",
       "question": "Which question best assesses the functional impact of a client's pain?",
-      "choices": ["What color is your favorite blanket?", "How is the pain affecting your ability to sleep, move, cough, or do the activities you need to do?", "Would you rather have visitors in the morning or afternoon?", "Do you think other clients have more pain than you do?"],
+      "choices": [
+        "Where is the pain located?",
+        "How is the pain affecting your ability to sleep, move, cough, or do the activities you need to do?",
+        "When did the pain first begin?",
+        "Would you describe the pain as burning or aching?"
+      ],
       "correctIndex": 1,
       "explanation": "Pain assessment includes the effect on activity, breathing, sleep, mobility, and other valued functions. This helps the RN and client set a meaningful comfort-function goal instead of focusing only on a single numeric rating."
     },
@@ -27,37 +37,57 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Which goal best represents a client-centered comfort-function goal after surgery?",
-      "choices": ["The client will report zero pain at all times", "The client will be able to cough and take deep breaths with discomfort at or below the agreed goal", "The client will avoid all movement until discharge", "The client will not mention pain during the shift"],
+      "choices": [
+        "The client will report zero pain at all times",
+        "The client will be able to cough and take deep breaths with discomfort at or below the agreed goal",
+        "The client will avoid all movement until discharge",
+        "The client will not mention pain during the shift"
+      ],
       "correctIndex": 1,
       "explanation": "A comfort-function goal connects pain relief with a safe, meaningful activity such as coughing and deep breathing. It is individualized with the client and guides evaluation more effectively than demanding an unrealistic or silent pain experience."
     },
     {
       "id": "rn-13-q04",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Physiological Adaptation",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Which finding needs immediate focused assessment and escalation rather than a routine comfort measure?",
-      "choices": ["New chest pressure with diaphoresis and shortness of breath", "A request to dim the lights at bedtime", "A preference for an extra pillow", "Mild discomfort from a familiar room temperature"],
+      "choices": [
+        "New chest pressure with diaphoresis and shortness of breath",
+        "A request to dim the lights at bedtime",
+        "A preference for an extra pillow",
+        "Mild discomfort from a familiar room temperature"
+      ],
       "correctIndex": 0,
       "explanation": "New chest pressure with diaphoresis and shortness of breath can indicate an urgent problem. The RN immediately assesses ABCs and follows the emergency or escalation process; routine comfort measures must not delay evaluation of potentially serious symptoms."
     },
     {
       "id": "rn-13-q05",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
       "clinicalJudgmentStep": "Take action",
       "question": "Before administering a prescribed opioid analgesic, which assessment is most important?",
-      "choices": ["The client's preferred television channel", "Current pain assessment, level of sedation, respiratory status, and relevant vital signs", "Whether the client skipped breakfast", "The number of visitors in the room"],
+      "choices": [
+        "The pain rating alone, without checking alertness or breathing",
+        "Current pain assessment, level of sedation, respiratory status, and relevant vital signs",
+        "The medication's effectiveness yesterday without a current assessment",
+        "The dosing interval alone, without checking the client's current condition"
+      ],
       "correctIndex": 1,
       "explanation": "Before a prescribed opioid, the RN verifies the order and assesses pain, sedation, respiratory status, vital signs as indicated, allergies, and precautions. These data help identify whether giving the medication is safe and whether escalation is needed."
     },
     {
       "id": "rn-13-q06",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "After a prescribed analgesic is given, which action completes the evaluation step?",
-      "choices": ["Assume it worked because the medication was administered", "Reassess pain characteristics, function, sedation, respiratory status as indicated, and adverse effects at the required interval", "Wait until discharge to ask whether the client felt better", "Increase the next dose independently if pain persists"],
+      "choices": [
+        "Assume it worked because the medication was administered",
+        "Reassess pain characteristics, function, sedation, respiratory status as indicated, and adverse effects at the required interval",
+        "Wait until discharge to ask whether the client felt better",
+        "Increase the next dose independently if pain persists"
+      ],
       "correctIndex": 1,
       "explanation": "Evaluation requires reassessment at the interval appropriate to the medication, route, onset, and policy. The RN determines whether the client meets the comfort-function goal and monitors for adverse effects, escalating when the plan is ineffective or unsafe."
     },
@@ -67,17 +97,27 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Which intervention best supports sleep for a stable hospitalized client?",
-      "choices": ["Turn on all room lights to prevent daytime sleepiness", "Cluster nonurgent care when safe, reduce noise and light, and support the client's bedtime routine when possible", "Wake the client every hour for nonessential conversation", "Offer a sedating medication without assessing sleep barriers"],
+      "choices": [
+        "Turn on all room lights to prevent daytime sleepiness",
+        "Cluster nonurgent care when safe, reduce noise and light, and support the client's bedtime routine when possible",
+        "Wake the client every hour for nonessential conversation",
+        "Offer a sedating medication without assessing sleep barriers"
+      ],
       "correctIndex": 1,
       "explanation": "When safe, clustering nonurgent care and reducing avoidable noise and light can protect rest. The RN first assesses pain, positioning, symptoms, devices, and routine barriers; sleep support is individualized rather than automatically medication-based."
     },
     {
       "id": "rn-13-q08",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
       "clinicalJudgmentStep": "Prioritize hypotheses",
       "question": "A client who received an analgesic is difficult to arouse and has slower, shallow breathing. Which interpretation is the priority?",
-      "choices": ["The client is finally getting restful sleep", "The findings may indicate excessive sedation and respiratory compromise requiring immediate assessment and response", "The client should receive another dose to prevent pain recurrence", "The client needs a quieter room before reassessment"],
+      "choices": [
+        "The client is finally getting restful sleep",
+        "The findings may indicate excessive sedation and respiratory compromise requiring immediate assessment and response",
+        "The client should receive another dose to prevent pain recurrence",
+        "The client needs a quieter room before reassessment"
+      ],
       "correctIndex": 1,
       "explanation": "Difficulty arousing and slower, shallow breathing after an analgesic are high-priority safety cues. The RN immediately assesses airway and breathing, activates the required response, and follows the medication safety process rather than treating this as ordinary sleep."
     },
@@ -87,7 +127,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Take action",
       "question": "A nonverbal client grimaces and guards an incision during repositioning. What is the best nursing action?",
-      "choices": ["Conclude that the client has no pain because no number was reported", "Use the approved observational tool, compare with baseline, assess the situation, and follow the prescribed comfort plan", "Tell the client that grimacing is not helpful", "Document the behavior but delay all assessment until family arrives"],
+      "choices": [
+        "Conclude that the client has no pain because no number was reported",
+        "Use the approved observational tool, compare with baseline, assess the situation, and follow the prescribed comfort plan",
+        "Tell the client that grimacing is not helpful",
+        "Document the behavior but delay all assessment until family arrives"
+      ],
       "correctIndex": 1,
       "explanation": "Clients who cannot self-report may show behavioral indicators such as guarding and grimacing. The RN uses an approved observational approach, incorporates baseline and collateral information when appropriate, and assesses and treats within the prescribed plan."
     },
@@ -97,7 +142,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "Which finding best supports that a comfort plan is effective?",
-      "choices": ["The client can sleep, participate in the agreed activity, and reports acceptable comfort without concerning adverse effects", "The client remains unable to cough because pain is unchanged", "The client receives more interventions without reassessment", "The client stops reporting pain because staff appear busy"],
+      "choices": [
+        "The client can sleep, participate in the agreed activity, and reports acceptable comfort without concerning adverse effects",
+        "The client remains unable to cough because pain is unchanged",
+        "The client receives more interventions without reassessment",
+        "The client stops reporting pain because staff appear busy"
+      ],
       "correctIndex": 0,
       "explanation": "Effective comfort care supports the client's agreed function and rest while avoiding concerning adverse effects. The RN evaluates the client's response and satisfaction, then continues, modifies, or escalates the plan based on current assessment."
     }

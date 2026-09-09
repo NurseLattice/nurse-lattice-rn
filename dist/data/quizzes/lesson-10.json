@@ -7,7 +7,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Which finding most strongly suggests that a client needs swallowing reassessment before continuing oral intake?",
-      "choices": ["The client asks for an extra napkin", "The client has a wet, gurgly voice and coughs after drinking", "The client finishes a meal slowly", "The client prefers a familiar food from home"],
+      "choices": [
+        "The client needs help opening food packages",
+        "The client has a wet, gurgly voice and coughs after drinking",
+        "The client finishes a meal slowly",
+        "The client prefers a familiar food from home"
+      ],
       "correctIndex": 1,
       "explanation": "A wet or gurgly voice and coughing after liquids are concerning swallowing-safety cues. The RN pauses oral intake, assesses the client, reviews the current plan, and obtains the required help rather than testing additional fluids."
     },
@@ -17,7 +22,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Before assisting a client with a prescribed texture-modified diet, which action is best?",
-      "choices": ["Offer thin water first to see whether swallowing has improved", "Verify the diet order and swallowing plan, then ensure the client is awake and positioned as directed", "Ask a family member to select whichever foods appear easiest to chew", "Change the diet texture when the client says the meal is unappealing"],
+      "choices": [
+        "Offer thin water first to see whether swallowing has improved",
+        "Verify the diet order and swallowing plan, then ensure the client is awake and positioned as directed",
+        "Ask a family member to select whichever foods appear easiest to chew",
+        "Change the diet texture when the client says the meal is unappealing"
+      ],
       "correctIndex": 1,
       "explanation": "The RN verifies the ordered diet and current swallowing plan, then provides the prescribed assistance and positioning. Unsupervised water trials or independent texture changes can conflict with a safety plan and should not replace reassessment."
     },
@@ -27,7 +37,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Take action",
       "question": "A client begins repeated coughing and develops a wet voice while eating. What should the RN do first?",
-      "choices": ["Encourage the client to take another bite to clear the throat", "Stop oral intake, support safe positioning, and assess airway and breathing", "Document the finding after the meal is complete", "Offer a larger drink to wash down the food"],
+      "choices": [
+        "Encourage the client to take another bite to clear the throat",
+        "Stop oral intake, support safe positioning, and assess airway and breathing",
+        "Document the finding after the meal is complete",
+        "Offer a larger drink to wash down the food"
+      ],
       "correctIndex": 1,
       "explanation": "Repeated coughing and a wet voice during a meal require an immediate pause in oral intake and assessment of airway and breathing. The RN then follows the client's plan and the facility escalation process; continuing food or fluids can increase risk."
     },
@@ -37,17 +52,27 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Analyze cues",
       "question": "Which assessment finding most needs follow-up as a possible nutrition or hydration concern?",
-      "choices": ["The client consumes 25% of meals for three days and reports nausea", "The client asks whether lunch will arrive on time", "The client selects tea instead of coffee at breakfast", "The client uses a napkin independently during the meal"],
+      "choices": [
+        "The client consumes 25% of meals for three days and reports nausea",
+        "The client eats most meals with assistance opening packages",
+        "The client chooses a nutritionally equivalent option within the ordered diet",
+        "The client has stable weight and intake after one smaller meal"
+      ],
       "correctIndex": 0,
       "explanation": "A pattern of markedly reduced intake with nausea needs assessment and communication, especially when it persists. The RN gathers objective intake and symptom data, identifies barriers, and collaborates on the prescribed plan rather than simply urging the client to eat."
     },
     {
       "id": "rn-10-q05",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Reduction of Risk Potential",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "While preparing a scheduled enteral feeding, the RN notes that the external tube length is different from the documented baseline. What is the safest interpretation?",
-      "choices": ["The tube location may have changed and requires the approved verification process before use", "The difference proves the tube is correctly placed", "The feeding rate should be increased to compensate for the delay", "The tube can be used if the client does not report pain"],
+      "choices": [
+        "The tube location may have changed and requires the approved verification process before use",
+        "The difference proves the tube is correctly placed",
+        "The feeding rate should be increased to compensate for the delay",
+        "The tube can be used if the client does not report pain"
+      ],
       "correctIndex": 0,
       "explanation": "A change in external tube length can indicate possible displacement. The RN does not assume the tube remains in the intended location; the feeding is managed according to the institution's verification process and the appropriate team is notified."
     },
@@ -57,27 +82,42 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "Which intervention supports aspiration-risk reduction for an adult receiving enteral feeding when not contraindicated?",
-      "choices": ["Keep the head of bed flat throughout the feeding", "Maintain the head of bed at the elevation specified by the care plan or policy, often 30–45 degrees", "Disconnect the tube frequently so the client can rest", "Change the formula whenever the client reports thirst"],
+      "choices": [
+        "Keep the head of bed flat throughout the feeding",
+        "Maintain the head of bed at the elevation specified by the care plan or policy, often 30–45 degrees",
+        "Disconnect the tube frequently so the client can rest",
+        "Change the formula whenever the client reports thirst"
+      ],
       "correctIndex": 1,
       "explanation": "Head-of-bed elevation as ordered or allowed by policy is a common enteral-feeding safeguard when it is not contraindicated. The RN also verifies the prescribed plan and monitors tolerance; a single positioning action does not replace assessment."
     },
     {
       "id": "rn-10-q07",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Physiological Adaptation",
       "clinicalJudgmentStep": "Take action",
       "question": "During feeding, a client suddenly cannot speak, develops stridor, and appears cyanotic. What is the priority action?",
-      "choices": ["Wait for the client to calm down before reassessing", "Activate the immediate emergency response and begin the required airway intervention", "Offer water to help move the food", "Complete the intake record before leaving the bedside"],
+      "choices": [
+        "Wait for the client to calm down before reassessing",
+        "Activate the immediate emergency response and begin the required airway intervention",
+        "Offer water to help move the food",
+        "Complete the intake record before leaving the bedside"
+      ],
       "correctIndex": 1,
       "explanation": "Inability to speak, stridor, and cyanosis indicate a possible airway emergency. The RN activates the immediate emergency response and begins the required airway actions within role and training; routine documentation and oral fluids do not come first."
     },
     {
       "id": "rn-10-q08",
       "traditionalCourse": "Foundations of Nursing Practice",
-      "nclexClientNeeds": "Basic Care and Comfort",
+      "nclexClientNeeds": "Physiological Adaptation",
       "clinicalJudgmentStep": "Prioritize hypotheses",
       "question": "A client receiving enteral feeding develops new vomiting, abdominal distention, and coughing. Which interpretation should the RN prioritize?",
-      "choices": ["The client is demonstrating expected feeding tolerance", "The cues may reflect feeding intolerance or aspiration risk and require prompt assessment", "The formula should be replaced with a higher-calorie product immediately", "The client needs to remain flat to reduce abdominal pressure"],
+      "choices": [
+        "The client is demonstrating expected feeding tolerance",
+        "The cues may reflect feeding intolerance or aspiration risk and require prompt assessment",
+        "The formula should be replaced with a higher-calorie product immediately",
+        "The client needs to remain flat to reduce abdominal pressure"
+      ],
       "correctIndex": 1,
       "explanation": "New vomiting, distention, and coughing during enteral feeding are concerning cues that need prompt assessment. The RN manages the feeding according to the order and policy, assesses respiratory status, and escalates rather than independently changing the formula or rate."
     },
@@ -87,7 +127,12 @@
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "Which information best evaluates whether a nutrition-support plan is meeting the client's needs?",
-      "choices": ["Whether the food tray was delivered on schedule", "Measured intake and fluids, symptoms, respiratory status, ability to self-feed, and trends over time", "Whether a family member says the client should eat more", "Whether the client received the same menu item each day"],
+      "choices": [
+        "Whether the food tray was delivered on schedule",
+        "Measured intake and fluids, symptoms, respiratory status, ability to self-feed, and trends over time",
+        "Whether a family member says the client should eat more",
+        "Whether the prescribed supplement was offered, without measuring consumption"
+      ],
       "correctIndex": 1,
       "explanation": "Evaluation uses measurable intake and fluids along with symptoms, respiratory safety, functional ability, and relevant trends. These data show whether the plan is tolerated and effective or whether barriers and changes need to be communicated."
     },
@@ -96,10 +141,15 @@
       "traditionalCourse": "Foundations of Nursing Practice",
       "nclexClientNeeds": "Basic Care and Comfort",
       "clinicalJudgmentStep": "Evaluate outcomes",
-      "question": "Which finding best supports that a prescribed swallowing-support plan is working?",
-      "choices": ["The client consistently tolerates the ordered texture without coughing or new respiratory symptoms", "The client independently changes from thickened to thin liquids", "The client eats quickly despite increasing drowsiness", "The client coughs after each bite but completes the tray"],
+      "question": "Which evaluation of a prescribed swallowing-support plan is most appropriate?",
+      "choices": [
+        "Assess intake and respiratory trends against the swallowing plan; recognize that no cough does not exclude silent aspiration",
+        "The client independently changes from thickened to thin liquids",
+        "The client eats quickly despite increasing drowsiness",
+        "The client coughs after each bite but completes the tray"
+      ],
       "correctIndex": 0,
-      "explanation": "Tolerance of the ordered texture without coughing or new respiratory symptoms supports the current plan. The RN continues to monitor because swallowing safety can change; independent diet changes, drowsiness, or repeated coughing require reassessment."
+      "explanation": "Evaluate intake, respiratory status, alertness, and the individualized swallowing recommendations together. Silent aspiration may occur without cough; symptom-free intake alone does not prove safety. New symptoms or reduced alertness require reassessment, not independent diet changes."
     }
   ]
 }

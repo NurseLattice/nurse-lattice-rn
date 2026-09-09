@@ -9,6 +9,8 @@ let currentQuizTitle = "";
 let lessonCache = new Map();
 let quizCache = new Map();
 let toastTimer = null;
+let loadingQuiz = false;
+let navigationEpoch = 0;
 
 function localDateKey(date = new Date()) {
   const year = date.getFullYear();
@@ -26,11 +28,13 @@ function toast(message) {
 }
 
 function save() {
-  progress = RNProgress.saveProgress(localStorage, progress);
+  try { progress = RNProgress.saveProgress(localStorage, progress); }
+  catch (error) { toast("Progress cannot be saved on this device. Keep this tab open and check browser storage."); }
   updateDashboard();
 }
 
 function setRoute(route) {
+  navigationEpoch += 1;
   document.querySelectorAll(".page").forEach(page => page.classList.toggle("active", page.id === route));
   document.querySelectorAll(".bottom-nav button").forEach(button => {
     const activeRoute = route === "lesson" || route === "learn" ? "learn" : route;
@@ -38,10 +42,13 @@ function setRoute(route) {
   });
   if (route === "progress") renderProgress();
   window.scrollTo({ top: 0, behavior: "instant" });
+  const heading = document.querySelector("#" + route + " h1");
+  if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
 }
 
 function initializeTheme() {
-  const saved = localStorage.getItem(RN_THEME_KEY);
+  let saved;
+  try { saved = localStorage.getItem(RN_THEME_KEY); } catch (error) { /* Theme remains available without storage. */ }
   const theme = saved === "dark" || saved === "light" ? saved : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   document.documentElement.dataset.theme = theme;
   syncThemeButton();
@@ -57,7 +64,7 @@ function syncThemeButton() {
 function toggleTheme() {
   const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = next;
-  localStorage.setItem(RN_THEME_KEY, next);
+  try { localStorage.setItem(RN_THEME_KEY, next); } catch (error) { toast("Theme changed for this session only."); }
   syncThemeButton();
 }
 
@@ -67,7 +74,7 @@ function moduleCard(lesson, index) {
   button.type = "button";
   button.className = "module-card" + (complete ? " completed" : "");
   button.dataset.lessonIndex = String(index);
-  button.innerHTML = '<span class="module-number">' + (complete ? "✓" : lesson.id) + '</span><span class="module-copy"><b>' + lesson.cardTitle + '</b><small>' + lesson.summary + '</small></span><span class="module-weight">' + lesson.weight + '</span>';
+  button.innerHTML = '<span class="module-number">' + (complete ? "✓" : lesson.id) + '</span><span class="module-copy"><b>' + lesson.cardTitle + '</b><small>' + lesson.summary + '</small></span><span class="module-weight">' + (complete ? "Quiz completed" : "10 questions") + '</span>';
   button.addEventListener("click", () => openLesson(index));
   return button;
 }
@@ -107,19 +114,23 @@ function updateDashboard() {
   document.getElementById("level").textContent = level;
   document.getElementById("xp").textContent = progress.xp;
   document.getElementById("xpBar").style.width = String(withinLevel / 5) + "%";
-  document.getElementById("streak").textContent = progress.streak;
+  document.getElementById("streak").textContent = RNProgress.currentStreak(progress, localDateKey());
   document.getElementById("studyDays").textContent = progress.studyDates.length;
   document.getElementById("freeze").textContent = progress.freeze;
   document.getElementById("completionSummary").textContent = progress.completedLessons.length + " / " + curriculum.lessons.length + " available complete";
-  const nextIndex = Math.max(0, Math.min(curriculum.lessons.length - 1, progress.lastLessonId - 1));
+  const nextIndex = RNProgress.nextLessonIndex(progress, curriculum.lessons);
   const continueButton = document.getElementById("continueButton");
-  continueButton.textContent = progress.completedLessons.length ? "Continue Lesson " + curriculum.lessons[nextIndex].id : "Start Lesson 1";
+  const nextLesson = curriculum.lessons[nextIndex];
+  continueButton.textContent = (progress.completedLessons.includes(nextLesson.id) ? "Review Lesson " : "Continue Lesson ") + nextLesson.id;
+  document.getElementById("reviewButton").textContent = "Review missed questions (" + progress.missedQuestionIds.length + ")";
+  document.getElementById("reviewButton").disabled = !progress.missedQuestionIds.length;
+  document.getElementById("availabilitySummary").textContent = curriculum.lessons.length + " lessons available · 184 planned across 12 courses";
   continueButton.onclick = () => openLesson(nextIndex);
   renderCurriculum();
 }
 
 async function fetchJson(path) {
-  const response = await fetch(path);
+  const response = await fetch(path + "?v=" + RN_APP_VERSION.replace(/^v/, ""));
   if (!response.ok) throw new Error("Could not load " + path);
   return response.json();
 }
@@ -138,14 +149,16 @@ async function loadQuiz(index) {
 
 async function openLesson(index) {
   try {
-    currentLessonIndex = index;
+    const requestEpoch = ++navigationEpoch;
     const item = curriculum.lessons[index];
     const lesson = await loadLesson(index);
+    if (requestEpoch !== navigationEpoch) return;
+    currentLessonIndex = index;
     progress = RNProgress.markStudyDay(progress, localDateKey());
     progress.lastLessonId = item.id;
     save();
     const body = document.getElementById("lessonBody");
-    const courseLabel = item.course ? item.course + " · NCLEX tag: " + item.category + " " + item.weight : item.category + " · " + item.weight;
+    const courseLabel = item.course ? item.course + " · NCLEX tag: " + lesson.nclexClientNeeds : item.category + " · " + item.weight;
     body.innerHTML = '<span class="eyebrow">' + courseLabel + '</span><h1 id="lessonTitle">' + lesson.title + "</h1>" + lesson.html + '<p class="source-note">Blueprint source: <a href="https://www.nclex.com/test-plans" target="_blank" rel="noopener noreferrer">2026 NCLEX-RN Test Plan</a>. Educational content last reviewed September 2026.</p>';
     setRoute("lesson");
   } catch (error) {
@@ -155,29 +168,43 @@ async function openLesson(index) {
 }
 
 async function startLessonQuiz() {
+  if (!curriculum || loadingQuiz) return;
+  loadingQuiz = true;
+  const index = currentLessonIndex;
+  const epoch = navigationEpoch;
   try {
-    const data = await loadQuiz(currentLessonIndex);
-    currentQuiz = RNQuiz.createQuizSession(data.questions, { mode: "lesson", lessonId: curriculum.lessons[currentLessonIndex].id });
+    const data = await loadQuiz(index);
+    if (epoch !== navigationEpoch) return;
+    currentQuiz = RNQuiz.createQuizSession(data.questions, { mode: "lesson", lessonId: curriculum.lessons[index].id, shuffleChoices: true });
     currentQuizTitle = curriculum.lessons[currentLessonIndex].cardTitle;
     startQuizUI();
   } catch (error) {
     console.error(error);
     toast("The quiz could not be loaded.");
-  }
+  } finally { loadingQuiz = false; }
 }
 
-async function startPractice() {
+async function startPractice(reviewOnly = false) {
+  // Event listeners pass an Event; only a literal true requests missed-question review.
+  reviewOnly = reviewOnly === true;
+  if (!curriculum || loadingQuiz) return;
+  loadingQuiz = true;
+  const epoch = navigationEpoch;
   try {
     document.getElementById("practiceButton").disabled = true;
     const banks = await Promise.all(curriculum.lessons.map((lesson, index) => loadQuiz(index)));
-    const questions = banks.flatMap((bank, index) => bank.questions.map(question => Object.assign({}, question, { lessonId: curriculum.lessons[index].id })));
-    currentQuiz = RNQuiz.createQuizSession(RNQuiz.shuffleQuestions(questions).slice(0, Math.min(10, questions.length)), { mode: "practice" });
-    currentQuizTitle = "Mixed RN practice";
+    if (epoch !== navigationEpoch) return;
+    let questions = banks.flatMap((bank, index) => bank.questions.map(question => Object.assign({}, question, { lessonId: curriculum.lessons[index].id })));
+    if (reviewOnly) questions = questions.filter(question => progress.missedQuestionIds.includes(question.id));
+    if (!questions.length) { toast("No missed questions to review."); return; }
+    currentQuiz = RNQuiz.createQuizSession(RNQuiz.shuffleQuestions(questions).slice(0, Math.min(10, questions.length)), { mode: reviewOnly ? "review" : "practice", shuffleChoices: true });
+    currentQuizTitle = reviewOnly ? "Missed-question review" : "Mixed RN practice";
     startQuizUI();
   } catch (error) {
     console.error(error);
     toast("Practice could not be loaded.");
   } finally {
+    loadingQuiz = false;
     document.getElementById("practiceButton").disabled = false;
   }
 }
@@ -185,7 +212,7 @@ async function startPractice() {
 function startQuizUI() {
   progress = RNProgress.markStudyDay(progress, localDateKey());
   save();
-  document.getElementById("quizLabel").textContent = currentQuiz.mode === "lesson" ? "LESSON QUIZ" : "MIXED PRACTICE";
+  document.getElementById("quizLabel").textContent = currentQuiz.mode === "lesson" ? "LESSON QUIZ" : currentQuiz.mode === "review" ? "MISSED-QUESTION REVIEW" : "MIXED PRACTICE";
   renderQuestion();
   setRoute("quiz");
 }
@@ -196,7 +223,11 @@ function renderQuestion() {
   document.getElementById("questionTotal").textContent = currentQuiz.questions.length;
   document.getElementById("questionProgress").style.width = String((currentQuiz.current + 1) / currentQuiz.questions.length * 100) + "%";
   document.getElementById("questionStep").textContent = JUDGMENT_STEPS.includes(question.clinicalJudgmentStep) ? question.clinicalJudgmentStep : "Clinical judgment";
+  document.getElementById("questionTags").textContent = question.traditionalCourse + " · " + question.nclexClientNeeds;
   document.getElementById("questionText").textContent = question.question;
+  document.getElementById("questionText").tabIndex = -1;
+  document.getElementById("questionText").focus({ preventScroll: true });
+  window.scrollTo({ top: 0, behavior: "instant" });
   const choices = document.getElementById("answerChoices");
   choices.replaceChildren(...question.choices.map((choice, index) => {
     const button = document.createElement("button");
@@ -221,7 +252,7 @@ function selectAnswer(selectedIndex) {
     if (index === result.correctIndex) button.classList.add("correct");
     if (index === selectedIndex && !result.correct) button.classList.add("incorrect");
   });
-  progress = RNProgress.recordAnswer(progress, result.correct);
+  progress = RNProgress.recordAnswer(progress, result.correct, currentQuiz.questions[currentQuiz.current].id);
   save();
   const rationale = document.getElementById("answerRationale");
   rationale.innerHTML = "<b>" + (result.correct ? "Correct" : "Best answer: " + String.fromCharCode(65 + result.correctIndex)) + "</b><span>" + result.explanation + "</span>";
@@ -232,13 +263,17 @@ function selectAnswer(selectedIndex) {
 }
 
 function nextQuestion() {
+  if (!currentQuiz || !currentQuiz.answered || currentQuiz.finished) return;
   if (RNQuiz.advanceQuestion(currentQuiz)) renderQuestion();
   else finishQuiz();
 }
 
 function finishQuiz() {
+  if (!currentQuiz || currentQuiz.finished) return;
+  currentQuiz.finished = true;
   if (currentQuiz.mode === "lesson") {
     progress = RNProgress.completeLesson(progress, currentQuiz.lessonId);
+    progress = RNProgress.recordLessonScore(progress, currentQuiz.lessonId, currentQuiz.score, currentQuiz.questions.length);
     save();
   }
   document.getElementById("resultsTitle").textContent = currentQuizTitle + " complete";
@@ -246,16 +281,29 @@ function finishQuiz() {
   document.getElementById("resultTotal").textContent = currentQuiz.questions.length;
   const percentage = currentQuiz.score / currentQuiz.questions.length;
   document.getElementById("resultMessage").textContent = percentage >= .8 ? "Strong shift. Keep applying the same reasoning to new cues." : percentage >= .6 ? "Good foundation. Review the rationales before the next shift." : "Review the lesson, then try the questions again with safety and priority in mind.";
+  document.getElementById("resultsReviewButton").hidden = !currentQuiz.missedQuestions.length;
+  document.getElementById("resultsReviewButton").onclick = () => {
+    currentQuiz = RNQuiz.createQuizSession(currentQuiz.missedQuestions, { mode: "review", shuffleChoices: true });
+    currentQuizTitle = "Missed-question review";
+    startQuizUI();
+  };
+  const next = document.getElementById("resultsNextButton");
+  next.hidden = !curriculum.lessons.some(lesson => !progress.completedLessons.includes(lesson.id));
+  next.onclick = () => openLesson(RNProgress.nextLessonIndex(progress, curriculum.lessons));
   setRoute("results");
 }
 
 function renderProgress() {
   if (!curriculum) return;
   document.getElementById("progressXp").textContent = progress.xp;
-  document.getElementById("progressStreak").textContent = progress.streak + " days";
+  document.getElementById("progressStreak").textContent = RNProgress.currentStreak(progress, localDateKey()) + " days";
   document.getElementById("progressStudyDays").textContent = progress.studyDates.length;
   document.getElementById("progressAccuracy").textContent = progress.answers.total ? Math.round(progress.answers.correct / progress.answers.total * 100) + "%" : "—";
-  document.getElementById("moduleProgress").innerHTML = curriculum.lessons.map(lesson => '<div class="progress-row"><div><b>' + lesson.cardTitle + "</b><br><span>" + lesson.category + '</span></div><b>' + (progress.completedLessons.includes(lesson.id) ? "Complete" : "Not started") + "</b></div>").join("");
+  document.getElementById("moduleProgress").innerHTML = curriculum.lessons.map(lesson => {
+    const score = progress.lessonScores[lesson.id];
+    const status = score ? "Last " + score.last + "/" + score.total + " · Best " + score.bestPercent + "%" : progress.completedLessons.includes(lesson.id) ? "Quiz completed · score not recorded" : "Quiz not completed";
+    return '<div class="progress-row"><div><b>' + lesson.cardTitle + "</b><br><span>" + lesson.category + '</span></div><b>' + status + "</b></div>";
+  }).join("");
 }
 
 function bindEvents() {
@@ -264,6 +312,7 @@ function bindEvents() {
   document.getElementById("nextQuestionButton").addEventListener("click", nextQuestion);
   document.getElementById("quizBackButton").addEventListener("click", () => setRoute(currentQuiz && currentQuiz.mode === "lesson" ? "lesson" : "home"));
   document.getElementById("resultsHomeButton").addEventListener("click", () => setRoute("home"));
+  document.getElementById("reviewButton").addEventListener("click", () => startPractice(true));
   document.getElementById("practiceButton").addEventListener("click", startPractice);
   document.querySelectorAll("[data-route]").forEach(button => button.addEventListener("click", () => setRoute(button.dataset.route)));
   document.querySelectorAll("[data-action='practice']").forEach(button => button.addEventListener("click", startPractice));
@@ -275,7 +324,26 @@ async function initializeApp() {
   try {
     [curriculum, roadmap] = await Promise.all([fetchJson("data/curriculum.json"), fetchJson("data/program-roadmap.json")]);
     updateDashboard();
-    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(error => console.warn("Offline support unavailable", error));
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").then(registration => {
+        const offerUpdate = () => {
+          if (!registration.waiting) return;
+          const notice = document.getElementById("updateNotice");
+          notice.hidden = false;
+          document.getElementById("updateButton").onclick = () => {
+            navigator.serviceWorker.addEventListener("controllerchange", () => location.reload(), { once: true });
+            registration.waiting?.postMessage({ type: "SKIP_WAITING" });
+          };
+        };
+        offerUpdate();
+        registration.addEventListener("updatefound", () => {
+          const installing = registration.installing;
+          installing?.addEventListener("statechange", () => {
+            if (installing.state === "installed") offerUpdate();
+          });
+        });
+      }).catch(error => console.warn("Offline support unavailable", error));
+    }
   } catch (error) {
     console.error(error);
     document.getElementById("curriculumList").innerHTML = '<article class="notice-card"><b>Curriculum unavailable</b><p>Reload while connected to continue.</p></article>';

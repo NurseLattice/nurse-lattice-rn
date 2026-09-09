@@ -5,26 +5,151 @@
       "id": "rn-07-q01",
       "clinicalJudgmentStep": "Analyze cues",
       "question": "Which postoperative trend is most concerning and requires prompt follow-up?",
-      "choices": ["Pain decreases after treatment", "Heart rate rises from 88 to 118/min while blood pressure and urine output fall", "Temperature remains unchanged over two readings", "The client requests help repositioning"],
+      "choices": [
+        "Pain decreases after treatment",
+        "Heart rate rises from 88 to 118/min while blood pressure and urine output fall",
+        "Temperature remains unchanged over two readings",
+        "The client requests help repositioning"
+      ],
       "correctIndex": 1,
-      "explanation": "Rising heart rate with falling blood pressure and urine output suggests worsening perfusion and possible bleeding or shock. The pattern is more urgent than a stable or improving finding."
+      "explanation": "Rising heart rate with falling blood pressure and urine output suggests worsening perfusion and possible bleeding or shock. The pattern is more urgent than a stable or improving finding.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Reduction of Risk Potential"
     },
     {
       "id": "rn-07-q02",
       "clinicalJudgmentStep": "Take action",
       "question": "The laboratory reports a critically high potassium result for a client. Which action is the RN's priority?",
-      "choices": ["File the result for the next shift", "Assess the client and cardiac status, verify the result as appropriate, and promptly escalate for treatment", "Encourage unrestricted potassium-rich foods", "Repeat the test next week without notifying anyone"],
+      "choices": [
+        "File the result for the next shift",
+        "Assess the client and cardiac status, verify the result as appropriate, and promptly escalate for treatment",
+        "Encourage unrestricted potassium-rich foods",
+        "Repeat the test next week without notifying anyone"
+      ],
       "correctIndex": 1,
-      "explanation": "Severe hyperkalemia can cause life-threatening dysrhythmias. The RN rapidly assesses, checks monitoring and specimen context without delaying care, and activates the critical-result response."
+      "explanation": "Severe hyperkalemia can cause life-threatening dysrhythmias. The RN rapidly assesses, checks monitoring and specimen context without delaying care, and activates the critical-result response.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Reduction of Risk Potential"
     },
     {
       "id": "rn-07-q03",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "After a femoral arterial procedure, which finding requires immediate escalation?",
-      "choices": ["A small amount of stable bruising at the insertion site", "The affected foot is newly cool with an absent pedal pulse", "The client asks when lunch will arrive", "The dressing remains dry and intact"],
+      "choices": [
+        "A small amount of stable bruising at the insertion site",
+        "The affected foot is newly cool with an absent pedal pulse",
+        "The client asks when lunch will arrive",
+        "The dressing remains dry and intact"
+      ],
       "correctIndex": 1,
-      "explanation": "A newly cool, pulseless extremity suggests acute arterial compromise. Compare with baseline, maintain safety, and escalate immediately to protect limb perfusion."
+      "explanation": "A newly cool, pulseless extremity suggests acute arterial compromise. Compare with baseline, maintain safety, and escalate immediately to protect limb perfusion.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Reduction of Risk Potential"
+    },
+    {
+      "id": "rn-07-q04",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which post-cast finding requires urgent evaluation even when a distal pulse is palpable?",
+      "choices": [
+        "Increasing pain with passive movement and new tingling",
+        "Warm fingers with unchanged sensation",
+        "Mild discomfort that improves with prescribed measures",
+        "Unchanged swelling documented before the cast"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pain with passive movement and new sensory changes may indicate a neurovascular complication, including compartment syndrome. A pulse does not exclude it; expected stable findings do not explain this new pattern."
+    },
+    {
+      "id": "rn-07-q05",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A monitor shows an unexpected low pressure and the client is confused with cool, clammy skin. What is the best response?",
+      "choices": [
+        "Activate urgent assessment while assessing the client and verifying the reading",
+        "Repeat the pressure several times before contacting anyone",
+        "Assume the monitor is inaccurate because the reading is unusual",
+        "Complete routine documentation before reassessing symptoms"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clinical signs support instability. Verification can occur alongside rescue; repeated measurements must not postpone escalation when perfusion and mental status are worsening."
+    },
+    {
+      "id": "rn-07-q06",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why is a pre-procedure neurovascular assessment useful?",
+      "choices": [
+        "It establishes a comparison for detecting new post-procedure changes",
+        "It eliminates the need to assess afterward",
+        "It proves that later pain cannot be a complication",
+        "It replaces the client's procedure-specific consent"
+      ],
+      "correctIndex": 0,
+      "explanation": "Baseline findings help distinguish a change from a pre-existing limitation. They do not prevent complications, remove monitoring needs, or substitute for informed consent."
+    },
+    {
+      "id": "rn-07-q07",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client awaiting a procedure says, 'I signed, but no one explained the risks.' What should the RN do?",
+      "choices": [
+        "Pause preparation and contact the clinician responsible for the informed-consent discussion",
+        "Proceed because the signed form alone establishes understanding",
+        "Explain that questions may only be asked after sedation",
+        "Describe the procedure's risks from memory and authorize it independently"
+      ],
+      "correctIndex": 0,
+      "explanation": "The concern requires clarification before proceeding. The RN advocates for an informed discussion within role; a signature or later explanation does not resolve unanswered pre-procedure questions."
+    },
+    {
+      "id": "rn-07-q08",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which escalation message best communicates a deteriorating postoperative trend?",
+      "choices": [
+        "State the timed vital-sign changes, perfusion findings, actions taken, and request immediate bedside review",
+        "Report only the latest heart rate without baseline or symptoms",
+        "Ask for routine review at the next ward round",
+        "Send a message saying 'not doing well' without assessment details"
+      ],
+      "correctIndex": 0,
+      "explanation": "Specific trends and a clear request support timely action. An isolated value or vague message hides the clinical pattern, and routine review is not adequate for deterioration."
+    },
+    {
+      "id": "rn-07-q09",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN reports worsening perfusion, but the initial response is to wait despite continuing deterioration. What should the RN do?",
+      "choices": [
+        "Use the escalation chain or rapid-response process while continuing assessment and support",
+        "Wait until the next shift because the concern has been reported",
+        "Document the call and stop further monitoring",
+        "Ask the client to call the provider directly"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reporting does not end the RN's responsibility to respond to ongoing deterioration. Escalate through the appropriate pathway and continue care rather than relying on a single unanswered concern."
+    },
+    {
+      "id": "rn-07-q10",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After a time-critical intervention for deterioration, what is the most meaningful follow-up?",
+      "choices": [
+        "Reassess symptoms, perfusion and vital-sign trends, and escalate if the response is inadequate",
+        "Confirm only that the provider received the original message",
+        "Document the intervention without checking the client again",
+        "Assume the condition is resolved once a new order is entered"
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluation concerns the client's response, not completion of communication or ordering. Continued or worsening instability requires further action even after the first intervention."
     }
   ]
 }
-

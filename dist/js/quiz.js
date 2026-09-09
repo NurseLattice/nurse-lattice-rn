@@ -7,10 +7,17 @@ function shuffleQuestions(items, random = Math.random) {
   return result;
 }
 
+function shuffleChoices(question, random = Math.random) {
+  const order = shuffleQuestions(question.choices.map((_, index) => index), random);
+  return { ...question, choices: order.map(index => question.choices[index]), correctIndex: order.indexOf(question.correctIndex) };
+}
+
 function createQuizSession(questions, options = {}) {
   if (!Array.isArray(questions) || questions.length === 0) throw new Error("Quiz requires questions");
   return {
-    questions: options.shuffle ? shuffleQuestions(questions, options.random) : [...questions],
+    questions: (options.shuffle ? shuffleQuestions(questions, options.random) : [...questions]).map(question => options.shuffleChoices ? shuffleChoices(question, options.random) : { ...question, choices: [...question.choices] }),
+    missedQuestions: [],
+    finished: false,
     current: 0,
     score: 0,
     answered: false,
@@ -26,6 +33,7 @@ function answerCurrentQuestion(session, selectedIndex) {
   session.answered = true;
   const correct = selectedIndex === question.correctIndex;
   if (correct) session.score += 1;
+  else session.missedQuestions.push(question);
   return { correct, repeated: false, correctIndex: question.correctIndex, explanation: question.explanation };
 }
 
@@ -37,7 +45,6 @@ function advanceQuestion(session) {
   return true;
 }
 
-const RNQuiz = { shuffleQuestions, createQuizSession, answerCurrentQuestion, advanceQuestion };
+const RNQuiz = { shuffleChoices, shuffleQuestions, createQuizSession, answerCurrentQuestion, advanceQuestion };
 if (typeof window !== "undefined") window.RNQuiz = RNQuiz;
 if (typeof module !== "undefined") module.exports = RNQuiz;
-

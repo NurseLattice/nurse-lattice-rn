@@ -5,82 +5,151 @@
       "id": "rn-01-q01",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "The RN begins care of a newly admitted client. Which action represents the assessment step of the nursing process?",
-      "choices": ["Collect the client's history, current symptoms, vital signs, and physical findings", "Select nursing interventions before meeting the client", "Determine whether the outcomes were achieved", "Document that the care plan is complete"],
+      "choices": [
+        "Collect the client's history, current symptoms, vital signs, and physical findings",
+        "Select nursing interventions before meeting the client",
+        "Determine whether the outcomes were achieved",
+        "Document that the care plan is complete"
+      ],
       "correctIndex": 0,
-      "explanation": "Assessment is the systematic collection and validation of subjective and objective information. Planning, intervention, and evaluation depend on an adequate assessment."
+      "explanation": "Assessment is the systematic collection and validation of subjective and objective information. Planning, intervention, and evaluation depend on an adequate assessment.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care"
     },
     {
       "id": "rn-01-q02",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Which finding is objective assessment data?",
-      "choices": ["The client states, “My pain is sharp.”", "The client reports feeling worried about surgery", "The blood pressure is 86/54 mm Hg", "The client says sleep was poor last night"],
+      "choices": [
+        "The client states, “My pain is sharp.”",
+        "The client reports feeling worried about surgery",
+        "The blood pressure is 86/54 mm Hg",
+        "The client says sleep was poor last night"
+      ],
       "correctIndex": 2,
-      "explanation": "A measured blood pressure is objective data that another observer can verify. Pain quality, worry, and sleep experience are subjective data reported by the client."
+      "explanation": "A measured blood pressure is objective data that another observer can verify. Pain quality, worry, and sleep experience are subjective data reported by the client.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care"
     },
     {
       "id": "rn-01-q03",
       "clinicalJudgmentStep": "Analyze cues",
       "question": "What is the primary purpose of the nursing diagnosis or analysis step?",
-      "choices": ["Name the medical disease that the provider will treat", "Identify actual or potential human responses that nursing care can address", "Replace the need for further assessment", "Select medications independently of an order"],
+      "choices": [
+        "Name the medical disease that the provider will treat",
+        "Identify actual or potential human responses that nursing care can address",
+        "Replace the need for further assessment",
+        "Select medications independently of an order"
+      ],
       "correctIndex": 1,
-      "explanation": "Nursing analysis identifies client responses and risks that guide nursing priorities and interventions. It does not replace a medical diagnosis or authorize independent prescribing."
+      "explanation": "Nursing analysis identifies client responses and risks that guide nursing priorities and interventions. It does not replace a medical diagnosis or authorize independent prescribing.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care"
     },
     {
       "id": "rn-01-q04",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "A client refuses an ordered medication. Which response by the RN best reflects patient-centered care?",
-      "choices": ["Tell the client the medication must be taken", "Hide the medication in food", "Ask the reason, provide relevant information, respect the decision, and communicate and document as appropriate", "Record the dose as given to avoid delaying the schedule"],
+      "choices": [
+        "Tell the client the medication must be taken",
+        "Hide the medication in food",
+        "Ask the reason, provide relevant information, respect the decision, and communicate and document as appropriate",
+        "Record the dose as given to avoid delaying the schedule"
+      ],
       "correctIndex": 2,
-      "explanation": "A capable client has the right to refuse. The RN explores concerns, supports an informed decision, addresses immediate risk, and accurately communicates and documents the refusal."
+      "explanation": "A capable client has the right to refuse. The RN explores concerns, supports an informed decision, addresses immediate risk, and accurately communicates and documents the refusal.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care"
     },
     {
       "id": "rn-01-q05",
       "clinicalJudgmentStep": "Take action",
       "question": "The RN sees an order for a medication listed as a severe allergy in the client's record. What should the RN do first?",
-      "choices": ["Administer the medication because it was ordered", "Hold the medication and clarify the discrepancy before administration", "Ask another nurse to give the medication", "Delete the allergy from the record"],
+      "choices": [
+        "Administer the medication because it was ordered",
+        "Hold the medication and clarify the discrepancy before administration",
+        "Ask another nurse to give the medication",
+        "Delete the allergy from the record"
+      ],
       "correctIndex": 1,
-      "explanation": "The RN remains accountable for safe care and should not administer a medication while a severe-allergy discrepancy is unresolved. Hold it, assess relevant information, and clarify promptly."
+      "explanation": "The RN remains accountable for safe care and should not administer a medication while a severe-allergy discrepancy is unresolved. Hold it, assess relevant information, and clarify promptly.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies"
     },
     {
       "id": "rn-01-q06",
       "clinicalJudgmentStep": "Recognize cues",
       "question": "Assistive personnel reports that a previously alert client is now difficult to awaken. What is the RN's priority response?",
-      "choices": ["Ask the assistive personnel to recheck in one hour", "Personally assess the client immediately and call for appropriate help", "Document the report without seeing the client", "Wait for the provider to make rounds"],
+      "choices": [
+        "Ask the assistive personnel to recheck in one hour",
+        "Personally assess the client immediately and call for appropriate help",
+        "Document the report without seeing the client",
+        "Wait for the provider to make rounds"
+      ],
       "correctIndex": 1,
-      "explanation": "An acute change in level of consciousness may signal a life-threatening problem. The RN must promptly assess the client and activate the needed response rather than delegate clinical judgment."
+      "explanation": "An acute change in level of consciousness may signal a life-threatening problem. The RN must promptly assess the client and activate the needed response rather than delegate clinical judgment.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care"
     },
     {
       "id": "rn-01-q07",
       "clinicalJudgmentStep": "Take action",
       "question": "Which documentation entry is most appropriate?",
-      "choices": ["Client was difficult and uncooperative", "Client probably fell because of carelessness", "Client declined ambulation, stating, “I feel dizzy”; blood pressure 92/58 mm Hg; assisted back to bed and provider notified", "Client seems much better now"],
+      "choices": [
+        "Client was difficult and uncooperative",
+        "Client probably fell because of carelessness",
+        "Client declined ambulation, stating, “I feel dizzy”; blood pressure 92/58 mm Hg; assisted back to bed and provider notified",
+        "Client seems much better now"
+      ],
       "correctIndex": 2,
-      "explanation": "The entry records the client's words, measurable findings, nursing action, and communication without judgment or speculation. Accurate, timely facts support continuity and accountability."
+      "explanation": "The entry records the client's words, measurable findings, nursing action, and communication without judgment or speculation. Accurate, timely facts support continuity and accountability.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care"
     },
     {
       "id": "rn-01-q08",
       "clinicalJudgmentStep": "Evaluate outcomes",
       "question": "After implementing a nursing intervention, what should the RN do next?",
-      "choices": ["Assume the intervention worked because it was ordered", "Compare the client's response with the expected outcome and revise or escalate the plan if needed", "Remove the problem from the care plan", "Wait until discharge to reassess"],
+      "choices": [
+        "Assume the intervention worked because it was ordered",
+        "Compare the client's response with the expected outcome and revise or escalate the plan if needed",
+        "Remove the problem from the care plan",
+        "Wait until discharge to reassess"
+      ],
       "correctIndex": 1,
-      "explanation": "Evaluation determines whether the intervention produced the expected result. The RN uses the response to continue, modify, or escalate care rather than assuming success."
+      "explanation": "Evaluation determines whether the intervention produced the expected result. The RN uses the response to continue, modify, or escalate care rather than assuming success.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care"
     },
     {
       "id": "rn-01-q09",
       "clinicalJudgmentStep": "Prioritize hypotheses",
       "question": "Which client finding requires the most immediate nursing attention?",
-      "choices": ["A chronic knee pain rating of 4/10", "A request for assistance with morning hygiene", "New noisy breathing with difficulty speaking", "A question about tomorrow's discharge time"],
+      "choices": [
+        "A chronic knee pain rating of 4/10",
+        "A request for assistance with morning hygiene",
+        "New noisy breathing with difficulty speaking",
+        "A question about tomorrow's discharge time"
+      ],
       "correctIndex": 2,
-      "explanation": "New noisy breathing and difficulty speaking suggest a threatened airway. An immediate physiologic threat takes priority over chronic discomfort, routine care, and discharge planning."
+      "explanation": "New noisy breathing and difficulty speaking suggest a threatened airway. An immediate physiologic threat takes priority over chronic discomfort, routine care, and discharge planning.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Physiological Adaptation"
     },
     {
       "id": "rn-01-q10",
       "clinicalJudgmentStep": "Generate solutions",
       "question": "An RN is unsure whether a requested procedure is within the nurse's scope and competence. Which action is best?",
-      "choices": ["Perform it once and research it later", "Refuse without communicating the concern", "Pause and consult the applicable nurse practice act, organizational policy, and appropriate supervisor", "Ask an unlicensed coworker to perform it"],
+      "choices": [
+        "Perform it once and research it later",
+        "Refuse without communicating the concern",
+        "Pause and consult the applicable nurse practice act, organizational policy, and appropriate supervisor",
+        "Ask an unlicensed coworker to perform it"
+      ],
       "correctIndex": 2,
-      "explanation": "Scope depends on jurisdiction, standards, policy, education, and competence. Pausing to verify and seek appropriate supervision protects the client and the nurse's accountability."
+      "explanation": "Scope depends on jurisdiction, standards, policy, education, and competence. Pausing to verify and seek appropriate supervision protects the client and the nurse's accountability.",
+      "traditionalCourse": "Foundations of Nursing Practice",
+      "nclexClientNeeds": "Management of Care"
     }
   ]
 }
-

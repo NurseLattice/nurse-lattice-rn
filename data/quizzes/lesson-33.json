@@ -1,0 +1,105 @@
+{
+  "lessonId": 33,
+  "questions": [
+    {
+      "id": "rn-33-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding best represents a clinically meaningful change from baseline?",
+      "choices": ["A chronic irregular pulse documented repeatedly without new symptoms", "A client who was oriented this morning now cannot state their name and is difficult to arouse", "A stable scar from surgery five years ago", "A laboratory value unchanged from the client's documented baseline"],
+      "correctIndex": 1,
+      "explanation": "A sudden decline in consciousness and orientation is an acute neurologic change requiring immediate assessment and escalation. Familiar chronic findings still need context but are not the highest-priority change here."
+    },
+    {
+      "id": "rn-33-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A pulse oximeter reads 82%, but the waveform is poor. The client is using accessory muscles and cannot speak a full sentence. What should the RN do first?",
+      "choices": ["Spend several minutes replacing the probe before assessing the client", "Treat the respiratory distress as real: assess airway and breathing, call for help, support oxygenation per protocol, and verify the reading in parallel", "Document equipment failure and leave the room", "Wait for an arterial blood gas before intervening"],
+      "correctIndex": 1,
+      "explanation": "Severe respiratory symptoms establish urgency even when a device signal is questionable. The RN supports the client and escalates immediately while measurement reliability is checked concurrently."
+    },
+    {
+      "id": "rn-33-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which cue cluster most strongly suggests worsening perfusion?",
+      "choices": ["Warm skin, clear mentation, stable urine output and unchanged pulse", "Tachycardia, narrowing pulse pressure, cool clammy skin, delayed capillary refill and falling urine output", "One mildly elevated temperature after exercise", "Chronic edema with no change in weight or breathing"],
+      "correctIndex": 1,
+      "explanation": "The combined changes in pulse, pressure relationship, skin perfusion, capillary refill, and urine output point to impaired circulation. A connected trend carries more meaning than an isolated measurement."
+    },
+    {
+      "id": "rn-33-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client suddenly develops facial droop, right-arm weakness and slurred speech. What information is especially time-sensitive while the emergency pathway is activated?",
+      "choices": ["The client's favorite meal", "The exact onset or last-known-well time", "The date of the last dental visit", "The room temperature"],
+      "correctIndex": 1,
+      "explanation": "Sudden focal neurologic deficits suggest a time-sensitive event. The onset or last-known-well time guides urgent evaluation and possible treatment, so it should be established without delaying emergency response."
+    },
+    {
+      "id": "rn-33-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A family member says, 'He is not acting like himself,' although the current vital signs are within the ordered parameters. What is the RN's best response?",
+      "choices": ["Reassure the family that normal vital signs exclude deterioration", "Ask what is different from baseline and perform a focused assessment, then escalate findings as indicated", "Tell the family to discuss it at discharge", "Ask assistive personnel to decide whether the concern is important"],
+      "correctIndex": 1,
+      "explanation": "Family members may detect subtle cognition, behavior, breathing, or function changes early. Their concern is assessment data and warrants clarification and direct RN evaluation even when one data set appears reassuring."
+    },
+    {
+      "id": "rn-33-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best demonstrates avoidance of anchoring bias?",
+      "choices": ["The confusion must be dementia because the client is older", "The pain must be postoperative because surgery occurred today", "The client has a known diagnosis, but I will reassess the new findings and consider other time-sensitive causes", "The first explanation is usually correct, so no further assessment is needed"],
+      "correctIndex": 2,
+      "explanation": "Anchoring occurs when new findings are forced into an existing diagnosis. Reassessing the pattern and considering dangerous alternatives reduces premature closure and supports safer escalation."
+    },
+    {
+      "id": "rn-33-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which SBAR message gives the receiving clinician the clearest actionable concern?",
+      "choices": ["The patient doesn't look good. Please come sometime", "Room 12 has changed", "Mr. Lee developed new chest pressure 10 minutes ago; BP fell from 132/78 to 94/60, he is diaphoretic, and I need immediate bedside evaluation while the chest-pain pathway is underway", "I already documented everything in the chart"],
+      "correctIndex": 2,
+      "explanation": "Effective escalation identifies the client, new situation, timing, objective trend, focused assessment, actions underway, urgency, and a specific request. Vague concern does not support rapid coordinated action."
+    },
+    {
+      "id": "rn-33-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN reports continuing deterioration, but the first contacted clinician does not respond. What should the RN do?",
+      "choices": ["Wait until the next shift to avoid conflict", "Continue supportive care and use the rapid-response or chain-of-command process required by policy", "Change the medical treatment plan independently", "Document the call and stop monitoring"],
+      "correctIndex": 1,
+      "explanation": "Ongoing client risk requires continued assessment, supportive action, and timely escalation. If the initial contact is unavailable or the response is inadequate, the RN follows the established chain of command or rapid-response pathway."
+    },
+    {
+      "id": "rn-33-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Assistive personnel report a new respiratory rate of 30/min in a client whose prior rate was 16/min. What is the RN's priority responsibility?",
+      "choices": ["Ask the assistant to diagnose the cause", "Personally assess breathing, symptoms, oxygen delivery and related vital signs, then determine urgency and response", "Change the value to the previous baseline", "Wait for the next scheduled set because respiratory rate was delegated"],
+      "correctIndex": 1,
+      "explanation": "A substantial new change requires RN validation and focused assessment. Measurement may be delegated, but interpreting the trend, identifying deterioration, acting, and evaluating the response remain RN responsibilities."
+    },
+    {
+      "id": "rn-33-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After interventions for respiratory deterioration, which finding best demonstrates that the response loop is complete?",
+      "choices": ["The provider was notified", "The intervention was entered in the chart", "Breathing effort, respiratory rate, oxygenation, mentation and symptoms were reassessed and compared with the pre-intervention state", "The monitor alarm was silenced"],
+      "correctIndex": 2,
+      "explanation": "Notification and intervention are process steps, not outcomes. Reassessment of the relevant physiologic and functional findings determines whether the client improved, worsened, or needs further escalation."
+    }
+  ]
+}

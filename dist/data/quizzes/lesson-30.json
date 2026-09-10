@@ -1,0 +1,105 @@
+{
+  "lessonId": 30,
+  "questions": [
+    {
+      "id": "rn-30-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which assessment best detects an early pressure-related change in deeply pigmented skin?",
+      "choices": ["Look only for bright redness", "Compare with nearby tissue and assess persistent color change, temperature, firmness, edema, and pain", "Rely only on the pressure-risk score", "Wait until the skin opens"],
+      "correctIndex": 1,
+      "explanation": "Early pressure damage may not appear bright red or show visible blanching in deeply pigmented skin. Local temperature, firmness, pain, edema, and persistent discoloration are important comparative cues."
+    },
+    {
+      "id": "rn-30-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN finds an intact, tender, nonblanching area over the heel. What is the priority action?",
+      "choices": ["Massage the area vigorously", "Relieve pressure, offload the heel, complete and document the assessment, and implement the prevention pathway", "Place the heel directly on a heating pad", "Wait for blistering before intervening"],
+      "correctIndex": 1,
+      "explanation": "Persistent nonblanching change over a bony prominence indicates tissue injury risk. Immediate pressure relief and an individualized prevention and follow-up plan can limit further damage; massage may worsen injury."
+    },
+    {
+      "id": "rn-30-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A wound bed is fully covered by slough and eschar, so the depth cannot be seen. How should the RN classify the finding under the pressure-injury staging system?",
+      "choices": ["Stage 1", "Stage 2", "Automatically Stage 4", "Unstageable until enough obscuring tissue is removed or otherwise evaluated according to policy"],
+      "correctIndex": 3,
+      "explanation": "When slough or eschar obscures the full extent of tissue loss, the depth cannot be confirmed. It is documented as unstageable rather than guessed as Stage 3 or 4."
+    },
+    {
+      "id": "rn-30-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which skin finding requires the most immediate action?",
+      "choices": ["A stable freckle present for years", "Dry skin on both lower legs", "A rapidly spreading rash with lip swelling, wheezing, and hypotension", "A small bruise after a blood draw"],
+      "correctIndex": 2,
+      "explanation": "Widespread rash with angioedema, respiratory symptoms, and hypotension is an airway and circulation emergency. The RN initiates immediate emergency assessment and response."
+    },
+    {
+      "id": "rn-30-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why is skin turgor alone a poor way to assess dehydration in an older adult?",
+      "choices": ["Older adults cannot become dehydrated", "Age-related loss of elasticity can alter turgor, so it must be combined with mucosa, intake and output, weight, vital signs, perfusion, and other findings", "Turgor measures oxygen saturation", "Turgor is valid only on the heel"],
+      "correctIndex": 1,
+      "explanation": "Reduced skin elasticity can make turgor misleading in older adults. Hydration assessment requires a cluster of subjective, examination, trend, and laboratory findings when available."
+    },
+    {
+      "id": "rn-30-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "What is the best way to assess skin beneath a removable medical device?",
+      "choices": ["Leave the device untouched for the entire hospitalization", "When clinically safe, remove or reposition it according to policy, inspect and palpate contact areas, then restore prescribed therapy correctly", "Inspect only after the client reports severe pain", "Place extra layers under every device without checking fit"],
+      "correctIndex": 1,
+      "explanation": "Medical devices can conceal pressure, moisture, and friction injury. The RN protects the therapy while directly assessing contact areas at the required frequency and correcting risk according to policy."
+    },
+    {
+      "id": "rn-30-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which description of a skin lesion is most objective?",
+      "choices": ["Suspicious rash", "Bad-looking mole", "Single 0.8-cm asymmetric dark-brown macule on left upper back with irregular border and two color tones; client reports recent enlargement", "Skin cancer present"],
+      "correctIndex": 2,
+      "explanation": "Objective description records number, size, morphology, location, symmetry, border, color, and evolution. It supports evaluation without substituting an unconfirmed diagnosis."
+    },
+    {
+      "id": "rn-30-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client has new widespread petechiae, fever, hypotension, and confusion. How should the RN respond?",
+      "choices": ["Apply moisturizer and reassess next week", "Treat the systemic cluster as urgent, assess ABCs and perfusion, and activate the appropriate response", "Massage the petechiae to test blanching", "Assume the spots are normal bruises"],
+      "correctIndex": 1,
+      "explanation": "Petechiae accompanied by fever, hypotension, and altered mental status may signal a serious systemic process. The RN prioritizes stabilization and urgent evaluation rather than isolated skin care."
+    },
+    {
+      "id": "rn-30-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Assistive personnel report a new dark, tender area on the sacrum during hygiene. What should the RN do?",
+      "choices": ["Ask the assistant to stage it", "Personally assess color, temperature, firmness, blanching when appropriate, integrity, size, pain and pressure risk, then initiate and evaluate the plan", "Document normal skin because it is not bright red", "Wait until the next scheduled weekly assessment"],
+      "correctIndex": 1,
+      "explanation": "The RN validates new skin findings, determines the clinical meaning and urgency, implements pressure relief and other indicated measures, and communicates or consults according to policy."
+    },
+    {
+      "id": "rn-30-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which skin documentation is most useful for comparison?",
+      "choices": ["Heel looks bad", "Pressure sore noted", "Right heel intact with 2.0 × 1.5 cm persistent violaceous area, warmer and firmer than adjacent tissue, tender 4/10; heel offloaded and wound-resource RN notified", "Skin checked"],
+      "correctIndex": 2,
+      "explanation": "Specific documentation identifies location, measurements, color, integrity, comparative temperature and firmness, pain, intervention, and communication. It avoids vague wording and unsupported staging."
+    }
+  ]
+}

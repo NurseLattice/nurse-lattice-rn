@@ -11,6 +11,7 @@ let quizCache = new Map();
 let toastTimer = null;
 let loadingQuiz = false;
 let navigationEpoch = 0;
+const phaseDisclosureState = new Map();
 
 function localDateKey(date = new Date()) {
   const year = date.getFullYear();
@@ -79,31 +80,51 @@ function moduleCard(lesson, index) {
   return button;
 }
 
-function phaseCard(phase, phaseIndex) {
+function phaseCard(phase, phaseIndex, expandedPhases) {
   const [firstLesson, lastLesson] = phase.lessonRange;
   const lessons = curriculum.lessons.filter(lesson => lesson.id >= firstLesson && lesson.id <= lastLesson);
-  const section = document.createElement("section");
+  const section = document.createElement("details");
   section.className = "course-phase" + (lessons.length ? " course-phase-active" : "");
+  section.dataset.phaseIndex = String(phaseIndex);
+  section.open = expandedPhases.has(phaseIndex);
   const status = lessons.length ? lessons.length + " / " + (lastLesson - firstLesson + 1) + " lessons available" : "Coming soon";
-  section.innerHTML = '<div class="course-phase-header"><div><span class="eyebrow">PHASE ' + (phaseIndex + 1) + '</span><h2>' + phase.title + '</h2><p>Lessons ' + firstLesson + '–' + lastLesson + '</p></div><span class="phase-status">' + status + '</span></div>';
+  const summary = document.createElement("summary");
+  summary.className = "course-phase-summary";
+  summary.innerHTML = '<div class="course-phase-header"><div class="course-phase-copy"><span class="eyebrow">PART ' + (phaseIndex + 1) + '</span><h2>' + phase.title + '</h2><p>Lessons ' + firstLesson + '–' + lastLesson + '</p></div><div class="phase-header-actions"><span class="phase-status">' + status + '</span><span class="phase-chevron" aria-hidden="true">⌄</span></div></div>';
+  section.append(summary);
+  const body = document.createElement("div");
+  body.className = "course-phase-body";
   if (lessons.length) {
     const list = document.createElement("div");
     list.className = "phase-module-list";
     list.append(...lessons.map(lesson => moduleCard(lesson, curriculum.lessons.indexOf(lesson))));
-    section.append(list);
+    body.append(list);
   } else {
     const message = document.createElement("p");
     message.className = "phase-message";
     message.textContent = "This course is mapped and will unlock as its lessons are authored.";
-    section.append(message);
+    body.append(message);
   }
+  section.append(body);
+  section.addEventListener("toggle", () => {
+    if (section.open) expandedPhases.add(phaseIndex);
+    else expandedPhases.delete(phaseIndex);
+  });
   return section;
 }
 
 function renderCurriculum() {
   if (!curriculum || !roadmap) return;
+  const nextLesson = curriculum.lessons[RNProgress.nextLessonIndex(progress, curriculum.lessons)];
+  const currentPhaseIndex = Math.max(0, roadmap.phases.findIndex(phase =>
+    nextLesson.id >= phase.lessonRange[0] && nextLesson.id <= phase.lessonRange[1]));
   [document.getElementById("curriculumList"), document.getElementById("learnList")].forEach(container => {
-    container.replaceChildren(...roadmap.phases.map(phaseCard));
+    let expandedPhases = phaseDisclosureState.get(container.id);
+    if (!expandedPhases) {
+      expandedPhases = new Set([currentPhaseIndex]);
+      phaseDisclosureState.set(container.id, expandedPhases);
+    }
+    container.replaceChildren(...roadmap.phases.map((phase, phaseIndex) => phaseCard(phase, phaseIndex, expandedPhases)));
   });
 }
 

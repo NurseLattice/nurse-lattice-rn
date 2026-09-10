@@ -1,0 +1,105 @@
+{
+  "lessonId": 27,
+  "questions": [
+    {
+      "id": "rn-27-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client suddenly develops left facial droop, left arm drift, and difficulty speaking. What should the RN do first?",
+      "choices": ["Complete every cranial-nerve test before reporting", "Identify the last known well time, maintain immediate safety, and activate the emergency stroke pathway", "Give water to determine whether swallowing is affected", "Reassess after the client sleeps"],
+      "correctIndex": 1,
+      "explanation": "New focal deficits are time-sensitive. The RN identifies the last time the client was known at baseline, protects airway and safety, keeps oral intake on hold, and activates the emergency pathway without delaying for a complete routine exam."
+    },
+    {
+      "id": "rn-27-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement correctly distinguishes level of consciousness from orientation?",
+      "choices": ["They are identical terms", "Level of consciousness describes arousal and response to stimulus; orientation describes awareness of person, place, time, or situation", "Orientation can be assessed only in an unconscious client", "A client who cannot speak is always disoriented"],
+      "correctIndex": 1,
+      "explanation": "Arousal and orientation measure different functions. Aphasia, language difference, hearing impairment, or an artificial airway can limit answers without proving disorientation or reduced arousal."
+    },
+    {
+      "id": "rn-27-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "The RN finds the right pupil is 4 mm and the left is 3 mm, both briskly reactive. What is the best next step for a stable client?",
+      "choices": ["Declare a neurologic emergency based only on unequal size", "Compare with documented baseline and assess related consciousness, vision, motor, medication, surgery, and trauma findings", "Record PERRLA because both pupils react", "Repeat bright-light testing continuously until the pupils match"],
+      "correctIndex": 1,
+      "explanation": "Pupil inequality may be baseline or related to several factors, but it requires context and comparison. The RN documents actual size and response and escalates promptly if the change is new or accompanied by high-risk findings."
+    },
+    {
+      "id": "rn-27-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which approach is correct when trending the Glasgow Coma Scale?",
+      "choices": ["Assign zero when an item cannot be tested", "Record only the total and omit limiting factors", "Use the standardized eye, verbal, and motor criteria, report components and trend, and document factors that limit testing", "Replace airway assessment with the GCS total"],
+      "correctIndex": 2,
+      "explanation": "The GCS must be applied consistently; its lowest total is 3, not zero. Components and testing limitations make trends interpretable, and the score never replaces airway or full clinical assessment."
+    },
+    {
+      "id": "rn-27-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "How should the RN assess upper-extremity motor strength most accurately?",
+      "choices": ["Apply unequal resistance so the dominant side works harder", "Compare corresponding muscle groups bilaterally with equal resistance while accounting for pain, comprehension, and baseline", "Test only the side the client says is weak", "Use hand grasp as the only motor test for every client"],
+      "correctIndex": 1,
+      "explanation": "Consistent bilateral comparison identifies asymmetry. Pain, orthopedic limits, fatigue, and comprehension can affect performance and must be considered rather than treating one task as the entire motor examination."
+    },
+    {
+      "id": "rn-27-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which technique is appropriate for a routine light-touch sensory comparison?",
+      "choices": ["Use an exposed needle to create a strong stimulus", "With understanding confirmed and eyes closed, compare the same safe stimulus at corresponding sites and vary the timing", "Tell the client when and where each touch will occur", "Test directly over an open wound"],
+      "correctIndex": 1,
+      "explanation": "Closing the eyes and varying timing reduce visual and rhythmic cues. The RN uses a safe, consistent stimulus, compares sides, avoids injured tissue, and maps any altered sensation."
+    },
+    {
+      "id": "rn-27-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client has an acute focal deficit and cannot stand without two-person assistance. What is the safest way to assess gait?",
+      "choices": ["Ask the client to walk alone so natural gait can be observed", "Perform a Romberg test first", "Defer gait testing, document the safety limitation, and use appropriate assistance for mobility", "Have the family hold the client upright"],
+      "correctIndex": 2,
+      "explanation": "Gait and balance testing must not create a fall. When standing is unsafe, the RN defers the test, documents why, and follows the mobility plan with trained assistance and equipment."
+    },
+    {
+      "id": "rn-27-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "An older adult becomes acutely confused and drowsy. Which interpretation should guide the RN’s assessment?",
+      "choices": ["Acute confusion is an expected part of aging", "The change may reflect neurologic or systemic threats, so compare with baseline and assess oxygenation, glucose under protocol, vital signs, medications, infection cues, and focal deficits", "Orientation questions alone can identify the cause", "Wait for family confirmation before checking airway and breathing"],
+      "correctIndex": 1,
+      "explanation": "Acute mental-status change is not normal aging and may have neurologic, respiratory, metabolic, infectious, medication-related, or other causes. Immediate stability assessment and baseline comparison guide urgent action."
+    },
+    {
+      "id": "rn-27-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client with new facial weakness has a wet voice and coughs while handling saliva. Which action is best?",
+      "choices": ["Offer water to test swallowing", "Give oral medication crushed in food", "Keep the client NPO, protect the airway, and initiate the approved swallowing and neurologic evaluation pathway", "Use a straw because it prevents aspiration"],
+      "correctIndex": 2,
+      "explanation": "Wet voice, cough, and new facial weakness indicate possible impaired airway protection. Oral trials should wait for the approved swallowing screen or evaluation while neurologic and airway safety are addressed."
+    },
+    {
+      "id": "rn-27-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which documentation best supports follow-up of an acute neurologic change?",
+      "choices": ["Possible stroke; doctor aware", "Neuro status worse", "0815: New right facial droop, right arm drift, and slurred speech; follows one-step commands; pupils 3 mm equal and brisk; last known at baseline 0745; stroke response activated 0817", "PERRLA and oriented"],
+      "correctIndex": 2,
+      "explanation": "Useful documentation records observable findings, laterality, command response, pupil details, last known well time, and timed action. It avoids vague language and an unconfirmed diagnosis."
+    }
+  ]
+}

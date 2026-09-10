@@ -1,0 +1,105 @@
+{
+  "lessonId": 32,
+  "questions": [
+    {
+      "id": "rn-32-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which approach is safest when interpreting a newly reported laboratory result?",
+      "choices": ["Compare it only with a memorized normal value", "Verify the client, test, unit, local reference interval, timing and specimen information, then connect the result with symptoms and trend", "Treat every value marked high or low as a critical emergency", "Ignore any value that does not match the previous result"],
+      "correctIndex": 1,
+      "explanation": "Laboratories use different methods, units, and reference intervals. Safe interpretation confirms the report details and integrates the client’s condition, baseline, trend, medications, treatments, and collection timing."
+    },
+    {
+      "id": "rn-32-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A potassium result is unexpectedly high and the laboratory notes that the specimen is hemolyzed. The client has no symptoms, but kidney disease is present. What should the RN do?",
+      "choices": ["Assume the potassium is false and take no action", "Administer a potassium-lowering medication without an order", "Assess the client and rhythm as indicated, review the trend and medications, report the result, and obtain a repeat specimen according to the urgent care pathway", "Document normal potassium because hemolysis cancels the result"],
+      "correctIndex": 2,
+      "explanation": "Hemolysis can falsely elevate potassium, but kidney disease also creates genuine hyperkalemia risk. The RN protects the client while clarifying reliability; neither automatic dismissal nor unprescribed treatment is safe."
+    },
+    {
+      "id": "rn-32-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which laboratory-related situation requires the most immediate response?",
+      "choices": ["Stable mildly low hemoglobin documented for six months without symptoms", "Platelet count slightly below the local reference interval with no bleeding", "Critical potassium with new muscle weakness and ventricular ectopy", "Fasting glucose slightly above the reference interval at a routine visit"],
+      "correctIndex": 2,
+      "explanation": "A critical potassium result with neuromuscular and cardiac manifestations can rapidly become life-threatening. The RN prioritizes rhythm assessment, safety, urgent communication, and prescribed treatment."
+    },
+    {
+      "id": "rn-32-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A postoperative client's hemoglobin is falling. Which additional findings make the trend most concerning for active blood loss?",
+      "choices": ["Warm skin, HR 70/min, stable blood pressure", "Increasing drain output, tachycardia, hypotension, pallor and dizziness", "Improved appetite and steady urine output", "Chronic fatigue unchanged from baseline"],
+      "correctIndex": 1,
+      "explanation": "A falling hemoglobin becomes urgent when paired with increasing blood loss and impaired perfusion. The cluster of drainage, tachycardia, hypotension, pallor, and dizziness supports possible hemorrhage."
+    },
+    {
+      "id": "rn-32-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client receiving chemotherapy has severe neutropenia and develops a fever. What is the RN's priority action?",
+      "choices": ["Wait for the white blood cell count to normalize", "Initiate the organization's neutropenic-fever assessment and urgent notification pathway", "Give a rectal suppository for comfort", "Reassure the client that infection always raises the white blood cell count"],
+      "correctIndex": 1,
+      "explanation": "Fever with severe neutropenia can indicate a time-sensitive infection despite a low total white count. The RN promptly assesses, follows protective precautions, and activates the prescribed evaluation pathway."
+    },
+    {
+      "id": "rn-32-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A conscious client with safe swallowing has sweating and tremors; bedside glucose is below the protocol threshold. What should the RN do?",
+      "choices": ["Wait for a serum result before intervening", "Follow the hypoglycemia protocol with the appropriate fast-acting carbohydrate, then recheck at the specified time and investigate the cause", "Give long-acting insulin", "Offer only water and reassess in four hours"],
+      "correctIndex": 1,
+      "explanation": "Symptoms plus a low bedside glucose require immediate protocol-based treatment. Rechecking at the defined interval confirms response, while reviewing meal and medication timing helps prevent recurrence."
+    },
+    {
+      "id": "rn-32-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which pattern most strongly suggests worsening kidney function that needs prompt evaluation?",
+      "choices": ["Stable creatinine at baseline with normal urine output", "Rising creatinine, decreasing urine output, new edema and recent hypotension", "Low BUN after increased oral fluids with no symptoms", "One estimated GFR value reviewed without baseline or context"],
+      "correctIndex": 1,
+      "explanation": "A rising creatinine with oliguria, edema, and recent poor perfusion forms a coherent acute kidney injury cue cluster. Trends, output, hemodynamics, and exposures matter more than one isolated value."
+    },
+    {
+      "id": "rn-32-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "An aPTT drawn from a heparin-infusing central line is much higher than prior values, and the client has no bleeding. What is the best plan?",
+      "choices": ["Assume major hemorrhage without assessing the client", "Recognize possible heparin contamination, assess for bleeding, follow the infusion protocol, notify as required, and obtain a correctly collected repeat specimen", "Permanently discontinue anticoagulation without an order", "Ignore the result because the client has no symptoms"],
+      "correctIndex": 1,
+      "explanation": "Line contamination can falsely prolong coagulation results, but the RN must still assess for bleeding and follow the anticoagulation pathway. A properly collected repeat helps distinguish artifact from excessive effect."
+    },
+    {
+      "id": "rn-32-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The laboratory calls a critical sodium result. Which response best completes the RN's immediate communication responsibility?",
+      "choices": ["Write 'provider aware' without assessing the client", "Assess neurologic status and safety, communicate the result and relevant trend using the critical-result pathway, read back orders, and document times and response", "Leave the result for the next shift because the laboratory already reported it", "Ask assistive personnel to interpret the value"],
+      "correctIndex": 1,
+      "explanation": "Critical-result follow-up includes client assessment, prompt structured communication, read-back or clarification of orders, documentation, intervention, and reassessment. A vague note does not close the loop."
+    },
+    {
+      "id": "rn-32-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After assistive personnel obtain a point-of-care glucose that is unexpectedly low, which task remains the RN's responsibility?",
+      "choices": ["Interpreting the result, assessing the client, initiating the appropriate response, and evaluating the repeat value", "Delegating all follow-up because the assistant performed the test", "Changing the prescribed insulin regimen independently", "Deleting the result if the client feels well"],
+      "correctIndex": 0,
+      "explanation": "Collection or testing may be delegated within policy, but clinical interpretation, assessment, nursing judgment, urgent communication, intervention, and evaluation remain the RN's accountability."
+    }
+  ]
+}

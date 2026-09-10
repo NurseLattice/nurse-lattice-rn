@@ -1,0 +1,105 @@
+{
+  "lessonId": 34,
+  "questions": [
+    {
+      "id": "rn-34-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which nursing entry is most objective and clinically useful?",
+      "choices": ["Client is difficult and anxious", "Client looks terrible; provider aware", "0930: Client paced beside bed for 10 minutes, wrung hands, and stated, 'I cannot catch my breath'; RR 28/min with accessory-muscle use", "Client probably has a panic disorder"],
+      "correctIndex": 2,
+      "explanation": "The best entry records time, observable behavior, the client’s own words, and measurable assessment findings. It avoids judgment, speculation, and vague communication language."
+    },
+    {
+      "id": "rn-34-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Urgent client care prevented the RN from documenting an intervention at the time it occurred. What should the RN do?",
+      "choices": ["Backdate the entry so it appears contemporaneous", "Use the approved late-entry or addendum process, including the current entry time and actual event time", "Ask another nurse to enter it under that nurse's credentials", "Omit the information because documentation was delayed"],
+      "correctIndex": 1,
+      "explanation": "A transparent late entry preserves the true chronology and audit trail while adding necessary clinical information. Backdating, omission, or documentation under another identity compromises record integrity."
+    },
+    {
+      "id": "rn-34-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN discovers an incorrect assessment entry in the electronic record. Which action is appropriate?",
+      "choices": ["Delete it without leaving evidence", "Overwrite the original text", "Use the designated correction or addendum workflow so the original and audit trail remain identifiable", "Create a second contradictory note without explaining the correction"],
+      "correctIndex": 2,
+      "explanation": "Record corrections must be transparent and follow the EHR’s approved process. Preserving the original entry and audit trail protects accuracy, chronology, and professional accountability."
+    },
+    {
+      "id": "rn-34-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A scheduled medication was withheld because the client's blood pressure did not meet the ordered parameter. What should the RN document?",
+      "choices": ["Record the medication as administered to close the task", "Only write 'not given'", "The assessment and value, reason held, notification, resulting order or plan, and follow-up", "Delete the medication from the record"],
+      "correctIndex": 2,
+      "explanation": "A held medication requires the clinical context and complete safety loop: relevant assessment, reason, communication, decision, and reassessment. It must never be charted as administered."
+    },
+    {
+      "id": "rn-34-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "After a client falls, which information belongs in the health record?",
+      "choices": ["A statement blaming the staff member", "Objective circumstances, client assessment, notifications, interventions, orders and serial reassessment", "Speculation that the client fell intentionally", "A copied conclusion from the internal safety report"],
+      "correctIndex": 1,
+      "explanation": "The health record should contain factual clinical information and the response to the event. Blame, speculation, and internal safety-report conclusions do not support objective continuity of care."
+    },
+    {
+      "id": "rn-34-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which element is essential when documenting a PRN pain medication?",
+      "choices": ["Only the administration time", "The indication and relevant preassessment, administration details, and reassessment of pain, function and adverse effects at the appropriate interval", "A promise that the medication will work", "The next shift's expected assessment"],
+      "correctIndex": 1,
+      "explanation": "PRN documentation connects the reason for treatment with safe administration and outcome evaluation. Without reassessment, the record cannot show effectiveness or detect adverse effects."
+    },
+    {
+      "id": "rn-34-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A permitted telephone order sounds unclear. What is the RN's best response?",
+      "choices": ["Guess the intended dose", "Record the complete order, clarify ambiguity, read it back, confirm accuracy, and authenticate it according to policy", "Ask assistive personnel to interpret it", "Implement the order before confirming the medication"],
+      "correctIndex": 1,
+      "explanation": "Closed-loop communication requires a complete order, clarification, read-back, confirmation, and authentication. An ambiguous or potentially unsafe order must be resolved before implementation."
+    },
+    {
+      "id": "rn-34-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which information has highest priority during shift handoff?",
+      "choices": ["The client watched television during the afternoon", "New increasing oxygen requirement, pending blood gas, action already taken, who owns follow-up, and when to escalate", "Every normal finding copied from the admission assessment", "The room's meal-delivery time"],
+      "correctIndex": 1,
+      "explanation": "A safe handoff highlights illness severity, recent change, pending results, completed and required actions, timing, ownership, and contingency planning so the receiver can act without delay."
+    },
+    {
+      "id": "rn-34-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which electronic-record action best protects confidentiality and accountability?",
+      "choices": ["Share a login during a busy shift", "Leave the chart open so the next nurse can use it", "Use only personal authorized credentials, access records needed for assigned work, and lock or log out when leaving", "Photograph the record with a personal phone for convenience"],
+      "correctIndex": 2,
+      "explanation": "Unique credentials, role-appropriate access, and securing unattended workstations support confidentiality and an accurate audit trail. Shared access and personal-device copies create privacy and security risks."
+    },
+    {
+      "id": "rn-34-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which final review best confirms that documentation supports continuity of care?",
+      "choices": ["Every field contains copied text", "The correct chart shows a coherent timeline linking abnormal findings, actions, communication, response, pending items and ownership", "The note contains as many abbreviations as possible", "Only completed tasks are listed"],
+      "correctIndex": 1,
+      "explanation": "A coherent, client-specific timeline helps the next clinician understand what changed, what was done, how the client responded, and what still requires follow-up. Volume and copied text do not ensure quality."
+    }
+  ]
+}

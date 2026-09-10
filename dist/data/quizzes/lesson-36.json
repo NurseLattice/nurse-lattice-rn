@@ -1,0 +1,105 @@
+{
+  "lessonId": 36,
+  "questions": [
+    {
+      "id": "rn-36-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best distinguishes inflammation from infection?",
+      "choices": ["Inflammation always proves bacterial invasion", "Infection is microbial invasion, whereas inflammation is a host response that can also follow sterile injury", "Inflammation occurs only when fever is present", "Infection never causes inflammation"],
+      "correctIndex": 1,
+      "explanation": "Infection is one trigger for inflammation, but trauma, ischemia, allergy, autoimmune disease, crystals, burns, and toxins can produce sterile inflammatory responses. Cause requires clinical evaluation."
+    },
+    {
+      "id": "rn-36-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which vascular changes most directly produce warmth and swelling during acute inflammation?",
+      "choices": ["Vasodilation and increased vascular permeability", "Persistent vasoconstriction and reduced protein movement", "Decreased local blood flow and complete endothelial closure", "Reduced mediator release and lymphocyte destruction"],
+      "correctIndex": 0,
+      "explanation": "Vasodilation increases local blood flow and warmth, while increased permeability allows protein-rich fluid to enter tissue and create edema. Pain and impaired function arise from mediators and tissue effects."
+    },
+    {
+      "id": "rn-36-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which leukocyte is commonly prominent early in acute bacterial inflammation?",
+      "choices": ["Neutrophil", "Erythrocyte", "Platelet", "Fibroblast"],
+      "correctIndex": 0,
+      "explanation": "Neutrophils are rapidly recruited to many acute bacterial inflammatory sites and phagocytose microbes and debris. The entire differential and clinical context remain necessary for interpretation."
+    },
+    {
+      "id": "rn-36-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which pattern is most characteristic of chronic inflammation?",
+      "choices": ["Only transient vasodilation with complete resolution in minutes", "Macrophages and lymphocytes with simultaneous tissue injury, repair and fibrosis", "Absence of cytokines and tissue damage", "Platelet activation without leukocyte involvement"],
+      "correctIndex": 1,
+      "explanation": "Persistent triggers recruit macrophages, lymphocytes, and plasma cells. Ongoing mediator release can produce tissue destruction while angiogenesis, fibroblast activity, and fibrosis occur at the same time."
+    },
+    {
+      "id": "rn-36-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why does a client often feel cold and shiver while a fever is rising?",
+      "choices": ["The hypothalamic set point has risen, so the current temperature is perceived as too low", "The temperature set point has fallen below normal", "Sweating has already removed all body heat", "Fever and hyperthermia use identical mechanisms"],
+      "correctIndex": 0,
+      "explanation": "Pyrogen-driven prostaglandin signaling raises the hypothalamic set point. Vasoconstriction, chills, and shivering generate and conserve heat until body temperature approaches the new target."
+    },
+    {
+      "id": "rn-36-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which finding favors dangerous hyperthermia rather than a routine regulated fever?",
+      "choices": ["Chills as a cytokine-mediated set point rises", "Severe heat exposure with hot skin, altered mental status and very high temperature", "Mild postoperative temperature elevation without symptoms", "Sweating as a fever resolves"],
+      "correctIndex": 1,
+      "explanation": "Hyperthermia results when heat production or exposure exceeds heat loss without a higher regulated set point. Heat exposure plus neurologic change requires immediate cooling and emergency response."
+    },
+    {
+      "id": "rn-36-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "How should the RN interpret a declining C-reactive protein after treatment?",
+      "choices": ["It proves that a specific bacterial pathogen is eradicated", "It may support decreasing inflammatory activity but must be interpreted with symptoms, examination and other trends", "It guarantees tissue repair is complete", "It rules out every infection"],
+      "correctIndex": 1,
+      "explanation": "C-reactive protein is a nonspecific inflammatory marker. A falling trend can support improvement, but it neither identifies the cause nor replaces assessment, cultures, imaging, and functional outcomes."
+    },
+    {
+      "id": "rn-36-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "During which overlapping wound-healing phase do angiogenesis, fibroblast activity, granulation tissue and re-epithelialization predominate?",
+      "choices": ["Hemostasis", "Proliferation", "Initial vasoconstriction only", "Necrosis"],
+      "correctIndex": 1,
+      "explanation": "The proliferative phase builds new vascular and connective tissue, deposits collagen, contracts the wound, and restores the epithelial surface. It overlaps with inflammation and later remodeling."
+    },
+    {
+      "id": "rn-36-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which modifiable factors should the RN address to support wound healing?",
+      "choices": ["Tobacco exposure, poor nutrition, uncontrolled glucose, pressure and inadequate perfusion", "Age and genetic history only", "Scar color only", "Room number and meal preference"],
+      "correctIndex": 0,
+      "explanation": "Tobacco exposure, nutritional deficits, hyperglycemia, pressure, moisture and impaired perfusion can delay repair. Nursing care targets these risks while following the prescribed wound plan."
+    },
+    {
+      "id": "rn-36-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A postoperative client has increasing incisional pain, tachypnea, new confusion, hypotension and falling urine output. What is the priority action?",
+      "choices": ["Document expected inflammation and reassess tomorrow", "Assess ABCs and perfusion and activate the appropriate urgent or sepsis response pathway", "Apply a warm compress and finish routine rounds", "Wait for marked redness before reporting"],
+      "correctIndex": 1,
+      "explanation": "The systemic cluster suggests organ dysfunction rather than an expected local healing response. Immediate assessment, stabilization, escalation, and protocol-based action take priority over routine wound care."
+    }
+  ]
+}

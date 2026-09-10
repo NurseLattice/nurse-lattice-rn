@@ -1,0 +1,105 @@
+{
+  "lessonId": 31,
+  "questions": [
+    {
+      "id": "rn-31-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "At the start of the shift, what is the safest first approach to a client with several lines and drains?",
+      "choices": ["Document every device as intact before touching the client", "Assess client stability, then trace each device from the client to its source or collection system and verify its purpose and settings", "Disconnect and reconnect each line to confirm compatibility", "Ask assistive personnel to decide which devices are still needed"],
+      "correctIndex": 1,
+      "explanation": "The RN first evaluates airway, breathing, circulation, mental status, and symptoms. A deliberate client-to-source trace then identifies the device, connections, prescribed settings, function, and potential misconnections."
+    },
+    {
+      "id": "rn-31-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client receiving a vesicant through a peripheral IV reports burning; the site is swollen and tight. What should the RN do first?",
+      "choices": ["Flush rapidly with normal saline", "Slow the infusion and apply pressure", "Stop the infusion, do not flush, and follow the medication-specific extravasation protocol while initially leaving the catheter available", "Remove the catheter immediately before identifying the medication"],
+      "correctIndex": 2,
+      "explanation": "The cue cluster suggests extravasation. Stopping exposure and avoiding a flush limits tissue injury; the device may be needed for aspiration or an antidote, so removal follows the drug-specific protocol."
+    },
+    {
+      "id": "rn-31-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which finding pattern most strongly supports peripheral IV infiltration with a nonvesicant solution?",
+      "choices": ["Cool swelling, pallor, leaking, and slowed infusion at the site", "Warm tender vein with a palpable cord", "Dry intact dressing with no symptoms and prescribed flow", "Generalized itching without a local site change"],
+      "correctIndex": 0,
+      "explanation": "Coolness, swelling, pallor or blanching, leakage, discomfort, and altered flow are typical infiltration cues. Warmth, tenderness, erythema, and a venous cord are more consistent with phlebitis."
+    },
+    {
+      "id": "rn-31-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which urinary drainage setup best reduces catheter-related complications?",
+      "choices": ["Bag resting on the floor so gravity drainage is maximized", "Closed system, tubing free of kinks, and bag below bladder level and off the floor", "Tubing disconnected each shift for cleaning", "Bag raised to mattress level during transport"],
+      "correctIndex": 1,
+      "explanation": "A closed system, unobstructed tubing, and a collection bag below the bladder and off the floor support drainage while reducing reflux, contamination, and infection risk."
+    },
+    {
+      "id": "rn-31-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN needs a small fresh urine specimen for culture from an indwelling catheter. Which method is appropriate?",
+      "choices": ["Pour urine from the collection bag into a sterile cup", "Disconnect the catheter from the drainage tubing", "Clean the needleless sampling port and aspirate aseptically with the approved sterile device", "Squeeze urine from the tubing into an open container"],
+      "correctIndex": 2,
+      "explanation": "For a small fresh specimen, CDC guidance supports disinfecting the needleless sampling port and aspirating aseptically. Pooled bag urine or breaking the closed system can contaminate the specimen."
+    },
+    {
+      "id": "rn-31-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Urine output through an indwelling catheter has dropped sharply. What is the RN's best initial plan?",
+      "choices": ["Irrigate the catheter immediately without an order", "Assess the client and output trend, then trace the tubing for kinks, compression, dependent loops, bag position, or obstruction", "Raise the bag above the bladder", "Replace the catheter solely because one hourly output is low"],
+      "correctIndex": 1,
+      "explanation": "Low output may reflect client deterioration, hydration status, retention, or a mechanical problem. The RN assesses the client and system first; routine irrigation is not recommended and requires an appropriate order and policy."
+    },
+    {
+      "id": "rn-31-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "During an enteral feeding, a client coughs forcefully and the visible tube length changes from 58 cm to 66 cm. What is the priority interpretation and action?",
+      "choices": ["The tube may have migrated; stop use, assess breathing, secure it without advancing, and verify placement by the approved method", "The tube is more secure; increase the feeding rate", "Auscultate an air bolus and resume feeding if a sound is heard", "Advance the tube back to 58 cm without an order"],
+      "correctIndex": 0,
+      "explanation": "A changed external length after coughing is a displacement cue. Feeding or medications are held while the client is assessed and placement is reverified; blind advancement and the unreliable whoosh test are unsafe."
+    },
+    {
+      "id": "rn-31-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding provides the best evidence that a feeding tube remains positioned as expected after initial radiographic confirmation?",
+      "choices": ["The client says the tube feels normal", "Air injected into the tube produces a sound over the stomach", "The external length matches the documented reference and the organization-approved verification criteria are met before use", "Aspirate is green, so location is guaranteed"],
+      "correctIndex": 2,
+      "explanation": "Ongoing verification uses the documented external-length reference plus the organization-approved method. Air-bolus auscultation and aspirate appearance alone are not reliable proof of position."
+    },
+    {
+      "id": "rn-31-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A postoperative drain suddenly collects 150 mL of bright-red fluid, and the client is pale with BP 86/50 mm Hg and HR 124/min. What should the RN do?",
+      "choices": ["Empty the drain and reassess at the end of the shift", "Prioritize circulation, activate urgent assistance, maintain safety, and notify the surgical team while trending the output", "Milk the drain forcefully until output stops", "Clamp the drain and help the client walk"],
+      "correctIndex": 1,
+      "explanation": "Rapid bright-red output with hypotension and tachycardia indicates possible hemorrhage and shock. The RN prioritizes stabilization and urgent escalation rather than manipulating or simply recording the drain."
+    },
+    {
+      "id": "rn-31-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Assistive personnel report that a surgical drain produced no output for four hours and the client now reports increasing pressure near the site. What is the RN's best response?",
+      "choices": ["Ask the assistant to strip the drain", "Personally assess the client, site, tubing, reservoir, and output trend; correct only permitted external mechanical problems and escalate suspected obstruction", "Document zero output as an expected outcome", "Remove the drain because it is no longer functioning"],
+      "correctIndex": 1,
+      "explanation": "The RN must validate and interpret the new symptom and output change. Increasing pressure with abrupt cessation may signal obstruction or displacement; invasive manipulation or removal requires specific authority and policy."
+    }
+  ]
+}

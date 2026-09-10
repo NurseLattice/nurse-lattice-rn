@@ -1,0 +1,105 @@
+{
+  "lessonId": 35,
+  "questions": [
+    {
+      "id": "rn-35-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best describes homeostasis?",
+      "choices": ["A body state in which no variables ever change", "Dynamic regulation that keeps internal conditions within ranges compatible with function", "Permanent enlargement of every stressed cell", "Cell death after any brief stress"],
+      "correctIndex": 1,
+      "explanation": "Homeostasis is an active, dynamic balance maintained through sensing, control, and feedback. Variables fluctuate, but regulatory responses keep them within ranges that support cellular function."
+    },
+    {
+      "id": "rn-35-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "A client's calf muscles become smaller after six weeks of immobilization. Which cellular adaptation best explains this change?",
+      "choices": ["Hyperplasia", "Metaplasia", "Atrophy", "Dysplasia"],
+      "correctIndex": 2,
+      "explanation": "Reduced workload causes disuse atrophy, with decreased cell size and tissue mass. The resulting weakness connects cellular adaptation to mobility limits and increased fall risk."
+    },
+    {
+      "id": "rn-35-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Chronic hypertension causes left-ventricular muscle cells to enlarge. Which process is occurring?",
+      "choices": ["Hypertrophy", "Hyperplasia", "Atrophy", "Metaplasia"],
+      "correctIndex": 0,
+      "explanation": "Cardiac muscle adapts to pressure overload primarily by increasing cell size. This hypertrophy may preserve output initially but raises oxygen demand and can eventually impair filling and function."
+    },
+    {
+      "id": "rn-35-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which statement correctly distinguishes hyperplasia from hypertrophy?",
+      "choices": ["Hyperplasia increases cell number; hypertrophy increases cell size", "Hyperplasia replaces one mature cell type with another", "Hypertrophy always indicates cancer", "Both terms mean irreversible cell death"],
+      "correctIndex": 0,
+      "explanation": "Hyperplasia is increased cell number in tissues capable of division, whereas hypertrophy is increased cell size. Either can be physiologic or pathologic depending on cause and context."
+    },
+    {
+      "id": "rn-35-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Chronic smoke exposure replaces ciliated airway epithelium with more durable squamous cells. Which interpretation is most accurate?",
+      "choices": ["This is metaplasia that may improve stress tolerance but reduces normal mucus clearance", "This is normal apoptosis with improved ciliary function", "This proves invasive lung cancer", "This is skeletal-muscle hypertrophy"],
+      "correctIndex": 0,
+      "explanation": "Metaplasia substitutes one mature cell type for another under persistent stress. It can be reversible when the stressor is removed, but function is sacrificed and continued injury may promote dysplasia."
+    },
+    {
+      "id": "rn-35-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why is ischemia generally more damaging to tissue than isolated hypoxemia?",
+      "choices": ["Ischemia increases nutrient delivery", "Ischemia reduces oxygen and nutrients while also limiting removal of acids and metabolic waste", "Hypoxemia always stops all blood flow", "Ischemia affects only the skin"],
+      "correctIndex": 1,
+      "explanation": "Inadequate blood flow deprives tissue of oxygen and substrates and prevents waste removal. This combined metabolic disturbance can produce cellular energy failure faster than reduced oxygen alone."
+    },
+    {
+      "id": "rn-35-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "What early cellular change is expected when oxygen loss decreases ATP and disables the sodium-potassium pump?",
+      "choices": ["Cellular swelling as sodium and water accumulate inside", "Immediate formation of mature scar tissue", "Increased removal of intracellular calcium", "Permanent increase in cilia"],
+      "correctIndex": 0,
+      "explanation": "ATP depletion impairs membrane ion pumps. Intracellular sodium rises, water follows, and the cell swells—an early finding that may remain reversible if the cause is corrected promptly."
+    },
+    {
+      "id": "rn-35-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which feature most strongly differentiates necrosis from apoptosis?",
+      "choices": ["Necrosis commonly involves membrane rupture, leakage and inflammation", "Necrosis is always a normal developmental process", "Apoptosis always affects an entire organ at once", "Apoptosis produces more surrounding inflammation than necrosis"],
+      "correctIndex": 0,
+      "explanation": "Severe injury leading to necrosis disrupts membranes and releases intracellular contents, provoking inflammation. Apoptotic fragments remain membrane bound and are cleared with relatively little inflammation."
+    },
+    {
+      "id": "rn-35-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client has sudden severe leg pain, a cool pale foot and no palpable pedal pulse, but hand oxygen saturation is 97%. What is the priority interpretation?",
+      "choices": ["Normal hand saturation rules out tissue injury", "The leg may have acute regional ischemia requiring urgent vascular evaluation", "The findings show harmless muscle atrophy", "The absent pulse confirms apoptosis only"],
+      "correctIndex": 1,
+      "explanation": "Pulse oximetry on the hand does not establish perfusion to the leg. Pain, pallor, coolness and an absent distal pulse form a time-sensitive regional ischemia pattern that can progress to necrosis."
+    },
+    {
+      "id": "rn-35-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After treatment intended to restore perfusion, which evaluation best reflects cellular recovery at the bedside?",
+      "choices": ["Only confirming that the treatment order was entered", "Reassessing pain, color, temperature, pulses, sensation, movement and organ-specific function over time", "Waiting for tissue necrosis before reassessing", "Using one normal oxygen-saturation reading from another limb"],
+      "correctIndex": 1,
+      "explanation": "Outcome evaluation compares serial perfusion and function findings with baseline. Improvement across related cues suggests recovery, while persistent or worsening deficits require renewed escalation."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "lessonId": 28,
+  "questions": [
+    {
+      "id": "rn-28-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which sequence should the RN use for a routine abdominal examination?",
+      "choices": ["Inspection, palpation, percussion, auscultation", "Auscultation, inspection, palpation, percussion", "Inspection, auscultation, percussion, palpation", "Palpation, auscultation, inspection, percussion"],
+      "correctIndex": 2,
+      "explanation": "The correct abdominal sequence is inspection, auscultation, percussion, then palpation. Listening precedes tapping and touching because those techniques can stimulate bowel activity and alter the sound pattern."
+    },
+    {
+      "id": "rn-28-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which finding requires the RN’s most immediate response?",
+      "choices": ["Mild nausea after eating", "One loose stool without pain", "Coffee-ground emesis with diaphoresis, HR 124/min, and BP 86/50 mm Hg", "A rounded abdomen unchanged from baseline"],
+      "correctIndex": 2,
+      "explanation": "Possible gastrointestinal bleeding with hemodynamic instability is a circulation emergency. The RN stops the routine examination, supports ABCs, obtains immediate assistance, and initiates the appropriate response."
+    },
+    {
+      "id": "rn-28-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which positioning best promotes comfort and abdominal-wall relaxation for a stable client?",
+      "choices": ["Prone with arms overhead", "Supine with head and knees supported and arms at the sides", "Standing with knees locked", "Trendelenburg with hands behind the head"],
+      "correctIndex": 1,
+      "explanation": "A supine position with supported head and knees helps relax the abdominal muscles. Arms behind the head can tense the abdominal wall and make palpation less comfortable and less accurate."
+    },
+    {
+      "id": "rn-28-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The RN hears no bowel sounds during a brief 30-second listen. What is the best action?",
+      "choices": ["Immediately document absent bowel sounds", "Palpate deeply to stimulate a sound", "Continue systematic auscultation for the duration required by policy and interpret the result with symptoms, medications, surgery, distension, stool, and flatus", "Conclude the client has an obstruction"],
+      "correctIndex": 2,
+      "explanation": "Bowel activity is irregular, so a brief silent interval is insufficient to establish absence. The RN follows the required listening duration and evaluates the result as one cue within the complete clinical pattern."
+    },
+    {
+      "id": "rn-28-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A stable client reports right-lower-quadrant pain. How should the RN perform light palpation?",
+      "choices": ["Begin directly over the painful area", "Begin in a nonpainful quadrant and examine the painful area last", "Use deep pressure in every quadrant", "Skip inspection and auscultation so palpation occurs quickly"],
+      "correctIndex": 1,
+      "explanation": "For a stable client, the RN begins away from pain and palpates the painful area last to reduce guarding and discomfort. Inspection and auscultation still occur before palpation."
+    },
+    {
+      "id": "rn-28-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "During inspection, the RN observes a new pulsatile abdominal mass in a client with back pain and hypotension. What should the RN do?",
+      "choices": ["Palpate deeply to measure the mass", "Ask the client to cough repeatedly", "Avoid deep palpation, support circulation and safety, and obtain emergency assistance", "Apply firm abdominal pressure until the pulse disappears"],
+      "correctIndex": 2,
+      "explanation": "A painful pulsatile mass with hypotension is a high-risk vascular pattern. The RN avoids manipulation, prioritizes ABCs and monitoring, and activates immediate evaluation."
+    },
+    {
+      "id": "rn-28-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client taking iron reports a new black stool and dizziness. Which nursing interpretation is best?",
+      "choices": ["Iron always explains black stool, so no assessment is needed", "The RN should assess stool character, bleeding risks, abdominal symptoms, vital signs and perfusion rather than assuming a medication effect", "Black stool confirms an upper gastrointestinal bleed", "The client should stop all medication without an order"],
+      "correctIndex": 1,
+      "explanation": "Iron can darken stool, but new black stool with dizziness may also represent bleeding. The RN evaluates the full pattern and escalates as indicated without independently diagnosing or changing therapy."
+    },
+    {
+      "id": "rn-28-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which postoperative pattern is most concerning?",
+      "choices": ["Mild incisional soreness relieved by splinting", "Progressive distension, repeated green emesis, worsening cramping, no flatus, and falling blood pressure", "Appetite returning gradually", "Passing flatus with decreasing nausea"],
+      "correctIndex": 1,
+      "explanation": "Progressive distension, bilious-appearing emesis, absent passage of flatus, worsening pain, and hemodynamic change form a high-risk cluster requiring immediate focused assessment and escalation."
+    },
+    {
+      "id": "rn-28-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Assistive personnel report that a client passed a large black tarry stool. What should the RN do?",
+      "choices": ["Ask the assistant to decide whether bleeding is present", "Personally assess the client, stool when available, vital signs, perfusion, symptoms, medications and bleeding risk, then escalate promptly as indicated", "Record the report as a normal bowel movement", "Wait for the next stool before assessing"],
+      "correctIndex": 1,
+      "explanation": "Potential bleeding requires timely RN validation and focused assessment. The RN integrates the stool description with symptoms, hemodynamics, medication risk, and baseline and communicates the change."
+    },
+    {
+      "id": "rn-28-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which abdominal assessment entry is most clinically useful?",
+      "choices": ["Possible obstruction; provider aware", "Abdomen abnormal", "1610: New generalized distension, nausea and two episodes of green emesis totaling about 150 mL; cramping pain 7/10, no flatus since morning; abdomen firm with guarding; surgical team notified 1614", "Bowel sounds checked"],
+      "correctIndex": 2,
+      "explanation": "Objective charting identifies timing, contour change, emesis amount and character, pain, elimination, palpation response, and notification. It avoids vague language and an unconfirmed diagnosis."
+    }
+  ]
+}

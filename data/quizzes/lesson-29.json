@@ -1,0 +1,105 @@
+{
+  "lessonId": 29,
+  "questions": [
+    {
+      "id": "rn-29-q01",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client fell and now has severe hip pain, inability to bear weight, and a shortened externally rotated leg. What should the RN do first?",
+      "choices": ["Test full active and passive hip range of motion", "Protect the limb from unnecessary movement, assess distal neurovascular status, and obtain urgent evaluation", "Ask the client to walk with a walker", "Massage the hip and reassess later"],
+      "correctIndex": 1,
+      "explanation": "The pattern suggests a serious injury. The RN avoids movement that could worsen harm, protects the limb, assesses distal circulation and neurologic function, and obtains prompt evaluation."
+    },
+    {
+      "id": "rn-29-q02",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client cannot actively raise the left arm fully, but no acute injury is suspected. What assessment best helps clarify the limitation?",
+      "choices": ["Force the arm beyond the painful point", "Support the joint and gently assess passive motion while noting pain and resistance", "Test only the right arm", "Document paralysis without further assessment"],
+      "correctIndex": 1,
+      "explanation": "When safe, passive motion can help distinguish impaired active movement from joint restriction. The RN supports the joint, moves gently, compares sides, and never forces through pain or resistance."
+    },
+    {
+      "id": "rn-29-q03",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which technique best assesses muscle strength?",
+      "choices": ["Use different resistance on each side", "Compare corresponding muscle groups with equal positioning and resistance and record the action, side, grade, pain, and limitations", "Use hand grasp as the only strength measure", "Apply resistance across a suspected fracture"],
+      "correctIndex": 1,
+      "explanation": "Standardized bilateral comparison makes strength findings reproducible. The RN accounts for pain, precautions, comprehension, and fatigue and avoids resistance over an acute injury."
+    },
+    {
+      "id": "rn-29-q04",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client with a new cast reports rapidly increasing pain. Passive toe stretch causes severe pain and sensation is decreasing, although a pedal pulse is present. How should the RN respond?",
+      "choices": ["A palpable pulse rules out an emergency", "Wait until the pulse disappears", "Treat the cluster as an urgent neurovascular threat and initiate immediate evaluation", "Encourage walking to decrease pressure"],
+      "correctIndex": 2,
+      "explanation": "Escalating pain, pain with passive stretch, and sensory change can precede pulse loss in a limb-threatening pressure problem. The RN acts urgently rather than waiting for late findings."
+    },
+    {
+      "id": "rn-29-q05",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which plan best evaluates gait in a client who is weak after surgery?",
+      "choices": ["Have the client walk alone to show true ability", "First assess bed mobility and sitting tolerance, then progress to standing and walking with the prescribed assistance, footwear, gait belt, and device", "Skip dizziness and vital-sign symptoms", "Let an untrained visitor support the client"],
+      "correctIndex": 1,
+      "explanation": "Mobility should progress in safe stages. The RN assesses readiness and tolerance and uses the prescribed level of trained assistance and equipment to prevent a fall."
+    },
+    {
+      "id": "rn-29-q06",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which fall-prevention plan is most appropriate?",
+      "choices": ["Apply the same interventions to every client based only on age", "Use the approved risk assessment and tailor measures to gait, cognition, dizziness, toileting, medications, vision, footwear, equipment, and environment", "Use side rails as the only prevention measure", "Limit all clients to bed rest"],
+      "correctIndex": 1,
+      "explanation": "Effective fall prevention combines general safety measures with an individualized plan addressing the client’s actual risk factors. A score or age alone does not explain why a fall may occur."
+    },
+    {
+      "id": "rn-29-q07",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Before ambulation, the RN finds a newly swollen, warm, tender calf. What is the best action?",
+      "choices": ["Massage the calf and continue walking", "Perform repeated ankle dorsiflexion to exclude a clot", "Hold ambulation, avoid massage, assess related findings, and report the change promptly", "Apply a tight wrap without an order"],
+      "correctIndex": 2,
+      "explanation": "New unilateral calf warmth, tenderness, and swelling require prompt evaluation for a vascular complication. Massage and provocative maneuvers are unsafe and cannot rule the condition in or out."
+    },
+    {
+      "id": "rn-29-q08",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Basic Care and Comfort",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which question best establishes a functional mobility baseline?",
+      "choices": ["Do your joints hurt?", "Before this illness, how did you get in and out of bed, walk, use stairs, toilet, bathe, and manage daily activities, and what is different now?", "Are you active for your age?", "Can your family do everything for you?"],
+      "correctIndex": 1,
+      "explanation": "A functional baseline describes specific activities, prior independence, assistance and devices, and current change. This information is more actionable than a vague judgment about activity."
+    },
+    {
+      "id": "rn-29-q09",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Assistive personnel report that a previously ambulatory client can no longer stand and has new leg pain. What should the RN do?",
+      "choices": ["Ask the assistant to try again with more force", "Personally assess pain, injury, strength, neurologic and neurovascular status, and readiness before any further mobility", "Document that the client refused activity", "Wait until physical therapy arrives the next day"],
+      "correctIndex": 1,
+      "explanation": "New pain and functional loss require RN assessment before activity continues. The RN validates the change, determines immediate risk, protects the client, and escalates or collaborates as needed."
+    },
+    {
+      "id": "rn-29-q10",
+      "traditionalCourse": "Health Assessment & Nursing Skills",
+      "nclexClientNeeds": "Management of Care",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which mobility documentation is most useful?",
+      "choices": ["Up with help", "Walked okay", "Ambulated 20 feet with front-wheeled walker, gait belt, and one-person steadying assistance; shortened steps, no knee buckling; stopped for dizziness that resolved after sitting", "Weak for age"],
+      "correctIndex": 2,
+      "explanation": "Useful documentation specifies distance, device, assistance level, observed gait, symptoms, and response. It allows the next clinician to reproduce the plan and compare function safely."
+    }
+  ]
+}

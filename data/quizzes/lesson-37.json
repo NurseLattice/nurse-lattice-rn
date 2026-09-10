@@ -1,0 +1,105 @@
+{
+  "lessonId": 37,
+  "questions": [
+    {
+      "id": "rn-37-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding represents a first-line barrier component of innate defense?",
+      "choices": ["Intact skin and mucous membranes", "A memory B-cell response after a booster", "Antigen-specific cytotoxic T-cell expansion", "Long-lived plasma-cell antibody production"],
+      "correctIndex": 0,
+      "explanation": "Intact skin and mucous membranes provide immediate, nonspecific barriers to entry. Memory B cells, cytotoxic T-cell expansion, and long-lived plasma cells are adaptive immune mechanisms."
+    },
+    {
+      "id": "rn-37-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which comparison of innate and adaptive immunity is most accurate?",
+      "choices": ["Innate immunity requires prior exposure, while adaptive immunity never forms memory", "Innate immunity responds rapidly to broad patterns, while adaptive immunity is antigen-specific and can form memory", "Both systems use only antibodies", "Adaptive immunity always acts before barriers and inflammation"],
+      "correctIndex": 1,
+      "explanation": "Innate defenses recognize recurring danger patterns rapidly. Adaptive lymphocytes require antigen-specific activation during a first encounter and can generate memory for a faster later response."
+    },
+    {
+      "id": "rn-37-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "How does a dendritic cell help connect innate and adaptive immunity?",
+      "choices": ["It becomes an erythrocyte that transports antigen", "It processes antigen and presents fragments with activation signals to lymphocytes", "It produces every class of immunoglobulin", "It permanently suppresses all T-cell activity"],
+      "correctIndex": 1,
+      "explanation": "Dendritic cells capture and process antigen, then present antigen fragments and costimulatory signals to lymphocytes in lymphoid tissue, helping initiate a specific adaptive response."
+    },
+    {
+      "id": "rn-37-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which complement effect makes a microorganism easier for a phagocyte to engulf?",
+      "choices": ["Opsonization", "Immune tolerance", "Clonal deletion", "Epithelial metaplasia"],
+      "correctIndex": 0,
+      "explanation": "Opsonization coats a target with molecules that improve recognition and engulfment by phagocytes. Complement can also promote inflammation and damage susceptible membranes."
+    },
+    {
+      "id": "rn-37-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which adaptive immune cell differentiates into a plasma cell that secretes antibodies?",
+      "choices": ["B lymphocyte", "Neutrophil", "Natural killer cell", "Platelet"],
+      "correctIndex": 0,
+      "explanation": "After appropriate activation, B lymphocytes can differentiate into antibody-secreting plasma cells and memory B cells. Neutrophils and natural killer cells are innate effectors."
+    },
+    {
+      "id": "rn-37-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Health Promotion and Maintenance",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which teaching statement correctly distinguishes active from passive immunity?",
+      "choices": ["Immune globulin creates durable memory but vaccines do not", "Vaccination stimulates the recipient's response and memory, while transferred antibody acts immediately but temporarily", "Passive immunity requires clonal expansion before it protects", "Maternal IgG is an example of active immunity in the infant"],
+      "correctIndex": 1,
+      "explanation": "Vaccination produces active immunity through the recipient's own response and can generate memory. Passive antibody, including maternal IgG or immune globulin, is immediate but temporary."
+    },
+    {
+      "id": "rn-37-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which mechanism best explains immediate wheezing and urticaria after allergen exposure?",
+      "choices": ["IgE-mediated mast-cell activation", "Delayed T-cell injury only", "Immune-complex deposition over several days", "Failure of hemostasis"],
+      "correctIndex": 0,
+      "explanation": "Type I hypersensitivity uses IgE-mediated mast-cell activation and can rapidly cause urticaria, bronchospasm, angioedema, hypotension, and anaphylaxis."
+    },
+    {
+      "id": "rn-37-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Minutes after an IV medication begins, a client develops wheezing, facial swelling and hypotension without a rash. What is the priority action?",
+      "choices": ["Wait for hives before intervening", "Stop the suspected trigger, activate emergency help and give intramuscular epinephrine per protocol or order", "Give an oral antihistamine and reassess after one hour", "Slow the infusion and complete the dose"],
+      "correctIndex": 1,
+      "explanation": "Airway and circulatory findings after likely allergen exposure indicate anaphylaxis even without a rash. Prompt emergency response and intramuscular epinephrine are priorities; antihistamines do not replace epinephrine."
+    },
+    {
+      "id": "rn-37-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client receiving chemotherapy has a temperature of 38.2°C (100.8°F) and a severely reduced absolute neutrophil count but no wound redness. Which interpretation is highest priority?",
+      "choices": ["The absence of redness rules out infection", "This may be a time-sensitive infection with a muted inflammatory response", "The fever confirms an autoimmune flare", "A normal total white blood cell count would eliminate concern"],
+      "correctIndex": 1,
+      "explanation": "Severe neutropenia can blunt local and laboratory inflammatory signs. A new fever may be the only early cue of serious infection and requires urgent protocol-based evaluation and treatment."
+    },
+    {
+      "id": "rn-37-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Why is a secondary immune response often faster than the primary response to the same antigen?",
+      "choices": ["The skin permanently stores every antigen", "Memory B and T cells formed after the first exposure respond rapidly on re-exposure", "Complement becomes antigen-specific for life", "Neutrophils begin producing immunoglobulins"],
+      "correctIndex": 1,
+      "explanation": "Antigen-specific memory B and T cells persist after the initial response. Re-exposure activates these cells more quickly and effectively than the original naïve-cell response."
+    }
+  ]
+}

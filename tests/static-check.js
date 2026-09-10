@@ -21,7 +21,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 26) throw new Error("Pilot must preserve all eight Client Needs areas and include twenty-six lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 37) throw new Error("Pilot must preserve all eight Client Needs areas and include thirty-seven lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
@@ -259,11 +259,123 @@ if (twentySixthLesson.traditionalCourse !== "Health Assessment & Nursing Skills"
 for (const question of twentySixthQuiz.questions) {
   if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 26 question must preserve its course and NCLEX tags");
 }
+const twentySeventhLessonItem = curriculum.lessons[26];
+const twentySeventhLesson = JSON.parse(read(twentySeventhLessonItem.lessonFile));
+const twentySeventhQuiz = JSON.parse(read(twentySeventhLessonItem.quizFile));
+if (twentySeventhLessonItem.courseId !== "health-assessment-skills" || twentySeventhLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 27 must remain in Health Assessment & Nursing Skills");
+if (!twentySeventhLesson.title.includes("Neurologic Assessment—Mental Status, Pupils, Strength & Acute Change") || !twentySeventhLesson.html.includes("Stability and time come first") || !twentySeventhLesson.html.includes("Level of consciousness is not the same as orientation") || !twentySeventhLesson.html.includes("Assess pupils deliberately") || !twentySeventhLesson.html.includes("Recognize acute change as a pattern")) throw new Error("Lesson 27 neurologic-assessment content is incomplete");
+if (twentySeventhQuiz.questions.length !== 10) throw new Error("Lesson 27 must include ten neurologic-assessment questions");
+if (twentySeventhLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentySeventhLesson.nclexClientNeeds !== "Reduction of Risk Potential" || twentySeventhLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 27 must preserve all three content tags");
+for (const question of twentySeventhQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 27 question must preserve its course and NCLEX tags");
+}
+const twentyEighthLessonItem = curriculum.lessons[27];
+const twentyEighthLesson = JSON.parse(read(twentyEighthLessonItem.lessonFile));
+const twentyEighthQuiz = JSON.parse(read(twentyEighthLessonItem.quizFile));
+if (twentyEighthLessonItem.courseId !== "health-assessment-skills" || twentyEighthLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 28 must remain in Health Assessment & Nursing Skills");
+if (!twentyEighthLesson.title.includes("Abdominal & Gastrointestinal Assessment") || !twentyEighthLesson.html.includes("Begin with stability and urgent symptoms") || !twentyEighthLesson.html.includes("Use the abdominal sequence: I-A-P-P") || !twentyEighthLesson.html.includes("Auscultate before percussion or palpation") || !twentyEighthLesson.html.includes("Palpate gently and leave pain until last")) throw new Error("Lesson 28 abdominal-assessment content is incomplete");
+if (twentyEighthQuiz.questions.length !== 10) throw new Error("Lesson 28 must include ten abdominal-assessment questions");
+if (twentyEighthLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentyEighthLesson.nclexClientNeeds !== "Reduction of Risk Potential" || twentyEighthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 28 must preserve all three content tags");
+for (const question of twentyEighthQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 28 question must preserve its course and NCLEX tags");
+}
+const twentyNinthLessonItem = curriculum.lessons[28];
+const twentyNinthLesson = JSON.parse(read(twentyNinthLessonItem.lessonFile));
+const twentyNinthQuiz = JSON.parse(read(twentyNinthLessonItem.quizFile));
+if (twentyNinthLessonItem.courseId !== "health-assessment-skills" || twentyNinthLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 29 must remain in Health Assessment & Nursing Skills");
+if (!twentyNinthLesson.title.includes("Musculoskeletal Assessment, Mobility & Fall Risk") || !twentyNinthLesson.html.includes("Begin with safety and function") || !twentyNinthLesson.html.includes("Assess active motion before passive motion") || !twentyNinthLesson.html.includes("Check distal neurovascular status") || !twentyNinthLesson.html.includes("Fall risk is a plan, not just a score")) throw new Error("Lesson 29 musculoskeletal-assessment content is incomplete");
+if (twentyNinthQuiz.questions.length !== 10) throw new Error("Lesson 29 must include ten musculoskeletal-assessment questions");
+if (twentyNinthLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || twentyNinthLesson.nclexClientNeeds !== "Basic Care and Comfort" || twentyNinthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 29 must preserve all three content tags");
+for (const question of twentyNinthQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 29 question must preserve its course and NCLEX tags");
+}
+const thirtiethLessonItem = curriculum.lessons[29];
+const thirtiethLesson = JSON.parse(read(thirtiethLessonItem.lessonFile));
+const thirtiethQuiz = JSON.parse(read(thirtiethLessonItem.quizFile));
+if (thirtiethLessonItem.courseId !== "health-assessment-skills" || thirtiethLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 30 must remain in Health Assessment & Nursing Skills");
+if (!thirtiethLesson.title.includes("Skin, Hair & Nail Assessment—Pressure Injury Risk and Early Change") || !thirtiethLesson.html.includes("Assess color across skin tones") || !thirtiethLesson.html.includes("Describe lesions before naming them") || !thirtiethLesson.html.includes("Identify early pressure-related change") || !thirtiethLesson.html.includes("Risk tools support—but never replace—inspection")) throw new Error("Lesson 30 integumentary-assessment content is incomplete");
+if (thirtiethQuiz.questions.length !== 10) throw new Error("Lesson 30 must include ten integumentary-assessment questions");
+if (thirtiethLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || thirtiethLesson.nclexClientNeeds !== "Reduction of Risk Potential" || thirtiethLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 30 must preserve all three content tags");
+for (const question of thirtiethQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 30 question must preserve its course and NCLEX tags");
+}
+const thirtyFirstLessonItem = curriculum.lessons[30];
+const thirtyFirstLesson = JSON.parse(read(thirtyFirstLessonItem.lessonFile));
+const thirtyFirstQuiz = JSON.parse(read(thirtyFirstLessonItem.quizFile));
+if (thirtyFirstLessonItem.courseId !== "health-assessment-skills" || thirtyFirstLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 31 must remain in Health Assessment & Nursing Skills");
+if (!thirtyFirstLesson.title.includes("Lines, Tubes & Drains—IV, Urinary Catheter & Enteral Tube Safety") || !thirtyFirstLesson.html.includes("Assess the client before the device") || !thirtyFirstLesson.html.includes("Peripheral IV assessment") || !thirtyFirstLesson.html.includes("Indwelling urinary catheter safety") || !thirtyFirstLesson.html.includes("Enteral tube assessment")) throw new Error("Lesson 31 lines, tubes, and drains content is incomplete");
+if (thirtyFirstQuiz.questions.length !== 10) throw new Error("Lesson 31 must include ten lines, tubes, and drains questions");
+if (thirtyFirstLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || thirtyFirstLesson.nclexClientNeeds !== "Reduction of Risk Potential" || thirtyFirstLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 31 must preserve all three content tags");
+for (const question of thirtyFirstQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 31 question must preserve its course and NCLEX tags");
+}
+const thirtySecondLessonItem = curriculum.lessons[31];
+const thirtySecondLesson = JSON.parse(read(thirtySecondLessonItem.lessonFile));
+const thirtySecondQuiz = JSON.parse(read(thirtySecondLessonItem.quizFile));
+if (thirtySecondLessonItem.courseId !== "health-assessment-skills" || thirtySecondLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 32 must remain in Health Assessment & Nursing Skills");
+if (!thirtySecondLesson.title.includes("Laboratory Interpretation—Reference Ranges, Trends & Critical Results") || !thirtySecondLesson.html.includes("Start with the client, then validate the result") || !thirtySecondLesson.html.includes("Read a complete blood count as connected cell lines") || !thirtySecondLesson.html.includes("Interpret electrolytes through their clinical effects") || !thirtySecondLesson.html.includes("Respond to critical and unexpected results")) throw new Error("Lesson 32 laboratory-interpretation content is incomplete");
+if (thirtySecondQuiz.questions.length !== 10) throw new Error("Lesson 32 must include ten laboratory-interpretation questions");
+if (thirtySecondLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || thirtySecondLesson.nclexClientNeeds !== "Reduction of Risk Potential" || thirtySecondLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 32 must preserve all three content tags");
+for (const question of thirtySecondQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 32 question must preserve its course and NCLEX tags");
+}
+const thirtyThirdLessonItem = curriculum.lessons[32];
+const thirtyThirdLesson = JSON.parse(read(thirtyThirdLessonItem.lessonFile));
+const thirtyThirdQuiz = JSON.parse(read(thirtyThirdLessonItem.quizFile));
+if (thirtyThirdLessonItem.courseId !== "health-assessment-skills" || thirtyThirdLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 33 must remain in Health Assessment & Nursing Skills");
+if (!thirtyThirdLesson.title.includes("Recognizing Abnormal Findings—From Cue to Escalation") || !thirtyThirdLesson.html.includes("Know the baseline—but never normalize a dangerous change") || !thirtyThirdLesson.html.includes("Validate data without abandoning the client") || !thirtyThirdLesson.html.includes("Cluster cues across sources") || !thirtyThirdLesson.html.includes("Reassessment closes the rescue loop")) throw new Error("Lesson 33 abnormal-findings content is incomplete");
+if (thirtyThirdQuiz.questions.length !== 10) throw new Error("Lesson 33 must include ten abnormal-findings questions");
+if (thirtyThirdLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || thirtyThirdLesson.nclexClientNeeds !== "Reduction of Risk Potential" || thirtyThirdLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 33 must preserve all three content tags");
+for (const question of thirtyThirdQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 33 question must preserve its course and NCLEX tags");
+}
+const thirtyFourthLessonItem = curriculum.lessons[33];
+const thirtyFourthLesson = JSON.parse(read(thirtyFourthLessonItem.lessonFile));
+const thirtyFourthQuiz = JSON.parse(read(thirtyFourthLessonItem.quizFile));
+if (thirtyFourthLessonItem.courseId !== "health-assessment-skills" || thirtyFourthLessonItem.course !== "Health Assessment & Nursing Skills") throw new Error("Lesson 34 must complete Health Assessment & Nursing Skills");
+if (!thirtyFourthLesson.title.includes("Nursing Documentation—Accurate Charting, Handoffs & Legal Safety") || !thirtyFourthLesson.html.includes("Document the clinical story—not just completed tasks") || !thirtyFourthLesson.html.includes("Correct errors transparently") || !thirtyFourthLesson.html.includes("Handoff transfers information, authority, and responsibility") || !thirtyFourthLesson.html.includes("Protect privacy and confidentiality")) throw new Error("Lesson 34 nursing-documentation content is incomplete");
+if (thirtyFourthQuiz.questions.length !== 10) throw new Error("Lesson 34 must include ten nursing-documentation questions");
+if (thirtyFourthLesson.traditionalCourse !== "Health Assessment & Nursing Skills" || thirtyFourthLesson.nclexClientNeeds !== "Management of Care" || thirtyFourthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 34 must preserve all three content tags");
+for (const question of thirtyFourthQuiz.questions) {
+  if (question.traditionalCourse !== "Health Assessment & Nursing Skills" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 34 question must preserve its course and NCLEX tags");
+}
+const thirtyFifthLessonItem = curriculum.lessons[34];
+const thirtyFifthLesson = JSON.parse(read(thirtyFifthLessonItem.lessonFile));
+const thirtyFifthQuiz = JSON.parse(read(thirtyFifthLessonItem.quizFile));
+if (thirtyFifthLessonItem.courseId !== "pathophysiology" || thirtyFifthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 35 must begin Pathophysiology");
+if (!thirtyFifthLesson.title.includes("Cellular Adaptation, Injury & Death—From Homeostasis to Clinical Cues") || !thirtyFifthLesson.html.includes("Homeostasis is dynamic balance") || !thirtyFifthLesson.html.includes("Adaptation changes size, number, or cell type") || !thirtyFifthLesson.html.includes("ATP depletion begins the injury cascade") || !thirtyFifthLesson.html.includes("Necrosis and apoptosis are not interchangeable")) throw new Error("Lesson 35 cellular-pathophysiology content is incomplete");
+if (thirtyFifthQuiz.questions.length !== 10) throw new Error("Lesson 35 must include ten cellular-pathophysiology questions");
+if (thirtyFifthLesson.traditionalCourse !== "Pathophysiology" || thirtyFifthLesson.nclexClientNeeds !== "Physiological Adaptation" || thirtyFifthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 35 must preserve all three content tags");
+for (const question of thirtyFifthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 35 question must preserve its course and NCLEX tags");
+}
+const thirtySixthLessonItem = curriculum.lessons[35];
+const thirtySixthLesson = JSON.parse(read(thirtySixthLessonItem.lessonFile));
+const thirtySixthQuiz = JSON.parse(read(thirtySixthLessonItem.quizFile));
+if (thirtySixthLessonItem.courseId !== "pathophysiology" || thirtySixthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 36 must remain in Pathophysiology");
+if (!thirtySixthLesson.title.includes("Inflammation, Fever & Tissue Repair—Protection, Injury and Healing") || !thirtySixthLesson.html.includes("Inflammation is not the same as infection") || !thirtySixthLesson.html.includes("Vascular changes create the cardinal signs") || !thirtySixthLesson.html.includes("Fever resets the temperature set point") || !thirtySixthLesson.html.includes("Tissue repair uses four overlapping phases")) throw new Error("Lesson 36 inflammation and repair content is incomplete");
+if (thirtySixthQuiz.questions.length !== 10) throw new Error("Lesson 36 must include ten inflammation and repair questions");
+if (thirtySixthLesson.traditionalCourse !== "Pathophysiology" || thirtySixthLesson.nclexClientNeeds !== "Physiological Adaptation" || thirtySixthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 36 must preserve all three content tags");
+for (const question of thirtySixthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 36 question must preserve its course and NCLEX tags");
+}
+const thirtySeventhLessonItem = curriculum.lessons[36];
+const thirtySeventhLesson = JSON.parse(read(thirtySeventhLessonItem.lessonFile));
+const thirtySeventhQuiz = JSON.parse(read(thirtySeventhLessonItem.quizFile));
+if (thirtySeventhLessonItem.courseId !== "pathophysiology" || thirtySeventhLessonItem.course !== "Pathophysiology") throw new Error("Lesson 37 must remain in Pathophysiology");
+if (!thirtySeventhLesson.title.includes("Innate & Adaptive Immunity—Defense, Memory and Dysregulation") || !thirtySeventhLesson.html.includes("Innate immunity is rapid and broadly targeted") || !thirtySeventhLesson.html.includes("Antigen presentation connects innate and adaptive immunity") || !thirtySeventhLesson.html.includes("Active and passive immunity are different") || !thirtySeventhLesson.html.includes("Anaphylaxis is an airway and circulation emergency")) throw new Error("Lesson 37 immunity content is incomplete");
+if (thirtySeventhQuiz.questions.length !== 10) throw new Error("Lesson 37 must include ten immunity questions");
+if (thirtySeventhLesson.traditionalCourse !== "Pathophysiology" || thirtySeventhLesson.nclexClientNeeds !== "Physiological Adaptation" || thirtySeventhLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 37 must preserve all three content tags");
+for (const question of thirtySeventhQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 37 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
+if (!read("js/app.js").includes('document.createElement("details")') || !read("js/app.js").includes("phaseDisclosureState") || !read("js/app.js").includes("new Set([currentPhaseIndex])")) throw new Error("Course phases must be collapsible with the current phase expanded by default");
+if (!read("css/styles.css").includes(".course-phase[open] .phase-chevron") || !read("css/styles.css").includes(".course-phase-summary:focus-visible")) throw new Error("Course phase disclosure states must have visible, accessible styling");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 260) throw new Error("Expected 260 pilot questions after adding Lesson 26");
+if (questionIds.size !== 370) throw new Error("Expected 370 pilot questions after adding Lesson 37");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -282,4 +394,4 @@ const cloudConfig = read("js/cloud.js");
 if (!cloudConfig.includes('url: ""') || !cloudConfig.includes('publishableKey: ""')) throw new Error("Pilot cloud adapter must remain unconfigured");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "RN Quest" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 20 Foundations lessons, 6 Health Assessment lessons, 260 questions, and version parity.");
+console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 3 Pathophysiology lessons, 370 questions, and version parity.");

@@ -1,0 +1,105 @@
+{
+  "lessonId": 38,
+  "questions": [
+    {
+      "id": "rn-38-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best distinguishes colonization from infection?",
+      "choices": ["Colonization means organisms are present without symptoms or tissue invasion, while infection causes invasion and a host response", "Colonization always requires antimicrobial treatment", "Infection can occur only when a blood culture is positive", "Colonized clients cannot transmit organisms"],
+      "correctIndex": 0,
+      "explanation": "Colonized people carry organisms without symptomatic tissue invasion but may still transmit them. Infection reflects invasion, multiplication, and a clinical or tissue response; results require context."
+    },
+    {
+      "id": "rn-38-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Safety and Infection Prevention and Control",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which nursing action most directly interrupts a mode of transmission in the chain of infection?",
+      "choices": ["Performing hand hygiene before and after client contact", "Increasing the microorganism's virulence", "Creating a new portal of entry", "Suppressing the client's immune response"],
+      "correctIndex": 0,
+      "explanation": "Hand hygiene reduces transfer of organisms by contact and interrupts transmission. Infection prevention can also target the reservoir, portals of exit and entry, or host susceptibility."
+    },
+    {
+      "id": "rn-38-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why might the same microorganism cause colonization in one client and invasive infection in another?",
+      "choices": ["Disease depends only on the organism's name", "Virulence, inoculum, portal of entry and host defenses interact", "Every exposure produces an identical response", "Vaccination eliminates all differences in susceptibility"],
+      "correctIndex": 1,
+      "explanation": "Clinical outcome reflects both microbial features and host factors, including barrier integrity, immune status, devices, chronic illness, exposure dose, and route of entry."
+    },
+    {
+      "id": "rn-38-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which feature of an indwelling device can support persistent or recurrent infection?",
+      "choices": ["A biofilm that protects an attached microbial community", "Permanent sterilization by body fluids", "Conversion of bacteria into platelets", "Elimination of every portal of entry"],
+      "correctIndex": 0,
+      "explanation": "Microorganisms can form a protective biofilm on devices and damaged tissue, limiting immune clearance and antimicrobial penetration. Avoiding unnecessary devices reduces this risk."
+    },
+    {
+      "id": "rn-38-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Blood cultures and an urgent first dose of antimicrobial are ordered for an unstable client with suspected sepsis. What should the RN do?",
+      "choices": ["Delay all treatment until the final culture report", "Obtain the ordered cultures promptly when feasible without delaying time-critical therapy", "Collect cultures after several doses regardless of timing", "Cancel cultures because antimicrobials were prescribed"],
+      "correctIndex": 1,
+      "explanation": "Cultures are ideally collected before antimicrobials when this can be done promptly, but emergency stabilization and time-critical treatment must not be delayed solely for specimen collection."
+    },
+    {
+      "id": "rn-38-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which action best supports antimicrobial stewardship after culture and susceptibility results return?",
+      "choices": ["Continue the broadest therapy indefinitely", "Collaborate to narrow or stop therapy when clinical evidence and results support it", "Save remaining doses for a future illness", "Share the prescription with a family member who has similar symptoms"],
+      "correctIndex": 1,
+      "explanation": "Stewardship uses the appropriate agent, dose, route, and duration and reassesses broad therapy when evidence becomes available. Clients should never save or share prescribed antimicrobials."
+    },
+    {
+      "id": "rn-38-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement about bacteremia and sepsis is correct?",
+      "choices": ["They are interchangeable terms", "Bacteremia is bacteria in blood, while sepsis is a life-threatening systemic response to infection with organ dysfunction", "Sepsis requires a positive blood culture", "Transient bacteremia always causes shock"],
+      "correctIndex": 1,
+      "explanation": "Bacteremia describes viable bacteria in the bloodstream and may be transient or serious. Sepsis is defined by a dangerous systemic response and organ dysfunction and may occur without positive cultures."
+    },
+    {
+      "id": "rn-38-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which cue cluster most strongly suggests infection-related organ dysfunction rather than an uncomplicated local infection?",
+      "choices": ["Small area of tenderness with stable vital signs", "New confusion, tachypnea, falling blood pressure and decreased urine output", "Positive screening swab without symptoms", "Mild itching beneath an adhesive"],
+      "correctIndex": 1,
+      "explanation": "Acute neurologic, respiratory, perfusion, and renal changes suggest systemic deterioration and possible sepsis. This cluster requires immediate assessment and protocol-based escalation."
+    },
+    {
+      "id": "rn-38-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client with suspected infection is confused, hypotensive and tachypneic but has no fever. What is the priority nursing action?",
+      "choices": ["Wait for fever before reporting the findings", "Assess ABCs and perfusion and activate the appropriate emergency or sepsis pathway", "Give an antipyretic and reassess tomorrow", "Assume confusion is an expected effect of aging"],
+      "correctIndex": 1,
+      "explanation": "Sepsis can occur without fever. Suspected infection plus new organ-function and perfusion changes requires immediate stabilization, escalation, timely treatment, and repeated reassessment."
+    },
+    {
+      "id": "rn-38-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best supports improvement after treatment for systemic infection?",
+      "choices": ["Temperature falls briefly after an antipyretic while blood pressure continues to fall", "Mental status, perfusion, urine output and work of breathing improve together", "One inflammatory marker declines while oxygen need rises", "Pain worsens despite a normal white blood cell count"],
+      "correctIndex": 1,
+      "explanation": "Improvement should appear across clinically meaningful trends, especially organ function and perfusion. A single temperature or laboratory change cannot outweigh worsening respiratory or circulatory status."
+    }
+  ]
+}

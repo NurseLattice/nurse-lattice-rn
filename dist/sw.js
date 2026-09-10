@@ -1,8 +1,8 @@
-const VERSION = "0.38.0";
+const VERSION = "0.40.0";
 const CACHE_PREFIX = "rn-quest-" + new URL(self.registration.scope).pathname + "-v";
 const CACHE_NAME = CACHE_PREFIX + VERSION;
 const APP_SHELL = ["./", "index.html", "manifest.webmanifest",
-  ...["css/styles.css", "js/version.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/app.js",
+  ...["css/styles.css", "js/version.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/app.js",
     "data/curriculum.json", "data/program-roadmap.json"].map(path => path + "?v=" + VERSION)];
 
 self.addEventListener("install", event => {

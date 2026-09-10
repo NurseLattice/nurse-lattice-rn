@@ -1,10 +1,10 @@
 {
   "name": "rn-quest",
-  "version": "0.38.0",
+  "version": "0.40.0",
   "private": true,
   "scripts": {
     "start": "python3 -m http.server 4173",
-    "test": "node tests/static-check.js && node tests/progress-check.js && node tests/quiz-check.js && node tests/offline-check.js",
+    "test": "node tests/static-check.js && node tests/progress-check.js && node tests/quiz-check.js && node tests/analytics-check.js && node tests/offline-check.js",
     "build": "node scripts/build.js"
   },
   "engines": {

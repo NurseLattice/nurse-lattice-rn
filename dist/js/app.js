@@ -178,6 +178,7 @@ async function openLesson(index) {
     progress = RNProgress.markStudyDay(progress, localDateKey());
     progress.lastLessonId = item.id;
     save();
+    RNAnalytics.track("lesson_open", item.id);
     const body = document.getElementById("lessonBody");
     const courseLabel = item.course ? item.course + " · NCLEX tag: " + lesson.nclexClientNeeds : item.category + " · " + item.weight;
     body.innerHTML = '<span class="eyebrow">' + courseLabel + '</span><h1 id="lessonTitle">' + lesson.title + "</h1>" + lesson.html + '<p class="source-note">Blueprint source: <a href="https://www.nclex.com/test-plans" target="_blank" rel="noopener noreferrer">2026 NCLEX-RN Test Plan</a>. Educational content last reviewed September 2026.</p>';
@@ -198,6 +199,7 @@ async function startLessonQuiz() {
     if (epoch !== navigationEpoch) return;
     currentQuiz = RNQuiz.createQuizSession(data.questions, { mode: "lesson", lessonId: curriculum.lessons[index].id, shuffleChoices: true });
     currentQuizTitle = curriculum.lessons[currentLessonIndex].cardTitle;
+    RNAnalytics.track("lesson_quiz_start", currentQuiz.lessonId);
     startQuizUI();
   } catch (error) {
     console.error(error);
@@ -296,7 +298,9 @@ function finishQuiz() {
     progress = RNProgress.completeLesson(progress, currentQuiz.lessonId);
     progress = RNProgress.recordLessonScore(progress, currentQuiz.lessonId, currentQuiz.score, currentQuiz.questions.length);
     save();
+    RNAnalytics.track("lesson_quiz_complete", currentQuiz.lessonId);
   }
+  if (currentQuiz.mode === "practice") RNAnalytics.track("practice_complete");
   document.getElementById("resultsTitle").textContent = currentQuizTitle + " complete";
   document.getElementById("resultScore").textContent = currentQuiz.score;
   document.getElementById("resultTotal").textContent = currentQuiz.questions.length;
@@ -342,6 +346,7 @@ function bindEvents() {
 async function initializeApp() {
   initializeTheme();
   bindEvents();
+  RNAnalytics.init();
   try {
     [curriculum, roadmap] = await Promise.all([fetchJson("data/curriculum.json"), fetchJson("data/program-roadmap.json")]);
     updateDashboard();

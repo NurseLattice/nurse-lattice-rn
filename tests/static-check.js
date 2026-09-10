@@ -21,7 +21,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 37) throw new Error("Pilot must preserve all eight Client Needs areas and include thirty-seven lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 38) throw new Error("Pilot must preserve all eight Client Needs areas and include thirty-eight lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
@@ -369,14 +369,24 @@ if (thirtySeventhLesson.traditionalCourse !== "Pathophysiology" || thirtySeventh
 for (const question of thirtySeventhQuiz.questions) {
   if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 37 question must preserve its course and NCLEX tags");
 }
+const thirtyEighthLessonItem = curriculum.lessons[37];
+const thirtyEighthLesson = JSON.parse(read(thirtyEighthLessonItem.lessonFile));
+const thirtyEighthQuiz = JSON.parse(read(thirtyEighthLessonItem.quizFile));
+if (thirtyEighthLessonItem.courseId !== "pathophysiology" || thirtyEighthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 38 must remain in Pathophysiology");
+if (!thirtyEighthLesson.title.includes("Infection—From Exposure and Colonization to Sepsis") || !thirtyEighthLesson.html.includes("Presence of a microorganism is not always infection") || !thirtyEighthLesson.html.includes("The chain of infection identifies prevention points") || !thirtyEighthLesson.html.includes("Specimens must answer the clinical question") || !thirtyEighthLesson.html.includes("Sepsis is infection with a dangerous systemic response")) throw new Error("Lesson 38 infection content is incomplete");
+if (thirtyEighthQuiz.questions.length !== 10) throw new Error("Lesson 38 must include ten infection questions");
+if (thirtyEighthLesson.traditionalCourse !== "Pathophysiology" || thirtyEighthLesson.nclexClientNeeds !== "Physiological Adaptation" || thirtyEighthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 38 must preserve all three content tags");
+for (const question of thirtyEighthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 38 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
 if (!read("js/app.js").includes('document.createElement("details")') || !read("js/app.js").includes("phaseDisclosureState") || !read("js/app.js").includes("new Set([currentPhaseIndex])")) throw new Error("Course phases must be collapsible with the current phase expanded by default");
 if (!read("css/styles.css").includes(".course-phase[open] .phase-chevron") || !read("css/styles.css").includes(".course-phase-summary:focus-visible")) throw new Error("Course phase disclosure states must have visible, accessible styling");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 370) throw new Error("Expected 370 pilot questions after adding Lesson 37");
-for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json"]) {
+if (questionIds.size !== 380) throw new Error("Expected 380 pilot questions after adding Lesson 38");
+for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json", "supabase/rn_analytics_setup.sql", "docs/ANONYMOUS_ANALYTICS.md"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
 for (const label of ["Home", "Learn", "Practice", "Progress", "Educational pilot", "About &amp; sources"]) {
@@ -385,13 +395,18 @@ for (const label of ["Home", "Learn", "Practice", "Progress", "Educational pilot
 const match = versionScript.match(/RN_APP_VERSION = "([^"]+)"/);
 if (!match || match[1] !== version.version || !index.includes("RN Quest " + version.version)) throw new Error("Version values do not match");
 const numericVersion = version.version.replace(/^v/, "");
-for (const asset of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/version.js"]) {
+for (const asset of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js"]) {
   if (!index.includes(asset + "?v=" + numericVersion)) throw new Error("Stale asset version: " + asset);
 }
-const executableSource = ["index.html", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "sw.js"].map(read).join("\n");
+const executableSource = ["index.html", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "sw.js"].map(read).join("\n");
 if (/fnpQuest|FNP_APP_VERSION|mirwbtlwglrpmbbqhfol|service_role|sb_secret_/i.test(executableSource)) throw new Error("FNP namespace or secret leaked into RN runtime");
 const cloudConfig = read("js/cloud.js");
 if (!cloudConfig.includes('url: ""') || !cloudConfig.includes('publishableKey: ""')) throw new Error("Pilot cloud adapter must remain unconfigured");
+const analyticsSource = read("js/analytics.js");
+if (!analyticsSource.includes("dmdkfyvrjfbcyuebhcop.supabase.co") || !analyticsSource.includes("sb_publishable_") || !analyticsSource.includes('RN_ANALYTICS_TABLE = "rn_analytics_events"')) throw new Error("RN analytics must use the dedicated project and publishable key");
+if (!analyticsSource.includes('location.hostname === "nurselattice.github.io"') || !analyticsSource.includes("globalPrivacyControl") || !analyticsSource.includes("RN_ANALYTICS_OPT_OUT_KEY")) throw new Error("RN analytics privacy controls are incomplete");
+if (!index.includes('id="anonymousAnalyticsStatus"') || !index.includes('id="anonymousAnalyticsToggle"')) throw new Error("Anonymous statistics disclosure and opt-out control are missing");
+if (!read("js/app.js").includes('RNAnalytics.track("lesson_open"') || !read("js/app.js").includes('RNAnalytics.track("lesson_quiz_complete"')) throw new Error("Learning analytics event hooks are incomplete");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "RN Quest" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 3 Pathophysiology lessons, 370 questions, and version parity.");
+console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 4 Pathophysiology lessons, 380 questions, and version parity.");

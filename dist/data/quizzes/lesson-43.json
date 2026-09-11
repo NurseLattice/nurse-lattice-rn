@@ -1,0 +1,105 @@
+{
+  "lessonId": 43,
+  "questions": [
+    {
+      "id": "rn-43-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement correctly distinguishes acidemia from acidosis?",
+      "choices": ["Acidemia is a low blood pH, while acidosis is a process that tends to lower pH", "The terms always mean exactly the same thing", "Acidosis can occur only when bicarbonate is low", "Acidemia describes a high blood pH"],
+      "correctIndex": 0,
+      "explanation": "Acidemia describes the measured overall pH state. Acidosis describes a physiologic process; opposing processes may coexist, so an acidosis can be present even when the pH is near the reference interval."
+    },
+    {
+      "id": "rn-43-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "An ABG shows acidemia with an elevated PaCO₂ as the change that explains the pH. Which primary disorder is present?",
+      "choices": ["Respiratory acidosis", "Respiratory alkalosis", "Metabolic alkalosis", "No acid–base disorder"],
+      "correctIndex": 0,
+      "explanation": "A primary rise in PaCO₂ lowers the bicarbonate-to-CO₂ ratio and produces respiratory acidosis. The bicarbonate and timeline help determine compensation and whether another process is present."
+    },
+    {
+      "id": "rn-43-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which client requires action before completing a detailed acid–base calculation?",
+      "choices": ["A stable client asking what bicarbonate means", "A client with apnea, cyanosis, and decreasing consciousness", "A client whose chemistry panel is unchanged", "A client waiting for routine discharge teaching"],
+      "correctIndex": 1,
+      "explanation": "Apnea and declining consciousness threaten airway, breathing, and oxygenation. Immediate support and emergency escalation take priority over finishing interpretation formulas."
+    },
+    {
+      "id": "rn-43-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which information is essential when interpreting the PaO₂ on an ABG?",
+      "choices": ["The client's inspired oxygen or oxygen-delivery setting at collection", "Only the client's height", "The previous day's meal", "Whether serum sodium was normal last year"],
+      "correctIndex": 0,
+      "explanation": "PaO₂ must be interpreted with inspired oxygen and the clinical situation. Collection time, specimen type, breathing, and ventilator settings when present also matter."
+    },
+    {
+      "id": "rn-43-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client with severe diarrhea has a low pH, low HCO₃⁻, and compensatory low PaCO₂. Which primary disorder is most consistent with this pattern?",
+      "choices": ["Metabolic acidosis from bicarbonate loss", "Metabolic alkalosis from acid gain", "Respiratory acidosis from excess ventilation", "Respiratory alkalosis from bicarbonate retention"],
+      "correctIndex": 0,
+      "explanation": "Diarrhea can cause bicarbonate loss and a normal-anion-gap metabolic acidosis. Increased ventilation lowers PaCO₂ as respiratory compensation."
+    },
+    {
+      "id": "rn-43-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Using anion gap = sodium − (chloride + bicarbonate), what is the gap when sodium is 140, chloride 104, and bicarbonate 16 mEq/L?",
+      "choices": ["8 mEq/L", "12 mEq/L", "20 mEq/L", "36 mEq/L"],
+      "correctIndex": 2,
+      "explanation": "140 − (104 + 16) = 20 mEq/L. Interpretation uses the laboratory's reference interval, albumin, trend, and clinical cause; the calculation alone does not identify the acid."
+    },
+    {
+      "id": "rn-43-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with metabolic acidosis has HCO₃⁻ 12 mEq/L. The expected PaCO₂ by 1.5 × HCO₃⁻ + 8, ±2 is about 24–28 mm Hg, but the measured PaCO₂ is 45. What should the RN suspect?",
+      "choices": ["Adequate respiratory compensation", "Concurrent respiratory acidosis or ventilatory failure", "A primary metabolic alkalosis only", "No clinically important abnormality"],
+      "correctIndex": 1,
+      "explanation": "The measured PaCO₂ is much higher than expected, so ventilation is not providing the expected compensation. The RN assesses breathing and fatigue and escalates for a mixed disorder or ventilatory failure."
+    },
+    {
+      "id": "rn-43-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can a nearly normal pH still represent a dangerous mixed acid–base disorder?",
+      "choices": ["Opposing primary processes can move the pH toward the reference interval", "A normal pH means PaCO₂ and HCO₃⁻ must be normal", "Compensation always removes the underlying disease", "Blood gas values cannot coexist abnormally"],
+      "correctIndex": 0,
+      "explanation": "Opposing disorders, such as metabolic acidosis and metabolic alkalosis, can partially offset their pH effects while both mechanisms remain clinically important."
+    },
+    {
+      "id": "rn-43-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A tachypneic client with sepsis has low HCO₃⁻ and low PaCO₂. What is the safest nursing interpretation?",
+      "choices": ["The rapid breathing may be compensation for metabolic acidosis; assess perfusion, oxygenation, fatigue, and the cause", "The breathing pattern proves anxiety", "Reduce ventilation without evaluating the client", "A low PaCO₂ rules out serious illness"],
+      "correctIndex": 0,
+      "explanation": "Low HCO₃⁻ indicates metabolic acidosis, and low PaCO₂ may be compensatory. The RN supports ABCs, evaluates shock and respiratory reserve, and treats the cause under the prescribed plan."
+    },
+    {
+      "id": "rn-43-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which trend best supports improvement after treatment of shock-related metabolic acidosis?",
+      "choices": ["pH improves while mentation, perfusion, urine output, lactate trend, and breathing also improve", "Bicarbonate rises once while blood pressure and urine output fall", "Respiratory effort worsens despite a near-normal pH", "One sample is normal but was drawn from a contaminated line"],
+      "correctIndex": 0,
+      "explanation": "Meaningful improvement appears across acid–base data and organ perfusion. A single laboratory number cannot outweigh worsening clinical function or an unreliable specimen."
+    }
+  ]
+}

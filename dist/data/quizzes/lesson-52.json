@@ -1,0 +1,155 @@
+{
+  "lessonId": 52,
+  "questions": [
+    {
+      "id": "rn-52-q01",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Before administering a scheduled antihypertensive, which finding requires the RN to pause and reassess the plan?",
+      "choices": [
+        "The client's blood pressure is now 82/48 mm Hg with dizziness",
+        "The medication barcode matches the eMAR",
+        "The tablet is intact and unexpired",
+        "The client can state two identifiers"
+      ],
+      "correctIndex": 0,
+      "explanation": "A major change in blood pressure and symptoms may make a previously appropriate medication unsafe now. Technology confirms selected data but does not override current clinical assessment."
+    },
+    {
+      "id": "rn-52-q02",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which method best verifies the correct client immediately before medication administration?",
+      "choices": [
+        "Match two approved identifiers from the client and identification band with the eMAR",
+        "Use the room number and recognize the client's face",
+        "Ask whether the client is Mr. Lee and accept a nod",
+        "Ask a family member to point to the correct bed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two approved identifiers should be matched at the bedside. Room number, location, facial recognition, and leading yes-or-no questions are not reliable identification methods."
+    },
+    {
+      "id": "rn-52-q03",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best describes a high-alert medication?",
+      "choices": [
+        "An error involving it has a heightened risk of causing serious harm",
+        "It always causes an allergic reaction",
+        "It is used only in intensive care",
+        "Errors with it are harmless if detected later"
+      ],
+      "correctIndex": 0,
+      "explanation": "High-alert designation reflects the potential severity of harm when an error occurs, not necessarily a higher frequency of errors or restriction to one setting."
+    },
+    {
+      "id": "rn-52-q04",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A policy requires an independent double check for an insulin infusion. Which action meets that requirement?",
+      "choices": [
+        "A second qualified clinician separately verifies the required elements before comparing results",
+        "A second clinician signs after being told the first clinician's calculation",
+        "The same clinician repeats the calculation without another reviewer",
+        "The barcode scan replaces all required independent verification"
+      ],
+      "correctIndex": 0,
+      "explanation": "Independence reduces confirmation bias. The second clinician should separately verify the specified prescription, calculation, product, concentration, client, and pump settings before comparing conclusions."
+    },
+    {
+      "id": "rn-52-q05",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "During admission medication reconciliation, the client cannot remember the strength of an anticoagulant. What is the best plan?",
+      "choices": [
+        "Use available reliable sources to verify the product and strength before resolving the discrepancy",
+        "Guess the most common strength and document it as confirmed",
+        "Omit the anticoagulant because uncertain medications are never important",
+        "Automatically continue every home medication without an order"
+      ],
+      "correctIndex": 0,
+      "explanation": "Medication reconciliation seeks the best possible history and compares it with current orders. High-risk uncertainties should be verified with sources such as pharmacy, records, containers, and clinicians."
+    },
+    {
+      "id": "rn-52-q06",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Minutes after an IV medication begins, the client develops wheezing, facial swelling, widespread hives, and hypotension. Which hypothesis has priority?",
+      "choices": [
+        "Anaphylaxis",
+        "Expected mild intolerance",
+        "Therapeutic response",
+        "A harmless local side effect"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acute airway, breathing, circulatory, and skin findings after exposure form a life-threatening anaphylaxis pattern requiring immediate emergency response."
+    },
+    {
+      "id": "rn-52-q07",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A capable client refuses a prescribed medication after hearing its purpose. What should the RN do?",
+      "choices": [
+        "Explore the reason, provide balanced information, respect the refusal, notify as needed, and document",
+        "Hide the medication in food so treatment continues",
+        "Threaten discharge if the client does not take it",
+        "Document it as administered because it was offered"
+      ],
+      "correctIndex": 0,
+      "explanation": "The client has the right to informed refusal. The RN assesses concerns, addresses correctable barriers, communicates clinically important refusal, and accurately documents what occurred."
+    },
+    {
+      "id": "rn-52-q08",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN discovers that an incorrect dose was administered 10 minutes ago. What is the first priority?",
+      "choices": [
+        "Assess the client and reduce ongoing harm while initiating the required clinical response",
+        "Alter the eMAR so the incorrect dose is no longer visible",
+        "Wait for symptoms before telling anyone",
+        "Complete the incident report before checking the client"
+      ],
+      "correctIndex": 0,
+      "explanation": "Client safety comes first. Assess immediately, stop ongoing exposure when safe, notify appropriate clinicians, obtain monitoring or treatment, and continue reassessment before completing reporting steps."
+    },
+    {
+      "id": "rn-52-q09",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which documentation is appropriate after administering a PRN analgesic?",
+      "choices": [
+        "Record the pre-assessment, medication administration, and timely reassessment of effect and adverse findings",
+        "Document only that the tablet was removed from storage",
+        "Chart complete pain relief before reassessing the client",
+        "Leave the response blank even when the medication is repeatedly ineffective"
+      ],
+      "correctIndex": 0,
+      "explanation": "PRN therapy requires assessment of the indication before administration and evaluation afterward. Repeated inadequate effect or adverse findings should be documented and escalated."
+    },
+    {
+      "id": "rn-52-q10",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The scanner confirms a medication, but the label concentration differs from the concentration expected in the eMAR. What is the safest interpretation?",
+      "choices": [
+        "The discrepancy must be resolved before preparation or administration",
+        "The successful scan proves the dose is correct",
+        "Concentration does not affect the volume administered",
+        "The RN should use the expected volume from memory"
+      ],
+      "correctIndex": 0,
+      "explanation": "A concentration mismatch can cause a serious dosing error. Barcode technology is one safeguard; the RN must still read the full label, calculate using the actual product, and clarify discrepancies."
+    }
+  ]
+}

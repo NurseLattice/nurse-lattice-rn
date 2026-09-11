@@ -1,0 +1,105 @@
+{
+  "lessonId": 45,
+  "questions": [
+    {
+      "id": "rn-45-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client has a respiratory rate of 30/min but takes very shallow breaths. Why can PaCO₂ still rise?",
+      "choices": ["Effective alveolar ventilation may be inadequate despite the rapid rate", "Every rapid respiratory rate guarantees high tidal volume", "Supplemental oxygen automatically removes carbon dioxide", "PaCO₂ depends only on hemoglobin concentration"],
+      "correctIndex": 0,
+      "explanation": "Alveolar ventilation depends on both rate and the portion of tidal volume reaching gas-exchanging alveoli. Rapid shallow breaths may ventilate mostly dead space and fail to eliminate enough CO₂."
+    },
+    {
+      "id": "rn-45-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which description best represents a pulmonary shunt?",
+      "choices": ["Blood perfuses alveoli that receive no ventilation", "Alveoli are ventilated without any adjacent perfusion", "Airflow and perfusion are perfectly matched", "Hemoglobin concentration is increased"],
+      "correctIndex": 0,
+      "explanation": "In shunt physiology, blood reaches unventilated alveoli or bypasses ventilated alveoli. A large true shunt may respond incompletely to increased inspired oxygen."
+    },
+    {
+      "id": "rn-45-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A pulmonary embolus blocks blood flow to ventilated alveoli. Which mechanism results?",
+      "choices": ["High V/Q and increased alveolar dead space", "Low V/Q from excess perfusion", "Pure diffusion limitation from fibrosis", "Increased oxygen-carrying capacity"],
+      "correctIndex": 0,
+      "explanation": "The affected alveoli receive ventilation but little or no perfusion, creating high V/Q and wasted ventilation, also called alveolar dead space."
+    },
+    {
+      "id": "rn-45-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding most strongly suggests respiratory muscle fatigue rather than improvement?",
+      "choices": ["A previously distressed client becomes drowsy with slower shallow respirations and less air movement", "The client speaks in full sentences with less accessory-muscle use", "Breath sounds improve after prescribed bronchodilator therapy", "Respiratory rate returns toward baseline while alertness improves"],
+      "correctIndex": 0,
+      "explanation": "Falling rate, shallow breathing, reduced air movement, and worsening alertness after sustained distress can signal exhaustion and impending ventilatory failure."
+    },
+    {
+      "id": "rn-45-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which client requires the most immediate action?",
+      "choices": ["A stable client asking how an incentive spirometer works", "A client with a quiet chest, inability to speak, decreasing alertness, and weak respiratory effort", "A client with a chronic cough unchanged from baseline", "A client awaiting routine pulmonary-function testing"],
+      "correctIndex": 1,
+      "explanation": "Minimal air movement, inability to speak, altered alertness, and weak effort indicate critical airflow limitation or respiratory fatigue and require emergency airway and breathing support."
+    },
+    {
+      "id": "rn-45-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can a client with severe anemia have tissue hypoxia despite an acceptable PaO₂ and SpO₂?",
+      "choices": ["Total oxygen content is reduced because less hemoglobin is available to carry oxygen", "PaO₂ directly measures total hemoglobin concentration", "SpO₂ measures cardiac output", "Anemia always produces hypercapnia first"],
+      "correctIndex": 0,
+      "explanation": "PaO₂ reflects dissolved oxygen pressure and SpO₂ estimates the proportion of hemoglobin saturated. With much less hemoglobin, arterial oxygen content and tissue delivery can still be low."
+    },
+    {
+      "id": "rn-45-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client receiving supplemental oxygen has an improved SpO₂ but increasing somnolence and shallow respirations. What is the best plan?",
+      "choices": ["Urgently reassess ventilation and prepare for additional airway or ventilatory support", "Assume respiratory function is normal because SpO₂ improved", "Remove all monitoring", "Wait for cyanosis before escalating"],
+      "correctIndex": 0,
+      "explanation": "Supplemental oxygen can improve saturation without correcting hypoventilation. Worsening alertness and shallow breathing require urgent ventilation assessment and escalation."
+    },
+    {
+      "id": "rn-45-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which action is appropriate when administering oxygen for acute hypoxemia?",
+      "choices": ["Use the ordered delivery system, target the individualized range, and reassess oxygenation, ventilation, and mental status", "Withhold oxygen from every client at risk for CO₂ retention", "Adjust the device without checking the client or order", "Judge response only by the device flow setting"],
+      "correctIndex": 0,
+      "explanation": "Indicated oxygen should not be withheld in a hypoxemic emergency. It is titrated to an individualized target with reassessment of the whole respiratory response and possible adverse effects."
+    },
+    {
+      "id": "rn-45-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best indicates that respiratory support is improving both oxygenation and ventilation?",
+      "choices": ["The client is more alert with less work of breathing and improving oxygen and CO₂ trends", "SpO₂ rises while somnolence and PaCO₂ worsen", "Respirations become shallower and breath sounds diminish", "Blood pressure falls after positive-pressure support"],
+      "correctIndex": 0,
+      "explanation": "Improved alertness, reduced effort, and favorable oxygen and carbon-dioxide trends provide converging evidence of benefit. A saturation change alone is incomplete."
+    },
+    {
+      "id": "rn-45-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client with diffuse inflammatory lung injury has severe hypoxemia, bilateral alveolar opacities, and low lung compliance not fully explained by heart failure. Which mechanism is the priority hypothesis?",
+      "choices": ["ARDS with alveolar–capillary barrier injury and shunt physiology", "Isolated increased hemoglobin concentration", "Uncomplicated anxiety", "Normal age-related change"],
+      "correctIndex": 0,
+      "explanation": "ARDS causes inflammatory barrier injury, protein-rich edema, surfactant dysfunction, atelectasis, low compliance, and severe gas-exchange impairment including shunt physiology."
+    }
+  ]
+}

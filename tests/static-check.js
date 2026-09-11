@@ -21,7 +21,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 38) throw new Error("Pilot must preserve all eight Client Needs areas and include thirty-eight lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 53) throw new Error("Pilot must preserve all eight Client Needs areas and include fifty-three lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
@@ -379,13 +379,163 @@ if (thirtyEighthLesson.traditionalCourse !== "Pathophysiology" || thirtyEighthLe
 for (const question of thirtyEighthQuiz.questions) {
   if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 38 question must preserve its course and NCLEX tags");
 }
+const thirtyNinthLessonItem = curriculum.lessons[38];
+const thirtyNinthLesson = JSON.parse(read(thirtyNinthLessonItem.lessonFile));
+const thirtyNinthQuiz = JSON.parse(read(thirtyNinthLessonItem.quizFile));
+if (thirtyNinthLessonItem.courseId !== "pathophysiology" || thirtyNinthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 39 must remain in Pathophysiology");
+if (!thirtyNinthLesson.title.includes("Fluid Compartments & Volume Regulation—Movement, Edema and Perfusion") || !thirtyNinthLesson.html.includes("Body water occupies connected compartments") || !thirtyNinthLesson.html.includes("Osmolality and tonicity answer different questions") || !thirtyNinthLesson.html.includes("Third spacing can hide intravascular depletion") || !thirtyNinthLesson.html.includes("The kidneys and hormones defend balance")) throw new Error("Lesson 39 fluid-balance content is incomplete");
+if (thirtyNinthQuiz.questions.length !== 10) throw new Error("Lesson 39 must include ten fluid-balance questions");
+if (thirtyNinthLesson.traditionalCourse !== "Pathophysiology" || thirtyNinthLesson.nclexClientNeeds !== "Physiological Adaptation" || thirtyNinthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 39 must preserve all three content tags");
+for (const question of thirtyNinthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 39 question must preserve its course and NCLEX tags");
+}
+const fortiethLessonItem = curriculum.lessons[39];
+const fortiethLesson = JSON.parse(read(fortiethLessonItem.lessonFile));
+const fortiethQuiz = JSON.parse(read(fortiethLessonItem.quizFile));
+if (fortiethLessonItem.courseId !== "pathophysiology" || fortiethLessonItem.course !== "Pathophysiology") throw new Error("Lesson 40 must remain in Pathophysiology");
+if (!fortiethLesson.title.includes("Sodium & Water Disorders—Hyponatremia, Hypernatremia and Brain Adaptation") || !fortiethLesson.html.includes("Start with tonicity—not the sodium number alone") || !fortiethLesson.html.includes("Hyponatremia causes water to enter brain cells") || !fortiethLesson.html.includes("Hypernatremia usually reflects too little water") || !fortiethLesson.html.includes("Evaluate correction and detect complications")) throw new Error("Lesson 40 sodium-disorder content is incomplete");
+if (fortiethQuiz.questions.length !== 10) throw new Error("Lesson 40 must include ten sodium-disorder questions");
+if (fortiethLesson.traditionalCourse !== "Pathophysiology" || fortiethLesson.nclexClientNeeds !== "Physiological Adaptation" || fortiethLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 40 must preserve all three content tags");
+for (const question of fortiethQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 40 question must preserve its course and NCLEX tags");
+}
+const fortyFirstLessonItem = curriculum.lessons[40];
+const fortyFirstLesson = JSON.parse(read(fortyFirstLessonItem.lessonFile));
+const fortyFirstQuiz = JSON.parse(read(fortyFirstLessonItem.quizFile));
+if (fortyFirstLessonItem.courseId !== "pathophysiology" || fortyFirstLessonItem.course !== "Pathophysiology") throw new Error("Lesson 41 must remain in Pathophysiology");
+if (!fortyFirstLesson.title.includes("Potassium Disorders—Cellular Shifts, Dysrhythmias and Safe Correction") || !fortyFirstLesson.html.includes("Serum potassium is a small window into a large store") || !fortyFirstLesson.html.includes("Potassium replacement is high-alert therapy") || !fortyFirstLesson.html.includes("Exclude pseudohyperkalemia without delaying rescue") || !fortyFirstLesson.html.includes("Emergency treatment has three different jobs")) throw new Error("Lesson 41 potassium-disorder content is incomplete");
+if (fortyFirstQuiz.questions.length !== 10) throw new Error("Lesson 41 must include ten potassium-disorder questions");
+if (fortyFirstLesson.traditionalCourse !== "Pathophysiology" || fortyFirstLesson.nclexClientNeeds !== "Physiological Adaptation" || fortyFirstLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 41 must preserve all three content tags");
+for (const question of fortyFirstQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 41 question must preserve its course and NCLEX tags");
+}
+const fortySecondLessonItem = curriculum.lessons[41];
+const fortySecondLesson = JSON.parse(read(fortySecondLessonItem.lessonFile));
+const fortySecondQuiz = JSON.parse(read(fortySecondLessonItem.quizFile));
+if (fortySecondLessonItem.courseId !== "pathophysiology" || fortySecondLessonItem.course !== "Pathophysiology") throw new Error("Lesson 42 must remain in Pathophysiology");
+if (!fortySecondLesson.title.includes("Calcium, Magnesium & Phosphate—Excitability, Bone and Cellular Energy") || !fortySecondLesson.html.includes("Ionized calcium is the biologically active fraction") || !fortySecondLesson.html.includes("Magnesium stabilizes enzymes, membranes, and electrolyte balance") || !fortySecondLesson.html.includes("Refeeding can create a dangerous intracellular shift") || !fortySecondLesson.html.includes("Replacement can create new emergencies")) throw new Error("Lesson 42 calcium-magnesium-phosphate content is incomplete");
+if (fortySecondQuiz.questions.length !== 10) throw new Error("Lesson 42 must include ten calcium-magnesium-phosphate questions");
+if (fortySecondLesson.traditionalCourse !== "Pathophysiology" || fortySecondLesson.nclexClientNeeds !== "Physiological Adaptation" || fortySecondLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 42 must preserve all three content tags");
+for (const question of fortySecondQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 42 question must preserve its course and NCLEX tags");
+}
+const fortyThirdLessonItem = curriculum.lessons[42];
+const fortyThirdLesson = JSON.parse(read(fortyThirdLessonItem.lessonFile));
+const fortyThirdQuiz = JSON.parse(read(fortyThirdLessonItem.quizFile));
+if (fortyThirdLessonItem.courseId !== "pathophysiology" || fortyThirdLessonItem.course !== "Pathophysiology") throw new Error("Lesson 43 must remain in Pathophysiology");
+if (!fortyThirdLesson.title.includes("Acid–Base Balance—ABG Patterns, Compensation and Mixed Disorders") || !fortyThirdLesson.html.includes("pH depends on a ratio") || !fortyThirdLesson.html.includes("Use a systematic interpretation sequence") || !fortyThirdLesson.html.includes("The anion gap organizes unmeasured ions") || !fortyThirdLesson.html.includes("Compensation moves toward normal but does not overcorrect")) throw new Error("Lesson 43 acid-base content is incomplete");
+if (fortyThirdQuiz.questions.length !== 10) throw new Error("Lesson 43 must include ten acid-base questions");
+if (fortyThirdLesson.traditionalCourse !== "Pathophysiology" || fortyThirdLesson.nclexClientNeeds !== "Physiological Adaptation" || fortyThirdLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 43 must preserve all three content tags");
+for (const question of fortyThirdQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 43 question must preserve its course and NCLEX tags");
+}
+const fortyFourthLessonItem = curriculum.lessons[43];
+const fortyFourthLesson = JSON.parse(read(fortyFourthLessonItem.lessonFile));
+const fortyFourthQuiz = JSON.parse(read(fortyFourthLessonItem.quizFile));
+if (fortyFourthLessonItem.courseId !== "pathophysiology" || fortyFourthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 44 must remain in Pathophysiology");
+if (!fortyFourthLesson.title.includes("Cardiovascular Hemodynamics—Cardiac Output, Ischemia and Heart Failure") || !fortyFourthLesson.html.includes("Cardiac output links the pump to perfusion") || !fortyFourthLesson.html.includes("Coronary perfusion must match myocardial demand") || !fortyFourthLesson.html.includes("Heart failure can reflect impaired ejection, filling, or both") || !fortyFourthLesson.html.includes("Cardiogenic shock is pump failure with organ hypoperfusion")) throw new Error("Lesson 44 cardiovascular hemodynamics content is incomplete");
+if (fortyFourthQuiz.questions.length !== 10) throw new Error("Lesson 44 must include ten cardiovascular questions");
+if (fortyFourthLesson.traditionalCourse !== "Pathophysiology" || fortyFourthLesson.nclexClientNeeds !== "Physiological Adaptation" || fortyFourthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 44 must preserve all three content tags");
+for (const question of fortyFourthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 44 question must preserve its course and NCLEX tags");
+}
+const fortyFifthLessonItem = curriculum.lessons[44];
+const fortyFifthLesson = JSON.parse(read(fortyFifthLessonItem.lessonFile));
+const fortyFifthQuiz = JSON.parse(read(fortyFifthLessonItem.quizFile));
+if (fortyFifthLessonItem.courseId !== "pathophysiology" || fortyFifthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 45 must remain in Pathophysiology");
+if (!fortyFifthLesson.title.includes("Respiratory Gas Exchange—Ventilation, V/Q Mismatch and Respiratory Failure") || !fortyFifthLesson.html.includes("Ventilation moves carbon dioxide; oxygenation is a different function") || !fortyFifthLesson.html.includes("Ventilation and perfusion must meet in the same alveolus") || !fortyFifthLesson.html.includes("Hypoxemia and tissue hypoxia are related but not identical") || !fortyFifthLesson.html.includes("Respiratory failure may be hypoxemic, hypercapnic, or mixed")) throw new Error("Lesson 45 respiratory pathophysiology content is incomplete");
+if (fortyFifthQuiz.questions.length !== 10) throw new Error("Lesson 45 must include ten respiratory pathophysiology questions");
+if (fortyFifthLesson.traditionalCourse !== "Pathophysiology" || fortyFifthLesson.nclexClientNeeds !== "Physiological Adaptation" || fortyFifthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 45 must preserve all three content tags");
+for (const question of fortyFifthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 45 question must preserve its course and NCLEX tags");
+}
+const fortySixthLessonItem = curriculum.lessons[45];
+const fortySixthLesson = JSON.parse(read(fortySixthLessonItem.lessonFile));
+const fortySixthQuiz = JSON.parse(read(fortySixthLessonItem.quizFile));
+if (fortySixthLessonItem.courseId !== "pathophysiology" || fortySixthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 46 must remain in Pathophysiology");
+if (!fortySixthLesson.title.includes("Renal Function—Filtration, Acute Kidney Injury and Chronic Kidney Disease") || !fortySixthLesson.html.includes("The nephron filters first, then edits the filtrate") || !fortySixthLesson.html.includes("Acute kidney injury is organized by mechanism") || !fortySixthLesson.html.includes("Chronic kidney disease is defined by persistence, not one result") || !fortySixthLesson.html.includes("Uremia is a clinical syndrome, not simply a high urea value")) throw new Error("Lesson 46 renal pathophysiology content is incomplete");
+if (fortySixthQuiz.questions.length !== 10) throw new Error("Lesson 46 must include ten renal pathophysiology questions");
+if (fortySixthLesson.traditionalCourse !== "Pathophysiology" || fortySixthLesson.nclexClientNeeds !== "Physiological Adaptation" || fortySixthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 46 must preserve all three content tags");
+for (const question of fortySixthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 46 question must preserve its course and NCLEX tags");
+}
+const fortySeventhLessonItem = curriculum.lessons[46];
+const fortySeventhLesson = JSON.parse(read(fortySeventhLessonItem.lessonFile));
+const fortySeventhQuiz = JSON.parse(read(fortySeventhLessonItem.quizFile));
+if (fortySeventhLessonItem.courseId !== "pathophysiology" || fortySeventhLessonItem.course !== "Pathophysiology") throw new Error("Lesson 47 must remain in Pathophysiology");
+if (!fortySeventhLesson.title.includes("Endocrine Regulation—Feedback Loops, Glucose Control and Hormonal Crises") || !fortySeventhLesson.html.includes("Hormone systems communicate through feedback loops") || !fortySeventhLesson.html.includes("DKA is insulin deficiency with ketone-driven acidosis") || !fortySeventhLesson.html.includes("Thyroid storm is clinical decompensation, not just a high hormone value") || !fortySeventhLesson.html.includes("Adrenal crisis is refractory shock until proven otherwise")) throw new Error("Lesson 47 endocrine pathophysiology content is incomplete");
+if (fortySeventhQuiz.questions.length !== 10) throw new Error("Lesson 47 must include ten endocrine pathophysiology questions");
+if (fortySeventhLesson.traditionalCourse !== "Pathophysiology" || fortySeventhLesson.nclexClientNeeds !== "Physiological Adaptation" || fortySeventhLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 47 must preserve all three content tags");
+for (const question of fortySeventhQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 47 question must preserve its course and NCLEX tags");
+}
+const fortyEighthLessonItem = curriculum.lessons[47];
+const fortyEighthLesson = JSON.parse(read(fortyEighthLessonItem.lessonFile));
+const fortyEighthQuiz = JSON.parse(read(fortyEighthLessonItem.quizFile));
+if (fortyEighthLessonItem.courseId !== "pathophysiology" || fortyEighthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 48 must remain in Pathophysiology");
+if (!fortyEighthLesson.title.includes("Neurologic Function—Cerebral Perfusion, Stroke, Seizures and Deterioration") || !fortyEighthLesson.html.includes("Cerebral perfusion depends on pressure and resistance") || !fortyEighthLesson.html.includes("The skull contains a fixed total volume") || !fortyEighthLesson.html.includes("Ischemic stroke creates a core and a threatened penumbra") || !fortyEighthLesson.html.includes("Status epilepticus is a time-sensitive emergency")) throw new Error("Lesson 48 neurologic pathophysiology content is incomplete");
+if (fortyEighthQuiz.questions.length !== 10) throw new Error("Lesson 48 must include ten neurologic pathophysiology questions");
+if (fortyEighthLesson.traditionalCourse !== "Pathophysiology" || fortyEighthLesson.nclexClientNeeds !== "Physiological Adaptation" || fortyEighthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 48 must preserve all three content tags");
+for (const question of fortyEighthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 48 question must preserve its course and NCLEX tags");
+}
+const fortyNinthLessonItem = curriculum.lessons[48];
+const fortyNinthLesson = JSON.parse(read(fortyNinthLessonItem.lessonFile));
+const fortyNinthQuiz = JSON.parse(read(fortyNinthLessonItem.quizFile));
+if (fortyNinthLessonItem.courseId !== "pathophysiology" || fortyNinthLessonItem.course !== "Pathophysiology") throw new Error("Lesson 49 must remain in Pathophysiology");
+if (!fortyNinthLesson.title.includes("Gastrointestinal & Hepatobiliary Function—Obstruction, Bleeding and Organ Failure") || !fortyNinthLesson.html.includes("Obstruction raises pressure and threatens blood flow") || !fortyNinthLesson.html.includes("Mesenteric ischemia is a vascular emergency") || !fortyNinthLesson.html.includes("GI bleeding can be visible, occult, or concealed") || !fortyNinthLesson.html.includes("Acute pancreatitis can become systemic")) throw new Error("Lesson 49 gastrointestinal and hepatobiliary pathophysiology content is incomplete");
+if (fortyNinthQuiz.questions.length !== 10) throw new Error("Lesson 49 must include ten gastrointestinal and hepatobiliary pathophysiology questions");
+if (fortyNinthLesson.traditionalCourse !== "Pathophysiology" || fortyNinthLesson.nclexClientNeeds !== "Physiological Adaptation" || fortyNinthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 49 must preserve all three content tags");
+for (const question of fortyNinthQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 49 question must preserve its course and NCLEX tags");
+}
+const fiftiethLessonItem = curriculum.lessons[49];
+const fiftiethLesson = JSON.parse(read(fiftiethLessonItem.lessonFile));
+const fiftiethQuiz = JSON.parse(read(fiftiethLessonItem.quizFile));
+if (fiftiethLessonItem.courseId !== "pathophysiology" || fiftiethLessonItem.course !== "Pathophysiology") throw new Error("Lesson 50 must remain in Pathophysiology");
+if (!fiftiethLesson.title.includes("Hematologic Function & Systemic Shock—Oxygen Delivery, Hemostasis, DIC and Multiorgan Failure") || !fiftiethLesson.html.includes("Oxygen delivery depends on more than pulse oximetry") || !fiftiethLesson.html.includes("DIC causes clotting and bleeding at the same time") || !fiftiethLesson.html.includes("Four major shock mechanisms guide hypotheses") || !fiftiethLesson.html.includes("Multiorgan dysfunction is an interacting network failure")) throw new Error("Lesson 50 hematologic and systemic shock pathophysiology content is incomplete");
+if (fiftiethQuiz.questions.length !== 10) throw new Error("Lesson 50 must include ten hematologic and shock pathophysiology questions");
+if (fiftiethLesson.traditionalCourse !== "Pathophysiology" || fiftiethLesson.nclexClientNeeds !== "Physiological Adaptation" || fiftiethLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 50 must preserve all three content tags");
+for (const question of fiftiethQuiz.questions) {
+  if (question.traditionalCourse !== "Pathophysiology" || !clientNeedsTitles.has(question.nclexClientNeeds)) throw new Error("Each Lesson 50 question must preserve its course and NCLEX tags");
+}
+const fiftyFirstLessonItem = curriculum.lessons[50];
+const fiftyFirstLesson = JSON.parse(read(fiftyFirstLessonItem.lessonFile));
+const fiftyFirstQuiz = JSON.parse(read(fiftyFirstLessonItem.quizFile));
+if (fiftyFirstLessonItem.courseId !== "pharmacology" || fiftyFirstLessonItem.course !== "Pharmacology") throw new Error("Lesson 51 must begin the Pharmacology phase");
+if (!fiftyFirstLesson.title.includes("Pharmacology Foundations: Pharmacokinetics, Pharmacodynamics & Individualized Medication Response") || !fiftyFirstLesson.html.includes("Pharmacokinetics is what the body does to the drug") || !fiftyFirstLesson.html.includes("Half-life predicts accumulation and decline") || !fiftyFirstLesson.html.includes("Pharmacodynamics is what the drug does to the body") || !fiftyFirstLesson.html.includes("Every dose is a new decision point")) throw new Error("Lesson 51 foundational pharmacology content is incomplete");
+if (fiftyFirstQuiz.questions.length !== 10) throw new Error("Lesson 51 must include ten foundational pharmacology questions");
+if (fiftyFirstLesson.traditionalCourse !== "Pharmacology" || fiftyFirstLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftyFirstLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 51 must preserve all three content tags");
+for (const question of fiftyFirstQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 51 question must preserve its course and NCLEX tags");
+}
+const fiftySecondLessonItem = curriculum.lessons[51];
+const fiftySecondLesson = JSON.parse(read(fiftySecondLessonItem.lessonFile));
+const fiftySecondQuiz = JSON.parse(read(fiftySecondLessonItem.quizFile));
+if (fiftySecondLessonItem.courseId !== "pharmacology" || fiftySecondLessonItem.course !== "Pharmacology") throw new Error("Lesson 52 must remain in Pharmacology");
+if (!fiftySecondLesson.title.includes("Medication Administration Safety: Verification, Reconciliation, High-Alert Safeguards & Error Response") || !fiftySecondLesson.html.includes("Begin with the current client, not the medication package") || !fiftySecondLesson.html.includes("High-alert means the consequence of error is greater") || !fiftySecondLesson.html.includes("Respond to an error by protecting the client first") || !fiftySecondLesson.html.includes("Correct scanning never overrides new clinical cues")) throw new Error("Lesson 52 medication administration safety content is incomplete");
+if (fiftySecondQuiz.questions.length !== 10) throw new Error("Lesson 52 must include ten medication administration safety questions");
+if (fiftySecondLesson.traditionalCourse !== "Pharmacology" || fiftySecondLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftySecondLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 52 must preserve all three content tags");
+for (const question of fiftySecondQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 52 question must preserve its course and NCLEX tags");
+}
+const fiftyThirdLessonItem = curriculum.lessons[52];
+const fiftyThirdLesson = JSON.parse(read(fiftyThirdLessonItem.lessonFile));
+const fiftyThirdQuiz = JSON.parse(read(fiftyThirdLessonItem.quizFile));
+if (fiftyThirdLessonItem.courseId !== "pharmacology" || fiftyThirdLessonItem.course !== "Pharmacology") throw new Error("Lesson 53 must remain in Pharmacology");
+if (!fiftyThirdLesson.title.includes("Dosage Calculations & Infusion Math: Units, Safe Ranges, Pump Rates and Clinical Verification") || !fiftyThirdLesson.html.includes("Start with meaning, not arithmetic") || !fiftyThirdLesson.html.includes("Weight-based doses must preserve the time basis") || !fiftyThirdLesson.html.includes("Convert dose-per-time orders into mL/hr") || !fiftyThirdLesson.html.includes("Unexpected pump behavior is a clinical event")) throw new Error("Lesson 53 dosage and infusion calculation content is incomplete");
+if (fiftyThirdQuiz.questions.length !== 10) throw new Error("Lesson 53 must include ten dosage and infusion calculation questions");
+if (fiftyThirdLesson.traditionalCourse !== "Pharmacology" || fiftyThirdLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftyThirdLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 53 must preserve all three content tags");
+for (const question of fiftyThirdQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 53 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
 if (!read("js/app.js").includes('document.createElement("details")') || !read("js/app.js").includes("phaseDisclosureState") || !read("js/app.js").includes("new Set([currentPhaseIndex])")) throw new Error("Course phases must be collapsible with the current phase expanded by default");
 if (!read("css/styles.css").includes(".course-phase[open] .phase-chevron") || !read("css/styles.css").includes(".course-phase-summary:focus-visible")) throw new Error("Course phase disclosure states must have visible, accessible styling");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 380) throw new Error("Expected 380 pilot questions after adding Lesson 38");
+if (questionIds.size !== 530) throw new Error("Expected 530 pilot questions after adding Lesson 53");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json", "supabase/rn_analytics_setup.sql", "docs/ANONYMOUS_ANALYTICS.md"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -409,4 +559,4 @@ if (!index.includes('id="anonymousAnalyticsStatus"') || !index.includes('id="ano
 if (!read("js/app.js").includes('RNAnalytics.track("lesson_open"') || !read("js/app.js").includes('RNAnalytics.track("lesson_quiz_complete"')) throw new Error("Learning analytics event hooks are incomplete");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "RN Quest" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 4 Pathophysiology lessons, 380 questions, and version parity.");
+console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 3 Pharmacology lessons, 530 questions, and version parity.");

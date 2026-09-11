@@ -1,0 +1,155 @@
+{
+  "lessonId": 50,
+  "questions": [
+    {
+      "id": "rn-50-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client has an oxygen saturation of 98% but a hemoglobin of 4.8 g/dL and new tachycardia. Which interpretation is most accurate?",
+      "choices": [
+        "The client may have critically reduced oxygen-carrying capacity despite normal saturation",
+        "Normal saturation proves that tissue oxygen delivery is adequate",
+        "Hemoglobin affects coagulation but not oxygen delivery",
+        "The tachycardia rules out anemia-related compensation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pulse oximetry estimates the percentage of available hemoglobin binding sites occupied by oxygen. It does not measure hemoglobin concentration, so severe anemia can markedly reduce arterial oxygen content despite normal saturation."
+    },
+    {
+      "id": "rn-50-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which finding most strongly supports an appropriate marrow response to recent blood loss when iron and marrow function are adequate?",
+      "choices": [
+        "An increased reticulocyte count",
+        "An absent platelet count",
+        "A reduced D-dimer",
+        "A prolonged aPTT alone"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reticulocytes are newly released red cells. An increased reticulocyte response supports marrow compensation after blood loss or hemolysis when production capacity and nutrients are adequate."
+    },
+    {
+      "id": "rn-50-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "A client receiving marrow-suppressive therapy has a very low absolute neutrophil count. Which new finding is most urgent?",
+      "choices": [
+        "A temperature of 38.3°C (100.9°F)",
+        "Mild fatigue after walking",
+        "A longstanding healed scar",
+        "A preference for cool liquids"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fever with profound neutropenia may be the only early sign of a life-threatening infection because the local inflammatory response can be muted. It requires prompt evaluation and treatment according to protocol."
+    },
+    {
+      "id": "rn-50-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which cluster is most consistent with disseminated intravascular coagulation?",
+      "choices": [
+        "Oozing from lines, falling platelets and fibrinogen, prolonged coagulation times, and organ dysfunction",
+        "Isolated hypertension with elevated platelets and shortened coagulation times",
+        "A stable bruise with normal laboratory trends and no systemic illness",
+        "Microcytosis with an increased iron-binding capacity only"
+      ],
+      "correctIndex": 0,
+      "explanation": "DIC causes systemic coagulation activation, microvascular fibrin deposition, consumption of platelets and factors, and fibrinolysis. The result can be simultaneous bleeding, thrombosis, and organ dysfunction."
+    },
+    {
+      "id": "rn-50-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A postoperative client develops sudden dyspnea, hypotension, distended neck veins, and clear breath sounds. Which shock mechanism should the RN prioritize?",
+      "choices": [
+        "Obstructive shock from a possible massive pulmonary embolism",
+        "Simple dehydration with no circulatory obstruction",
+        "Distributive shock caused only by peripheral vasodilation",
+        "Chronic anemia without acute perfusion change"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sudden respiratory compromise and shock with elevated venous pressure after surgery raise concern for a massive pulmonary embolism obstructing right-heart outflow. This is a time-sensitive obstructive-shock pattern."
+    },
+    {
+      "id": "rn-50-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best describes compensated shock?",
+      "choices": [
+        "Tissue perfusion may already be impaired while blood pressure is temporarily maintained",
+        "Shock cannot exist until systolic pressure falls below a fixed threshold",
+        "Normal blood pressure proves normal kidney and skin perfusion",
+        "Compensation permanently corrects the underlying cause"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tachycardia, vasoconstriction, hormonal retention, and redistribution can temporarily maintain pressure while tissue perfusion is deteriorating. Mental status, skin, urine output, pulse pattern, and trends matter."
+    },
+    {
+      "id": "rn-50-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with acute myocardial infarction has hypotension, cool extremities, oliguria, pulmonary crackles, and elevated neck veins. Which principle should guide the plan?",
+      "choices": [
+        "Support perfusion while treating pump failure and avoiding indiscriminate fluid loading",
+        "Assume all shock requires unlimited rapid fluid boluses",
+        "Treat the pulmonary congestion as proof that perfusion is adequate",
+        "Delay action until the lactate reaches a specific threshold"
+      ],
+      "correctIndex": 0,
+      "explanation": "This cluster suggests cardiogenic shock with congestion and low forward flow. Support must be cause-specific; uncritical volume loading can worsen pulmonary edema without correcting pump failure."
+    },
+    {
+      "id": "rn-50-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client with severe infection becomes confused, tachypneic, hypotensive, and oliguric. What is the RN's priority action?",
+      "choices": [
+        "Activate urgent sepsis and shock response while supporting airway, breathing, circulation, and source evaluation",
+        "Wait for hypotension to resolve spontaneously before notifying the team",
+        "Focus only on the temperature because the other findings are unrelated",
+        "Delay care until every diagnostic result is finalized"
+      ],
+      "correctIndex": 0,
+      "explanation": "The cue cluster indicates acute organ dysfunction and shock. Immediate stabilization, escalation, prescribed sepsis measures, and source-control evaluation should proceed without waiting for complete data."
+    },
+    {
+      "id": "rn-50-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After initial shock treatment, which finding best supports improving systemic perfusion?",
+      "choices": [
+        "Improving mentation and urine output with warmer perfused skin and a favorable lactate trend",
+        "A single higher blood-pressure reading with worsening confusion and anuria",
+        "Persistent mottling despite normalization of one laboratory result",
+        "Increasing respiratory distress after large-volume resuscitation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recovery should be assessed across organ perfusion and serial trends. A pressure number alone is insufficient if neurologic, renal, skin, respiratory, or metabolic indicators worsen."
+    },
+    {
+      "id": "rn-50-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A septic client has diffuse line-site bleeding, mottled digits, falling platelets, prolonged PT and aPTT, and rising creatinine. Which hypothesis best unifies the findings?",
+      "choices": [
+        "DIC causing consumption bleeding, microvascular thrombosis, and organ injury",
+        "Isolated iron deficiency causing all findings",
+        "Simple thrombocytosis without systemic coagulation activation",
+        "Stable chronic anemia with no acute complication"
+      ],
+      "correctIndex": 0,
+      "explanation": "The combination of a severe trigger, diffuse bleeding, thrombocytopenia, prolonged coagulation tests, distal ischemic cues, and kidney injury is a classic DIC pattern involving both consumption and microthrombosis."
+    }
+  ]
+}

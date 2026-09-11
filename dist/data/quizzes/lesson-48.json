@@ -1,0 +1,105 @@
+{
+  "lessonId": 48,
+  "questions": [
+    {
+      "id": "rn-48-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which equation describes cerebral perfusion pressure?",
+      "choices": ["CPP = MAP − ICP", "CPP = ICP − MAP", "CPP = heart rate × stroke volume", "CPP = systolic pressure − oxygen saturation"],
+      "correctIndex": 0,
+      "explanation": "CPP is the pressure gradient supporting cerebral perfusion and is calculated as mean arterial pressure minus intracranial pressure."
+    },
+    {
+      "id": "rn-48-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can a small increase in intracranial volume cause a large ICP rise after compensation is exhausted?",
+      "choices": ["The rigid skull has limited remaining capacity to displace CSF or venous blood", "Brain tissue becomes infinitely compliant", "MAP always falls to zero", "Cerebrospinal fluid production permanently stops"],
+      "correctIndex": 0,
+      "explanation": "CSF displacement and venous outflow initially buffer added volume. Once reserve is exhausted, intracranial compliance falls and ICP rises steeply."
+    },
+    {
+      "id": "rn-48-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding can be an early sign of worsening intracranial pressure?",
+      "choices": ["New restlessness and slowed responses", "The complete late Cushing response only", "Stable alertness and unchanged pupils", "Improved orientation"],
+      "correctIndex": 0,
+      "explanation": "Subtle change in attention or consciousness may precede late pupil, motor, respiratory, or Cushing-pattern findings and warrants urgent reassessment."
+    },
+    {
+      "id": "rn-48-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client suddenly develops facial asymmetry, aphasia, and right arm weakness. What is the priority hypothesis?",
+      "choices": ["Acute stroke", "Expected aging", "Stable dementia", "Peripheral edema"],
+      "correctIndex": 0,
+      "explanation": "Sudden focal language, facial, and motor deficits are an acute stroke pattern. Last known well and emergency stroke activation are time critical."
+    },
+    {
+      "id": "rn-48-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Take action",
+      "question": "What should the RN do first when a conscious client begins a generalized convulsive seizure in bed?",
+      "choices": ["Protect from injury, support airway positioning, note the start time, and summon help", "Place an object between the teeth", "Restrain all extremities", "Leave to complete documentation before assessing"],
+      "correctIndex": 0,
+      "explanation": "Seizure care protects the client, supports airway and oxygenation, and documents timing and sequence. Limbs should not be restrained and nothing should be placed in the mouth."
+    },
+    {
+      "id": "rn-48-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why is urgent brain imaging required before giving stroke-specific reperfusion therapy?",
+      "choices": ["Ischemic and hemorrhagic stroke can present similarly but require different treatment", "Imaging measures bedside glucose", "All neurologic deficits are caused by hemorrhage", "Symptoms alone determine the exact vessel and pathology"],
+      "correctIndex": 0,
+      "explanation": "Clinical findings cannot reliably exclude intracranial hemorrhage. Imaging distinguishes major pathologies because some ischemic treatments could worsen bleeding."
+    },
+    {
+      "id": "rn-48-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with progressive peripheral neuromuscular weakness has a weak cough and difficulty swallowing but a normal SpO₂. Which plan is best?",
+      "choices": ["Urgently monitor ventilation, bulbar function, and respiratory strength and prepare for support", "Assume breathing is safe because saturation is normal", "Encourage repeated exhausting strength tests", "Give oral fluids without a swallowing assessment"],
+      "correctIndex": 0,
+      "explanation": "Neuromuscular ventilatory failure and aspiration risk can develop before oxygen saturation falls. Serial respiratory and bulbar assessment is essential."
+    },
+    {
+      "id": "rn-48-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client remains unresponsive after convulsive movements stop. Which nursing action is most appropriate?",
+      "choices": ["Continue airway and hemodynamic support, check glucose, monitor for subtle seizure, and escalate urgently", "Assume sleep and leave the client alone", "Give oral medication immediately", "Wait several hours before reassessment"],
+      "correctIndex": 0,
+      "explanation": "Persistent altered consciousness may reflect postictal recovery, hypoxia, metabolic cause, medication effect, injury, or nonconvulsive status. Immediate support and evaluation are required."
+    },
+    {
+      "id": "rn-48-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best supports neurologic improvement after emergency treatment?",
+      "choices": ["Consciousness, pupils, speech, and motor findings trend toward baseline without new respiratory or hemodynamic compromise", "The client becomes harder to arouse", "A new pupil asymmetry develops", "Weakness spreads while breathing becomes shallow"],
+      "correctIndex": 0,
+      "explanation": "Improvement should appear across serial neurologic and physiologic assessments. New declining consciousness, pupil change, spreading weakness, or hypoventilation signals deterioration."
+    },
+    {
+      "id": "rn-48-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client reports an abrupt severe headache and then develops vomiting, neck stiffness, and decreasing consciousness. Which hypothesis has highest priority?",
+      "choices": ["Subarachnoid hemorrhage", "Stable tension headache", "Chronic peripheral neuropathy", "Uncomplicated dementia"],
+      "correctIndex": 0,
+      "explanation": "Abrupt severe headache with meningismus, vomiting, and declining consciousness is a subarachnoid hemorrhage pattern requiring emergency evaluation."
+    }
+  ]
+}

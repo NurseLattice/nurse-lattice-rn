@@ -1,0 +1,105 @@
+{
+  "lessonId": 46,
+  "questions": [
+    {
+      "id": "rn-46-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best describes the nephron's handling of a substance?",
+      "choices": ["Excretion equals filtration minus reabsorption plus secretion", "Excretion always equals urine volume", "Reabsorption moves substances from blood into tubular fluid", "Secretion occurs only in the glomerulus"],
+      "correctIndex": 0,
+      "explanation": "Filtered material enters tubular fluid, reabsorbed material returns to blood, and secreted material enters the tubule. Urine volume alone does not measure solute clearance."
+    },
+    {
+      "id": "rn-46-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding can be the earliest clue of acute kidney injury before serum creatinine rises?",
+      "choices": ["A new sustained decrease in accurately measured urine output", "An unchanged remote creatinine result", "A normal oxygen saturation", "A single normal body temperature"],
+      "correctIndex": 0,
+      "explanation": "Creatinine can lag behind an acute fall in filtration. A verified decline in urine output may appear earlier, although AKI can also be nonoliguric."
+    },
+    {
+      "id": "rn-46-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client develops AKI after prolonged hypotension and renal ischemia. Which category is most likely after structural tubular injury occurs?",
+      "choices": ["Intrinsic renal injury", "Prerenal physiology only", "Postrenal obstruction", "Normal renal adaptation"],
+      "correctIndex": 0,
+      "explanation": "Prolonged hypoperfusion can progress from a functional prerenal state to intrinsic ischemic tubular injury. Mechanisms may overlap as the condition evolves."
+    },
+    {
+      "id": "rn-46-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which pattern most strongly supports postrenal acute kidney injury?",
+      "choices": ["Bladder distention, very low urine output, and hydronephrosis", "Diarrhea with orthostatic hypotension", "Proteinuria with red-cell casts", "Stable urine output after a normal study"],
+      "correctIndex": 0,
+      "explanation": "Retention and upstream dilation suggest obstruction to urine flow. Diarrhea suggests a prerenal mechanism, while red-cell casts point toward glomerular injury."
+    },
+    {
+      "id": "rn-46-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which client requires the most immediate action?",
+      "choices": ["A client with chronic stable fatigue", "A client with kidney failure, potassium 6.8 mEq/L, muscle weakness, and new ECG changes", "A client asking why creatinine is measured", "A client with unchanged mild albuminuria"],
+      "correctIndex": 1,
+      "explanation": "Severe hyperkalemia with ECG changes threatens cardiac conduction and requires immediate monitoring, escalation, and prescribed emergency treatment."
+    },
+    {
+      "id": "rn-46-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can a client with advanced heart failure have edema and prerenal kidney dysfunction at the same time?",
+      "choices": ["Total fluid excess can coexist with reduced effective arterial perfusion of the kidneys", "Edema proves renal blood flow is adequate", "Prerenal injury occurs only after complete dehydration", "Venous congestion always increases GFR"],
+      "correctIndex": 0,
+      "explanation": "Heart failure can cause venous congestion and low effective forward flow. The client may be edematous while renal perfusion and filtration are reduced."
+    },
+    {
+      "id": "rn-46-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client's creatinine is rising rapidly during acute illness. Which assessment plan is most appropriate?",
+      "choices": ["Trend creatinine and urine output with hemodynamics, fluid balance, exposures, urinalysis, and clinical findings", "Use the eGFR as an exact steady-state measurement", "Evaluate only the BUN-to-creatinine ratio", "Wait for anuria before reviewing medications"],
+      "correctIndex": 0,
+      "explanation": "Creatinine-based eGFR is less reliable when kidney function is changing rapidly. Mechanism and severity require trends plus urine, perfusion, exposure, and clinical data."
+    },
+    {
+      "id": "rn-46-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client with AKI is prescribed a renally cleared medication. What should the RN do?",
+      "choices": ["Verify the current renal function, ordered dose, indication, monitoring, and pharmacy or prescriber plan", "Assume the usual dose is always safe", "Stop every medication without an order", "Use urine color as the only dosing guide"],
+      "correctIndex": 0,
+      "explanation": "Reduced or changing clearance can cause medication accumulation. Safe administration requires verification of current function, dosing, indication, interactions, and monitoring within scope."
+    },
+    {
+      "id": "rn-46-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "After prescribed treatment for prerenal AKI from gastrointestinal losses, which finding best supports improvement without fluid overload?",
+      "choices": ["Perfusion and urine output improve, creatinine stabilizes, and lungs remain clear", "Crackles and oxygen need increase", "Urine output remains absent while confusion worsens", "Weight rises rapidly with new edema"],
+      "correctIndex": 0,
+      "explanation": "Improved perfusion and urine output with a stabilizing renal trend and no congestion support benefit. New crackles, edema, or hypoxemia suggest treatment-related fluid excess or another problem."
+    },
+    {
+      "id": "rn-46-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client with advanced kidney failure develops confusion, a pericardial friction rub, nausea, and bleeding from venipuncture sites. Which hypothesis has highest priority?",
+      "choices": ["Symptomatic uremia requiring urgent specialist evaluation", "An isolated harmless rise in BUN", "Normal adaptation to aging", "Uncomplicated mild dehydration"],
+      "correctIndex": 0,
+      "explanation": "Neurologic change, pericarditis, gastrointestinal symptoms, and bleeding in advanced renal failure suggest clinically significant uremia and require urgent evaluation for renal-replacement needs."
+    }
+  ]
+}

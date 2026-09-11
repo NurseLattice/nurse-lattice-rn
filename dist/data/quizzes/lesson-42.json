@@ -1,0 +1,105 @@
+{
+  "lessonId": 42,
+  "questions": [
+    {
+      "id": "rn-42-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client with low albumin has a low total calcium but no symptoms. Which interpretation is safest?",
+      "choices": ["The client definitely has severe active hypocalcemia", "Low albumin can lower total calcium while ionized calcium remains normal, so active calcium and context should be evaluated", "Albumin never affects calcium measurement", "Immediate phosphate infusion is required"],
+      "correctIndex": 1,
+      "explanation": "A substantial portion of calcium is albumin-bound. Low albumin can produce a low total value without low ionized calcium; symptoms, pH, ionized calcium when ordered, and related electrolytes guide interpretation."
+    },
+    {
+      "id": "rn-42-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "How can acute respiratory alkalosis produce tingling and carpopedal spasm even when total calcium changes little?",
+      "choices": ["Alkalemia increases calcium binding to albumin and lowers ionized calcium", "Alkalemia releases all calcium from albumin", "Carbon dioxide converts calcium into phosphate", "Alkalemia permanently destroys parathyroid tissue"],
+      "correctIndex": 0,
+      "explanation": "Higher pH increases albumin binding of calcium, reducing the biologically active ionized fraction. Symptoms follow ionized calcium and the speed of change more closely than total calcium alone."
+    },
+    {
+      "id": "rn-42-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which finding after thyroid surgery requires the highest priority response?",
+      "choices": ["Mild incisional soreness", "New stridor, perioral tingling, and carpopedal spasm", "A request for another pillow", "An unchanged appetite"],
+      "correctIndex": 1,
+      "explanation": "Stridor with neuromuscular excitability may indicate severe acute hypocalcemia and airway compromise after thyroid or parathyroid injury. ABC assessment and emergency escalation are immediate priorities."
+    },
+    {
+      "id": "rn-42-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which cue cluster is most consistent with clinically important hypercalcemia?",
+      "choices": ["Tetany, hyperreflexia, and prolonged QT", "Constipation, weakness, confusion, polyuria, and dehydration", "Stridor, carpopedal spasm, and tingling", "High urine output with severe hypocalcemic tetany"],
+      "correctIndex": 1,
+      "explanation": "Hypercalcemia can suppress neuromuscular function, slow the gastrointestinal tract, alter cognition, and impair renal concentrating ability, causing polyuria and volume depletion."
+    },
+    {
+      "id": "rn-42-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Hypokalemia and hypocalcemia remain abnormal despite prescribed replacement. Which additional plan is most appropriate?",
+      "choices": ["Evaluate magnesium and continuing losses", "Stop all laboratory monitoring", "Assume both values are permanently normal", "Add unprescribed potassium and calcium supplements"],
+      "correctIndex": 0,
+      "explanation": "Magnesium deficiency can promote renal potassium wasting and impair PTH secretion or action, making potassium and calcium difficult to correct. The cause and ongoing losses also require attention."
+    },
+    {
+      "id": "rn-42-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "During a prescribed IV magnesium infusion, the client develops absent reflexes, hypotension, and slow shallow respirations. What should the RN do?",
+      "choices": ["Increase the infusion to restore reflexes", "Stop the infusion according to protocol, assess ABCs, and obtain immediate help", "Document the findings as an expected therapeutic effect", "Give an unprescribed magnesium-containing antacid"],
+      "correctIndex": 1,
+      "explanation": "Loss of reflexes, hypotension, and respiratory depression suggest magnesium toxicity. The RN stops exposure according to protocol, supports ABCs, escalates immediately, and prepares prescribed reversal or removal therapy."
+    },
+    {
+      "id": "rn-42-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can severe hypophosphatemia cause respiratory failure?",
+      "choices": ["Low phosphate impairs ATP production and respiratory-muscle function", "Phosphate blocks every airway receptor", "Low phosphate always causes pulmonary edema", "Phosphate exists only in bone and has no muscle role"],
+      "correctIndex": 0,
+      "explanation": "Phosphate is essential for ATP and cellular function. Severe deficiency can impair diaphragmatic and other skeletal-muscle strength, reducing ventilation."
+    },
+    {
+      "id": "rn-42-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which pattern most strongly suggests refeeding syndrome after nutrition begins?",
+      "choices": ["Stable electrolytes and improving strength", "Falling phosphate, potassium, and magnesium with edema, weakness, and respiratory decline", "Isolated high albumin without symptoms", "A gradual increase in appetite with stable vital signs"],
+      "correctIndex": 1,
+      "explanation": "Insulin release during refeeding can shift depleted phosphate, potassium, and magnesium into cells and promote fluid retention. Respiratory or cardiac deterioration requires urgent escalation."
+    },
+    {
+      "id": "rn-42-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which action is safest before administering prescribed IV calcium, magnesium, or phosphate?",
+      "choices": ["Mix all products in one line without checking compatibility", "Verify the current result, kidney function, urine output, product, concentration, compatibility, route, pump, and monitoring plan", "Use the fastest possible rate regardless of symptoms", "Draw the repeat specimen from the actively infusing line"],
+      "correctIndex": 1,
+      "explanation": "These are high-alert replacements. Current data, renal clearance, precise product and pump verification, compatibility, access-site checks, and correctly timed repeat testing reduce preventable harm."
+    },
+    {
+      "id": "rn-42-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best demonstrates safe improvement after treatment for severe electrolyte disturbance?",
+      "choices": ["The laboratory value normalizes while respiratory function worsens", "Symptoms, rhythm, breathing, strength, kidney function, and serial electrolytes improve without infusion complications", "One value is normal from a specimen drawn through the infusion line", "The IV site becomes painful and swollen while the infusion continues"],
+      "correctIndex": 1,
+      "explanation": "A safe response appears across clinical function and reliable laboratory trends without treatment harm. A number alone cannot outweigh respiratory, cardiac, renal, or IV-site deterioration."
+    }
+  ]
+}

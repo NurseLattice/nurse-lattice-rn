@@ -1,0 +1,105 @@
+{
+  "lessonId": 49,
+  "questions": [
+    {
+      "id": "rn-49-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which acid–base pattern is commonly associated with prolonged loss of gastric contents through vomiting?",
+      "choices": ["Hypochloremic metabolic alkalosis", "Respiratory acidosis from bicarbonate loss", "High-anion-gap acidosis from chloride gain", "No possible electrolyte effect"],
+      "correctIndex": 0,
+      "explanation": "Vomiting removes gastric hydrogen, chloride, potassium, and water, often producing volume contraction with hypochloremic metabolic alkalosis and potassium loss."
+    },
+    {
+      "id": "rn-49-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "How can a mechanical bowel obstruction progress to necrosis?",
+      "choices": ["Rising luminal pressure impairs venous drainage, then arterial inflow and barrier integrity", "Distention permanently increases mucosal oxygen delivery", "Obstruction prevents all bacterial growth", "Bowel sounds protect the bowel wall"],
+      "correctIndex": 0,
+      "explanation": "Distention first impairs lymphatic and venous return, causing edema. Continued pressure can reduce arterial flow, leading to ischemia, necrosis, translocation, and perforation."
+    },
+    {
+      "id": "rn-49-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding should raise concern for early acute mesenteric ischemia?",
+      "choices": ["Abrupt severe abdominal pain out of proportion to initial examination findings", "A stable appetite without pain", "Chronic mild constipation unchanged from baseline", "A normal lactate that excludes ischemia"],
+      "correctIndex": 0,
+      "explanation": "Severe pain with few early examination findings is a classic warning pattern. Lactate may be normal early and cannot independently exclude mesenteric ischemia."
+    },
+    {
+      "id": "rn-49-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which client requires the most immediate action?",
+      "choices": ["A client with stable chronic reflux", "A client with hematemesis, confusion, cool skin, tachycardia, and falling blood pressure", "A client asking about dietary fiber", "A client with unchanged mild bloating"],
+      "correctIndex": 1,
+      "explanation": "Active upper GI bleeding with systemic hypoperfusion suggests hemorrhagic shock and requires immediate airway, circulation, and bleeding-control response."
+    },
+    {
+      "id": "rn-49-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can a client with cirrhosis have both ascites and reduced effective arterial volume?",
+      "choices": ["Portal hypertension and splanchnic vasodilation promote third spacing and renal sodium retention despite fragile perfusion", "Ascites proves intravascular volume is excessive", "Albumin is the only factor controlling fluid distribution", "Portal hypertension prevents neurohormonal activation"],
+      "correctIndex": 0,
+      "explanation": "Portal resistance, splanchnic vasodilation, capillary and lymph forces, reduced oncotic support, and sodium retention can produce ascites while effective circulation remains reduced."
+    },
+    {
+      "id": "rn-49-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement about hepatic encephalopathy is most accurate?",
+      "choices": ["Ammonia contributes, but its level does not consistently match clinical severity and other causes and triggers must be assessed", "A normal ammonia value proves cognition is normal", "It is caused only by dietary protein", "GI bleeding cannot precipitate it"],
+      "correctIndex": 0,
+      "explanation": "Hepatic encephalopathy is multifactorial. Ammonia is relevant, but clinical severity and treatment response require neurologic assessment and evaluation of triggers and competing causes."
+    },
+    {
+      "id": "rn-49-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with acute GI bleeding has an initially unchanged hemoglobin but worsening tachycardia and oliguria. Which plan is best?",
+      "choices": ["Treat the hemodynamic pattern as possible significant blood loss while trending hemoglobin and response", "Delay action until hemoglobin falls", "Assume bleeding has stopped", "Encourage unassisted ambulation"],
+      "correctIndex": 0,
+      "explanation": "Hemoglobin may not fall immediately before plasma-volume equilibration. Perfusion, symptoms, output, and serial laboratory trends guide severity assessment."
+    },
+    {
+      "id": "rn-49-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client with suspected variceal hemorrhage is receiving emergency therapy. Which nursing action is most appropriate?",
+      "choices": ["Support airway and circulation, verify prescribed vasoactive and antimicrobial therapy, prepare blood products and urgent endoscopy, and reassess closely", "Give oral fluids immediately", "Target only a normal INR", "Ignore aspiration risk if oxygen saturation is normal"],
+      "correctIndex": 0,
+      "explanation": "Variceal hemorrhage requires coordinated airway, hemodynamic, medication, transfusion, and endoscopic management with attention to aspiration and over- or under-resuscitation."
+    },
+    {
+      "id": "rn-49-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best indicates improvement during treatment of severe acute pancreatitis?",
+      "choices": ["Pain and nausea improve while perfusion, urine output, oxygenation, and organ-function trends stabilize", "Oxygen need and creatinine continue to rise", "Hypotension worsens with new confusion", "Abdominal distention increases with absent output"],
+      "correctIndex": 0,
+      "explanation": "Severe pancreatitis can cause systemic inflammatory and capillary-leak injury. Improvement should be reflected in symptoms and respiratory, renal, and circulatory function."
+    },
+    {
+      "id": "rn-49-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client with jaundice develops fever, right-upper-quadrant pain, hypotension, and confusion. Which hypothesis has highest priority?",
+      "choices": ["Ascending biliary infection with sepsis", "Stable uncomplicated biliary colic", "Chronic constipation", "Normal bilirubin metabolism"],
+      "correctIndex": 0,
+      "explanation": "Fever, jaundice, abdominal pain, hypotension, and altered mentation suggest severe biliary infection with systemic compromise requiring urgent source control and treatment."
+    }
+  ]
+}

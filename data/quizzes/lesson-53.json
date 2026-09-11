@@ -1,0 +1,125 @@
+{
+  "lessonId": 53,
+  "questions": [
+    {
+      "id": "rn-53-q01",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A prescription is for 750 mg. The available liquid contains 250 mg in 5 mL. How many mL should the RN prepare?",
+      "choices": ["15 mL", "3 mL", "6 mL", "150 mL"],
+      "correctIndex": 0,
+      "explanation": "Set up the goal unit: 750 mg × 5 mL / 250 mg = 15 mL. The mg units cancel, leaving mL."
+    },
+    {
+      "id": "rn-53-q02",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client weighs 22 lb. Using 2.2 lb = 1 kg, what weight should the RN use for a kilogram-based calculation?",
+      "choices": ["10 kg", "22 kg", "48.4 kg", "4.5 kg"],
+      "correctIndex": 0,
+      "explanation": "22 lb × 1 kg / 2.2 lb = 10 kg. The pound units cancel, leaving kilograms."
+    },
+    {
+      "id": "rn-53-q03",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A medication is prescribed at 10 mg/kg/day in two equal doses for a 20-kg client. How many mg should be given per dose?",
+      "choices": ["100 mg/dose", "200 mg/dose", "20 mg/dose", "400 mg/dose"],
+      "correctIndex": 0,
+      "explanation": "10 mg/kg/day × 20 kg = 200 mg/day. Dividing by 2 doses/day gives 100 mg/dose. The daily amount must be divided because the order is mg/kg/day, not mg/kg/dose."
+    },
+    {
+      "id": "rn-53-q04",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A reference range is 5–10 mg/kg/dose for an 18-kg client. The prescription is 200 mg per dose. Which interpretation is correct?",
+      "choices": [
+        "The calculated range is 90–180 mg/dose, so the prescription requires clarification",
+        "The range is 5–10 mg total, so 200 mg is automatically safe",
+        "The calculated maximum is 360 mg/dose",
+        "The RN should independently change the prescription to 180 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "The minimum is 5 × 18 = 90 mg and the maximum is 10 × 18 = 180 mg per dose. A 200-mg prescription is above the range and should be verified and clarified, not independently changed."
+    },
+    {
+      "id": "rn-53-q05",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The prescription is to infuse 1,000 mL over 8 hours. What pump rate should the RN calculate?",
+      "choices": ["125 mL/hr", "80 mL/hr", "8 mL/hr", "1,000 mL/hr"],
+      "correctIndex": 0,
+      "explanation": "Pump rate equals volume divided by hours: 1,000 mL ÷ 8 hr = 125 mL/hr."
+    },
+    {
+      "id": "rn-53-q06",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "The RN must infuse 500 mL over 4 hours using tubing with a drop factor of 15 gtt/mL. What gravity rate is required?",
+      "choices": ["31 gtt/min", "125 gtt/min", "15 gtt/min", "8 gtt/min"],
+      "correctIndex": 0,
+      "explanation": "Convert 4 hours to 240 minutes. Then 500 mL × 15 gtt/mL ÷ 240 min = 31.25 gtt/min, rounded to 31 whole drops per minute."
+    },
+    {
+      "id": "rn-53-q07",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A solution contains 250 mg in 100 mL. The prescribed continuous dose is 20 mg/hr. What pump rate should the RN calculate?",
+      "choices": ["8 mL/hr", "20 mL/hr", "12.5 mL/hr", "80 mL/hr"],
+      "correctIndex": 0,
+      "explanation": "20 mg/hr × 100 mL / 250 mg = 8 mL/hr. The mg units cancel, leaving mL/hr."
+    },
+    {
+      "id": "rn-53-q08",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which unit discrepancy creates a thousandfold dosing risk?",
+      "choices": [
+        "Confusing milligrams with micrograms",
+        "Confusing hours with 60 minutes",
+        "Converting 1 liter to 1,000 milliliters correctly",
+        "Writing a leading zero in 0.5 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "One milligram equals 1,000 micrograms. Confusing mg and mcg can create a thousandfold error. A leading zero reduces decimal-reading risk."
+    },
+    {
+      "id": "rn-53-q09",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A smart-pump alert states that a programmed high-alert infusion exceeds the library's soft limit. What is the best action?",
+      "choices": [
+        "Pause and independently verify the order, client, weight, concentration, units, rate, library entry, and line before deciding how to proceed",
+        "Override the alert immediately because soft limits never identify errors",
+        "Switch to basic mode to avoid further alerts",
+        "Lower the rate randomly until the alert disappears"
+      ],
+      "correctIndex": 0,
+      "explanation": "An alert is a prompt to investigate. The RN should verify the entire medication-delivery chain and clarify discrepancies rather than bypassing safeguards or altering the dose arbitrarily."
+    },
+    {
+      "id": "rn-53-q10",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which assessment best verifies that a continuous infusion is being delivered safely?",
+      "choices": [
+        "Compare the client's response, access site, line trace, pump settings, and remaining volume with the expected delivery",
+        "Rely only on the pump's illuminated display",
+        "Assume no alarm means the ordered dose reached the client",
+        "Check the bag label without assessing the client or tubing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe evaluation combines the client, access site, tubing path, programmed settings, product concentration, and delivered volume. Pumps can be misprogrammed or fail mechanically without validating every element."
+    }
+  ]
+}

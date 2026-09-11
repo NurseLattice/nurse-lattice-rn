@@ -1,0 +1,105 @@
+{
+  "lessonId": 44,
+  "questions": [
+    {
+      "id": "rn-44-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which equation correctly describes cardiac output?",
+      "choices": ["Heart rate × stroke volume", "Preload × afterload", "Systolic pressure − diastolic pressure", "End-systolic volume ÷ heart rate"],
+      "correctIndex": 0,
+      "explanation": "Cardiac output equals heart rate multiplied by stroke volume. Rate, rhythm, preload, afterload, contractility, and compliance can therefore affect forward flow."
+    },
+    {
+      "id": "rn-44-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "What is the expected immediate effect of a marked increase in left ventricular afterload when other factors remain constant?",
+      "choices": ["Stroke volume decreases", "Stroke volume increases", "Coronary oxygen demand disappears", "Ventricular filling always stops"],
+      "correctIndex": 0,
+      "explanation": "Greater afterload increases the load against which the ventricle ejects, tending to reduce stroke volume and increase end-systolic volume."
+    },
+    {
+      "id": "rn-44-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which assessment cluster most strongly suggests falling cardiac output despite a blood pressure still within the reference range?",
+      "choices": ["New confusion, cool skin, weak pulses, and decreasing urine output", "Warm dry skin, normal mentation, and stable urine output", "A single unchanged daily weight", "An isolated soft murmur without symptoms"],
+      "correctIndex": 0,
+      "explanation": "Vasoconstriction can temporarily preserve pressure while tissue perfusion falls. Mentation, skin, pulses, and urine output provide important organ-perfusion evidence."
+    },
+    {
+      "id": "rn-44-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client has heart-failure symptoms and a preserved ejection fraction. Which explanation is most accurate?",
+      "choices": ["A stiff ventricle can fill poorly at high pressure even though the fraction ejected is preserved", "Preserved ejection fraction rules out heart failure", "The client must have isolated right-sided valve disease", "Ejection fraction directly measures tissue oxygen delivery"],
+      "correctIndex": 0,
+      "explanation": "Impaired relaxation and reduced compliance can elevate filling pressure and reduce effective filling while the proportion ejected remains preserved. Ejection fraction is not a stand-alone diagnosis or perfusion measure."
+    },
+    {
+      "id": "rn-44-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which client should the RN assess first?",
+      "choices": ["A client with chronic ankle edema unchanged from baseline", "A client with new chest pressure, diaphoresis, dyspnea, and hypotension", "A client asking why daily weights are ordered", "A stable client with a long-standing murmur"],
+      "correctIndex": 1,
+      "explanation": "New ischemic symptoms with respiratory and hemodynamic compromise suggest acute coronary syndrome with possible pump failure and require immediate assessment and escalation."
+    },
+    {
+      "id": "rn-44-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can a sustained tachyarrhythmia worsen myocardial ischemia?",
+      "choices": ["It increases oxygen demand and shortens diastolic filling and coronary perfusion time", "It always increases stroke volume without cost", "It eliminates ventricular wall tension", "It guarantees greater coronary oxygen supply"],
+      "correctIndex": 0,
+      "explanation": "Tachycardia raises myocardial oxygen demand and shortens diastole, which can reduce filling and coronary perfusion time. Stroke volume and blood pressure may fall."
+    },
+    {
+      "id": "rn-44-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with reduced contractility has crackles, elevated neck veins, cool extremities, and oliguria. Which plan best reflects the physiology?",
+      "choices": ["Monitor and address both congestion and systemic hypoperfusion", "Treat edema as unrelated to cardiac function", "Give unrestricted fluid because urine output is low", "Evaluate only the ejection fraction"],
+      "correctIndex": 0,
+      "explanation": "Congestion and low forward output can coexist. Therapy must balance filling pressure, perfusion, breathing, kidney function, and treatment risk rather than target one finding in isolation."
+    },
+    {
+      "id": "rn-44-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A vasoactive infusion is started for cardiovascular instability. Which nursing action is most appropriate?",
+      "choices": ["Verify the order and access, monitor the required parameters, and reassess perfusion and adverse effects", "Judge success only by a higher blood-pressure number", "Stop monitoring once the target pressure appears", "Change the dose outside the ordered titration parameters"],
+      "correctIndex": 0,
+      "explanation": "Vasoactive therapy requires verification, protocol-based monitoring, and repeated assessment of both pressure and organ perfusion. A numerical pressure response alone does not establish benefit."
+    },
+    {
+      "id": "rn-44-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best indicates improved systemic perfusion after treatment for low cardiac output?",
+      "choices": ["Mentation and urine output improve while skin warms and lactate trends downward", "Peripheral edema increases", "Crackles become more widespread", "The heart rate rises while confusion worsens"],
+      "correctIndex": 0,
+      "explanation": "Improved neurologic, renal, skin, and metabolic findings provide converging evidence of better perfusion. Worsening congestion or confusion would be concerning."
+    },
+    {
+      "id": "rn-44-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Following a large myocardial infarction, a client develops hypotension, cool clammy skin, oliguria, rising lactate, and increasing pulmonary crackles. Which hypothesis has the highest priority?",
+      "choices": ["Cardiogenic shock from impaired pump function", "Stable compensated hypertension", "Isolated chronic venous insufficiency", "Uncomplicated anxiety"],
+      "correctIndex": 0,
+      "explanation": "The cluster of acute pump injury, systemic hypoperfusion, and pulmonary congestion is consistent with cardiogenic shock and requires emergency escalation."
+    }
+  ]
+}

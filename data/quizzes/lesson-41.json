@@ -1,0 +1,105 @@
+{
+  "lessonId": 41,
+  "questions": [
+    {
+      "id": "rn-41-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can a rapid cellular potassium shift substantially change serum potassium without an equal change in total-body potassium?",
+      "choices": ["Most potassium is intracellular and only a small fraction is extracellular", "Potassium exists only in plasma", "The kidneys cannot excrete potassium", "Serum potassium directly measures every intracellular store"],
+      "correctIndex": 0,
+      "explanation": "Because extracellular potassium is only a small fraction of total-body potassium, movement across cell membranes can markedly change the serum value without equivalent body gain or loss."
+    },
+    {
+      "id": "rn-41-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which mechanism can produce hypokalemia without initially removing potassium from the body?",
+      "choices": ["Insulin-driven movement of potassium into cells", "Rhabdomyolysis releasing intracellular potassium", "Severely reduced renal excretion", "Excess potassium supplementation"],
+      "correctIndex": 0,
+      "explanation": "Insulin activates cellular potassium uptake and can lower extracellular potassium through redistribution. The other mechanisms tend to increase extracellular potassium."
+    },
+    {
+      "id": "rn-41-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "A client has persistent hypokalemia despite prescribed replacement. Which additional abnormality should the RN expect the team to evaluate?",
+      "choices": ["Low magnesium", "High albumin", "Low bilirubin", "High platelet count"],
+      "correctIndex": 0,
+      "explanation": "Hypomagnesemia can promote renal potassium wasting and make hypokalemia refractory to replacement. Ongoing losses and the underlying mechanism must also be addressed."
+    },
+    {
+      "id": "rn-41-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which action is safe when administering prescribed intravenous potassium?",
+      "choices": ["Give the concentrated product by direct IV push", "Dilute it as ordered, use an infusion pump, and verify renal function, urine output, access, and monitoring requirements", "Increase the rate independently if the client reports weakness", "Use an old potassium result without checking for newer data"],
+      "correctIndex": 1,
+      "explanation": "IV potassium is high-alert therapy and must never be given by direct IV push. Safe administration requires current data, correct dilution and rate, pump control, suitable access, site checks, and ordered monitoring."
+    },
+    {
+      "id": "rn-41-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which finding in a client with hypokalemia requires the highest priority response?",
+      "choices": ["Mild constipation with stable vital signs", "New ventricular dysrhythmia and progressive respiratory-muscle weakness", "A question about potassium-rich foods", "A normal bowel movement after treatment"],
+      "correctIndex": 1,
+      "explanation": "A ventricular dysrhythmia and respiratory-muscle weakness threaten circulation and breathing. Immediate assessment, monitoring, escalation, and prescribed treatment take priority."
+    },
+    {
+      "id": "rn-41-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A stable client has an unexpected high potassium from a visibly hemolyzed specimen and no ECG change. What is the best plan?",
+      "choices": ["Ignore the result permanently", "Promptly notify the appropriate clinician and obtain a correctly collected repeat as ordered while continuing assessment", "Immediately give potassium replacement", "Assume every future result is false"],
+      "correctIndex": 1,
+      "explanation": "Collection-related hemolysis can cause pseudohyperkalemia. A stable, discordant result should be promptly confirmed, but the client still requires assessment and risk-based monitoring."
+    },
+    {
+      "id": "rn-41-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client with acute kidney injury has severe hyperkalemia, weakness, and new QRS widening. What is the priority?",
+      "choices": ["Wait for peaked T waves before acting", "Activate emergency treatment and continuous cardiac monitoring", "Encourage a potassium-containing salt substitute", "Delay care until the next routine laboratory draw"],
+      "correctIndex": 1,
+      "explanation": "Severe hyperkalemia with weakness and conduction change is a cardiac emergency. ECG findings need not follow a fixed sequence, and treatment should not wait for another classic sign."
+    },
+    {
+      "id": "rn-41-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "What is the purpose of prescribed intravenous calcium during a hyperkalemic emergency with ECG toxicity?",
+      "choices": ["Permanently remove potassium through the kidneys", "Stabilize cardiac membranes without directly lowering serum potassium", "Shift all potassium into cells for 24 hours", "Replace a total-body calcium deficit"],
+      "correctIndex": 1,
+      "explanation": "IV calcium protects the myocardium from potassium-related electrical toxicity. It does not reduce the potassium level, so shifting and removal therapies are still needed."
+    },
+    {
+      "id": "rn-41-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which monitoring is essential after insulin and glucose are prescribed to shift potassium into cells?",
+      "choices": ["Serial glucose, potassium, symptoms, and ECG as indicated", "Only the client's temperature", "Only the amount of insulin left in the vial", "No further monitoring after the first lower potassium result"],
+      "correctIndex": 0,
+      "explanation": "Insulin can cause delayed hypoglycemia, and its potassium-lowering effect is temporary. Serial glucose, potassium, clinical status, and cardiac monitoring detect treatment harm and rebound."
+    },
+    {
+      "id": "rn-41-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best shows that emergency hyperkalemia care is incomplete despite a temporarily improved ECG?",
+      "choices": ["Potassium has not been removed and begins to rebound as the cellular shift wears off", "The client can state why monitoring continues", "Glucose remains within the ordered target", "The cause of reduced kidney excretion is being addressed"],
+      "correctIndex": 0,
+      "explanation": "Membrane stabilization and intracellular shifting are temporary. Definitive care must remove potassium or restore excretion and monitor for rebound after the shifting effect fades."
+    }
+  ]
+}

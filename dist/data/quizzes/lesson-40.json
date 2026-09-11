@@ -1,0 +1,105 @@
+{
+  "lessonId": 40,
+  "questions": [
+    {
+      "id": "rn-40-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best explains most cases of hyponatremia?",
+      "choices": ["The sodium concentration is low relative to body water", "The body has no sodium remaining", "Every case results from drinking too little water", "The finding always proves extracellular volume excess"],
+      "correctIndex": 0,
+      "explanation": "Hyponatremia is primarily a water-to-sodium concentration disorder. Total-body sodium and extracellular volume may be low, near normal, or increased, so volume assessment and tonicity are required."
+    },
+    {
+      "id": "rn-40-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Why can acute hypotonic hyponatremia cause neurologic deterioration?",
+      "choices": ["Water moves out of brain cells and shrinks them", "Water moves into brain cells and promotes cerebral edema", "Sodium directly blocks every neuron", "Plasma proteins immediately leave the circulation"],
+      "correctIndex": 1,
+      "explanation": "A hypotonic extracellular environment drives water into cells. Brain swelling can cause headache, confusion, seizures, reduced consciousness, respiratory compromise, and herniation."
+    },
+    {
+      "id": "rn-40-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client has hyponatremia, ascites, dependent edema, and heart failure. Which volume pattern is most consistent with these findings?",
+      "choices": ["Hypovolemic hyponatremia with no retained fluid", "Hypervolemic hyponatremia in which water gain exceeds sodium gain", "Hypernatremia caused by free-water loss", "Pseudohyponatremia proven by edema alone"],
+      "correctIndex": 1,
+      "explanation": "Heart failure can produce sodium and water retention with proportionally greater water retention, resulting in edema and dilutional hyponatremia. Effective circulating volume may still be reduced."
+    },
+    {
+      "id": "rn-40-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A low sodium result occurs with marked hyperglycemia. What is the safest interpretation?",
+      "choices": ["It automatically confirms hypotonic hyponatremia", "Glucose and measured osmolality must be considered because water may have shifted into extracellular fluid", "The sodium result can be ignored without assessment", "The client must have SIADH"],
+      "correctIndex": 1,
+      "explanation": "Marked hyperglycemia can create hypertonicity and shift water out of cells, lowering measured sodium. The mechanism differs from routine hypotonic hyponatremia and requires contextual interpretation."
+    },
+    {
+      "id": "rn-40-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which client with hyponatremia requires the highest priority response?",
+      "choices": ["Client with a stable mild value and no symptoms", "Client with a new seizure and decreasing level of consciousness", "Client asking why urine testing was ordered", "Client whose repeat specimen is pending and remains at baseline"],
+      "correctIndex": 1,
+      "explanation": "Seizure and declining consciousness suggest severe hyponatremic encephalopathy. ABC assessment, emergency assistance, seizure precautions, and protocol-based treatment are immediate priorities."
+    },
+    {
+      "id": "rn-40-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Hypertonic saline is prescribed for severe symptomatic hyponatremia. Which nursing action is essential?",
+      "choices": ["Increase the rate independently if symptoms persist", "Verify the concentration, pump settings, monitoring schedule, and prescribed correction limits", "Stop neurologic checks once the infusion begins", "Encourage unlimited water intake during the infusion"],
+      "correctIndex": 1,
+      "explanation": "Hypertonic saline is high-alert therapy. Controlled administration, serial sodium testing, neurologic reassessment, and prompt response to an unexpectedly rapid rise reduce treatment-related harm."
+    },
+    {
+      "id": "rn-40-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Why is overly rapid correction of chronic hyponatremia dangerous?",
+      "choices": ["Adapted brain cells may lose water rapidly, risking osmotic demyelination", "It always causes immediate pulmonary embolism", "It permanently prevents renal filtration", "It converts sodium into potassium"],
+      "correctIndex": 0,
+      "explanation": "During chronic hyponatremia, brain cells shed osmoles to limit swelling. Rapid correction can then pull water from adapted cells and contribute to osmotic demyelination, which may present after a delay."
+    },
+    {
+      "id": "rn-40-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding most strongly suggests impaired ADH effect in a client with hypernatremia?",
+      "choices": ["Very high urine output with persistently dilute urine", "Small amount of concentrated urine after poor intake", "Dependent edema with oliguria", "Dark stool after iron therapy"],
+      "correctIndex": 0,
+      "explanation": "When ADH is deficient or the kidney cannot respond, free water is lost in a large volume of dilute urine. Hypernatremia develops if intake cannot match the loss."
+    },
+    {
+      "id": "rn-40-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with hypernatremia is hypotensive, confused, and poorly perfused. Which plan reflects the correct priority?",
+      "choices": ["Correct the sodium concentration without considering circulation", "Support ABCs and prescribed intravascular resuscitation first, then address free-water deficit with serial monitoring", "Delay all treatment until thirst returns", "Give unlimited oral water despite reduced consciousness"],
+      "correctIndex": 1,
+      "explanation": "Shock threatens organ perfusion immediately and may require prescribed isotonic resuscitation before slower free-water correction. Reduced consciousness also makes unassessed oral intake unsafe."
+    },
+    {
+      "id": "rn-40-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding during correction of a sodium disorder requires immediate escalation?",
+      "choices": ["Sodium is changing within the prescribed target and mentation is improving", "New seizure with a sodium change faster than the prescribed limit", "Urine output is being measured accurately", "The client can explain the monitoring plan"],
+      "correctIndex": 1,
+      "explanation": "A new seizure and unexpectedly rapid sodium change may signal dangerous osmotic brain injury or ongoing severe disease. Stop, assess ABCs, obtain emergency help, and follow the prescribed escalation pathway."
+    }
+  ]
+}

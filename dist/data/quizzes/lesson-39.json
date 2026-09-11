@@ -1,0 +1,105 @@
+{
+  "lessonId": 39,
+  "questions": [
+    {
+      "id": "rn-39-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best describes the relationship between serum sodium and volume status?",
+      "choices": ["Serum sodium directly measures total-body sodium stores", "Hyponatremia always means extracellular volume excess", "Serum sodium mainly reflects the water-to-sodium relationship and must be interpreted with volume findings", "A normal sodium level rules out severe volume deficit"],
+      "correctIndex": 2,
+      "explanation": "Serum sodium is primarily a concentration and tonicity clue. The same sodium abnormality can occur with different extracellular volume states, so history, perfusion, edema, urine data, weight, and disease context are essential."
+    },
+    {
+      "id": "rn-39-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client has extensive edema and ascites but also cool extremities, tachycardia, and decreasing urine output. Which interpretation is most accurate?",
+      "choices": ["Visible edema proves intravascular volume is adequate", "Fluid may be sequestered outside the effective circulation while organ perfusion is reduced", "The findings exclude a fluid-distribution problem", "Urine output is unrelated to effective circulating volume"],
+      "correctIndex": 1,
+      "explanation": "Third-spaced fluid can increase total extracellular fluid while failing to support effective circulation. The perfusion cluster requires prompt assessment despite visible edema."
+    },
+    {
+      "id": "rn-39-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which mechanism most directly promotes edema when plasma protein concentration is markedly reduced?",
+      "choices": ["Increased plasma oncotic pull", "Reduced capillary hydrostatic pressure", "Reduced plasma oncotic pressure that favors net movement into the interstitium", "Increased lymphatic removal of interstitial protein"],
+      "correctIndex": 2,
+      "explanation": "Plasma proteins help retain water within the vascular space. When oncotic pressure falls, outward filtration can exceed lymphatic return and promote interstitial edema."
+    },
+    {
+      "id": "rn-39-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "What is the primary effect of antidiuretic hormone on fluid balance?",
+      "choices": ["It increases renal water reabsorption and tends to concentrate urine", "It causes the kidneys to excrete all filtered sodium", "It directly moves protein into lymphatic vessels", "It prevents thirst when plasma tonicity rises"],
+      "correctIndex": 0,
+      "explanation": "ADH increases free-water reabsorption in the kidney, helping lower elevated plasma tonicity and concentrate urine. Stress, pain, nausea, medications, and disease can alter its release."
+    },
+    {
+      "id": "rn-39-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which measurement provides the most useful trend for short-term fluid gain or loss when collected consistently?",
+      "choices": ["One isolated skin-turgor assessment", "Daily weight on the same scale at the same time under similar conditions", "A single blood pressure value", "The client's shoe size"],
+      "correctIndex": 1,
+      "explanation": "Consistently obtained daily weight is a sensitive noninvasive trend for overall fluid change. It must still be interpreted with intake and output, examination findings, laboratory data, and measurement conditions."
+    },
+    {
+      "id": "rn-39-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which finding in a client with suspected fluid-volume excess requires the highest priority?",
+      "choices": ["Mild bilateral ankle edema at the end of the day", "A 0.2-kg difference between two scales", "New dyspnea, falling oxygen saturation, and diffuse crackles", "An unchanged ring size"],
+      "correctIndex": 2,
+      "explanation": "New respiratory distress and declining oxygenation suggest pulmonary congestion and threaten breathing. Peripheral edema without instability is important but is not the immediate priority."
+    },
+    {
+      "id": "rn-39-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client with ongoing gastrointestinal losses becomes confused, hypotensive, cool, and oliguric. What should the RN do first?",
+      "choices": ["Wait until the end of the shift to calculate total intake and output", "Assess ABCs and perfusion, obtain immediate help, and follow the emergency pathway", "Encourage unmeasured oral fluids without checking swallowing or orders", "Document the findings as expected dehydration"],
+      "correctIndex": 1,
+      "explanation": "This cluster suggests inadequate organ perfusion and possible shock. Stabilization, immediate escalation, identification of ongoing loss, prescribed treatment, and repeated reassessment take priority over routine totals."
+    },
+    {
+      "id": "rn-39-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which plan best improves the reliability of a client's fluid-balance assessment?",
+      "choices": ["Use different scales so the readings can be averaged", "Rely on edema alone and omit respiratory findings", "Trend weight consistently and combine it with measured intake-output, perfusion, breathing, urine, and laboratory findings", "Treat every positive fluid balance as pulmonary edema"],
+      "correctIndex": 2,
+      "explanation": "A reliable assessment uses consistent measurements and converging data. Each individual cue has limitations, and a positive balance does not by itself establish the location, mechanism, or severity of retained fluid."
+    },
+    {
+      "id": "rn-39-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which reassessment is most important after starting prescribed IV fluid for volume deficit?",
+      "choices": ["Check only whether the IV bag is empty", "Reassess breathing, oxygenation, perfusion, blood pressure, urine output, lung sounds, and the IV site", "Wait for the next day's weight before evaluating any response", "Stop monitoring once blood pressure rises once"],
+      "correctIndex": 1,
+      "explanation": "Evaluation must look for improved organ perfusion and for harm such as pulmonary congestion or an IV complication. A single blood pressure or infusion-volume observation is insufficient."
+    },
+    {
+      "id": "rn-39-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which trend best supports improvement in effective circulating volume after prescribed treatment?",
+      "choices": ["Edema increases while urine output and mentation decline", "Heart rate, mentation, capillary refill, and urine output improve together", "Weight changes but measurement conditions are unknown", "Serum sodium is unchanged despite worsening hypotension"],
+      "correctIndex": 1,
+      "explanation": "Improvement across perfusion and organ-function trends is more meaningful than one isolated value. Treatment evaluation also includes respiratory status, weight, edema, laboratory trends, and adverse effects."
+    }
+  ]
+}

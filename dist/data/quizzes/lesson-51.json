@@ -1,0 +1,155 @@
+{
+  "lessonId": 51,
+  "questions": [
+    {
+      "id": "rn-51-q01",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement correctly distinguishes pharmacokinetics from pharmacodynamics?",
+      "choices": [
+        "Pharmacokinetics describes what the body does to a drug; pharmacodynamics describes what the drug does to the body",
+        "Pharmacokinetics describes receptor response only; pharmacodynamics describes renal excretion only",
+        "Pharmacokinetics applies only to oral drugs; pharmacodynamics applies only to IV drugs",
+        "The two terms have identical meanings"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pharmacokinetics covers absorption, distribution, metabolism, and excretion. Pharmacodynamics covers drug-target interactions and the resulting therapeutic and adverse effects."
+    },
+    {
+      "id": "rn-51-q02",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can an oral dose differ from an IV dose of the same medication?",
+      "choices": [
+        "Oral absorption and first-pass metabolism may reduce systemic bioavailability",
+        "Every oral medication has exactly 100% bioavailability",
+        "IV medication must first be absorbed from the gastrointestinal tract",
+        "Route has no effect on concentration over time"
+      ],
+      "correctIndex": 0,
+      "explanation": "IV medication enters systemic circulation directly. Oral medication may be incompletely absorbed and may undergo intestinal and hepatic first-pass metabolism, so routes are not automatically interchangeable milligram for milligram."
+    },
+    {
+      "id": "rn-51-q03",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which new finding most increases concern for accumulation of a primarily renally eliminated medication?",
+      "choices": [
+        "A rapid decline in kidney function with increasing adverse effects",
+        "A stable kidney trend and expected therapeutic response",
+        "A normal room temperature",
+        "An unchanged meal preference"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reduced renal clearance can lengthen half-life and raise exposure when dosing continues unchanged. A rapid kidney decline plus toxicity cues requires prompt assessment and clarification."
+    },
+    {
+      "id": "rn-51-q04",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A medication follows ordinary first-order elimination and has a half-life of 8 hours. Which statement is the best approximation?",
+      "choices": [
+        "Repeated dosing usually approaches steady state after roughly 32 to 40 hours",
+        "Steady state occurs immediately after the first dose",
+        "The entire drug amount is removed after exactly 8 hours",
+        "Half-life is unrelated to accumulation"
+      ],
+      "correctIndex": 0,
+      "explanation": "A practical approximation is four to five half-lives to approach steady state, so an 8-hour half-life suggests about 32 to 40 hours. Client and drug factors can alter this estimate."
+    },
+    {
+      "id": "rn-51-q05",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best compares loading and maintenance doses?",
+      "choices": [
+        "A loading dose reaches a target concentration sooner; maintenance dosing replaces drug eliminated over time",
+        "A loading dose is always smaller than every maintenance dose",
+        "Maintenance dosing is unrelated to clearance",
+        "Loading and maintenance doses always use identical calculations"
+      ],
+      "correctIndex": 0,
+      "explanation": "Loading dose is mainly related to the target concentration and volume of distribution. Maintenance dosing is strongly influenced by clearance, bioavailability, and the desired exposure."
+    },
+    {
+      "id": "rn-51-q06",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client with low albumin develops toxicity while receiving a highly protein-bound medication, although the reported total drug level is within its usual range. Which hypothesis is most plausible?",
+      "choices": [
+        "The active unbound fraction may be increased despite the ordinary total level",
+        "Protein binding cannot affect medication response",
+        "A total serum level always measures only unbound drug",
+        "Low albumin guarantees reduced medication effect"
+      ],
+      "correctIndex": 0,
+      "explanation": "For some highly protein-bound drugs, reduced binding can increase the free, active fraction. Sampling time, symptoms, organ function, and drug-specific interpretation remain essential."
+    },
+    {
+      "id": "rn-51-q07",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A trough level is prescribed for a medication. Which plan is generally appropriate?",
+      "choices": [
+        "Verify the drug-specific instructions and obtain the specimen immediately before the scheduled dose",
+        "Collect it at any convenient time without documenting the last dose",
+        "Collect it during the first minute of an infusion",
+        "Skip verification because all trough timing is identical"
+      ],
+      "correctIndex": 0,
+      "explanation": "A trough is generally drawn just before a dose, but exact instructions are drug specific. Last-dose, infusion, and specimen times must be verified and documented for meaningful interpretation."
+    },
+    {
+      "id": "rn-51-q08",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "The RN receives an extended-release tablet for a client whose feeding tube cannot accept whole tablets. What is the best action?",
+      "choices": [
+        "Do not crush it; verify the formulation and request a safe alternative plan",
+        "Crush it automatically because all tablets are tube compatible",
+        "Dissolve it in the entire feeding bag without checking guidance",
+        "Double the dose to compensate for the tube"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crushing an extended-release product can destroy its release mechanism and cause dose dumping or toxicity. The RN should verify product-specific guidance and clarify an appropriate alternative."
+    },
+    {
+      "id": "rn-51-q09",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which evaluation best demonstrates safe assessment of medication effectiveness?",
+      "choices": [
+        "Reassess the intended clinical endpoint and predictable adverse effects at the appropriate time",
+        "Assume administration proves the medication worked",
+        "Evaluate only whether the client swallowed the dose",
+        "Ignore laboratory and functional trends if no rash occurs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Medication evaluation includes whether the intended outcome occurred and whether adverse effects developed. Timing and the relevant clinical, functional, vital-sign, and laboratory endpoints matter."
+    },
+    {
+      "id": "rn-51-q10",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client taking several medications develops marked sedation and slow respirations after a new sedating drug is added. Which concept best explains the urgent risk?",
+      "choices": [
+        "A pharmacodynamic interaction may produce additive central nervous system depression",
+        "Only pharmacokinetic interactions can cause adverse effects",
+        "Unchanged drug concentrations guarantee no combined effect",
+        "Multiple sedating medications always cancel one another"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pharmacodynamic interactions can amplify a shared physiologic effect without changing measured drug concentrations. Marked sedation and respiratory depression require immediate assessment and response."
+    }
+  ]
+}

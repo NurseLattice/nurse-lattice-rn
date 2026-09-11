@@ -1,0 +1,105 @@
+{
+  "lessonId": 47,
+  "questions": [
+    {
+      "id": "rn-47-q01",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client has low free T4 with a clearly elevated TSH. Which mechanism is most consistent with this paired pattern?",
+      "choices": ["Primary thyroid failure with reduced negative feedback", "Autonomous pituitary suppression", "Primary hyperthyroidism", "Normal thyroid physiology regardless of symptoms"],
+      "correctIndex": 0,
+      "explanation": "When the thyroid underproduces hormone, reduced negative feedback allows pituitary TSH to rise. Paired values are more informative than either result alone."
+    },
+    {
+      "id": "rn-47-q02",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why can serum potassium be normal or high when a client first presents with DKA despite a total-body potassium deficit?",
+      "choices": ["Insulin deficiency, acidosis, and hyperosmolality shift potassium out of cells while urinary losses deplete total stores", "The kidneys create new potassium during DKA", "Ketones prevent all urinary potassium loss", "A normal serum value always proves normal total-body stores"],
+      "correctIndex": 0,
+      "explanation": "Extracellular shifting can mask potassium lost through osmotic diuresis and vomiting. Insulin treatment shifts potassium into cells, so frequent monitoring is essential."
+    },
+    {
+      "id": "rn-47-q03",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which cue cluster is most consistent with HHS?",
+      "choices": ["Profound dehydration, marked hypertonicity, severe hyperglycemia, and altered mentation with limited ketogenesis", "Recurrent hypoglycemia with diaphoresis", "Bradycardia, hypothermia, and hypoventilation", "Hypotension with hyperkalemia after steroid withdrawal"],
+      "correctIndex": 0,
+      "explanation": "HHS is dominated by severe hyperglycemia, osmotic diuresis, water loss, hypertonicity, and neurologic change, usually without the major ketoacidosis of DKA."
+    },
+    {
+      "id": "rn-47-q04",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which client requires the most immediate action?",
+      "choices": ["A client with stable chronic heat intolerance", "A client with diabetes who is unconscious, diaphoretic, and has a bedside glucose of 34 mg/dL", "A client asking how A1C is interpreted", "A client with unchanged mild constipation"],
+      "correctIndex": 1,
+      "explanation": "Severe symptomatic hypoglycemia threatens brain function and requires immediate protocol-based rescue using a route safe for the client's consciousness and swallowing status."
+    },
+    {
+      "id": "rn-47-q05",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which finding most strongly distinguishes thyroid storm from uncomplicated hyperthyroidism?",
+      "choices": ["Acute multisystem decompensation with high fever, severe tachycardia, and delirium", "A mildly suppressed TSH alone", "A long-standing fine tremor without instability", "A single elevated thyroid hormone value without symptoms"],
+      "correctIndex": 0,
+      "explanation": "Thyroid storm is a clinical syndrome of severe systemic decompensation. The absolute hormone concentration alone does not establish the crisis."
+    },
+    {
+      "id": "rn-47-q06",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client who abruptly stopped long-term glucocorticoids develops vomiting, weakness, confusion, hypotension, hyponatremia, and hypoglycemia. What is the priority hypothesis?",
+      "choices": ["Adrenal crisis", "Uncomplicated primary hyperthyroidism", "HHS", "Stable SIADH"],
+      "correctIndex": 0,
+      "explanation": "Chronic glucocorticoids can suppress the HPA axis. Abrupt withdrawal plus shock, gastrointestinal symptoms, sodium change, and hypoglycemia suggests adrenal crisis."
+    },
+    {
+      "id": "rn-47-q07",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client with DKA is beginning prescribed insulin and fluid therapy. Which monitoring plan best matches the pathophysiology?",
+      "choices": ["Trend glucose, ketones or anion gap, potassium, sodium, osmolality, acid–base status, urine output, and hemodynamics", "Check glucose only after all therapy is finished", "Ignore potassium because it was initially normal", "Use urine glucose alone to determine recovery"],
+      "correctIndex": 0,
+      "explanation": "DKA treatment changes glucose, tonicity, acid–base status, water, and intracellular potassium distribution together, requiring coordinated serial reassessment."
+    },
+    {
+      "id": "rn-47-q08",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "What is the safest action for an awake client with symptomatic hypoglycemia who can swallow safely?",
+      "choices": ["Give the protocol-specified rapid carbohydrate, recheck glucose at the required interval, and follow with ongoing evaluation", "Give nothing until loss of consciousness", "Administer a long-acting insulin dose", "Allow the client to walk unassisted"],
+      "correctIndex": 0,
+      "explanation": "An alert client who can swallow can receive rapid oral carbohydrate according to protocol, followed by timely glucose reassessment and evaluation of recurrence and cause."
+    },
+    {
+      "id": "rn-47-q09",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Reduction of Risk Potential",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best supports effective treatment of adrenal crisis?",
+      "choices": ["Perfusion, blood pressure, mentation, glucose, and electrolyte trends improve", "Hypotension becomes more refractory", "Confusion and hypoglycemia worsen", "Urine output falls while lactate rises"],
+      "correctIndex": 0,
+      "explanation": "Improvement across circulation, neurologic function, glucose, and electrolytes provides converging evidence of response; worsening shock findings require urgent reevaluation."
+    },
+    {
+      "id": "rn-47-q10",
+      "traditionalCourse": "Pathophysiology",
+      "nclexClientNeeds": "Physiological Adaptation",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A client has polyuria, intense thirst, rising serum sodium and osmolality, and very dilute urine. Which mechanism is most likely?",
+      "choices": ["Insufficient ADH effect causing diabetes insipidus physiology", "Excess ADH causing SIADH", "Excess aldosterone with concentrated urine", "Normal negative feedback"],
+      "correctIndex": 0,
+      "explanation": "Inadequate ADH production or renal response prevents water conservation, producing large volumes of dilute urine and rising serum tonicity when intake cannot keep pace."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-# RN Quest anonymous daily analytics
+# NurseLattice RN Quest anonymous daily analytics
 
-RN Quest records a minimal set of anonymous aggregate events on the published `nurselattice.github.io` site. This feature is independent from local learning progress and does not enable accounts or progress synchronization.
+NurseLattice RN Quest records a minimal set of anonymous aggregate events on the published `nurselattice.github.io` site. This feature is independent from local learning progress and does not enable accounts or progress synchronization.
 
 The browser sends only the event name, optional lesson number, app version, broad source category, a random browser identifier, a random daily identifier, a session identifier, and the server-generated event time. It does not send an account ID, email, score, answer, XP, streak, study dates, URL, raw referrer URL, patient information, or free-form metadata.
 
@@ -8,11 +8,11 @@ Statistics do not run on local preview pages. They are disabled when Global Priv
 
 ## Supabase setup
 
-1. Open the trusted SQL Editor in the dedicated RN Quest Supabase project.
+1. Open the trusted SQL Editor in the dedicated NurseLattice RN Quest Supabase project.
 2. Run `supabase/rn_analytics_setup.sql` once.
 3. Confirm that `anon` can insert into `public.rn_analytics_events` but cannot select, update, or delete rows.
 4. Confirm that `anon` and `authenticated` cannot select `public.rn_analytics_daily_summary`.
-5. Publish the matching RN Quest web release only after these checks pass.
+5. Publish the matching NurseLattice RN Quest web release only after these checks pass.
 
 The public browser uses only the project's publishable key. Never place a secret key, service-role key, or database password in this repository.
 

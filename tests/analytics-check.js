@@ -32,7 +32,7 @@ const context = vm.createContext({
   document: { referrer: "", getElementById: () => null },
   crypto: { randomUUID: crypto.randomUUID, getRandomValues: array => crypto.webcrypto.getRandomValues(array) },
   fetch: async (url, options) => { requests.push({ url, options }); return { ok: true, status: 201 }; },
-  RN_APP_VERSION: "v0.55.0",
+  RN_APP_VERSION: "v0.58.0",
   window: { doNotTrack: "0" }
 });
 context.window.location = context.location;

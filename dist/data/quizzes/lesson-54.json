@@ -1,0 +1,155 @@
+{
+  "lessonId": 54,
+  "questions": [
+    {
+      "id": "rn-54-q01",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Before administering an IV push medication through a peripheral catheter, which finding requires the RN to stop and investigate?",
+      "choices": [
+        "New pain, swelling, and resistance when the site is flushed",
+        "An intact transparent dressing with a visible site",
+        "A medication label that matches the verified order",
+        "The client correctly states two identifiers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pain, swelling, and resistance suggest a compromised or infiltrated site. The RN should not force the flush or administer medication until access safety is established."
+    },
+    {
+      "id": "rn-54-q02",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement about IV compatibility is correct?",
+      "choices": [
+        "A solution may be chemically incompatible even when no visible change occurs",
+        "Two clear solutions are always compatible at a Y-site",
+        "Compatibility is unchanged by concentration and diluent",
+        "A pump library independently verifies drug compatibility"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chemical degradation can occur without cloudiness or precipitate. Compatibility must be verified for the exact drugs, concentrations, diluents, contact method, and conditions."
+    },
+    {
+      "id": "rn-54-q03",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client reports burning during a peripheral vesicant infusion, and the site is swollen and pale. What is the RN's first action?",
+      "choices": [
+        "Stop the infusion immediately",
+        "Flush the line rapidly with saline",
+        "Increase the rate to complete the dose",
+        "Apply pressure and continue the infusion"
+      ],
+      "correctIndex": 0,
+      "explanation": "The infusion must be stopped to limit tissue exposure. Do not flush; disconnect the tubing and leave the catheter in place initially for aspiration or drug-specific antidote management while activating the protocol."
+    },
+    {
+      "id": "rn-54-q04",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which distinction between infiltration and extravasation is most accurate?",
+      "choices": [
+        "Extravasation involves a vesicant or tissue-damaging medication leaking into tissue",
+        "Infiltration always produces tissue necrosis",
+        "Extravasation can occur only through a central line",
+        "The two terms differ only by the amount of swelling"
+      ],
+      "correctIndex": 0,
+      "explanation": "Infiltration generally refers to nonvesicant fluid leaking into tissue. Extravasation involves a vesicant or tissue-damaging agent and can progress to severe injury."
+    },
+    {
+      "id": "rn-54-q05",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Two IV medications must be given through the same lumen, but their Y-site compatibility is unknown. What is the safest plan?",
+      "choices": [
+        "Do not connect them until exact compatibility and an appropriate administration plan are verified",
+        "Mix them because both are diluted in clear fluid",
+        "Run both faster so their contact time is shorter",
+        "Assume compatibility if no precipitate forms in the first minute"
+      ],
+      "correctIndex": 0,
+      "explanation": "Unknown compatibility is not permission to combine drugs. Verify an authoritative source and use a separate lumen, access, schedule, or approved flush strategy as appropriate."
+    },
+    {
+      "id": "rn-54-q06",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "How should the RN identify the correct lumen before connecting a high-alert infusion?",
+      "choices": [
+        "Trace the tubing from the labeled container and pump channel to the client's access",
+        "Choose the tubing closest to the medication pole",
+        "Rely on tubing color alone",
+        "Connect it to any open port and then check the response"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tracing the entire route verifies the actual physical connection. Position, color, and verbal assumptions can result in wrong-line or wrong-route administration."
+    },
+    {
+      "id": "rn-54-q07",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "During an IV medication infusion, the client develops wheezing, facial swelling, hypotension, and widespread hives. Which hypothesis has priority?",
+      "choices": [
+        "Anaphylaxis",
+        "Uncomplicated phlebitis",
+        "Expected therapeutic effect",
+        "A minor mechanical occlusion"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acute airway, respiratory, circulatory, and skin findings after exposure indicate possible anaphylaxis. Stop the suspected drug and activate emergency assessment and treatment."
+    },
+    {
+      "id": "rn-54-q08",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Why may a post-medication flush need to be administered at a controlled rate?",
+      "choices": [
+        "It can deliver medication remaining in the tubing and create an unintended rapid bolus",
+        "Flush rate cannot affect medication delivery",
+        "Every flush must be given as rapidly as possible",
+        "A flush neutralizes all incompatible medications"
+      ],
+      "correctIndex": 0,
+      "explanation": "Medication in the catheter and tubing dead space reaches the client with the flush. A rapid flush can deliver that residual dose faster than intended."
+    },
+    {
+      "id": "rn-54-q09",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "An infusion pump alarms for occlusion. What should the RN do?",
+      "choices": [
+        "Assess the client, site, clamps, tubing, connections, and pump to identify the cause without forcing a flush",
+        "Increase the pressure limit until the infusion resumes",
+        "Silence the alarm permanently without assessment",
+        "Assume the catheter is patent because the pump was working earlier"
+      ],
+      "correctIndex": 0,
+      "explanation": "An occlusion may result from a clamp, kink, catheter problem, precipitate, thrombosis, or infiltration. The cause must be identified; forcing fluid can cause harm."
+    },
+    {
+      "id": "rn-54-q10",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which evaluation best confirms safe delivery after an intermittent IV medication infusion?",
+      "choices": [
+        "Assess therapeutic response and adverse effects, inspect the site, trace the line, and compare delivered volume with the order",
+        "Verify only that the pump screen says complete",
+        "Check only whether the bag is empty",
+        "Assume success if the client did not use the call light"
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluation must include the client, access site, route, device, volume, and intended outcome. Pump completion or an empty container alone does not prove safe delivery."
+    }
+  ]
+}

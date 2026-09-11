@@ -21,7 +21,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 53) throw new Error("Pilot must preserve all eight Client Needs areas and include fifty-three lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 55) throw new Error("Pilot must preserve all eight Client Needs areas and include fifty-five lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
@@ -529,13 +529,33 @@ if (fiftyThirdLesson.traditionalCourse !== "Pharmacology" || fiftyThirdLesson.nc
 for (const question of fiftyThirdQuiz.questions) {
   if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 53 question must preserve its course and NCLEX tags");
 }
+const fiftyFourthLessonItem = curriculum.lessons[53];
+const fiftyFourthLesson = JSON.parse(read(fiftyFourthLessonItem.lessonFile));
+const fiftyFourthQuiz = JSON.parse(read(fiftyFourthLessonItem.quizFile));
+if (fiftyFourthLessonItem.courseId !== "pharmacology" || fiftyFourthLessonItem.course !== "Pharmacology") throw new Error("Lesson 54 must remain in Pharmacology");
+if (!fiftyFourthLesson.title.includes("IV Medication Administration: Access, Compatibility, Push Safety, Extravasation & Infusion Reactions") || !fiftyFourthLesson.html.includes("Choose access that matches the therapy") || !fiftyFourthLesson.html.includes("Compatibility is specific to products and conditions") || !fiftyFourthLesson.html.includes("Do not flush a suspected extravasation") || !fiftyFourthLesson.html.includes("Pumps add precision, not certainty")) throw new Error("Lesson 54 IV medication content is incomplete");
+if (fiftyFourthQuiz.questions.length !== 10) throw new Error("Lesson 54 must include ten IV medication questions");
+if (fiftyFourthLesson.traditionalCourse !== "Pharmacology" || fiftyFourthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftyFourthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 54 must preserve all three content tags");
+for (const question of fiftyFourthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 54 question must preserve its course and NCLEX tags");
+}
+const fiftyFifthLessonItem = curriculum.lessons[54];
+const fiftyFifthLesson = JSON.parse(read(fiftyFifthLessonItem.lessonFile));
+const fiftyFifthQuiz = JSON.parse(read(fiftyFifthLessonItem.quizFile));
+if (fiftyFifthLessonItem.courseId !== "pharmacology" || fiftyFifthLessonItem.course !== "Pharmacology") throw new Error("Lesson 55 must remain in Pharmacology");
+if (!fiftyFifthLesson.title.includes("High-Alert Medications & Rescue Readiness") || !fiftyFifthLesson.html.includes("High-alert is a harm category, not a frequency claim") || !fiftyFifthLesson.html.includes("Make the double check truly independent") || !fiftyFifthLesson.html.includes("Never give potassium chloride by IV push") || !fiftyFifthLesson.html.includes("Neuromuscular blockers paralyze; they do not sedate or relieve pain") || !fiftyFifthLesson.html.includes("Prepare rescue before the dose")) throw new Error("Lesson 55 high-alert medication content is incomplete");
+if (fiftyFifthQuiz.questions.length !== 10) throw new Error("Lesson 55 must include ten high-alert medication questions");
+if (fiftyFifthLesson.traditionalCourse !== "Pharmacology" || fiftyFifthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftyFifthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 55 must preserve all three content tags");
+for (const question of fiftyFifthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 55 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
 if (!read("js/app.js").includes('document.createElement("details")') || !read("js/app.js").includes("phaseDisclosureState") || !read("js/app.js").includes("new Set([currentPhaseIndex])")) throw new Error("Course phases must be collapsible with the current phase expanded by default");
 if (!read("css/styles.css").includes(".course-phase[open] .phase-chevron") || !read("css/styles.css").includes(".course-phase-summary:focus-visible")) throw new Error("Course phase disclosure states must have visible, accessible styling");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 530) throw new Error("Expected 530 pilot questions after adding Lesson 53");
+if (questionIds.size !== 550) throw new Error("Expected 550 pilot questions after adding Lesson 55");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json", "supabase/rn_analytics_setup.sql", "docs/ANONYMOUS_ANALYTICS.md"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -543,7 +563,7 @@ for (const label of ["Home", "Learn", "Practice", "Progress", "Educational pilot
   if (!index.includes(label)) throw new Error("Missing primary UI: " + label);
 }
 const match = versionScript.match(/RN_APP_VERSION = "([^"]+)"/);
-if (!match || match[1] !== version.version || !index.includes("RN Quest " + version.version)) throw new Error("Version values do not match");
+if (!match || match[1] !== version.version || !index.includes("NurseLattice RN Quest " + version.version)) throw new Error("Version values do not match");
 const numericVersion = version.version.replace(/^v/, "");
 for (const asset of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js"]) {
   if (!index.includes(asset + "?v=" + numericVersion)) throw new Error("Stale asset version: " + asset);
@@ -558,5 +578,5 @@ if (!analyticsSource.includes('location.hostname === "nurselattice.github.io"') 
 if (!index.includes('id="anonymousAnalyticsStatus"') || !index.includes('id="anonymousAnalyticsToggle"')) throw new Error("Anonymous statistics disclosure and opt-out control are missing");
 if (!read("js/app.js").includes('RNAnalytics.track("lesson_open"') || !read("js/app.js").includes('RNAnalytics.track("lesson_quiz_complete"')) throw new Error("Learning analytics event hooks are incomplete");
 const manifest = JSON.parse(read("manifest.webmanifest"));
-if (manifest.name !== "RN Quest" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 3 Pharmacology lessons, 530 questions, and version parity.");
+if (manifest.name !== "NurseLattice RN Quest" || manifest.short_name !== "NurseLattice RN" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
+console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 5 Pharmacology lessons, 550 questions, and version parity.");

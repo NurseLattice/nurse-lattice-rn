@@ -1,0 +1,105 @@
+{
+  "lessonId": 55,
+  "questions": [
+    {
+      "id": "rn-55-q01",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which statement best explains why a medication is classified as high-alert?",
+      "choices": ["An error involving it has an increased risk of causing severe harm", "It causes adverse effects in every client", "It is administered more often than other medications", "It can be given only in an intensive care unit"],
+      "correctIndex": 0,
+      "explanation": "High-alert status reflects the potential severity of harm when an error occurs. It does not mean errors are more common or that use is limited to one setting."
+    },
+    {
+      "id": "rn-55-q02",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Rapid-acting insulin is due with breakfast, but the tray is delayed and the client's glucose is unexpectedly low. What should the RN do first?",
+      "choices": ["Pause the insulin dose and follow the hypoglycemia and insulin protocol", "Give the insulin now because it is scheduled", "Double the carbohydrate allowance at lunch", "Document the glucose after administering the dose"],
+      "correctIndex": 0,
+      "explanation": "Low glucose and unavailable nutrition make automatic administration unsafe. The RN should assess and treat the hypoglycemia and clarify or follow the prescribed insulin protocol before dosing."
+    },
+    {
+      "id": "rn-55-q03",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "Which potassium chloride prescription requires immediate clarification?",
+      "choices": ["Potassium chloride concentrate by IV push", "Diluted potassium chloride by infusion pump with ordered monitoring", "Oral potassium with a meal when appropriate", "A standardized premixed potassium infusion"],
+      "correctIndex": 0,
+      "explanation": "Potassium chloride must never be administered by IV push because rapid delivery can cause fatal dysrhythmia or cardiac arrest."
+    },
+    {
+      "id": "rn-55-q04",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "After an opioid dose, which finding is the strongest early warning that urgent reassessment is needed?",
+      "choices": ["The client is increasingly difficult to arouse and respirations are shallow", "The pain rating decreased from 8 to 5", "The client asks for a glass of water", "The heart rate is unchanged from baseline"],
+      "correctIndex": 0,
+      "explanation": "Increasing sedation with shallow breathing may precede respiratory arrest. The RN must stop further depressants, assess ventilation, support the airway, and escalate promptly."
+    },
+    {
+      "id": "rn-55-q05",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "A client awakens and breathes more effectively after naloxone. What is the priority next step?",
+      "choices": ["Continue close respiratory and sedation monitoring for recurrent toxicity", "End monitoring because the opioid effect is permanently reversed", "Give another opioid immediately to prevent discomfort", "Encourage unassisted ambulation to confirm recovery"],
+      "correctIndex": 0,
+      "explanation": "Naloxone can wear off before the opioid, so respiratory depression may recur. Continued observation, supportive care, reassessment, and repeat rescue treatment when indicated are essential."
+    },
+    {
+      "id": "rn-55-q06",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Before starting a continuous neuromuscular blocker, which plan is essential?",
+      "choices": ["Confirm mechanical ventilation plus adequate sedation and analgesia", "Use movement as the only indicator of discomfort", "Stop sedation because paralysis causes unconsciousness", "Use the medication to control agitation without an airway plan"],
+      "correctIndex": 0,
+      "explanation": "Neuromuscular blockers cause paralysis but do not provide unconsciousness, amnesia, or analgesia. Ventilatory support and adequate sedation and analgesia must be ensured."
+    },
+    {
+      "id": "rn-55-q07",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client receiving an anticoagulant develops new hypotension, tachycardia, abdominal pain, and a falling hemoglobin. Which problem has priority?",
+      "choices": ["Possible internal bleeding", "Expected medication action", "Mild medication intolerance", "Uncomplicated anxiety"],
+      "correctIndex": 0,
+      "explanation": "Hemodynamic change, abdominal pain, and falling hemoglobin suggest potentially life-threatening internal bleeding and require urgent assessment and escalation."
+    },
+    {
+      "id": "rn-55-q08",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which action demonstrates a true independent double check of a high-alert infusion?",
+      "choices": ["A second qualified clinician separately calculates and verifies required elements before comparing results", "The preparer reads the dose aloud while the second clinician agrees", "The second clinician signs after looking only at the pump screen", "Two clinicians assume pharmacy verification makes bedside assessment unnecessary"],
+      "correctIndex": 0,
+      "explanation": "Independence reduces confirmation bias: the second clinician performs the required verification separately, then the two compare and resolve any difference."
+    },
+    {
+      "id": "rn-55-q09",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A peripheral vasopressor site becomes painful, pale, cool, and swollen. What should the RN do first?",
+      "choices": ["Stop the infusion and begin the drug-specific extravasation response without flushing", "Flush the line rapidly to clear the medication", "Increase the rate to maintain the blood pressure", "Remove the catheter immediately before assessing the medication"],
+      "correctIndex": 0,
+      "explanation": "These findings suggest extravasation. Stop delivery, disconnect tubing, do not flush, and initially preserve the catheter for aspiration or antidote use while activating the protocol and obtaining alternate access."
+    },
+    {
+      "id": "rn-55-q10",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which evaluation best determines whether a high-alert medication was administered safely?",
+      "choices": ["Reassess the intended effect, adverse effects, relevant trends, route, device, and risk of recurrence", "Confirm only that the barcode scan succeeded", "Verify only that another clinician co-signed", "Assume safety when the pump shows the expected rate"],
+      "correctIndex": 0,
+      "explanation": "Safe evaluation integrates the client's response with laboratory or physiologic trends, access and device performance, delivered therapy, and ongoing risk. No single technology or signature proves safety."
+    }
+  ]
+}

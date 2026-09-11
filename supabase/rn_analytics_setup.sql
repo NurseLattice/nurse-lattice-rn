@@ -1,5 +1,5 @@
--- RN Quest anonymous usage analytics and owner-only daily summary.
--- Run once in the new RN Quest project's trusted Supabase SQL Editor.
+-- NurseLattice RN Quest anonymous usage analytics and owner-only daily summary.
+-- Run once in the dedicated NurseLattice RN Quest project's trusted Supabase SQL Editor.
 
 begin;
 
@@ -22,7 +22,7 @@ create table if not exists public.rn_analytics_events (
 );
 
 comment on table public.rn_analytics_events is
-'Anonymous RN Quest usage events. Contains no account ID, email, score, answer, XP, streak, study date, URL, referrer URL, or free-form metadata.';
+'Anonymous NurseLattice RN Quest usage events. Contains no account ID, email, score, answer, XP, streak, study date, URL, referrer URL, or free-form metadata.';
 
 create index if not exists rn_analytics_events_occurred_at_idx
 on public.rn_analytics_events (occurred_at desc);
@@ -146,7 +146,7 @@ left join learner_summary using (day)
 order by event_summary.day desc;
 
 comment on view public.rn_analytics_daily_summary is
-'Owner-only daily RN Quest analytics grouped by America/Los_Angeles day. Browser identifiers are anonymous estimates, not verified people.';
+'Owner-only daily NurseLattice RN Quest analytics grouped by America/Los_Angeles day. Browser identifiers are anonymous estimates, not verified people.';
 
 revoke all on table public.rn_analytics_daily_summary from anon, authenticated;
 

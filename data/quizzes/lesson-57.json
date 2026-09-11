@@ -1,0 +1,105 @@
+{
+  "lessonId": 57,
+  "questions": [
+    {
+      "id": "rn-57-q01",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Before giving a scheduled beta blocker, which finding requires the RN to pause and assess further?",
+      "choices": ["Pulse 46/min with dizziness and cool skin", "Blood pressure unchanged from the documented baseline", "The client understands the medication purpose", "The medication label matches the current order"],
+      "correctIndex": 0,
+      "explanation": "Symptomatic bradycardia with poor-perfusion cues may make administration unsafe. The RN should assess rhythm and perfusion, follow ordered parameters, and escalate rather than focus on the schedule alone."
+    },
+    {
+      "id": "rn-57-q02",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client taking an ACE inhibitor develops sudden tongue swelling and difficulty speaking. What is the priority action?",
+      "choices": ["Activate emergency airway assessment and stop further exposure", "Offer water and reassess at the next medication time", "Place the client flat and leave to call the pharmacy", "Document an expected dry cough"],
+      "correctIndex": 0,
+      "explanation": "Tongue or airway swelling may be angioedema and can progress rapidly. The RN prioritizes airway, emergency response, and discontinuation of the suspected medication according to protocol."
+    },
+    {
+      "id": "rn-57-q03",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which medication history makes prescribed sublingual nitroglycerin unsafe until clarified?",
+      "choices": ["Recent use of a phosphodiesterase-5 inhibitor", "Use of acetaminophen yesterday", "A daily multivitamin", "An influenza vaccine last month"],
+      "correctIndex": 0,
+      "explanation": "Phosphodiesterase-5 inhibitors can markedly potentiate nitrate-induced hypotension. The exact agent and timing must be reviewed before nitrate administration."
+    },
+    {
+      "id": "rn-57-q04",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "A client is switching from an ACE inhibitor to sacubitril/valsartan. Which safeguard is essential?",
+      "choices": ["Verify the required 36-hour separation from the ACE inhibitor", "Administer both drugs together for the first dose", "Add a potassium supplement routinely", "Stop monitoring renal function after the switch"],
+      "correctIndex": 0,
+      "explanation": "Concurrent ACE inhibitor and ARNI therapy increases angioedema risk. The last ACE-inhibitor dose and required 36-hour separation must be verified."
+    },
+    {
+      "id": "rn-57-q05",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client taking spironolactone and an ARB develops weakness and an irregular pulse. Which problem has priority?",
+      "choices": ["Possible hyperkalemia", "Expected therapeutic diuresis", "Isolated medication nonadherence", "Normal adjustment to lower sodium intake"],
+      "correctIndex": 0,
+      "explanation": "Both therapies can increase potassium. Weakness and an irregular pulse may indicate a dangerous electrolyte disturbance requiring prompt assessment, ECG and laboratory review."
+    },
+    {
+      "id": "rn-57-q06",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "Which cluster most strongly suggests possible digoxin toxicity?",
+      "choices": ["Nausea, confusion, visual change, bradycardia, and impaired renal function", "Improved appetite, regular pulse, and stable creatinine", "Mild thirst after exercise with a normal rhythm", "Decreased ankle edema after a diuretic"],
+      "correctIndex": 0,
+      "explanation": "Gastrointestinal, neurologic, visual, and rhythm findings are concerning for digoxin toxicity, especially when renal clearance is impaired."
+    },
+    {
+      "id": "rn-57-q07",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which finding best indicates that a loop diuretic is relieving heart-failure congestion without obvious overdiuresis?",
+      "choices": ["Breathing and edema improve while pressure, renal function, electrolytes, and weight trend remain acceptable", "The client urinates once after the dose", "The scale shows the largest possible weight loss", "The potassium level falls below the reference range"],
+      "correctIndex": 0,
+      "explanation": "Effective evaluation integrates symptom and fluid improvement with perfusion, kidney function, electrolytes, and a safe weight trend. Urine output alone does not prove safe decongestion."
+    },
+    {
+      "id": "rn-57-q08",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "A client taking an SGLT2 inhibitor for heart failure reports nausea, abdominal pain, rapid breathing, and severe fatigue during an acute illness. Glucose is only mildly elevated. What should the RN suspect?",
+      "choices": ["Possible ketoacidosis despite modest glucose elevation", "The medication cannot cause concern without severe hyperglycemia", "Expected improvement in heart failure", "Isolated orthostatic hypotension only"],
+      "correctIndex": 0,
+      "explanation": "SGLT2-associated ketoacidosis can occur without marked hyperglycemia. The symptom cluster requires urgent assessment and the prescribed sick-day or emergency pathway."
+    },
+    {
+      "id": "rn-57-q09",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "Which instruction is safest for a client starting an alpha-1 blocker?",
+      "choices": ["Change positions slowly and use fall precautions because early doses may cause orthostatic hypotension", "Stop the drug abruptly whenever dizziness occurs", "Increase potassium intake without discussing other medications", "Take an extra dose when one blood-pressure reading is high"],
+      "correctIndex": 0,
+      "explanation": "Alpha-1 blockers can cause marked first-dose and orthostatic hypotension. Safety teaching includes slow position changes, monitoring, and contacting the care team rather than independently changing doses."
+    },
+    {
+      "id": "rn-57-q10",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which evaluation best determines whether cardiovascular medication therapy is safe and effective?",
+      "choices": ["Trend symptoms, function, perfusion, pressure, rhythm, fluid status, kidney function, electrolytes, adverse effects, and adherence", "Use only the most recent blood-pressure number", "Confirm only that every medication was administered", "Assume success when the client reports no headache"],
+      "correctIndex": 0,
+      "explanation": "Cardiovascular therapy affects several connected systems. Evaluation requires the intended outcome, physiologic trends, toxicity surveillance, and the client's ability to follow the plan."
+    }
+  ]
+}

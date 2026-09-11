@@ -21,7 +21,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 55) throw new Error("Pilot must preserve all eight Client Needs areas and include fifty-five lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 70) throw new Error("Pilot must preserve all eight Client Needs areas and include seventy lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
@@ -549,13 +549,163 @@ if (fiftyFifthLesson.traditionalCourse !== "Pharmacology" || fiftyFifthLesson.nc
 for (const question of fiftyFifthQuiz.questions) {
   if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 55 question must preserve its course and NCLEX tags");
 }
+const fiftySixthLessonItem = curriculum.lessons[55];
+const fiftySixthLesson = JSON.parse(read(fiftySixthLessonItem.lessonFile));
+const fiftySixthQuiz = JSON.parse(read(fiftySixthLessonItem.quizFile));
+if (fiftySixthLessonItem.courseId !== "pharmacology" || fiftySixthLessonItem.course !== "Pharmacology") throw new Error("Lesson 56 must remain in Pharmacology");
+if (!fiftySixthLesson.title.includes("Antibacterial Therapy & Stewardship") || !fiftySixthLesson.html.includes("Start with indication and urgency") || !fiftySixthLesson.html.includes("Obtain the right specimen at the right time") || !fiftySixthLesson.html.includes("Read microbiology as evidence, not an automatic prescription") || !fiftySixthLesson.html.includes("Watch for C. difficile and other superinfection") || !fiftySixthLesson.html.includes("Antibiotic stewardship happens at the bedside")) throw new Error("Lesson 56 antibacterial therapy content is incomplete");
+if (fiftySixthQuiz.questions.length !== 10) throw new Error("Lesson 56 must include ten antibacterial therapy questions");
+if (fiftySixthLesson.traditionalCourse !== "Pharmacology" || fiftySixthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftySixthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 56 must preserve all three content tags");
+for (const question of fiftySixthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 56 question must preserve its course and NCLEX tags");
+}
+const fiftySeventhLessonItem = curriculum.lessons[56];
+const fiftySeventhLesson = JSON.parse(read(fiftySeventhLessonItem.lessonFile));
+const fiftySeventhQuiz = JSON.parse(read(fiftySeventhLessonItem.quizFile));
+if (fiftySeventhLessonItem.courseId !== "pharmacology" || fiftySeventhLessonItem.course !== "Pharmacology") throw new Error("Lesson 57 must remain in Pharmacology");
+if (!fiftySeventhLesson.title.includes("Cardiovascular Medications") || !fiftySeventhLesson.html.includes("Treat the client and the indication—not one number") || !fiftySeventhLesson.html.includes("ACE inhibitor and ARNI require separation") || !fiftySeventhLesson.html.includes("Nitrates reduce myocardial workload and relieve ischemic symptoms") || !fiftySeventhLesson.html.includes("Heart failure therapy has different purposes") || !fiftySeventhLesson.html.includes("Digoxin has a narrow safety margin")) throw new Error("Lesson 57 cardiovascular medication content is incomplete");
+if (fiftySeventhQuiz.questions.length !== 10) throw new Error("Lesson 57 must include ten cardiovascular medication questions");
+if (fiftySeventhLesson.traditionalCourse !== "Pharmacology" || fiftySeventhLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftySeventhLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 57 must preserve all three content tags");
+for (const question of fiftySeventhQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 57 question must preserve its course and NCLEX tags");
+}
+const fiftyEighthLessonItem = curriculum.lessons[57];
+const fiftyEighthLesson = JSON.parse(read(fiftyEighthLessonItem.lessonFile));
+const fiftyEighthQuiz = JSON.parse(read(fiftyEighthLessonItem.quizFile));
+if (fiftyEighthLessonItem.courseId !== "pharmacology" || fiftyEighthLessonItem.course !== "Pharmacology") throw new Error("Lesson 58 must remain in Pharmacology");
+if (!fiftyEighthLesson.title.includes("Anticoagulants, Antiplatelets & Thrombolytics") || !fiftyEighthLesson.html.includes("Match the medication to the clotting pathway") || !fiftyEighthLesson.html.includes("Heparin-induced thrombocytopenia is a clotting emergency") || !fiftyEighthLesson.html.includes("Direct oral anticoagulants require exact product and timing") || !fiftyEighthLesson.html.includes("Neuraxial and procedural safety depends on timing") || !fiftyEighthLesson.html.includes("Respond to bleeding by severity and drug")) throw new Error("Lesson 58 antithrombotic medication content is incomplete");
+if (fiftyEighthQuiz.questions.length !== 10) throw new Error("Lesson 58 must include ten antithrombotic medication questions");
+if (fiftyEighthLesson.traditionalCourse !== "Pharmacology" || fiftyEighthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftyEighthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 58 must preserve all three content tags");
+for (const question of fiftyEighthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 58 question must preserve its course and NCLEX tags");
+}
+const fiftyNinthLessonItem = curriculum.lessons[58];
+const fiftyNinthLesson = JSON.parse(read(fiftyNinthLessonItem.lessonFile));
+const fiftyNinthQuiz = JSON.parse(read(fiftyNinthLessonItem.quizFile));
+if (fiftyNinthLessonItem.courseId !== "pharmacology" || fiftyNinthLessonItem.course !== "Pharmacology") throw new Error("Lesson 59 must remain in Pharmacology");
+if (!fiftyNinthLesson.title.includes("Respiratory Medications & Inhaler Safety") || !fiftyNinthLesson.html.includes("Reliever and controller are clinical roles") || !fiftyNinthLesson.html.includes("A quiet chest can be dangerous") || !fiftyNinthLesson.html.includes("Inhaled corticosteroids control inflammation") || !fiftyNinthLesson.html.includes("Theophylline has a narrow therapeutic range") || !fiftyNinthLesson.html.includes("Device technique determines delivered dose")) throw new Error("Lesson 59 respiratory medication content is incomplete");
+if (fiftyNinthQuiz.questions.length !== 10) throw new Error("Lesson 59 must include ten respiratory medication questions");
+if (fiftyNinthLesson.traditionalCourse !== "Pharmacology" || fiftyNinthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || fiftyNinthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 59 must preserve all three content tags");
+for (const question of fiftyNinthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 59 question must preserve its course and NCLEX tags");
+}
+const sixtiethLessonItem = curriculum.lessons[59];
+const sixtiethLesson = JSON.parse(read(sixtiethLessonItem.lessonFile));
+const sixtiethQuiz = JSON.parse(read(sixtiethLessonItem.quizFile));
+if (sixtiethLessonItem.courseId !== "pharmacology" || sixtiethLessonItem.course !== "Pharmacology") throw new Error("Lesson 60 must remain in Pharmacology");
+if (!sixtiethLesson.title.includes("Diabetes Medications & Insulin Safety") || !sixtiethLesson.html.includes("Start with the whole regimen—not one glucose number") || !sixtiethLesson.html.includes("Type 1 diabetes requires continuous insulin availability") || !sixtiethLesson.html.includes("Insulin is a high-alert medication") || !sixtiethLesson.html.includes("Hypoglycemia is a medication emergency") || !sixtiethLesson.html.includes("SGLT2 inhibitors: benefits with ketosis and volume risks")) throw new Error("Lesson 60 diabetes medication content is incomplete");
+if (sixtiethQuiz.questions.length !== 10) throw new Error("Lesson 60 must include ten diabetes medication questions");
+if (sixtiethLesson.traditionalCourse !== "Pharmacology" || sixtiethLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtiethLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 60 must preserve all three content tags");
+for (const question of sixtiethQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 60 question must preserve its course and NCLEX tags");
+}
+const sixtyFirstLessonItem = curriculum.lessons[60];
+const sixtyFirstLesson = JSON.parse(read(sixtyFirstLessonItem.lessonFile));
+const sixtyFirstQuiz = JSON.parse(read(sixtyFirstLessonItem.quizFile));
+if (sixtyFirstLessonItem.courseId !== "pharmacology" || sixtyFirstLessonItem.course !== "Pharmacology") throw new Error("Lesson 61 must remain in Pharmacology");
+if (!sixtyFirstLesson.title.includes("Thyroid, Adrenal & Pituitary Medications") || !sixtyFirstLesson.html.includes("Think in feedback loops and time courses") || !sixtyFirstLesson.html.includes("Levothyroxine is not a weight-loss drug") || !sixtyFirstLesson.html.includes("Fever or sore throat may signal agranulocytosis") || !sixtyFirstLesson.html.includes("Do not stop chronic glucocorticoids abruptly") || !sixtyFirstLesson.html.includes("Desmopressin reduces free-water excretion")) throw new Error("Lesson 61 endocrine medication content is incomplete");
+if (sixtyFirstQuiz.questions.length !== 10) throw new Error("Lesson 61 must include ten endocrine medication questions");
+if (sixtyFirstLesson.traditionalCourse !== "Pharmacology" || sixtyFirstLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtyFirstLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 61 must preserve all three content tags");
+for (const question of sixtyFirstQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 61 question must preserve its course and NCLEX tags");
+}
+const sixtySecondLessonItem = curriculum.lessons[61];
+const sixtySecondLesson = JSON.parse(read(sixtySecondLessonItem.lessonFile));
+const sixtySecondQuiz = JSON.parse(read(sixtySecondLessonItem.quizFile));
+if (sixtySecondLessonItem.courseId !== "pharmacology" || sixtySecondLessonItem.course !== "Pharmacology") throw new Error("Lesson 62 must remain in Pharmacology");
+if (!sixtySecondLesson.title.includes("Neurologic Medications & Safety") || !sixtySecondLesson.html.includes("Start with the neurologic baseline") || !sixtySecondLesson.html.includes("Do not stop antiseizure medication abruptly") || !sixtySecondLesson.html.includes("Lamotrigine rash can be life-threatening") || !sixtySecondLesson.html.includes("Parkinson medications are time-critical") || !sixtySecondLesson.html.includes("Medication-overuse headache can perpetuate the cycle")) throw new Error("Lesson 62 neurologic medication content is incomplete");
+if (sixtySecondQuiz.questions.length !== 10) throw new Error("Lesson 62 must include ten neurologic medication questions");
+if (sixtySecondLesson.traditionalCourse !== "Pharmacology" || sixtySecondLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtySecondLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 62 must preserve all three content tags");
+for (const question of sixtySecondQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 62 question must preserve its course and NCLEX tags");
+}
+const sixtyThirdLessonItem = curriculum.lessons[62];
+const sixtyThirdLesson = JSON.parse(read(sixtyThirdLessonItem.lessonFile));
+const sixtyThirdQuiz = JSON.parse(read(sixtyThirdLessonItem.quizFile));
+if (sixtyThirdLessonItem.courseId !== "pharmacology" || sixtyThirdLessonItem.course !== "Pharmacology") throw new Error("Lesson 63 must remain in Pharmacology");
+if (!sixtyThirdLesson.title.includes("Psychiatric Medications & Behavioral Safety") || !sixtyThirdLesson.html.includes("Start with safety and the whole person") || !sixtyThirdLesson.html.includes("Activation is not the same as recovery") || !sixtyThirdLesson.html.includes("Serotonin syndrome is a toxic pattern") || !sixtyThirdLesson.html.includes("Lithium has a narrow therapeutic window") || !sixtyThirdLesson.html.includes("Neuroleptic malignant syndrome is an emergency") || !sixtyThirdLesson.html.includes("Clozapine needs continuing ANC and systemic monitoring")) throw new Error("Lesson 63 psychiatric medication content is incomplete");
+if (sixtyThirdQuiz.questions.length !== 10) throw new Error("Lesson 63 must include ten psychiatric medication questions");
+if (sixtyThirdLesson.traditionalCourse !== "Pharmacology" || sixtyThirdLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtyThirdLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 63 must preserve all three content tags");
+for (const question of sixtyThirdQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 63 question must preserve its course and NCLEX tags");
+}
+const sixtyFourthLessonItem = curriculum.lessons[63];
+const sixtyFourthLesson = JSON.parse(read(sixtyFourthLessonItem.lessonFile));
+const sixtyFourthQuiz = JSON.parse(read(sixtyFourthLessonItem.quizFile));
+if (sixtyFourthLessonItem.courseId !== "pharmacology" || sixtyFourthLessonItem.course !== "Pharmacology") throw new Error("Lesson 64 must remain in Pharmacology");
+if (!sixtyFourthLesson.title.includes("Pain Medications & Opioid Safety") || !sixtyFourthLesson.html.includes("Pain relief is more than a number") || !sixtyFourthLesson.html.includes("Sedation can precede respiratory arrest") || !sixtyFourthLesson.html.includes("Count every source of acetaminophen") || !sixtyFourthLesson.html.includes("Only the client presses the PCA button") || !sixtyFourthLesson.html.includes("Naloxone does not end the emergency") || !sixtyFourthLesson.html.includes("Tolerance, dependence, and opioid use disorder are different")) throw new Error("Lesson 64 pain medication and opioid safety content is incomplete");
+if (sixtyFourthQuiz.questions.length !== 10) throw new Error("Lesson 64 must include ten pain medication questions");
+if (sixtyFourthLesson.traditionalCourse !== "Pharmacology" || sixtyFourthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtyFourthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 64 must preserve all three content tags");
+for (const question of sixtyFourthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 64 question must preserve its course and NCLEX tags");
+}
+const sixtyFifthLessonItem = curriculum.lessons[64];
+const sixtyFifthLesson = JSON.parse(read(sixtyFifthLessonItem.lessonFile));
+const sixtyFifthQuiz = JSON.parse(read(sixtyFifthLessonItem.quizFile));
+if (sixtyFifthLessonItem.courseId !== "pharmacology" || sixtyFifthLessonItem.course !== "Pharmacology") throw new Error("Lesson 65 must remain in Pharmacology");
+if (!sixtyFifthLesson.title.includes("Gastrointestinal Medications & Safety") || !sixtyFifthLesson.html.includes("Treat the cause, not just the symptom") || !sixtyFifthLesson.html.includes("Symptom relief can hide deterioration") || !sixtyFifthLesson.html.includes("Metoclopramide requires movement surveillance") || !sixtyFifthLesson.html.includes("Diarrhea treatment begins with hydration and cause") || !sixtyFifthLesson.html.includes("Hepatic encephalopathy: evaluate the brain and the bowel") || !sixtyFifthLesson.html.includes("Medication administration through feeding tubes")) throw new Error("Lesson 65 gastrointestinal medication content is incomplete");
+if (sixtyFifthQuiz.questions.length !== 10) throw new Error("Lesson 65 must include ten gastrointestinal medication questions");
+if (sixtyFifthLesson.traditionalCourse !== "Pharmacology" || sixtyFifthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtyFifthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 65 must preserve all three content tags");
+for (const question of sixtyFifthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 65 question must preserve its course and NCLEX tags");
+}
+const sixtySixthLessonItem = curriculum.lessons[65];
+const sixtySixthLesson = JSON.parse(read(sixtySixthLessonItem.lessonFile));
+const sixtySixthQuiz = JSON.parse(read(sixtySixthLessonItem.quizFile));
+if (sixtySixthLessonItem.courseId !== "pharmacology" || sixtySixthLessonItem.course !== "Pharmacology") throw new Error("Lesson 66 must remain in Pharmacology");
+if (!sixtySixthLesson.title.includes("Maternal–Newborn Medications & Safety") || !sixtySixthLesson.html.includes("Start with indication, timing, and two-patient assessment") || !sixtySixthLesson.html.includes("Oxytocin is a high-alert titrated medication") || !sixtySixthLesson.html.includes("Absent reflexes plus slow breathing is an emergency") || !sixtySixthLesson.html.includes("Match the uterotonic to the client") || !sixtySixthLesson.html.includes("Rh(D) immune globulin prevents sensitization") || !sixtySixthLesson.html.includes("Newborn prophylaxis requires exact identity and timing")) throw new Error("Lesson 66 maternal-newborn medication content is incomplete");
+if (sixtySixthQuiz.questions.length !== 10) throw new Error("Lesson 66 must include ten maternal-newborn medication questions");
+if (sixtySixthLesson.traditionalCourse !== "Pharmacology" || sixtySixthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtySixthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 66 must preserve all three content tags");
+for (const question of sixtySixthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 66 question must preserve its course and NCLEX tags");
+}
+const sixtySeventhLessonItem = curriculum.lessons[66];
+const sixtySeventhLesson = JSON.parse(read(sixtySeventhLessonItem.lessonFile));
+const sixtySeventhQuiz = JSON.parse(read(sixtySeventhLessonItem.quizFile));
+if (sixtySeventhLessonItem.courseId !== "pharmacology" || sixtySeventhLessonItem.course !== "Pharmacology") throw new Error("Lesson 67 must remain in Pharmacology");
+if (!sixtySeventhLesson.title.includes("Pediatric Medication Dosing & Safety") || !sixtySeventhLesson.html.includes("Start with a measured weight in kilograms") || !sixtySeventhLesson.html.includes("Read the dosing expression word by word") || !sixtySeventhLesson.html.includes("The dose and the volume are not interchangeable") || !sixtySeventhLesson.html.includes("Decimals can create tenfold errors") || !sixtySeventhLesson.html.includes("Know important pediatric restrictions") || !sixtySeventhLesson.html.includes("High-alert medications need pediatric-specific safeguards")) throw new Error("Lesson 67 pediatric medication content is incomplete");
+if (sixtySeventhQuiz.questions.length !== 10) throw new Error("Lesson 67 must include ten pediatric medication questions");
+if (sixtySeventhLesson.traditionalCourse !== "Pharmacology" || sixtySeventhLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtySeventhLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 67 must preserve all three content tags");
+for (const question of sixtySeventhQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 67 question must preserve its course and NCLEX tags");
+}
+const sixtyEighthLessonItem = curriculum.lessons[67];
+const sixtyEighthLesson = JSON.parse(read(sixtyEighthLessonItem.lessonFile));
+const sixtyEighthQuiz = JSON.parse(read(sixtyEighthLessonItem.quizFile));
+if (sixtyEighthLessonItem.courseId !== "pharmacology" || sixtyEighthLessonItem.course !== "Pharmacology") throw new Error("Lesson 68 must remain in Pharmacology");
+if (!sixtyEighthLesson.title.includes("Geriatric Medication Safety & Deprescribing") || !sixtyEighthLesson.html.includes("Start with the person, not the birth date") || !sixtyEighthLesson.html.includes("A normal creatinine can hide reduced clearance") || !sixtyEighthLesson.html.includes("Beers Criteria is a screening tool, not a blacklist") || !sixtyEighthLesson.html.includes("Delirium is an emergency clue, not a normal aging change") || !sixtyEighthLesson.html.includes("Deprescribing is a monitored clinical intervention") || !sixtyEighthLesson.html.includes("Stopping a medicine can cause harm too")) throw new Error("Lesson 68 geriatric medication content is incomplete");
+if (sixtyEighthQuiz.questions.length !== 10) throw new Error("Lesson 68 must include ten geriatric medication questions");
+if (sixtyEighthLesson.traditionalCourse !== "Pharmacology" || sixtyEighthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtyEighthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 68 must preserve all three content tags");
+for (const question of sixtyEighthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 68 question must preserve its course and NCLEX tags");
+}
+const sixtyNinthLessonItem = curriculum.lessons[68];
+const sixtyNinthLesson = JSON.parse(read(sixtyNinthLessonItem.lessonFile));
+const sixtyNinthQuiz = JSON.parse(read(sixtyNinthLessonItem.quizFile));
+if (sixtyNinthLessonItem.courseId !== "pharmacology" || sixtyNinthLessonItem.course !== "Pharmacology") throw new Error("Lesson 69 must remain in Pharmacology");
+if (!sixtyNinthLesson.title.includes("Blood Products & Transfusion Safety") || !sixtyNinthLesson.html.includes("Match the component to the deficit") || !sixtyNinthLesson.html.includes("Identity is the final bedside barrier") || !sixtyNinthLesson.html.includes("Stop the transfusion first") || !sixtyNinthLesson.html.includes("TACO and TRALI both cause respiratory distress") || !sixtyNinthLesson.html.includes("Massive transfusion is a resuscitation system") || !sixtyNinthLesson.html.includes("Delayed reactions can appear after discharge")) throw new Error("Lesson 69 blood-product and transfusion-safety content is incomplete");
+if (sixtyNinthQuiz.questions.length !== 10) throw new Error("Lesson 69 must include ten blood-product and transfusion-safety questions");
+if (sixtyNinthLesson.traditionalCourse !== "Pharmacology" || sixtyNinthLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || sixtyNinthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 69 must preserve all three content tags");
+for (const question of sixtyNinthQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 69 question must preserve its course and NCLEX tags");
+}
+const seventiethLessonItem = curriculum.lessons[69];
+const seventiethLesson = JSON.parse(read(seventiethLessonItem.lessonFile));
+const seventiethQuiz = JSON.parse(read(seventiethLessonItem.quizFile));
+if (seventiethLessonItem.courseId !== "pharmacology" || seventiethLessonItem.course !== "Pharmacology") throw new Error("Lesson 70 must remain in Pharmacology");
+if (!seventiethLesson.title.includes("Adverse Drug Reactions, Allergies, Interactions & Medication Reconciliation") || !seventiethLesson.html.includes("Name the event accurately") || !seventiethLesson.html.includes("Anaphylaxis is a clinical emergency") || !seventiethLesson.html.includes("Interactions are more than two prescriptions") || !seventiethLesson.html.includes("Build the best possible medication history") || !seventiethLesson.html.includes("Reconciliation means compare, decide, and communicate") || !seventiethLesson.html.includes("Withdrawal and rebound are medication harms too")) throw new Error("Lesson 70 adverse-reaction and medication-reconciliation content is incomplete");
+if (seventiethQuiz.questions.length !== 10) throw new Error("Lesson 70 must include ten adverse-reaction and medication-reconciliation questions");
+if (seventiethLesson.traditionalCourse !== "Pharmacology" || seventiethLesson.nclexClientNeeds !== "Pharmacological and Parenteral Therapies" || seventiethLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 70 must preserve all three content tags");
+for (const question of seventiethQuiz.questions) {
+  if (question.traditionalCourse !== "Pharmacology" || question.nclexClientNeeds !== "Pharmacological and Parenteral Therapies") throw new Error("Each Lesson 70 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
 if (!read("js/app.js").includes('document.createElement("details")') || !read("js/app.js").includes("phaseDisclosureState") || !read("js/app.js").includes("new Set([currentPhaseIndex])")) throw new Error("Course phases must be collapsible with the current phase expanded by default");
 if (!read("css/styles.css").includes(".course-phase[open] .phase-chevron") || !read("css/styles.css").includes(".course-phase-summary:focus-visible")) throw new Error("Course phase disclosure states must have visible, accessible styling");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 550) throw new Error("Expected 550 pilot questions after adding Lesson 55");
+if (questionIds.size !== 700) throw new Error("Expected 700 pilot questions after adding Lesson 70");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json", "supabase/rn_analytics_setup.sql", "docs/ANONYMOUS_ANALYTICS.md"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -579,4 +729,4 @@ if (!index.includes('id="anonymousAnalyticsStatus"') || !index.includes('id="ano
 if (!read("js/app.js").includes('RNAnalytics.track("lesson_open"') || !read("js/app.js").includes('RNAnalytics.track("lesson_quiz_complete"')) throw new Error("Learning analytics event hooks are incomplete");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "NurseLattice RN Quest" || manifest.short_name !== "NurseLattice RN" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 5 Pharmacology lessons, 550 questions, and version parity.");
+console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 20 Pharmacology lessons, 700 questions, and version parity.");

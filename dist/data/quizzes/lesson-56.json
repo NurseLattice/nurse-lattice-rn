@@ -1,0 +1,105 @@
+{
+  "lessonId": 56,
+  "questions": [
+    {
+      "id": "rn-56-q01",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A stable client has orders for blood cultures and a first dose of IV antibiotics for suspected infection. Which action is best?",
+      "choices": ["Collect the ordered cultures correctly, then administer the antibiotic promptly", "Give the antibiotic and collect cultures after several doses", "Wait for final culture results before giving any therapy", "Collect one culture from an existing IV bag"],
+      "correctIndex": 0,
+      "explanation": "When feasible, cultures are collected before antibiotics because treatment can reduce organism recovery. Correct collection should not create a dangerous delay in urgent therapy."
+    },
+    {
+      "id": "rn-56-q02",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "A urine culture grows bacteria in a client without urinary symptoms. Which interpretation is safest?",
+      "choices": ["The result must be interpreted with symptoms, collection quality, and clinical context", "Any bacterial growth proves symptomatic infection", "The broadest antibiotic should be started immediately", "A positive culture always identifies the cause of fever"],
+      "correctIndex": 0,
+      "explanation": "Culture growth may represent infection, colonization, or contamination. The result does not automatically establish that the organism is causing disease or requires treatment."
+    },
+    {
+      "id": "rn-56-q03",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which finding during a beta-lactam infusion most strongly suggests anaphylaxis?",
+      "choices": ["Hives, wheezing, facial swelling, and hypotension", "Mild nausea without other findings", "Temporary metallic taste", "Localized bruising from a previous venipuncture"],
+      "correctIndex": 0,
+      "explanation": "Rapid skin, airway, respiratory, and circulatory findings form a high-risk anaphylaxis pattern requiring the drug to be stopped and emergency treatment activated."
+    },
+    {
+      "id": "rn-56-q04",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Generate solutions",
+      "question": "Which information is most important when sending a serum aminoglycoside level?",
+      "choices": ["The exact antibiotic administration and specimen collection times", "The client's preferred pharmacy", "The color of the infusion tubing", "The time the meal tray arrived"],
+      "correctIndex": 0,
+      "explanation": "Drug-level interpretation depends on its timing relative to the dose. Accurate dose and collection times are necessary to avoid unsafe dosing decisions."
+    },
+    {
+      "id": "rn-56-q05",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Analyze cues",
+      "question": "During a vancomycin infusion, a client develops diffuse flushing and itching but has no airway symptoms. What should the RN recognize?",
+      "choices": ["A possible rate-related infusion reaction that requires stopping or slowing per protocol and reassessment", "Proof that all glycopeptide antibiotics are permanently contraindicated", "An expected effect that never requires intervention", "Evidence that the antibiotic is treating the infection"],
+      "correctIndex": 0,
+      "explanation": "Flushing and itching during vancomycin may reflect an infusion reaction. The RN assesses severity and airway, adjusts or stops as directed, and notifies the appropriate clinician rather than assuming either harmlessness or an IgE allergy."
+    },
+    {
+      "id": "rn-56-q06",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Prioritize hypotheses",
+      "question": "A client receiving broad-spectrum antibiotics develops frequent watery diarrhea, abdominal pain, fever, and leukocytosis. Which problem has priority?",
+      "choices": ["Possible Clostridioides difficile infection", "Expected improvement of the original infection", "Simple dietary intolerance only", "A harmless change in normal flora"],
+      "correctIndex": 0,
+      "explanation": "New significant diarrhea with systemic and abdominal findings during antibiotic exposure suggests possible C. difficile infection and requires prompt assessment, precautions, and testing per policy."
+    },
+    {
+      "id": "rn-56-q07",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Culture results identify a susceptible organism, and the stable client is improving on broad empiric therapy. Which stewardship action is appropriate?",
+      "choices": ["Prompt review for narrower targeted therapy, route, dose, and duration", "Continue every empiric antibiotic indefinitely", "Add another broad-spectrum antibiotic", "Ignore culture results because symptoms improved"],
+      "correctIndex": 0,
+      "explanation": "New microbiology and clinical response should trigger reassessment. Narrowing to effective targeted therapy can reduce toxicity, C. difficile risk, and selection pressure."
+    },
+    {
+      "id": "rn-56-q08",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Recognize cues",
+      "question": "Which new finding is most concerning in a client receiving an aminoglycoside?",
+      "choices": ["Tinnitus, vertigo, and rising creatinine", "Improved appetite and lower fever", "A normal respiratory rate", "Resolution of localized redness"],
+      "correctIndex": 0,
+      "explanation": "Hearing or vestibular symptoms plus worsening renal function suggest aminoglycoside ototoxicity and nephrotoxicity and require prompt review."
+    },
+    {
+      "id": "rn-56-q09",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Take action",
+      "question": "A client says, “I am allergic to penicillin,” before the first dose. What should the RN do?",
+      "choices": ["Hold the dose while obtaining reaction details and clarifying through the approved pathway", "Administer it because all reported allergies are intolerances", "Delete the allergy if it occurred many years ago", "Replace the ordered drug independently"],
+      "correctIndex": 0,
+      "explanation": "The RN needs the specific drug, timing, manifestations, severity, and later tolerance history. The dose should not proceed through unresolved risk, but the RN does not independently remove the label or substitute therapy."
+    },
+    {
+      "id": "rn-56-q10",
+      "traditionalCourse": "Pharmacology",
+      "nclexClientNeeds": "Pharmacological and Parenteral Therapies",
+      "clinicalJudgmentStep": "Evaluate outcomes",
+      "question": "Which evaluation best reflects effective and safe antibacterial therapy?",
+      "choices": ["The infection findings improve while organ function, adverse effects, cultures, spectrum, route, and duration are reassessed", "The medication administration record shows every dose as complete", "The antibiotic remains broad even after an organism is identified", "The client has no fever after one dose"],
+      "correctIndex": 0,
+      "explanation": "Evaluation combines clinical response with microbiology, toxicity, organ function, administration reliability, and stewardship review. Task completion or one isolated finding is insufficient."
+    }
+  ]
+}

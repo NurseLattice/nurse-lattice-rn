@@ -58,7 +58,7 @@ async function request(relative, extra = {}) {
   await lifetime("install");
   assert.equal(skipped, false, "An update must not interrupt a quiz");
   const current = [...stores.keys()][0];
-  assert.equal(stores.get(current).size, 122, "Shell, analytics, roadmap, all 55 lessons and 55 banks must be pre-cached");
+  assert.equal(stores.get(current).size, 152, "Shell, analytics, roadmap, all 70 lessons and 70 banks must be pre-cached");
   stores.set("another-app-v1", new Map());
   stores.set("rn-quest-v0.14.0", new Map());
   stores.set("rn-quest-/other-rn-app/-v0.14.0", new Map());
@@ -73,12 +73,12 @@ async function request(relative, extra = {}) {
   assert.equal(await request("version.json"), undefined, "Version checks must reach the network");
   const missing = await request("missing.json");
   assert.equal(missing.status, 404);
-  assert.equal(stores.get(current).size, 122, "Do not cache failed or unknown responses");
+  assert.equal(stores.get(current).size, 152, "Do not cache failed or unknown responses");
   offline = true;
-  const quiz = await request("data/quizzes/lesson-55.json?v=0.58.0");
+  const quiz = await request("data/quizzes/lesson-70.json?v=0.73.0");
   assert.equal((await quiz.json()).questions.length, 10);
   const page = await request("./", { mode: "navigate" });
-  assert.ok((await page.text()).includes("NurseLattice RN Quest v0.58.0"));
+  assert.ok((await page.text()).includes("NurseLattice RN Quest v0.73.0"));
   handlers.message({ data: { type: "SKIP_WAITING" } });
   assert.ok(skipped, "Only an explicit update action skips waiting");
   console.log("Service-worker checks passed: full offline coverage, cache isolation, failed-response exclusion and opt-in updates.");

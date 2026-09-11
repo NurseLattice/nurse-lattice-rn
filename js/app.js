@@ -58,8 +58,9 @@ function initializeTheme() {
 function syncThemeButton() {
   const dark = document.documentElement.dataset.theme === "dark";
   const button = document.getElementById("themeToggle");
-  button.textContent = dark ? "☀" : "☾";
+  button.textContent = dark ? "☀ Light" : "☾ Dark";
   button.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+  button.setAttribute("title", dark ? "Switch to light theme" : "Switch to dark theme");
 }
 
 function toggleTheme() {

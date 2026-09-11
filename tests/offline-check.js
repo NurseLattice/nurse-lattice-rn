@@ -75,10 +75,10 @@ async function request(relative, extra = {}) {
   assert.equal(missing.status, 404);
   assert.equal(stores.get(current).size, 152, "Do not cache failed or unknown responses");
   offline = true;
-  const quiz = await request("data/quizzes/lesson-70.json?v=0.73.0");
+  const quiz = await request("data/quizzes/lesson-70.json?v=0.74.0");
   assert.equal((await quiz.json()).questions.length, 10);
   const page = await request("./", { mode: "navigate" });
-  assert.ok((await page.text()).includes("NurseLattice RN Quest v0.73.0"));
+  assert.ok((await page.text()).includes("NurseLattice RN Quest v0.74.0"));
   handlers.message({ data: { type: "SKIP_WAITING" } });
   assert.ok(skipped, "Only an explicit update action skips waiting");
   console.log("Service-worker checks passed: full offline coverage, cache isolation, failed-response exclusion and opt-in updates.");

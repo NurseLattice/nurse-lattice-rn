@@ -1,4 +1,4 @@
-const VERSION = "0.73.0";
+const VERSION = "0.74.0";
 const CACHE_PREFIX = "rn-quest-" + new URL(self.registration.scope).pathname + "-v";
 const CACHE_NAME = CACHE_PREFIX + VERSION;
 const APP_SHELL = ["./", "index.html", "manifest.webmanifest",

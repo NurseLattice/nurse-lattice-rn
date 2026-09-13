@@ -169,6 +169,20 @@ async function loadQuiz(index) {
   return quizCache.get(item.id);
 }
 
+function lessonContent(item, lesson) {
+  if (item.id !== 44) return lesson.html;
+  const nextSection = "<h2>Coronary perfusion must match myocardial demand</h2>";
+  const preloadAfterloadGuide = '<div class="clinical-callout"><b>Preload fills the heart; afterload resists its ejection</b><br>Think of the ventricle as a water pump. Preload is how much the pump fills and stretches before it squeezes. Afterload is the pressure or resistance the pump must overcome to move blood through the outlet.</div>' +
+    '<h3>Connect preload to EDV and venous return</h3><p>Preload occurs at the end of diastole, just before contraction. Strictly, it is myocardial fiber stretch or wall stress created by filling; <b>end-diastolic volume (EDV)</b> and end-diastolic pressure are useful clinical estimates, not perfect synonyms. Venous return is a major determinant: greater return generally increases EDV and preload, while hemorrhage, dehydration, venodilation, or excessive diuresis can reduce them.</p>' +
+    '<p>Within the useful part of the <b>Frank–Starling relationship</b>, increased filling stretches myocardial fibers and can raise contraction force and stroke volume. This response has a limit. A weak or stiff failing ventricle may be on the flatter part of the curve; additional volume then produces little forward-flow benefit while filling pressure, pulmonary congestion, edema, or both worsen.</p>' +
+    '<h3>Connect afterload to ESV and arterial resistance</h3><p>Afterload acts during systolic ejection. The left ventricle must generate enough pressure to open the aortic valve and eject into the arterial system. Aortic pressure, systemic vascular resistance, arterial stiffness, and outflow obstruction all contribute. When afterload rises and contractility does not compensate, less blood is ejected and more remains after contraction, increasing <b>end-systolic volume (ESV)</b>.</p>' +
+    '<p><b>Stroke volume (SV) = EDV − ESV.</b> An EDV of 120 mL and ESV of 50 mL produces an SV of 70 mL. If greater afterload raises ESV to 70 mL while EDV is initially unchanged, SV falls to 50 mL. <b>Ejection fraction (EF) = SV ÷ EDV × 100%.</b> EF is a proportion, so interpret it with the actual volumes and the client’s clinical state.</p>' +
+    '<div class="hemodynamic-compare" role="group" aria-label="Preload and afterload comparison"><p><b>Preload</b><span>Before systole · filling and fiber stretch · closely linked to venous return and EDV · usually raises SV within physiologic limits</span></p><p><b>Afterload</b><span>During systole · resistance to ejection · influenced by aortic pressure and vascular resistance · usually lowers SV and raises ESV when increased</span></p></div>' +
+    '<h3>Apply the distinction to heart failure</h3><p>A client can have both high preload and high afterload. In decompensated heart failure, sodium and water retention and venous congestion can raise filling pressures, while hypertension or vasoconstriction can make ejection more difficult. The combination can reduce forward flow and worsen pulmonary or systemic congestion.</p>' +
+    '<p>Therapies change several variables and are not interchangeable shortcuts. Diuresis and venodilation can reduce excessive filling pressure; arterial vasodilation can reduce resistance to ejection. Nitrates often have prominent venodilating and preload-reducing effects, while renin–angiotensin system therapies can reduce vascular resistance as part of broader heart-failure treatment. The RN assesses the indication and monitors blood pressure, symptoms, lung findings, perfusion, kidney function, electrolytes, and response because excessive preload reduction or vasodilation can cause hypotension and lower stroke volume.</p>';
+  return lesson.html.replace(nextSection, preloadAfterloadGuide + nextSection);
+}
+
 async function openLesson(index) {
   try {
     const requestEpoch = ++navigationEpoch;
@@ -182,7 +196,7 @@ async function openLesson(index) {
     RNAnalytics.track("lesson_open", item.id);
     const body = document.getElementById("lessonBody");
     const courseLabel = item.course ? item.course + " · NCLEX tag: " + lesson.nclexClientNeeds : item.category + " · " + item.weight;
-    body.innerHTML = '<span class="eyebrow">' + courseLabel + '</span><h1 id="lessonTitle">' + lesson.title + "</h1>" + lesson.html + '<p class="source-note">Blueprint source: <a href="https://www.nclex.com/test-plans" target="_blank" rel="noopener noreferrer">2026 NCLEX-RN Test Plan</a>. Educational content last reviewed September 2026.</p>';
+    body.innerHTML = '<span class="lesson-number-badge">Lesson ' + item.id + '</span><span class="eyebrow">' + courseLabel + '</span><h1 id="lessonTitle">' + lesson.title + "</h1>" + lessonContent(item, lesson) + '<p class="source-note">Blueprint source: <a href="https://www.nclex.com/test-plans" target="_blank" rel="noopener noreferrer">2026 NCLEX-RN Test Plan</a>. Educational content last reviewed September 2026.</p>';
     setRoute("lesson");
   } catch (error) {
     console.error(error);

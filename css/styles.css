@@ -126,10 +126,17 @@ h3 { font-size: 1.05rem; line-height: 1.3; }
 
 .back-button { min-height: 44px; margin: 6px 0 18px; padding: 8px 0; border: 0; background: transparent; color: var(--primary); font-weight: 850; }
 .lesson-card { padding: clamp(21px, 5vw, 36px); }
+.lesson-number-badge { display: inline-flex; align-items: center; min-height: 34px; margin-bottom: 13px; padding: 6px 12px; border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: .82rem; font-weight: 900; letter-spacing: .04em; }
 .lesson-card h1 { font-size: clamp(2rem, 7vw, 3.1rem); }
 .lesson-card h2 { margin-top: 30px; }
+.lesson-card h3 { margin-top: 24px; }
 .lesson-card li { margin-bottom: 9px; }
 .lesson-card .clinical-callout { margin: 24px 0; padding: 17px; border-left: 5px solid var(--accent); border-radius: 8px 15px 15px 8px; background: var(--accent-soft); }
+.hemodynamic-compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 22px 0; }
+.hemodynamic-compare p { margin: 0; padding: 16px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface-strong); }
+.hemodynamic-compare b, .hemodynamic-compare span { display: block; }
+.hemodynamic-compare b { margin-bottom: 6px; color: var(--primary); }
+.hemodynamic-compare span { color: var(--muted); font-size: .92rem; }
 .lesson-card .source-note { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
 #lessonQuizButton { margin-top: 14px; }
 
@@ -193,6 +200,7 @@ h3 { font-size: 1.05rem; line-height: 1.3; }
   .phase-header-actions { width: 100%; justify-content: space-between; }
   .phase-status { max-width: 118px; }
   .site-footer { flex-direction: column; }
+  .hemodynamic-compare { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 360px) {

@@ -21,7 +21,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 81) throw new Error("Pilot must preserve all eight Client Needs areas and include eighty-one lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 91) throw new Error("Pilot must preserve all eight Client Needs areas and include ninety-one lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
@@ -816,6 +816,116 @@ if (eightyFirstLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eight
 for (const question of eightyFirstQuiz.questions) {
   if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 81 question must preserve its course and NCLEX tags");
 }
+const eightySecondLessonItem = curriculum.lessons[81];
+const eightySecondLesson = JSON.parse(read(eightySecondLessonItem.lessonFile));
+const eightySecondQuiz = JSON.parse(read(eightySecondLessonItem.quizFile));
+if (eightySecondLessonItem.courseId !== "med-surg-1" || eightySecondLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 82 must remain in Adult Health / Med-Surg I");
+if (eightySecondLessonItem.categoryId !== "risk-reduction" || !curriculum.courses.find(course => course.id === "risk-reduction").lessonIds.includes(82)) throw new Error("Lesson 82 must appear under Reduction of Risk Potential");
+if (!eightySecondLesson.title.includes("Lung Cancer & Thoracic Surgery") || !eightySecondLesson.html.includes("Screening is not diagnostic evaluation") || !eightySecondLesson.html.includes("Diagnosis, staging, and treatment are linked") || !eightySecondLesson.html.includes("Protect clients during bronchoscopy and biopsy") || !eightySecondLesson.html.includes("Postoperative care: breathe, perfuse, mobilize") || !eightySecondLesson.html.includes("Recognize oncologic emergencies")) throw new Error("Lesson 82 lung cancer and thoracic surgery content is incomplete");
+if (eightySecondQuiz.questions.length !== 10) throw new Error("Lesson 82 must include ten lung-cancer and thoracic-surgery questions");
+if (eightySecondLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eightySecondLesson.nclexClientNeeds !== "Reduction of Risk Potential" || eightySecondLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 82 must preserve all three content tags");
+for (const question of eightySecondQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Reduction of Risk Potential") throw new Error("Each Lesson 82 question must preserve its course and NCLEX tags");
+}
+const eightyThirdLessonItem = curriculum.lessons[82];
+const eightyThirdLesson = JSON.parse(read(eightyThirdLessonItem.lessonFile));
+const eightyThirdQuiz = JSON.parse(read(eightyThirdLessonItem.quizFile));
+if (eightyThirdLessonItem.courseId !== "med-surg-1" || eightyThirdLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 83 must remain in Adult Health / Med-Surg I");
+if (eightyThirdLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(83)) throw new Error("Lesson 83 must appear under Physiological Adaptation");
+if (!eightyThirdLesson.title.includes("Acute Kidney Injury & Chronic Kidney Disease") || !eightyThirdLesson.html.includes("AKI is a change over hours to days") || !eightyThirdLesson.html.includes("Find the mechanism: perfusion, parenchyma, or drainage") || !eightyThirdLesson.html.includes("Recognize complications that cannot wait") || !eightyThirdLesson.html.includes("CKD requires chronicity and a cause") || !eightyThirdLesson.html.includes("Slow progression and support self-management")) throw new Error("Lesson 83 AKI and CKD content is incomplete");
+if (eightyThirdQuiz.questions.length !== 10) throw new Error("Lesson 83 must include ten kidney-disorder questions");
+if (eightyThirdLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eightyThirdLesson.nclexClientNeeds !== "Physiological Adaptation" || eightyThirdLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 83 must preserve all three content tags");
+for (const question of eightyThirdQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 83 question must preserve its course and NCLEX tags");
+}
+const eightyFourthLessonItem = curriculum.lessons[83];
+const eightyFourthLesson = JSON.parse(read(eightyFourthLessonItem.lessonFile));
+const eightyFourthQuiz = JSON.parse(read(eightyFourthLessonItem.quizFile));
+if (eightyFourthLessonItem.courseId !== "med-surg-1" || eightyFourthLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 84 must remain in Adult Health / Med-Surg I");
+if (eightyFourthLessonItem.categoryId !== "risk-reduction" || !curriculum.courses.find(course => course.id === "risk-reduction").lessonIds.includes(84)) throw new Error("Lesson 84 must appear under Reduction of Risk Potential");
+if (!eightyFourthLesson.title.includes("Kidney Replacement Therapy") || !eightyFourthLesson.html.includes("Compare the modalities") || !eightyFourthLesson.html.includes("Hemodialysis vascular access is a lifeline") || !eightyFourthLesson.html.includes("PD requires a clean exchange and clear drainage") || !eightyFourthLesson.html.includes("CRRT needs continuous accounting") || !eightyFourthLesson.html.includes("Medication, nutrition, and daily life remain part of treatment")) throw new Error("Lesson 84 kidney replacement content is incomplete");
+if (eightyFourthQuiz.questions.length !== 10) throw new Error("Lesson 84 must include ten kidney replacement therapy questions");
+if (eightyFourthLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eightyFourthLesson.nclexClientNeeds !== "Reduction of Risk Potential" || eightyFourthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 84 must preserve all three content tags");
+for (const question of eightyFourthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Reduction of Risk Potential") throw new Error("Each Lesson 84 question must preserve its course and NCLEX tags");
+}
+const eightyFifthLessonItem = curriculum.lessons[84];
+const eightyFifthLesson = JSON.parse(read(eightyFifthLessonItem.lessonFile));
+const eightyFifthQuiz = JSON.parse(read(eightyFifthLessonItem.quizFile));
+if (eightyFifthLessonItem.courseId !== "med-surg-1" || eightyFifthLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 85 must remain in Adult Health / Med-Surg I");
+if (eightyFifthLessonItem.categoryId !== "safety-infection" || !curriculum.courses.find(course => course.id === "safety-infection").lessonIds.includes(85)) throw new Error("Lesson 85 must appear under Safety and Infection Prevention and Control");
+if (!eightyFifthLesson.title.includes("Urinary Tract Infection, Pyelonephritis & Obstructive Uropathy") || !eightyFifthLesson.html.includes("Asymptomatic bacteriuria is not automatically infection") || !eightyFifthLesson.html.includes("Pyelonephritis requires a severity check") || !eightyFifthLesson.html.includes("Obstruction changes the plan") || !eightyFifthLesson.html.includes("Prevent catheter-associated UTI") || !eightyFifthLesson.html.includes("Support treatment and safe discharge")) throw new Error("Lesson 85 urinary infection and obstruction content is incomplete");
+if (eightyFifthQuiz.questions.length !== 10) throw new Error("Lesson 85 must include ten urinary-disorder questions");
+if (eightyFifthLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eightyFifthLesson.nclexClientNeeds !== "Safety and Infection Prevention and Control" || eightyFifthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 85 must preserve all three content tags");
+for (const question of eightyFifthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Safety and Infection Prevention and Control") throw new Error("Each Lesson 85 question must preserve its course and NCLEX tags");
+}
+const eightySixthLessonItem = curriculum.lessons[85];
+const eightySixthLesson = JSON.parse(read(eightySixthLessonItem.lessonFile));
+const eightySixthQuiz = JSON.parse(read(eightySixthLessonItem.quizFile));
+if (eightySixthLessonItem.courseId !== "med-surg-1" || eightySixthLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 86 must remain in Adult Health / Med-Surg I");
+if (eightySixthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(86)) throw new Error("Lesson 86 must appear under Physiological Adaptation");
+if (!eightySixthLesson.title.includes("Glomerular Disease") || !eightySixthLesson.html.includes("Two useful patterns, not two final diagnoses") || !eightySixthLesson.html.includes("Nephritic deterioration may be time-sensitive") || !eightySixthLesson.html.includes("Nephrotic complications extend beyond edema") || !eightySixthLesson.html.includes("Kidney biopsy: prevent and detect bleeding") || !eightySixthLesson.html.includes("Evaluate treatment and support daily life")) throw new Error("Lesson 86 glomerular disease content is incomplete");
+if (eightySixthQuiz.questions.length !== 10) throw new Error("Lesson 86 must include ten glomerular-disease questions");
+if (eightySixthLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eightySixthLesson.nclexClientNeeds !== "Physiological Adaptation" || eightySixthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 86 must preserve all three content tags");
+for (const question of eightySixthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 86 question must preserve its course and NCLEX tags");
+}
+const eightySeventhLessonItem = curriculum.lessons[86];
+const eightySeventhLesson = JSON.parse(read(eightySeventhLessonItem.lessonFile));
+const eightySeventhQuiz = JSON.parse(read(eightySeventhLessonItem.quizFile));
+if (eightySeventhLessonItem.courseId !== "med-surg-1" || eightySeventhLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 87 must remain in Adult Health / Med-Surg I");
+if (eightySeventhLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(87)) throw new Error("Lesson 87 must appear under Physiological Adaptation");
+if (!eightySeventhLesson.title.includes("Diabetes Mellitus") || !eightySeventhLesson.html.includes("Read glucose data as a pattern") || !eightySeventhLesson.html.includes("Hypoglycemia requires immediate action") || !eightySeventhLesson.html.includes("Coordinate inpatient care with nutrition") || !eightySeventhLesson.html.includes("Sick days need a written plan") || !eightySeventhLesson.html.includes("Prevent complications across organ systems")) throw new Error("Lesson 87 diabetes content is incomplete");
+if (eightySeventhQuiz.questions.length !== 10) throw new Error("Lesson 87 must include ten diabetes questions");
+if (eightySeventhLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eightySeventhLesson.nclexClientNeeds !== "Physiological Adaptation" || eightySeventhLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 87 must preserve all three content tags");
+for (const question of eightySeventhQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 87 question must preserve its course and NCLEX tags");
+}
+const eightyEighthLessonItem = curriculum.lessons[87];
+const eightyEighthLesson = JSON.parse(read(eightyEighthLessonItem.lessonFile));
+const eightyEighthQuiz = JSON.parse(read(eightyEighthLessonItem.quizFile));
+if (eightyEighthLessonItem.id !== 88 || eightyEighthLessonItem.courseId !== "med-surg-1" || eightyEighthLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 88 must remain in Adult Health / Med-Surg I");
+if (eightyEighthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(88)) throw new Error("Lesson 88 must appear under Physiological Adaptation");
+if (!eightyEighthLesson.title.includes("Diabetic Ketoacidosis") || !eightyEighthLesson.html.includes("Why the crises differ") || !eightyEighthLesson.html.includes("Restore perfusion without causing overload") || !eightyEighthLesson.html.includes("Potassium safety comes before insulin speed") || !eightyEighthLesson.html.includes("Insulin resolves ketogenesis") || !eightyEighthLesson.html.includes("Transition safely after stabilization")) throw new Error("Lesson 88 DKA and HHS content is incomplete");
+if (eightyEighthQuiz.lessonId !== 88 || eightyEighthQuiz.questions.length !== 10) throw new Error("Lesson 88 must include ten DKA and HHS questions");
+if (eightyEighthLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eightyEighthLesson.nclexClientNeeds !== "Physiological Adaptation" || eightyEighthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 88 must preserve all three content tags");
+for (const question of eightyEighthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 88 question must preserve its course and NCLEX tags");
+}
+const eightyNinthLessonItem = curriculum.lessons[88];
+const eightyNinthLesson = JSON.parse(read(eightyNinthLessonItem.lessonFile));
+const eightyNinthQuiz = JSON.parse(read(eightyNinthLessonItem.quizFile));
+if (eightyNinthLessonItem.id !== 89 || eightyNinthLessonItem.courseId !== "med-surg-1" || eightyNinthLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 89 must remain in Adult Health / Med-Surg I");
+if (eightyNinthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(89)) throw new Error("Lesson 89 must appear under Physiological Adaptation");
+if (!eightyNinthLesson.title.includes("Thyroid Disorders") || !eightyNinthLesson.html.includes("Thyroid storm: a clinical emergency") || !eightyNinthLesson.html.includes("Severe decompensated hypothyroidism") || !eightyNinthLesson.html.includes("Definitive therapy and thyroidectomy safety") || !eightyNinthLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 89 thyroid content is incomplete");
+if (eightyNinthQuiz.lessonId !== 89 || eightyNinthQuiz.questions.length !== 10) throw new Error("Lesson 89 must include ten thyroid questions");
+if (eightyNinthLesson.traditionalCourse !== "Adult Health / Med-Surg I" || eightyNinthLesson.nclexClientNeeds !== "Physiological Adaptation" || eightyNinthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 89 must preserve all three content tags");
+for (const question of eightyNinthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 89 question must preserve its course and NCLEX tags");
+}
+const ninetiethLessonItem = curriculum.lessons[89];
+const ninetiethLesson = JSON.parse(read(ninetiethLessonItem.lessonFile));
+const ninetiethQuiz = JSON.parse(read(ninetiethLessonItem.quizFile));
+if (ninetiethLessonItem.id !== 90 || ninetiethLessonItem.courseId !== "med-surg-1" || ninetiethLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 90 must remain in Adult Health / Med-Surg I");
+if (ninetiethLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(90)) throw new Error("Lesson 90 must appear under Physiological Adaptation");
+if (!ninetiethLesson.title.includes("Adrenal Disorders") || !ninetiethLesson.html.includes("Adrenal crisis: recognize shock risk now") || !ninetiethLesson.html.includes("Long-term replacement and sick-day safety") || !ninetiethLesson.html.includes("Recognize cortisol excess") || !ninetiethLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 90 adrenal content is incomplete");
+if (ninetiethQuiz.lessonId !== 90 || ninetiethQuiz.questions.length !== 10) throw new Error("Lesson 90 must include ten adrenal questions");
+if (ninetiethLesson.traditionalCourse !== "Adult Health / Med-Surg I" || ninetiethLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetiethLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 90 must preserve all three content tags");
+for (const question of ninetiethQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 90 question must preserve its course and NCLEX tags");
+}
+const ninetyFirstLessonItem = curriculum.lessons[90];
+const ninetyFirstLesson = JSON.parse(read(ninetyFirstLessonItem.lessonFile));
+const ninetyFirstQuiz = JSON.parse(read(ninetyFirstLessonItem.quizFile));
+if (ninetyFirstLessonItem.id !== 91 || ninetyFirstLessonItem.courseId !== "med-surg-1" || ninetyFirstLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 91 must remain in Adult Health / Med-Surg I");
+if (ninetyFirstLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(91)) throw new Error("Lesson 91 must appear under Physiological Adaptation");
+if (!ninetyFirstLesson.title.includes("Pituitary Water-Balance Disorders") || !ninetyFirstLesson.html.includes("AVP deficiency: protect water balance") || !ninetyFirstLesson.html.includes("SIAD: identify dangerous hypotonic hyponatremia") || !ninetyFirstLesson.html.includes("After pituitary surgery, expect changing patterns") || !ninetyFirstLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 91 pituitary water-balance content is incomplete");
+if (ninetyFirstQuiz.lessonId !== 91 || ninetyFirstQuiz.questions.length !== 10) throw new Error("Lesson 91 must include ten water-balance questions");
+if (ninetyFirstLesson.traditionalCourse !== "Adult Health / Med-Surg I" || ninetyFirstLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetyFirstLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 91 must preserve all three content tags");
+for (const question of ninetyFirstQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 91 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
@@ -824,7 +934,7 @@ if (!read("css/styles.css").includes(".course-phase[open] .phase-chevron") || !r
 if (!index.includes('id="themeToggle" class="floating-theme-toggle"') || !read("css/styles.css").includes(".floating-theme-toggle { position: fixed") || !read("css/styles.css").includes("safe-area-inset-top") || !read("js/app.js").includes('dark ? "☀ Light" : "☾ Dark"')) throw new Error("Theme control must remain fixed at the upper-right with clear Light and Dark labels");
 if (!appSource.includes('<span class="lesson-number-badge">Lesson ') || !read("css/styles.css").includes(".lesson-number-badge")) throw new Error("Every opened lesson must display its lesson number in the main lesson body");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 810) throw new Error("Expected 810 pilot questions after adding Lesson 81");
+if (questionIds.size !== 910) throw new Error("Expected 910 pilot questions after adding Lesson 91");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json", "supabase/rn_analytics_setup.sql", "docs/ANONYMOUS_ANALYTICS.md"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -848,4 +958,4 @@ if (!index.includes('id="anonymousAnalyticsStatus"') || !index.includes('id="ano
 if (!read("js/app.js").includes('RNAnalytics.track("lesson_open"') || !read("js/app.js").includes('RNAnalytics.track("lesson_quiz_complete"')) throw new Error("Learning analytics event hooks are incomplete");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "NurseLattice RN Quest" || manifest.short_name !== "NurseLattice RN" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 20 Pharmacology lessons, 11 Med-Surg I lessons, 810 questions, and version parity.");
+console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 20 Pharmacology lessons, 21 Med-Surg I lessons, 910 questions, and version parity.");

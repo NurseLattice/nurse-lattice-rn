@@ -21,7 +21,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 91) throw new Error("Pilot must preserve all eight Client Needs areas and include ninety-one lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 102) throw new Error("Pilot must preserve all eight Client Needs areas and include one hundred two lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
@@ -926,6 +926,127 @@ if (ninetyFirstLesson.traditionalCourse !== "Adult Health / Med-Surg I" || ninet
 for (const question of ninetyFirstQuiz.questions) {
   if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 91 question must preserve its course and NCLEX tags");
 }
+const ninetySecondLessonItem = curriculum.lessons[91];
+const ninetySecondLesson = JSON.parse(read(ninetySecondLessonItem.lessonFile));
+const ninetySecondQuiz = JSON.parse(read(ninetySecondLessonItem.quizFile));
+if (ninetySecondLessonItem.id !== 92 || ninetySecondLessonItem.courseId !== "med-surg-1" || ninetySecondLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 92 must remain in Adult Health / Med-Surg I");
+if (ninetySecondLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(92)) throw new Error("Lesson 92 must appear under Physiological Adaptation");
+if (!ninetySecondLesson.title.includes("Upper GI Disorders") || !ninetySecondLesson.html.includes("GERD: distinguish typical symptoms") || !ninetySecondLesson.html.includes("Peptic ulcer disease: treat the cause") || !ninetySecondLesson.html.includes("Upper GI bleeding: stabilize before the scope") || !ninetySecondLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 92 upper GI content is incomplete");
+if (ninetySecondQuiz.lessonId !== 92 || ninetySecondQuiz.questions.length !== 10) throw new Error("Lesson 92 must include ten upper GI questions");
+if (ninetySecondLesson.traditionalCourse !== "Adult Health / Med-Surg I" || ninetySecondLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetySecondLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 92 must preserve all three content tags");
+for (const question of ninetySecondQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 92 question must preserve its course and NCLEX tags");
+}
+const ninetyThirdLessonItem = curriculum.lessons[92];
+const ninetyThirdLesson = JSON.parse(read(ninetyThirdLessonItem.lessonFile));
+const ninetyThirdQuiz = JSON.parse(read(ninetyThirdLessonItem.quizFile));
+if (ninetyThirdLessonItem.id !== 93 || ninetyThirdLessonItem.courseId !== "med-surg-1" || ninetyThirdLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 93 must remain in Adult Health / Med-Surg I");
+if (ninetyThirdLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(93)) throw new Error("Lesson 93 must appear under Physiological Adaptation");
+if (!ninetyThirdLesson.title.includes("Lower GI Disorders") || !ninetyThirdLesson.html.includes("Bowel obstruction: assess the cause") || !ninetyThirdLesson.html.includes("IBD: identify inflammation") || !ninetyThirdLesson.html.includes("Diverticulitis: severity guides treatment") || !ninetyThirdLesson.html.includes("Lower GI bleeding: stabilize before localization") || !ninetyThirdLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 93 lower GI content is incomplete");
+if (ninetyThirdQuiz.lessonId !== 93 || ninetyThirdQuiz.questions.length !== 10) throw new Error("Lesson 93 must include ten lower GI questions");
+if (ninetyThirdLesson.traditionalCourse !== "Adult Health / Med-Surg I" || ninetyThirdLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetyThirdLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 93 must preserve all three content tags");
+for (const question of ninetyThirdQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 93 question must preserve its course and NCLEX tags");
+}
+const ninetyFourthLessonItem = curriculum.lessons[93];
+const ninetyFourthLesson = JSON.parse(read(ninetyFourthLessonItem.lessonFile));
+const ninetyFourthQuiz = JSON.parse(read(ninetyFourthLessonItem.quizFile));
+if (ninetyFourthLessonItem.id !== 94 || ninetyFourthLessonItem.courseId !== "med-surg-1" || ninetyFourthLessonItem.course !== "Adult Health / Med-Surg I") throw new Error("Lesson 94 must complete Adult Health / Med-Surg I");
+if (ninetyFourthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(94)) throw new Error("Lesson 94 must appear under Physiological Adaptation");
+if (!ninetyFourthLesson.title.includes("Hepatobiliary & Pancreatic Disorders") || !ninetyFourthLesson.html.includes("Decompensated cirrhosis: watch the complications") || !ninetyFourthLesson.html.includes("Biliary disease: infection plus obstruction") || !ninetyFourthLesson.html.includes("Acute pancreatitis: treat the patient") || !ninetyFourthLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 94 hepatobiliary and pancreatic content is incomplete");
+if (ninetyFourthQuiz.lessonId !== 94 || ninetyFourthQuiz.questions.length !== 10) throw new Error("Lesson 94 must include ten hepatobiliary and pancreatic questions");
+if (ninetyFourthLesson.traditionalCourse !== "Adult Health / Med-Surg I" || ninetyFourthLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetyFourthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 94 must preserve all three content tags");
+for (const question of ninetyFourthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg I" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 94 question must preserve its course and NCLEX tags");
+}
+const ninetyFifthLessonItem = curriculum.lessons[94];
+const ninetyFifthLesson = JSON.parse(read(ninetyFifthLessonItem.lessonFile));
+const ninetyFifthQuiz = JSON.parse(read(ninetyFifthLessonItem.quizFile));
+if (ninetyFifthLessonItem.id !== 95 || ninetyFifthLessonItem.courseId !== "med-surg-2-critical-care" || ninetyFifthLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 95 must start Adult Health / Med-Surg II & Critical Care");
+if (ninetyFifthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(95)) throw new Error("Lesson 95 must appear under Physiological Adaptation");
+if (!ninetyFifthLesson.title.includes("Acute Ischemic Stroke & TIA") || !ninetyFifthLesson.html.includes("Recognize stroke and establish the timeline") || !ninetyFifthLesson.html.includes("Imaging separates treatment pathways") || !ninetyFifthLesson.html.includes("Reperfusion: eligibility is individualized") || !ninetyFifthLesson.html.includes("TIA and prevention") || !ninetyFifthLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 95 stroke content is incomplete");
+if (ninetyFifthQuiz.lessonId !== 95 || ninetyFifthQuiz.questions.length !== 10) throw new Error("Lesson 95 must include ten stroke questions");
+if (ninetyFifthLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || ninetyFifthLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetyFifthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 95 must preserve all three content tags");
+for (const question of ninetyFifthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 95 question must preserve its course and NCLEX tags");
+}
+const ninetySixthLessonItem = curriculum.lessons[95];
+const ninetySixthLesson = JSON.parse(read(ninetySixthLessonItem.lessonFile));
+const ninetySixthQuiz = JSON.parse(read(ninetySixthLessonItem.quizFile));
+if (ninetySixthLessonItem.id !== 96 || ninetySixthLessonItem.courseId !== "med-surg-2-critical-care" || ninetySixthLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 96 must remain in Adult Health / Med-Surg II & Critical Care");
+if (ninetySixthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(96)) throw new Error("Lesson 96 must appear under Physiological Adaptation");
+if (!ninetySixthLesson.title.includes("Hemorrhagic Stroke") || !ninetySixthLesson.html.includes("Intracerebral hemorrhage: stop expansion") || !ninetySixthLesson.html.includes("Aneurysmal subarachnoid hemorrhage") || !ninetySixthLesson.html.includes("Raised ICP and EVD") || !ninetySixthLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 96 hemorrhagic stroke content is incomplete");
+if (ninetySixthQuiz.lessonId !== 96 || ninetySixthQuiz.questions.length !== 10) throw new Error("Lesson 96 must include ten hemorrhagic stroke questions");
+if (ninetySixthLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || ninetySixthLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetySixthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 96 must preserve all three content tags");
+for (const question of ninetySixthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 96 question must preserve its course and NCLEX tags");
+}
+const ninetySeventhLessonItem = curriculum.lessons[96];
+const ninetySeventhLesson = JSON.parse(read(ninetySeventhLessonItem.lessonFile));
+const ninetySeventhQuiz = JSON.parse(read(ninetySeventhLessonItem.quizFile));
+if (ninetySeventhLessonItem.id !== 97 || ninetySeventhLessonItem.courseId !== "med-surg-2-critical-care" || ninetySeventhLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 97 must remain in Adult Health / Med-Surg II & Critical Care");
+if (ninetySeventhLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(97)) throw new Error("Lesson 97 must appear under Physiological Adaptation");
+if (!ninetySeventhLesson.title.includes("Seizures & Status Epilepticus") || !ninetySeventhLesson.html.includes("Recognize and document the event") || !ninetySeventhLesson.html.includes("During a seizure: protect") || !ninetySeventhLesson.html.includes("Convulsive status epilepticus") || !ninetySeventhLesson.html.includes("After movements stop") || !ninetySeventhLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 97 seizure content is incomplete");
+if (ninetySeventhQuiz.lessonId !== 97 || ninetySeventhQuiz.questions.length !== 10) throw new Error("Lesson 97 must include ten seizure questions");
+if (ninetySeventhLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || ninetySeventhLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetySeventhLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 97 must preserve all three content tags");
+for (const question of ninetySeventhQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 97 question must preserve its course and NCLEX tags");
+}
+const ninetyEighthLessonItem = curriculum.lessons[97];
+const ninetyEighthLesson = JSON.parse(read(ninetyEighthLessonItem.lessonFile));
+const ninetyEighthQuiz = JSON.parse(read(ninetyEighthLessonItem.quizFile));
+if (ninetyEighthLessonItem.id !== 98 || ninetyEighthLessonItem.courseId !== "med-surg-2-critical-care" || ninetyEighthLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 98 must remain in Adult Health / Med-Surg II & Critical Care");
+if (ninetyEighthLessonItem.categoryId !== "safety-infection" || !curriculum.courses.find(course => course.id === "safety-infection").lessonIds.includes(98)) throw new Error("Lesson 98 must appear under Safety and Infection Prevention and Control");
+if (!ninetyEighthLesson.title.includes("Meningitis & Encephalitis") || !ninetyEighthLesson.html.includes("Specimens and LP") || !ninetyEighthLesson.html.includes("Bacterial meningitis: antibiotics") || !ninetyEighthLesson.html.includes("Meningococcal disease: droplet precautions") || !ninetyEighthLesson.html.includes("Encephalitis: suspect HSV") || !ninetyEighthLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 98 CNS infection content is incomplete");
+if (ninetyEighthQuiz.lessonId !== 98 || ninetyEighthQuiz.questions.length !== 10) throw new Error("Lesson 98 must include ten CNS infection questions");
+if (ninetyEighthLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || ninetyEighthLesson.nclexClientNeeds !== "Safety and Infection Prevention and Control" || ninetyEighthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 98 must preserve all three content tags");
+for (const question of ninetyEighthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Safety and Infection Prevention and Control") throw new Error("Each Lesson 98 question must preserve its course and NCLEX tags");
+}
+const ninetyNinthLessonItem = curriculum.lessons[98];
+const ninetyNinthLesson = JSON.parse(read(ninetyNinthLessonItem.lessonFile));
+const ninetyNinthQuiz = JSON.parse(read(ninetyNinthLessonItem.quizFile));
+if (ninetyNinthLessonItem.id !== 99 || ninetyNinthLessonItem.courseId !== "med-surg-2-critical-care" || ninetyNinthLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 99 must remain in Adult Health / Med-Surg II & Critical Care");
+if (ninetyNinthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(99)) throw new Error("Lesson 99 must appear under Physiological Adaptation");
+if (!ninetyNinthLesson.title.includes("Neuromuscular Weakness") || !ninetyNinthLesson.html.includes("Compare the patterns") || !ninetyNinthLesson.html.includes("Respiratory surveillance") || !ninetyNinthLesson.html.includes("Myasthenia gravis: recognize crisis") || !ninetyNinthLesson.html.includes("Guillain–Barré: immune treatment") || !ninetyNinthLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 99 neuromuscular content is incomplete");
+if (ninetyNinthQuiz.lessonId !== 99 || ninetyNinthQuiz.questions.length !== 10) throw new Error("Lesson 99 must include ten neuromuscular questions");
+if (ninetyNinthLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || ninetyNinthLesson.nclexClientNeeds !== "Physiological Adaptation" || ninetyNinthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 99 must preserve all three content tags");
+for (const question of ninetyNinthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 99 question must preserve its course and NCLEX tags");
+}
+const hundredthLessonItem = curriculum.lessons[99];
+const hundredthLesson = JSON.parse(read(hundredthLessonItem.lessonFile));
+const hundredthQuiz = JSON.parse(read(hundredthLessonItem.quizFile));
+if (hundredthLessonItem.id !== 100 || hundredthLessonItem.courseId !== "med-surg-2-critical-care" || hundredthLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 100 must remain in Adult Health / Med-Surg II & Critical Care");
+if (hundredthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(100)) throw new Error("Lesson 100 must appear under Physiological Adaptation");
+if (!hundredthLesson.title.includes("Traumatic Spinal Cord Injury") || !hundredthLesson.html.includes("Initial assessment and spinal motion protection") || !hundredthLesson.html.includes("Neurogenic shock is not spinal shock") || !hundredthLesson.html.includes("Autonomic dysreflexia: a different blood-pressure emergency") || !hundredthLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 100 spinal cord injury content is incomplete");
+if (hundredthQuiz.lessonId !== 100 || hundredthQuiz.questions.length !== 10) throw new Error("Lesson 100 must include ten spinal cord injury questions");
+if (hundredthLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || hundredthLesson.nclexClientNeeds !== "Physiological Adaptation" || hundredthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 100 must preserve all three content tags");
+for (const question of hundredthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 100 question must preserve its course and NCLEX tags");
+}
+const hundredFirstLessonItem = curriculum.lessons[100];
+const hundredFirstLesson = JSON.parse(read(hundredFirstLessonItem.lessonFile));
+const hundredFirstQuiz = JSON.parse(read(hundredFirstLessonItem.quizFile));
+if (hundredFirstLessonItem.id !== 101 || hundredFirstLessonItem.courseId !== "med-surg-2-critical-care" || hundredFirstLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 101 must remain in Adult Health / Med-Surg II & Critical Care");
+if (hundredFirstLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(101)) throw new Error("Lesson 101 must appear under Physiological Adaptation");
+if (!hundredFirstLesson.title.includes("Traumatic Brain Injury") || !hundredFirstLesson.html.includes("First assessment: injury, airway, and neurologic baseline") || !hundredFirstLesson.html.includes("Prevent secondary brain injury") || !hundredFirstLesson.html.includes("Mild TBI and concussion: safe discharge") || !hundredFirstLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 101 traumatic brain injury content is incomplete");
+if (hundredFirstQuiz.lessonId !== 101 || hundredFirstQuiz.questions.length !== 10) throw new Error("Lesson 101 must include ten traumatic brain injury questions");
+if (hundredFirstLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || hundredFirstLesson.nclexClientNeeds !== "Physiological Adaptation" || hundredFirstLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 101 must preserve all three content tags");
+for (const question of hundredFirstQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 101 question must preserve its course and NCLEX tags");
+}
+const hundredSecondLessonItem = curriculum.lessons[101];
+const hundredSecondLesson = JSON.parse(read(hundredSecondLessonItem.lessonFile));
+const hundredSecondQuiz = JSON.parse(read(hundredSecondLessonItem.quizFile));
+if (hundredSecondLessonItem.id !== 102 || hundredSecondLessonItem.courseId !== "med-surg-2-critical-care" || hundredSecondLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 102 must remain in Adult Health / Med-Surg II & Critical Care");
+if (hundredSecondLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(102)) throw new Error("Lesson 102 must appear under Physiological Adaptation");
+if (!hundredSecondLesson.title.includes("Hematologic Cancer Emergencies") || !hundredSecondLesson.html.includes("Marrow suppression changes the assessment") || !hundredSecondLesson.html.includes("Febrile neutropenia: treat the patient") || !hundredSecondLesson.html.includes("Tumor lysis syndrome: chemistry") || !hundredSecondLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 102 oncologic emergency content is incomplete");
+if (hundredSecondQuiz.lessonId !== 102 || hundredSecondQuiz.questions.length !== 10) throw new Error("Lesson 102 must include ten oncologic emergency questions");
+if (hundredSecondLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || hundredSecondLesson.nclexClientNeeds !== "Physiological Adaptation" || hundredSecondLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 102 must preserve all three content tags");
+for (const question of hundredSecondQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 102 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
@@ -934,7 +1055,7 @@ if (!read("css/styles.css").includes(".course-phase[open] .phase-chevron") || !r
 if (!index.includes('id="themeToggle" class="floating-theme-toggle"') || !read("css/styles.css").includes(".floating-theme-toggle { position: fixed") || !read("css/styles.css").includes("safe-area-inset-top") || !read("js/app.js").includes('dark ? "☀ Light" : "☾ Dark"')) throw new Error("Theme control must remain fixed at the upper-right with clear Light and Dark labels");
 if (!appSource.includes('<span class="lesson-number-badge">Lesson ') || !read("css/styles.css").includes(".lesson-number-badge")) throw new Error("Every opened lesson must display its lesson number in the main lesson body");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 910) throw new Error("Expected 910 pilot questions after adding Lesson 91");
+if (questionIds.size !== 1020) throw new Error("Expected 1020 pilot questions after adding Lesson 102");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json", "supabase/rn_analytics_setup.sql", "docs/ANONYMOUS_ANALYTICS.md"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -958,4 +1079,4 @@ if (!index.includes('id="anonymousAnalyticsStatus"') || !index.includes('id="ano
 if (!read("js/app.js").includes('RNAnalytics.track("lesson_open"') || !read("js/app.js").includes('RNAnalytics.track("lesson_quiz_complete"')) throw new Error("Learning analytics event hooks are incomplete");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "NurseLattice RN Quest" || manifest.short_name !== "NurseLattice RN" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 20 Pharmacology lessons, 21 Med-Surg I lessons, 910 questions, and version parity.");
+console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 20 Pharmacology lessons, 24 Med-Surg I lessons, 8 Med-Surg II lessons, 1020 questions, and version parity.");

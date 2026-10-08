@@ -21,7 +21,7 @@ const expectedCategories = [
 const judgmentSteps = new Set(["Recognize cues", "Analyze cues", "Prioritize hypotheses", "Generate solutions", "Take action", "Evaluate outcomes"]);
 
 if (curriculum.blueprint !== "2026 NCLEX-RN Test Plan") throw new Error("Current NCLEX-RN blueprint is missing");
-if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 109) throw new Error("Pilot must preserve all eight Client Needs areas and include one hundred nine lessons");
+if (curriculum.courses.length !== 8 || curriculum.lessons.length !== 111) throw new Error("Pilot must preserve all eight Client Needs areas and include one hundred eleven lessons");
 if (curriculum.courses.map(course => course.id).join("|") !== expectedCategories.join("|")) throw new Error("Client Needs areas are incomplete or out of order");
 
 const clientNeedsTitles = new Set(curriculum.courses.map(course => course.title));
@@ -1124,6 +1124,28 @@ if (hundredNinthLesson.traditionalCourse !== "Adult Health / Med-Surg II & Criti
 for (const question of hundredNinthQuiz.questions) {
   if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 109 question must preserve its course and NCLEX tags");
 }
+const hundredTenthLessonItem = curriculum.lessons[109];
+const hundredTenthLesson = JSON.parse(read(hundredTenthLessonItem.lessonFile));
+const hundredTenthQuiz = JSON.parse(read(hundredTenthLessonItem.quizFile));
+if (hundredTenthLessonItem.id !== 110 || hundredTenthLessonItem.courseId !== "med-surg-2-critical-care" || hundredTenthLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 110 must remain in Adult Health / Med-Surg II & Critical Care");
+if (hundredTenthLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(110)) throw new Error("Lesson 110 must appear under Physiological Adaptation");
+if (!hundredTenthLesson.title.includes("Major Burns & Inhalation Injury") || !hundredTenthLesson.html.includes("Stop burning, then prevent hypothermia") || !hundredTenthLesson.html.includes("Depth and TBSA answer different questions") || !hundredTenthLesson.html.includes("Airway injury can worsen after arrival") || !hundredTenthLesson.html.includes("Burn shock formulas only start the conversation") || !hundredTenthLesson.html.includes("Circumferential burns threaten perfusion and ventilation") || !hundredTenthLesson.html.includes("Chemical and electrical burns hide ongoing injury") || !hundredTenthLesson.html.includes("Wound care, pain, infection and nutrition") || !hundredTenthLesson.html.includes("Rehabilitation starts on day one") || !hundredTenthLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 110 burn and inhalation injury content is incomplete");
+if (hundredTenthQuiz.lessonId !== 110 || hundredTenthQuiz.questions.length !== 10) throw new Error("Lesson 110 must include ten burn nursing questions");
+if (hundredTenthLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || hundredTenthLesson.nclexClientNeeds !== "Physiological Adaptation" || hundredTenthLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 110 must preserve all three content tags");
+for (const question of hundredTenthQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 110 question must preserve its course and NCLEX tags");
+}
+const hundredEleventhLessonItem = curriculum.lessons[110];
+const hundredEleventhLesson = JSON.parse(read(hundredEleventhLessonItem.lessonFile));
+const hundredEleventhQuiz = JSON.parse(read(hundredEleventhLessonItem.quizFile));
+if (hundredEleventhLessonItem.id !== 111 || hundredEleventhLessonItem.courseId !== "med-surg-2-critical-care" || hundredEleventhLessonItem.course !== "Adult Health / Med-Surg II & Critical Care") throw new Error("Lesson 111 must remain in Adult Health / Med-Surg II & Critical Care");
+if (hundredEleventhLessonItem.categoryId !== "physiological-adaptation" || !curriculum.courses.find(course => course.id === "physiological-adaptation").lessonIds.includes(111)) throw new Error("Lesson 111 must appear under Physiological Adaptation");
+if (!hundredEleventhLesson.title.includes("Polytrauma & Hemorrhagic Shock") || !hundredEleventhLesson.html.includes("Start with XABCDE and repeat it") || !hundredEleventhLesson.html.includes("Normal blood pressure does not exclude hemorrhagic shock") || !hundredEleventhLesson.html.includes("Control compressible bleeding now") || !hundredEleventhLesson.html.includes("Suspected pelvic hemorrhage needs early stabilization") || !hundredEleventhLesson.html.includes("Damage-control resuscitation prioritizes blood and hemostasis") || !hundredEleventhLesson.html.includes("Prevent the lethal diamond") || !hundredEleventhLesson.html.includes("Definitive control—not pressure normalization—is the goal") || !hundredEleventhLesson.html.includes("Apply clinical judgment")) throw new Error("Lesson 111 polytrauma and hemorrhagic shock content is incomplete");
+if (hundredEleventhQuiz.lessonId !== 111 || hundredEleventhQuiz.questions.length !== 10) throw new Error("Lesson 111 must include ten polytrauma and hemorrhagic shock questions");
+if (hundredEleventhLesson.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || hundredEleventhLesson.nclexClientNeeds !== "Physiological Adaptation" || hundredEleventhLesson.clinicalJudgmentSteps.length !== judgmentSteps.size) throw new Error("Lesson 111 must preserve all three content tags");
+for (const question of hundredEleventhQuiz.questions) {
+  if (question.traditionalCourse !== "Adult Health / Med-Surg II & Critical Care" || question.nclexClientNeeds !== "Physiological Adaptation") throw new Error("Each Lesson 111 question must preserve its course and NCLEX tags");
+}
 if (roadmap.totalLessons !== 184 || roadmap.phases.length !== 12 || roadmap.phases[0].lessonRange.join("-") !== "1-20" || roadmap.phases[11].lessonRange.join("-") !== "177-184") throw new Error("Traditional 184-lesson RN roadmap is incomplete");
 if (roadmap.tagging.join("|") !== "traditionalCourse|nclexClientNeeds|clinicalJudgmentStep") throw new Error("Roadmap must preserve all three content tags");
 if (!read("js/app.js").includes('fetchJson("data/program-roadmap.json")') || !index.includes('id="curriculumList" class="course-roadmap"') || !index.includes('id="learnList" class="course-roadmap"')) throw new Error("The visible curriculum must list all twelve course phases");
@@ -1132,7 +1154,7 @@ if (!read("css/styles.css").includes(".course-phase[open] .phase-chevron") || !r
 if (!index.includes('id="themeToggle" class="floating-theme-toggle"') || !read("css/styles.css").includes(".floating-theme-toggle { position: fixed") || !read("css/styles.css").includes("safe-area-inset-top") || !read("js/app.js").includes('dark ? "☀ Light" : "☾ Dark"')) throw new Error("Theme control must remain fixed at the upper-right with clear Light and Dark labels");
 if (!appSource.includes('<span class="lesson-number-badge">Lesson ') || !read("css/styles.css").includes(".lesson-number-badge")) throw new Error("Every opened lesson must display its lesson number in the main lesson body");
 if (!fs.existsSync(path.join(root, "data/roadmap/leadership-priority-delegation.json"))) throw new Error("Original priority and delegation lesson was not preserved in the leadership roadmap");
-if (questionIds.size !== 1090) throw new Error("Expected 1090 pilot questions after adding Lesson 109");
+if (questionIds.size !== 1110) throw new Error("Expected 1110 pilot questions after adding Lesson 111");
 for (const file of ["css/styles.css", "js/app.js", "js/progress.js", "js/quiz.js", "js/cloud.js", "js/analytics.js", "js/version.js", "sw.js", "manifest.webmanifest", ".openai/hosting.json", "supabase/rn_analytics_setup.sql", "docs/ANONYMOUS_ANALYTICS.md"]) {
   if (!fs.existsSync(path.join(root, file))) throw new Error("Missing required file: " + file);
 }
@@ -1156,4 +1178,4 @@ if (!index.includes('id="anonymousAnalyticsStatus"') || !index.includes('id="ano
 if (!read("js/app.js").includes('RNAnalytics.track("lesson_open"') || !read("js/app.js").includes('RNAnalytics.track("lesson_quiz_complete"')) throw new Error("Learning analytics event hooks are incomplete");
 const manifest = JSON.parse(read("manifest.webmanifest"));
 if (manifest.name !== "NurseLattice RN Quest" || manifest.short_name !== "NurseLattice RN" || manifest.display !== "standalone" || manifest.start_url !== "./") throw new Error("Invalid web app manifest");
-console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 20 Pharmacology lessons, 24 Med-Surg I lessons, 15 Med-Surg II lessons, 1090 questions, and version parity.");
+console.log("Static checks passed: 20 Foundations lessons, 14 Health Assessment lessons, 16 Pathophysiology lessons, 20 Pharmacology lessons, 24 Med-Surg I lessons, 17 Med-Surg II lessons, 1110 questions, and version parity.");
